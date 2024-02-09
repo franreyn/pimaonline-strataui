@@ -3,13 +3,18 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": { 
-    "build": "webpack",
-    "serve": "webpack-dev-server"
+  "scripts": {
+    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\"",
+    "build": "npm run scss && npm run ts",
+    "serve": "webpack serve",
+    "scss": "sass --watch --no-source-map --style=compressed src/scss/index.scss dist/styles.css",
+    "ts": "webpack --watch"
   },
   "author": "PimaOnline at Pima Community College",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.70.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.90.0",
