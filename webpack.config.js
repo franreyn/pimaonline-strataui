@@ -1,7 +1,14 @@
+// Used to compile typescript into javascript
 const path = require("path");
 
 module.exports = {
   mode: "production",
+  entry: "./src/ts/index.ts",
+  output: {
+    publicPath: "dist", 
+    filename: "scripts.js",
+    path: path.resolve(__dirname, "dist")
+  },
   module: {
     rules: [
       {
@@ -15,10 +22,12 @@ module.exports = {
   resolve: {
     extensions: [".ts", ".js"]
   },
-  entry: "./src/ts/index.ts",
-  output: {
-    publicPath: "dist", 
-    filename: "scripts.js",
-    path: path.resolve(__dirname, "dist")
-  }
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    open: true, // open browser when server starts
+    compress: true,
+    port: 8080, // or any other port you prefer
+  },
 }
