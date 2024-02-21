@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\" \"docsify serve docs\"",
+    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\"",
     "build": "npm run scss && npm run ts",
     "docs": "docsify serve docs",
     "serve": "webpack serve",
