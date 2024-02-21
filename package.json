@@ -4,16 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\"",
+    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\" \"npm run live\"",
     "build": "npm run scss && npm run ts",
     "serve": "webpack serve",
     "scss": "sass --watch --no-source-map --style=compressed src/scss/index.scss dist/styles.css",
+    "live": "live-server --port=8080 --no-browser",
     "ts": "webpack --watch"
   },
   "author": "PimaOnline at Pima Community College",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "live-server": "^1.2.2",
     "sass": "^1.70.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
