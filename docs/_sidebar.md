@@ -1,0 +1,10 @@
+- Getting Started
+  - [Installation](/getting-started/installation.md)
+- Themes
+  - [Default](/themes/default.md)
+- Layouts
+  - [One Column](/layouts/one-column.md)
+- Components
+  - [Accordion](/components/accordion.md)
+- Customizations
+  - [Typography](/customizations/typography.md)
