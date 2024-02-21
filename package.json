@@ -7,15 +7,16 @@
     "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\" \"npm run live\"",
     "build": "npm run scss && npm run ts",
     "docs": "docsify serve docs",
+    "live": "live-server --port=8080 --no-browser --watch=dist",
     "serve": "webpack serve",
     "scss": "sass --watch --no-source-map --style=compressed src/scss/index.scss dist/styles.css",
-    "live": "live-server --port=8080 --no-browser",
     "ts": "webpack --watch"
   },
   "author": "PimaOnline at Pima Community College",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "html-webpack-plugin": "^5.6.0",
     "live-server": "^1.2.2",
     "sass": "^1.70.0",
     "ts-loader": "^9.5.1",
