@@ -1,5 +1,6 @@
 // Used to compile typescript into javascript
 const path = require("path");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: "production",
@@ -30,4 +31,10 @@ module.exports = {
     compress: true,
     port: 8080, // or any other port you prefer
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/html/index.html', // source HTML file
+      filename: 'index.html', // Output file in dist
+    }),
+  ],
 }
