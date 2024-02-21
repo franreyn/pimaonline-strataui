@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\" \"npm run live\"",
     "build": "npm run scss && npm run ts",
+    "docs": "docsify serve docs",
     "serve": "webpack serve",
     "scss": "sass --watch --no-source-map --style=compressed src/scss/index.scss dist/styles.css",
     "live": "live-server --port=8080 --no-browser",
