@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\"",
+    "dev": "concurrently \"npm run scss\" \"npm run ts\" \"npm run serve\" \"docsify serve docs\"",
     "build": "npm run scss && npm run ts",
+    "docs": "docsify serve docs",
     "serve": "webpack serve",
     "scss": "sass --watch --no-source-map --style=compressed src/scss/index.scss dist/styles.css",
     "ts": "webpack --watch"
