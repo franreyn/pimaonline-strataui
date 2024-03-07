@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"npm:build\"",
     "docs": "docsify serve docs",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir --watch",
     "serve": "vite preview"
   },
   "author": "PimaOnline at Pima Community College",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "sass": "^1.70.0",
     "typescript": "^5.3.3",
     "vite": "^5.1.5",
