@@ -9,9 +9,9 @@ export default defineConfig({
     // rollupOptions is used to remove hashes from file names
     rollupOptions: {
       output: {
-        entryFileNames: `assets/[name].js`,
-        chunkFileNames: `assets/[name].js`,
-        assetFileNames: `assets/[name].[ext]`
+        entryFileNames: `js/[name].js`,
+        chunkFileNames: `js/[name].js`,
+        assetFileNames: `css/[name].[ext]`
       }
     }
   },
