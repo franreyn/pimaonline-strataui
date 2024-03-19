@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"vite\" \"npm:build\"",
+    "dev": "concurrently \"vite\" \"npm run build:watch\"",
     "docs": "docsify serve docs",
     "build": "vite build --emptyOutDir --watch",
+    "build:watch": "vite build --emptyOutDir --watch",
     "serve": "vite preview"
   },
   "author": "PimaOnline at Pima Community College",
