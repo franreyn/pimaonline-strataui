@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"npm run build:watch\"",
     "docs": "docsify serve docs",
-    "build": "vite build --emptyOutDir --watch",
+    "build": "vite build --emptyOutDir",
     "build:watch": "vite build --emptyOutDir --watch",
     "serve": "vite preview"
   },
