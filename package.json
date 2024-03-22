@@ -4,19 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"vite\" \"npm run build:watch\"",
+    "dev": "concurrently \"npm run sass-watch\" \"npm run tsc-watch\" \"npx webpack --watch\"",
+    "build": "npx webpack && npm run sass && npm run tsc",
     "docs": "docsify serve docs",
-    "build": "vite build --emptyOutDir",
-    "build:watch": "vite build --emptyOutDir --watch",
-    "serve": "vite preview"
+    "sass": "sass --no-source-map src/scss/index.scss dist/css/index.css",
+    "sass-watch": "sass --no-source-map src/scss/index.scss dist/css/index.css --watch",
+    "tsc": "tsc src/ts/index.ts --outDir dist/js --target ES5",
+    "tsc-watch": "tsc src/ts/index.ts --outDir dist/js --target ES5 --watch"
   },
   "author": "PimaOnline at Pima Community College",
   "license": "MIT",
   "devDependencies": {
+    "@types/react": "^18.2.67",
+    "@types/react-dom": "^18.2.22",
     "concurrently": "^8.2.2",
+    "html-webpack-plugin": "^5.6.0",
     "sass": "^1.70.0",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.5",
-    "vite-tsconfig-paths": "^4.3.1"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.4.2",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
