@@ -2,8 +2,8 @@ import React from "react";
 import customElements from "./CreateCustomElement";
 
 // Accessing AssignmentsWidget and AssignmentItem from customElements
-const AssignmentsWidgetWrapper = customElements["AssignmentsWidget"];
-const AssignmentItem = customElements["AssignmentItem"]
+const AssignmentsWidgetWrapper: React.FC<any> = customElements["AssignmentsWidget"];
+const AssignmentItem: React.FC<any> = customElements["AssignmentItem"]
 
 export default function AssignmentsWidget(): React.ReactElement {
   return (
