@@ -1,7 +1,7 @@
 import React from "react";
 import customElements from "./CreateCustomElement";
 
-const BorderWrapper = customElements["BorderWidget"]; // Accessing BorderWidget from customElements
+const BorderWrapper: React.FC<any> = customElements["BorderWidget"]; // Accessing BorderWidget from customElements
 
 export default function BorderWidget(): React.ReactElement {
   return (
