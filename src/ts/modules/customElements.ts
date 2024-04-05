@@ -1,4 +1,4 @@
-import { customElementsData } from "./variables";
+import { customElementsData } from "../config";
 
 // Create base class (in order to use a custom element, you need a constructor)
 class CustomElementBase extends HTMLElement {
