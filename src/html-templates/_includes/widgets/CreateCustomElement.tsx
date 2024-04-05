@@ -1,5 +1,5 @@
 import React from "react";
-import { customElementsData } from "../../../ts/modules/variables";
+import { customElementsData } from "../../../ts/config";
 
 // Function to generate custom element. Returns a function that renders a ReactElement with children.
 const createCustomElement = (elementName: string) => {
