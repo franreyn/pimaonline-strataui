@@ -9,7 +9,7 @@ In order to create a new custom element, you'll need 2 things to start.
 1. The name of the JSX Component in React.
 2. The name of the custom HTML tag.
 
-1. JSX React Component
+### JSX React Component
 
 For our test environment, create a new component for each custom element or widget. For this step, just ensure you have a name for the component. The name of the component is needed for the `config.ts` file. 
 
@@ -32,11 +32,11 @@ export default function BorderWidget(): React.ReactElement {
 }
 ```
 
-2. Custom HTML Tag
+### Custom HTML Tag
 
 The custom HTML tag will render in the final output of the HTML and will allow instructional designers to code the course and utilize them instead of having to remember classes and other tag attributes.
 
-### Custom HTML Tag Rules
+#### Custom HTML Tag Rules
 
 In order to ensure custom HTML tags are semantic and work, please follow these rules when deciding on an HTML custom tag name.
 
