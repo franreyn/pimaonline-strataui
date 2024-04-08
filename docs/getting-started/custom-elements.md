@@ -13,21 +13,21 @@ In order to create a new custom element, you'll need 2 things to start.
 
 For our test environment, create a new component for each custom element or widget. For this step, just ensure you have a name for the component. The name of the component is needed for the `config.ts` file. 
 
-#### BorderWidget.tsx
+#### CallOutWidget.tsx
 
 ```jsx
 import React from "react";
 import customElements from "./CreateCustomElement";
 
-const BorderWrapper: React.FC<any> = customElements["BorderWidget"]; // Accessing BorderWidget from customElements
+const CallOutWrapper: React.FC<any> = customElements["CallOutWidget"]; // Accessing BorderWidget from customElements
 
 export default function BorderWidget(): React.ReactElement {
   return (
-    <BorderWrapper>
+    <CallOutWrapper>
       <h3>Border Widget</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.
       </p>
-    </BorderWrapper>
+    </CallOutWrapper>
   )
 }
 ```
@@ -91,7 +91,7 @@ This array takes an object as element. It consists of two strings. The JSX name 
 
 ```js
 export const customElementsData: { jsxName: string, customHtmlTag: string }[] = [
-  { jsxName: "BorderWidget", customHtmlTag: "border-widget" },
+  { jsxName: "CallOutWidget", customHtmlTag: "callout-widget" },
   { jsxName: "AssignmentsWidget", customHtmlTag: "assignments-widget" },
   { jsxName: "AssignmentItem", customHtmlTag: "assignment-item" },
 ];
