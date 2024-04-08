@@ -18,6 +18,7 @@ export default function OneColumn(): string {
           href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-themepack/dist/css/themes/cards/styles.css"
         />
         <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <script src="../js/scripts.js" defer></script>
         <title>One Column Layout</title>
       </head>
       <body>

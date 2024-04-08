@@ -1,8 +1,13 @@
 import React from 'react';
+import AssignmentsWidget from './widgets/AssignmentsWidget';
 
 export default function SecondColContent(): React.ReactElement {
   return (
-    <>
+    <div id="second-column">
+      <div className="content-body">
+        <AssignmentsWidget>
+        </AssignmentsWidget>
+      </div>
       <div className="content-body">
         <h4 className="icon-image">Image</h4>
         <figure>
@@ -28,6 +33,6 @@ export default function SecondColContent(): React.ReactElement {
           <p>The Galapagos Penguin is the only penguin species that ventures north of the equator in the wild.</p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

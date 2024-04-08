@@ -1,0 +1,58 @@
+
+#second-column assignments-widget,#second-column assignments-widget {
+  margin: 0;
+  padding: 0
+}
+
+#content-wrapper assignments-widget,#content-wrapper assignments-widget {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+
+assignment-item {
+  display: block;
+  background-color: var(--color-pcc-ltgrey);
+  border-top: 1px solid var(--color-pcc-primary);
+  border-radius: 0px;
+  margin: 0;
+  margin-bottom: .8rem;
+  padding: .6rem;
+  transition: .3s
+}
+
+assignment-item:hover {
+  transform: translate(0, -5px)
+}
+
+assignment-item h2,assignment-item h3,assignment-item h4 {
+  background-color: rgba(13,13,13,.03);
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: -0.6rem -0.6rem .6rem -0.6rem !important;
+  padding: .3rem .6rem
+}
+
+assignment-item ol li,assignment-item ul li {
+  margin: 0
+}
+
+assignment-item p,assignment-item ol,assignment-item ul,assignment-item .btn {
+  font-size: .95em
+}
+
+assignment-item::before,assignment-item::marker {
+  content: none
+}
+
+@media screen and (min-width: 576px) {
+  #content-wrapper assignment-item {
+      flex-basis:45%
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #content-wrapper assignment-item {
+      flex-basis:30%
+  }
+}
