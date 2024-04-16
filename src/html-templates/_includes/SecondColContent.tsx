@@ -1,20 +1,22 @@
 import React from 'react';
 import AssignmentsWidget from './widgets/AssignmentsWidget';
+import ContentBody from './layout-elements/ContentBody';
+import SecondColumn from './layout-elements/SecondColumn';
 
 export default function SecondColContent(): React.ReactElement {
   return (
-    <div id="second-column">
-      <div className="content-body">
+    <SecondColumn>
+      <ContentBody>
         <AssignmentsWidget>
         </AssignmentsWidget>
-      </div>
-      <div className="content-body">
+      </ContentBody>
+      <ContentBody>
         <h4 className="icon-image">Image</h4>
         <figure>
           <img src="https://via.placeholder.com/800x800" alt="" />
         </figure>
-      </div>
-      <div className="content-body">
+      </ContentBody>
+      <ContentBody>
         <h4 className="icon-pencil">Quick Vocabulary</h4>
         <dl>
           <dt>Feathers:</dt>
@@ -26,13 +28,13 @@ export default function SecondColContent(): React.ReactElement {
           <dt>Waddle:</dt>
           <dd>A penguin's walk swaying from side to side.</dd>
         </dl>
-      </div>
-      <div className="content-body">
+      </ContentBody>
+      <ContentBody>
         <div className="border border-yellow">
           <h4>Did you know?!</h4>
           <p>The Galapagos Penguin is the only penguin species that ventures north of the equator in the wild.</p>
         </div>
-      </div>
-    </div>
+      </ContentBody>
+    </SecondColumn>
   );
 };
