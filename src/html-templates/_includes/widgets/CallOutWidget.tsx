@@ -1,5 +1,5 @@
 import React from "react";
-import customElements from "./CreateCustomElement";
+import customElements from "../CreateCustomElement";
 
 const CallOutWrapper: React.FC<any> = customElements["CallOutWidget"]; // Accessing CallOutWidget from customElements
 
