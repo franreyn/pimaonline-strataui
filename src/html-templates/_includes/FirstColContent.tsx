@@ -1,11 +1,11 @@
 import React from 'react';
 import CallOutWidget from './widgets/CallOutWidget';
-import ContentBody from './layout-elements/ContentBody';
-import ContentWrapper from './layout-elements/ContentWrapper';
+import ContentBody from './grid-components/ContentBody';
+import ColumnOne from './grid-components/ColumnOne';
 
 export default function FirstColContent(): React.ReactElement {
   return (
-    <ContentWrapper>
+    <ColumnOne>
       <ContentBody>
         <h2>Welcome to [course name here]</h2>
         <CallOutWidget></CallOutWidget>
@@ -25,6 +25,6 @@ export default function FirstColContent(): React.ReactElement {
           </div>
         </div>
       </ContentBody>
-    </ContentWrapper>
+    </ColumnOne>
   );
 };

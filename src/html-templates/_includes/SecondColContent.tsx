@@ -1,11 +1,11 @@
 import React from 'react';
 import AssignmentsWidget from './widgets/AssignmentsWidget';
-import ContentBody from './layout-elements/ContentBody';
-import SecondColumn from './layout-elements/SecondColumn';
+import ContentBody from './grid-components/ContentBody';
+import ColumnTwo from './grid-components/ColumnTwo';
 
 export default function SecondColContent(): React.ReactElement {
   return (
-    <SecondColumn>
+    <ColumnTwo>
       <ContentBody>
         <AssignmentsWidget>
         </AssignmentsWidget>
@@ -35,6 +35,6 @@ export default function SecondColContent(): React.ReactElement {
           <p>The Galapagos Penguin is the only penguin species that ventures north of the equator in the wild.</p>
         </div>
       </ContentBody>
-    </SecondColumn>
+    </ColumnTwo>
   );
 };
