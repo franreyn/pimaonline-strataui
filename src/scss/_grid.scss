@@ -2,7 +2,7 @@
 @use "variables";
 
 body {
-  background-color: var(--color-pcc-white);
+  background-color: var(--color-pcc-primary-tint1);
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0;
@@ -27,14 +27,14 @@ body {
 }
 
 .header,
-content-wrapper,
+column-one,
 footer {
   margin: 0 auto;
   max-width: 998px;
   width: 100%;
 }
 
-content-wrapper {
+column-one {
   grid-area: body;
 
   content-body {
@@ -71,7 +71,7 @@ footer {
   grid-template-areas:
     "header"
     "body"
-    "second-column"
+    "column-two"
     "footer";
 }
 
@@ -80,7 +80,7 @@ footer {
   grid-template-areas:
     "header"
     "body"
-    "second-column"
+    "column-two"
     "column-widget"
     "footer";
 }
@@ -92,9 +92,9 @@ footer {
   max-width: 1170px;
 }
 
-#two-column content-wrapper,
-#two-col-widget content-wrapper,
-second-column,
+#two-column column-one,
+#two-col-widget column-one,
+column-two,
 #column-widget {
   display: flex;
   flex-flow: column;
@@ -110,15 +110,15 @@ second-column,
   grid-area: column-widget;
 }
 
-second-column {
-  grid-area: second-column;
+column-two {
+  grid-area: column-two;
 }
 
 @media screen and (min-width: 700px) {
   #two-column {
     grid-template-areas:
       "header header"
-      "body second-column"
+      "body column-two"
       "footer footer";
   }
 
@@ -126,7 +126,7 @@ second-column {
     grid-template-areas:
       "header header"
       "body column-widget"
-      "body second-column"
+      "body column-two"
       "footer footer";
   }
 
@@ -162,11 +162,11 @@ second-column {
       text-align: left;
 
       li {
-        color: rgba(255, 255, 255, 1);
+        color: var(--color-pcc-white);
 
         &::before,
         &::after {
-          color: rgba(255, 255, 255, 1);
+          color: var(--color-pcc-white);
         }
       }
     }
@@ -203,7 +203,7 @@ second-column {
 
 //SYLLABUS HEADER
 .syllabus-header {
-  background-color: white;
+  background-color: var(--color-pcc-white);
   justify-content: center;
   text-align: center;
 
@@ -242,7 +242,7 @@ second-column {
 
 //CAPTION
 .caption {
-  color: #666666;
+  color: var(--color-pcc-dkgrey);
   font-size: 0.85em;
 }
 
@@ -268,17 +268,17 @@ video {
 }
 
 .edit {
-  color: rgba(178, 3, 3, 1);
+  color: var(--color-edit-text);
   font-weight: bold;
 }
 
 .highlight {
   background-color: transparent;
-  background-image: linear-gradient(to bottom, #b4e7f8, #b4e7f8);
-  border-bottom: 2px solid #b4e7f8;
-  border-left: 2px solid #b4e7f8;
-  border-right: 2px solid #b4e7f8;
-  border-top: 2px solid #b4e7f8;
+  background-image: linear-gradient(to bottom, var(--color-light-blue), var(--color-light-blue));
+  border-bottom: 2px solid var(--color-light-blue);
+  border-left: 2px solid var(--color-light-blue);
+  border-right: 2px solid var(--color-light-blue);
+  border-top: 2px solid var(--color-light-blue);
 }
 
 .monospace {
@@ -287,7 +287,7 @@ video {
 
 hr {
   border: none;
-  border-bottom: 1px solid rgba(13, 13, 13, 0.3);
+  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.3);
   margin: 10px;
 }
 
@@ -317,8 +317,8 @@ figure {
 
   figcaption,
   .caption {
-    border-bottom: 1px solid rgba(13, 13, 13, 0.045);
-    color: #666666;
+    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.045);
+    color: var(--color-pcc-dkgrey);
     font-size: 0.85em;
     font-style: italic;
     padding: 0 0 5px 0;
@@ -328,7 +328,7 @@ figure {
 //LABELS
 .label {
   border-radius: 1px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color-pcc-white);
   display: inline;
   font-size: 0.7em;
   font-weight: 700;
@@ -341,12 +341,12 @@ figure {
 }
 
 .label-default {
-  background-color: rgba(26, 97, 143, 1);
+  background-color: var(--color-pcc-primary);
 }
 
 .label-muted {
-  background-color: rgba(13, 13, 13, 0.15);
-  color: #232323;
+  background-color: rgba(var(--color-black-rgb), 0.15);
+  color: var(--color-muted-black);
 }
 
 dt {
@@ -368,19 +368,19 @@ a {
 a,
 .toggle-footnotes {
   background-color: transparent;
-  color: rgba(0, 91, 226, 1);
+  color: var(--color-link-blue);
   text-decoration: underline;
 }
 
 a:visited {
-  color: rgb(108, 0, 169) ;
+  color: var(--color-link-purple) ;
 }
 
 a:hover,
 a:active,
 .toggle-footnotes:hover {
   background-color: transparent;
-  color: rgba(0, 57, 143, 1);
+  color: var(--color-footnotes-blue);
   text-decoration: underline;
 }
 
@@ -407,22 +407,22 @@ a:active,
 
 //BUTTONS
 button {
-  background-color: rgba(46, 94, 142, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btn-blue);
+  color: var(--color-pcc-white);
   border: none;
   font-size: 1em;
   margin: 5px;
   padding: 10px;
 
   button:hover {
-    background-color: rgba(28, 57, 87, 1);
+    background-color: var(--color-btn-blue-hover);
   }
 }
 
 .btn {
-  background-color: rgba(46, 94, 142, 1);
-  color: rgba(255, 255, 255, 1);
-  border: 3px solid rgba(46, 94, 142, 1);
+  background-color: var(--color-btn-blue);
+  color: var(--color-pcc-white);
+  border: 3px solid var(--color-btn-blue);
   border-radius: 0.3em;
   cursor: pointer;
   display: inline-block;
@@ -441,57 +441,57 @@ button {
   vertical-align: middle;
 
   &:hover {
-    background-color: rgba(28, 57, 87, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-btn-blue-hover);
+    color: var(--color-pcc-white);
     text-decoration: none;
   }
 }
 
 //Custom .btn colors
 .btn-primary {
-  background-color: rgba(4, 85, 148, 1);
-  border-color: rgba(4, 85, 148, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-btn-primary);
+  border-color: var(--color-btn-primary);
+  color: var(--color-pcc-white);
 
   &:hover {
-    background-color: rgba(3, 64, 111, 1);
-    border-color: rgba(3, 64, 111, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-btn-primary-hover);
+    border-color: var(--color-btn-primary-hover);
+    color: var(--color-pcc-white);
   }
 }
 
 .btn-secondary {
-  background-color: rgba(247, 144, 45, 1);
-  border-color: rgba(247, 144, 45, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-pcc-secondary);
+  border-color: var(--color-pcc-secondary);
+  color: var(--color-pcc-white);
 
   &:hover {
-    background-color: rgba(236, 119, 9, 1);
-    border-color: rgba(236, 119, 9, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-pcc-secondary-hover);
+    border-color: var(--color-pcc-secondary-hover);
+    color: var(--color-pcc-white);
   }
 }
 
 .btn-tertiary {
-  background-color: rgba(0, 174, 239, 1);
-  border-color: rgba(0, 174, 239, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-pcc-tertiary);
+  border-color: var(--color-pcc-tertiary);
+  color: var(--color-pcc-white);
 
   &:hover {
-    background-color: rgba(0, 146, 199, 1);
-    border-color: rgba(0, 146, 199, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--color-pcc-tertiary-hover);
+    border-color: var(--color-pcc-tertiary-hover);
+    color: var(--color-pcc-white);
   }
 }
 
 .btn-gray {
-  background-color: rgba(128, 130, 133, 1);
-  border-color: rgba(128, 130, 133, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: var(--color-pcc-dkgrey);
+  border-color: var(--color-pcc-dkgrey);
+  color: var(--color-pcc-white);
 
   &:hover {
-    background-color: rgba(108, 110, 112, 1);
-    border-color: rgba(108, 110, 112, 1);
+    background-color: var(--color-dkgrey-hover);
+    border-color: var(--color-dkgrey-hover);
   }
 }
 
@@ -511,7 +511,7 @@ button {
 //.btn support classes
 .outline {
   background-color: transparent;
-  color: rgba(13, 13, 13, 1);
+  color: var(--color-pcc-black);
 }
 
 .pill {
