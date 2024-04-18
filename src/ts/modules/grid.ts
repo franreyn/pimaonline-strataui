@@ -1,23 +1,23 @@
 // Contains function to add id attributes to create the page's grid.
-import { courseBody, contentWrapper, secondColumn, columnWidget, videoWrapper } from "./variables";
+import { courseBody, columnOne, columnTwo, columnWidget, videoWrapper } from "./variables";
 
 const addGrid = (): void => {
 
   // Typescript requires checking for courseBody
   if (courseBody !== null) {
-    if (contentWrapper && secondColumn && !columnWidget) {
+    if (columnOne && columnTwo && !columnWidget) {
       courseBody.id = "two-column";
-      // If contentWrapper, secondColumn, and columnWidget all exist, the id of courseBody is set to "two-col-widget"
-    } else if (contentWrapper && secondColumn && columnWidget) {
+      // If columnOne, columnTwo, and columnWidget all exist, the id of courseBody is set to "two-col-widget"
+    } else if (columnOne && columnTwo && columnWidget) {
       courseBody.id = "two-col-widget";
-      // If contentWrapper and videoWrapper both exist, the id of courseBody is set to "video-grid"
-    } else if ((contentWrapper && videoWrapper)) {
+      // If columnOne and videoWrapper both exist, the id of courseBody is set to "video-grid"
+    } else if ((columnOne && videoWrapper)) {
       courseBody.id = "video-grid";
-      // If only contentWrapper exists and secondColumn, thirdColumn, columnWidget, and videoWrapper do not exist, the id of courseBody is set to "one-column"
-    } else if (contentWrapper && !secondColumn && !columnWidget && !videoWrapper) {
+      // If only columnOne exists and columnTwo, thirdColumn, columnWidget, and videoWrapper do not exist, the id of courseBody is set to "one-column"
+    } else if (columnOne && !columnTwo && !columnWidget && !videoWrapper) {
       courseBody.id = "one-column";
-      // If contentWrapper exists, secondColumn does not exist, and either thirdColumn or columnWidget exists, an error message is logged stating that <body> is missing an id because #second-column doesn’t exist
-    } else if (contentWrapper && !secondColumn && columnWidget) {
+      // If columnOne exists, columnTwo does not exist, and either thirdColumn or columnWidget exists, an error message is logged stating that <body> is missing an id because #second-column doesn’t exist
+    } else if (columnOne && !columnTwo && columnWidget) {
       // Error message for when the second column's container does not contain #second-column
       console.log("Document error: <body> is missing id because #second-column doesn't exist.");
       // If none of the above conditions are met, an error message is logged stating that the page layout could not be determined for setting <body> id
