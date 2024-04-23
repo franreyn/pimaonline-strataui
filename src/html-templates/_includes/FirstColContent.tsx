@@ -1,10 +1,12 @@
 import React from 'react';
 import CallOutWidget from './widgets/CallOutWidget';
+import ContentBlock from './grid-components/ContentBlock';
+import ColumnOne from './grid-components/ColumnOne';
 
 export default function FirstColContent(): React.ReactElement {
   return (
-    <div id="content-wrapper">
-      <div className="content-body">
+    <ColumnOne>
+      <ContentBlock>
         <h2>Welcome to [course name here]</h2>
         <CallOutWidget></CallOutWidget>
         <p>Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat. Vivamus suscipit tortor eget felis porttitor volutpat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Donec rutrum congue leo eget malesuada.</p>
@@ -22,7 +24,7 @@ export default function FirstColContent(): React.ReactElement {
             </figure>
           </div>
         </div>
-      </div>
-    </div>
+      </ContentBlock>
+    </ColumnOne>
   );
 };
