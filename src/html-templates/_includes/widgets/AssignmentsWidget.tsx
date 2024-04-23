@@ -1,5 +1,5 @@
 import React from "react";
-import customElements from "./CreateCustomElement";
+import customElements from "../CreateCustomElement";
 
 // Accessing AssignmentsWidget and AssignmentItem from customElements
 const AssignmentsWidgetWrapper: React.FC<any> = customElements["AssignmentsWidget"];
