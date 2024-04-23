@@ -37,7 +37,7 @@ footer {
 column-one {
   grid-area: body;
 
-  content-body {
+  content-block {
     width: 96%;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -101,8 +101,8 @@ column-two,
   height: 100%;
 }
 
-#two-column content-body:last-child,
-#two-col-widget content-body:last-child {
+#two-column content-block:last-child,
+#two-col-widget content-block:last-child {
   flex-grow: 1;
 }
 
@@ -247,7 +247,8 @@ column-two {
 }
 
 //CONTENT BODY
-content-body {
+content-block {
+  display: block;
   margin-bottom: 10px;
   padding: 15px;
   background-color: var(--color-pcc-white);
@@ -258,7 +259,7 @@ content-body {
   }
 }
 
-content-body:last-child {
+content-block:last-child {
   margin-bottom: 0px;
 }
 

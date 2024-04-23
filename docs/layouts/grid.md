@@ -4,7 +4,7 @@ The grid components help make up the different layouts in Strata CSS.
 
 The grid components are:
 
-1. ContentBody component
+1. ContentBlock component
 2. OneColumn component 
 3. TwoColumn component
 
@@ -63,8 +63,8 @@ column-two,
   height: 100%;
 }
 
-#two-column content-body:last-child,
-#two-col-widget content-body:last-child {
+#two-column content-block:last-child,
+#two-col-widget content-block:last-child {
   flex-grow: 1;
 }
 ```
@@ -75,7 +75,7 @@ The content body element are the sub grid components that contain the actual con
 
 ```scss
 //CONTENT BODY
-content-body {
+content-block {
   margin-bottom: 10px;
   padding: 15px;
   background-color: var(--color-pcc-white);
@@ -86,19 +86,19 @@ content-body {
   }
 }
 
-content-body:last-child {
+content-block:last-child {
   margin-bottom: 0px;
 }
 
-#two-column content-body:last-child,
-#two-col-widget content-body:last-child {
+#two-column content-block:last-child,
+#two-col-widget content-block:last-child {
   flex-grow: 1;
 }
 
 column-one {
   grid-area: body;
 
-  content-body {
+  content-block {
     width: 96%;
     width: -moz-available;
     width: -webkit-fill-available;
