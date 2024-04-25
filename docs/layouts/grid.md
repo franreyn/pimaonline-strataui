@@ -80,8 +80,7 @@ content-block {
   padding: 15px;
   background-color: var(--color-pcc-white);
 
-  h2:first-child,
-  h3:first-child {
+  h2:first-child {
     margin: 0 0 20px 0;
   }
 }
