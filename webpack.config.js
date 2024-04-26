@@ -26,7 +26,7 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extracts CSS into separate files
           "css-loader",                 // Translates CSS into CommonJS
           "sass-loader"                 // Compiles Sass to CSS
-        ], 
+        ],
         include: [path.resolve(__dirname, "src/scss")]
       }
     ],
@@ -47,7 +47,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: path.resolve(__dirname, "dist"), // Serve files from the dist directory
+    static: path.resolve(__dirname, "./"), // Serve files from the dist directory
     port: 8080, // Specify a port
     open: false, // Disable automatic browser opening
     hot: true, // Enable hot module replacement (HMR)
