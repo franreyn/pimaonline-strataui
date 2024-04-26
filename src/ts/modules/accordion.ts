@@ -52,7 +52,7 @@ const handleAccordions = () => {
           accordionHeading.setAttribute("tabindex", "0");
           accordionHeading.classList.add("toggle-btn");
           accordionHeading.classList.add("accordion-title");
-          accordionHeading.classList.add("arrow-down");
+          accordionHeading.classList.add("arrow-right");
         }
 
         const accordionContent: HTMLElement | null = accordionItem.querySelector("accordion-content");
