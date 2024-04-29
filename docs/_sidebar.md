@@ -7,5 +7,6 @@
   - [One Column](/layouts/one-column.md)
 - Components
   - [Accordion](/components/accordion.md)
+  - [Blockquote](/components/accordion.md)
 - Customizations
   - [Typography](/customizations/typography.md)
