@@ -1,0 +1,209 @@
+table {
+  border-collapse: collapse !important;
+  color: var(--color-pcc-white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  margin: 40px 20px 15px 20px;
+  text-rendering: optimizeLegibility;
+
+  th {
+    font-size: 1.0625em;
+    font-weight: bold;
+    line-height: normal;
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+    border: none;
+  }
+
+  thead,
+  tr,
+  td {
+    border: 1px solid rgba(var(--color-pcc-black-rgb), 0.155);
+    vertical-align: top;
+  }
+
+  caption {
+    font-size: 1.3rem;
+    margin: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  thead th {
+    font-weight: 600;
+  }
+
+  thead th,
+  tbody td {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  tbody tr {
+    color: var(--color-pcc-black);
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+table td,
+table th {
+  font-size: 1em;
+  padding: 10px 10px 20px 10px;
+}
+
+@media screen and (min-width: 730px) {
+  table {
+    margin: 20px 0 5px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  table.custom-width th:first-child {
+    width: 40%;
+  }
+  table.custom-width th:nth-child(2) {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 998px) {
+  /* zebra stripes */
+  tr:nth-child(even) {
+    background: rgba(var(--color-pcc-black-rgb), 0.05);
+  }
+}
+
+//Responsive table CSS for mobile
+@media screen and (max-width: 768px) {
+  table {
+    background: none;
+    background-color: var(--color-pcc-white);
+    display: inline-table !important; /*fixes table snapping in all browsers, including ie*/
+    margin: 10px auto;
+
+    thead {
+      display: none;
+    }
+
+    tbody td {
+      display: block;
+      padding: 0.6rem;
+
+      a {
+        color: var(--color-pcc-white);
+
+        &:hover {
+          color: var(--color-pcc-ltgrey);
+        }
+      }
+
+      &:first-child {
+        background: var(--color-table-drk-blue);
+        color: var(--color-pcc-white);
+      }
+
+      &::before {
+        content: attr(data-th) ": ";
+        display: inline-block;
+        font-weight: bold;
+        padding-right: 5px;
+        width: auto;
+      }
+    }
+  }
+}
+
+td#alignright {
+  text-align: right;
+}
+
+footer ul {
+  margin: 10px;
+}
+
+.footnotes {
+  border-top: 1px solid rgba(var(--color-pcc-black-rgb), 0.09);
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+table.two-column-table {
+  border-collapse: collapse;
+  margin: 0;
+
+  tr {
+    border-bottom: 15px solid transparent !important;
+    display: table-row;
+
+    td {
+      padding: 0;
+      vertical-align: top;
+
+      &:first-child {
+        color: rgba(var(--color-pcc-black-rgb), 0.45);
+
+        &::after {
+          content: ":";
+        }
+      }
+
+      &:nth-child(2) {
+        padding-left: 5%;
+        width: 100%;
+      }
+    }
+
+    &:nth-child(even) {
+      background: transparent;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+
+    li:before {
+      color: var(--color-table-drk-blue);
+      content: "\F101";
+      font-family: "FontAwesome";
+      font-size: 1em;
+      font-weight: 400;
+      margin-right: 10px;
+      opacity: 1;
+    }
+  }
+}
+
+table.two-column-table,
+table.two-column-table tr,
+table.two-column-table tr td {
+  border: none;
+}
+
+.sm-table-col {
+  width: 20%;
+}
+
+.md-table-col {
+  width: 30%;
+}
+
+.lg-table-col {
+  width: 50%;
+}
