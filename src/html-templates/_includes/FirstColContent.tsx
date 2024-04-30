@@ -35,7 +35,50 @@ export default function FirstColContent(): React.ReactElement {
           </AccordionItem>
         </AccordionWidget>
         <blockquote>Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</blockquote>
+      </ContentBlock>
+      <ContentBlock>
         <h2>Header</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Table Header 1</th>
+              <th>Table Header 2</th>
+              <th>Table Header 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">123</a></td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+            <tr>
+              <td>123</td>
+              <td>abc</td>
+              <td>vcr</td>
+            </tr>
+          </tbody>
+        </table>
         <p>Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Sed porttitor lectus nibh. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui posuere blandit.</p>
         <div className="card-horizontal">
           <div className="card-body">
