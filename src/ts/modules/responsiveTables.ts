@@ -8,7 +8,7 @@ const initResponsiveTables = () => {
     // Select all header elements within the current table
     const tableHeaders: NodeListOf<HTMLElement> = table.querySelectorAll(" table th, table th,  table th, table th");
     // Select the table body within the current table
-    const tableBody: HTMLTableSectionElement | null = table.querySelector(".display table tbody, table.display tbody,  table tbody, table tbody");
+    const tableBody: HTMLTableSectionElement | null = table.querySelector("table tbody, table tbody,  table tbody, table tbody");
 
     if (tableHeaders.length > 0) {
       // Initialize an array to store header text
