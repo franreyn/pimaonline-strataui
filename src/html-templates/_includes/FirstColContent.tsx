@@ -48,7 +48,7 @@ export default function FirstColContent(): React.ReactElement {
           </thead>
           <tbody>
             <tr>
-              <td>123</td>
+              <td><a href="#">123</a></td>
               <td>abc</td>
               <td>vcr</td>
             </tr>
