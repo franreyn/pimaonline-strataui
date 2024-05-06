@@ -5,6 +5,9 @@ import ColumnOne from './grid-components/ColumnOne';
 import { AccordionWidget } from './widgets/AccordionWidget';
 import { AccordionItem } from './widgets/AccordionWidget';
 import { AccordionContent } from './widgets/AccordionWidget';
+import { MediaContainerWidget } from './widgets/MediaContainer';
+import { MediaObject } from './widgets/MediaContainer';
+import { MediaInfo } from './widgets/MediaContainer';
 
 export default function FirstColContent(): React.ReactElement {
   return (
@@ -38,6 +41,28 @@ export default function FirstColContent(): React.ReactElement {
       </ContentBlock>
       <ContentBlock>
         <h2>Header</h2>
+        <MediaContainerWidget>
+          <MediaObject>
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen></iframe>
+          </MediaObject>
+          <MediaInfo>
+            <p>This is a description of the video.</p>
+          </MediaInfo>
+        </MediaContainerWidget>
+        <MediaContainerWidget className="reverse">
+          <MediaObject>
+            <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen></iframe>
+          </MediaObject>
+          <MediaInfo>
+            <p>This is a description of the video.</p>
+          </MediaInfo>
+        </MediaContainerWidget>
         <table>
           <thead>
             <tr>
