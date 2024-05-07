@@ -8,5 +8,6 @@
 - Components
   - [Accordion](/components/accordion.md)
   - [Blockquote](/components/accordion.md)
+  - [Media Container](/components/media-container.md)
 - Customizations
   - [Typography](/customizations/typography.md)
