@@ -5,3 +5,4 @@ import "./modules/accordion";
 import "./modules/toggleButtons";
 import "./modules/arrows";
 import "./modules/responsiveTables";
+import "./modules/mediaContainer";
