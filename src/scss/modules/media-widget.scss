@@ -1,4 +1,4 @@
-media-container {
+media-widget {
   border: 1px solid rgba(51, 51, 51, 0.1);
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@ media-container {
 }
 
 @media screen and (min-width: 890px) {
-  media-container {
+  media-widget {
     max-width: 90%;
   }
 }
