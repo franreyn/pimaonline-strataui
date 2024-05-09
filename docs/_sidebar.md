@@ -7,8 +7,8 @@
   - [One Column](/layouts/one-column.md)
 - Components
   - [Accordion](/components/accordion.md)
-  - [Blockquote](/components/accordion.md)
+  - [Blockquote](/components/blockquote.md)
   - [Columns](/components/columns.md)
-  - [Media Container](/components/media-container.md)
+  - [Media Container](/components/media-widget.md)
 - Customizations
   - [Typography](/customizations/typography.md)

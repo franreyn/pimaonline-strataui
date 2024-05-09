@@ -5,9 +5,9 @@ import ColumnOne from './grid-components/ColumnOne';
 import { AccordionWidget } from './widgets/AccordionWidget';
 import { AccordionItem } from './widgets/AccordionWidget';
 import { AccordionContent } from './widgets/AccordionWidget';
-import { MediaContainerWidget } from './widgets/MediaContainer';
-import { MediaObject } from './widgets/MediaContainer';
-import { MediaInfo } from './widgets/MediaContainer';
+import { MediaWidget } from './widgets/MediaWidget';
+import { MediaObject } from './widgets/MediaWidget';
+import { MediaInfo } from './widgets/MediaWidget';
 
 export default function FirstColContent(): React.ReactElement {
   return (
@@ -41,7 +41,7 @@ export default function FirstColContent(): React.ReactElement {
       </ContentBlock>
       <ContentBlock>
         <h2>Header</h2>
-        <MediaContainerWidget>
+        <MediaWidget>
           <MediaObject>
             <iframe width="560" height="315"
               src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player"
@@ -51,8 +51,8 @@ export default function FirstColContent(): React.ReactElement {
           <MediaInfo>
             <p>This is a description of the video.</p>
           </MediaInfo>
-        </MediaContainerWidget>
-        <MediaContainerWidget className="reverse">
+        </MediaWidget>
+        <MediaWidget className="reverse">
           <MediaObject>
             <iframe width="560" height="315"
               src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player"
@@ -62,7 +62,7 @@ export default function FirstColContent(): React.ReactElement {
           <MediaInfo>
             <p>This is a description of the video.</p>
           </MediaInfo>
-        </MediaContainerWidget>
+        </MediaWidget>
         <table>
           <thead>
             <tr>

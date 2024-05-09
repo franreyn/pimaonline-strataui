@@ -10,7 +10,7 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "ColumnOne", customHtmlTag: "column-one" },
   { jsxName: "ColumnTwo", customHtmlTag: "column-two" },
   { jsxName: "ContentBlock", customHtmlTag: "content-block" },
-  { jsxName: "MediaContainer", customHtmlTag: "media-container" },
+  { jsxName: "MediaWidget", customHtmlTag: "media-widget" },
   { jsxName: "MediaObject", customHtmlTag: "media-object" },
   { jsxName: "MediaInfo", customHtmlTag: "media-info" },
   { jsxName: "ColumnsWidget", customHtmlTag: "columns-widget" },
