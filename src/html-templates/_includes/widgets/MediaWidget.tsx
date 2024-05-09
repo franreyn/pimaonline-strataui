@@ -2,13 +2,13 @@ import React from "react";
 import customElements from "../CreateCustomElement";
 
 // Accessing the custom elements
-const MediaContainerWidgetWrapper: React.FC<MediaContainerWidgetProps> = customElements["MediaContainer"];
+const MediaWidgetWrapper: React.FC<MediaWidgetProps> = customElements["MediaWidget"];
 const MediaObjectWrapper: React.FC<MediaObjectProps> = customElements["MediaObject"];
 const MediaInfoWrapper: React.FC<MediaInfoProps> = customElements["MediaInfo"];
 
 
 // AccordionItem and AccordionContent are not defined in CreateCustomElement
-interface MediaContainerWidgetProps {
+interface MediaWidgetProps {
   children: React.ReactNode;
   className?: string;
 }
@@ -21,11 +21,11 @@ interface MediaInfoProps {
   children: React.ReactNode;
 }
 
-export const MediaContainerWidget: React.FC<MediaContainerWidgetProps> = ({ children, className }) => {
+export const MediaWidget: React.FC<MediaWidgetProps> = ({ children, className }) => {
   return (
-    <MediaContainerWidgetWrapper className={className}>
+    <MediaWidgetWrapper className={className}>
       {children}
-    </MediaContainerWidgetWrapper>
+    </MediaWidgetWrapper>
   );
 };
 
