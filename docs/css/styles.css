@@ -13,6 +13,10 @@
   --dark-white: rgba(177, 186, 188, 1);
 }
 
+body {
+  color: var(--color-primary);
+}
+
 body[index] main {
   display: none;
 }
@@ -155,7 +159,7 @@ body[index] .navbar {
   color: var(--color-white);
 }
 
-/* DOCS SIDEBARS */
+/* DOCS */
 
 .sidebar {
   margin-top: 60px;
@@ -182,6 +186,10 @@ body[index] .navbar {
 
 .matching-post a:hover, .search .search-keyword {
   color: var(--color-accent);
+}
+
+.anchor span {
+  color: var(--color-primary);
 }
 
 /* CODE SNIPPETS */
