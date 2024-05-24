@@ -1,0 +1,253 @@
+:root {
+  --color-primary: rgba(85, 88, 100, 1);
+  --color-secondary: rgba(108, 112, 126, 1);
+  --color-accent: rgba(0, 152, 180, 1);
+  --color-code: rgba(1, 106, 125, 1);
+  --color-white: rgba(255, 255, 255, 1);
+  --primary-rgb: 85, 88, 100;
+
+  --dark-primary: rgb(27, 34, 35);
+  --dark-secondary: rgba(136, 140, 157, 1);
+  --dark-tertiary: rgba(34, 42, 43, 1);
+  --dark-code: rgba(74, 190, 211, 1);
+  --dark-white: rgba(177, 186, 188, 1);
+}
+
+body[index] main {
+  display: none;
+}
+
+body[index] .navbar {
+  position: absolute;
+  background-color: transparent;
+}
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  font-size: 16px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--color-white);
+}
+
+.navbar > a {
+  align-self: center;
+}
+
+.navbar :is(a, button) {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.navbar > ul > li > a:hover {
+  color: var(--color-accent);
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar [class^="fa-"] {
+  font-size: 1.25rem;
+}
+
+.navbar [class^="fa-"]:hover {
+  color: var(--color-accent);
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .active, #dark-mode-btn.active {
+  color: var(--color-accent);
+}
+
+/* HOMEPAGE */
+
+.cover-main {
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.cover-main h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  margin: 0;
+}
+
+.cover-main blockquote {
+  font-size: 1.5rem;
+  margin: .5rem;
+  font-weight: 700;
+}
+
+.cover-main li {
+  line-height: 1.5;
+}
+
+.cover-main div {
+  margin-top: 2rem;
+  column-gap: 2rem;
+  display: flex;
+}
+
+.cover-main div a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-accent);
+  font-weight: 100;
+}
+
+.cover-main div a:first-child {
+  color: var(--color-accent);
+}
+
+.cover-main div a:first-child:hover {
+  color: var(--dark-white);
+}
+
+.cover-main div a:last-child {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.cover-main div a:last-child:hover {
+  background-color: var(--color-code);
+  border-color: var(--color-code);
+}
+
+.cover-main * {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.cover-main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cover-main>p:last-child a {
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.cover-main>p:last-child a:last-child {
+  background-color: var(--color-accent);
+}
+
+.cover-main>p:last-child a:last-child:hover {
+  color: var(--color-white);
+}
+
+/* DOCS SIDEBARS */
+
+.sidebar {
+  margin-top: 60px;
+}
+
+.sidebar-toggle span {
+  background-color: var(--color-accent);
+}
+
+.sidebar ul li a:hover {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.sidebar ul li.active>a {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.search .input-wrap input:focus {
+  box-shadow: 0 0 5px var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.matching-post a:hover, .search .search-keyword {
+  color: var(--color-accent);
+}
+
+/* CODE SNIPPETS */
+
+.markdown-section a {
+  color: var(--color-accent);
+}
+
+.token.string {
+  color: var(--color-accent);
+}
+
+.token.selector, .token.tag {
+  color: var(--color-code);
+}
+
+/* DARK MODE */
+
+body[dark-mode] {
+  background-color: var(--dark-primary);
+  color: var(--dark-white);
+}
+
+[dark-mode] section.cover.show {
+  background-color: var(--dark-primary) !important;
+}
+
+[dark-mode] :is(.navbar a, .navbar button, .anchor span, .cover-main *, .sidebar) {
+  color: var(--dark-white);
+}
+
+[dark-mode] :is(.navbar, .sidebar) {
+  background-color: var(--dark-primary);
+}
+
+[dark-mode] .search {
+  border-color: var(--color-primary);
+}
+
+[dark-mode] input[type="search"] {
+  background-color: transparent;
+}
+
+[dark-mode] .sidebar ul li a {
+  color: var(--dark-secondary);
+}
+
+[dark-mode] button.sidebar-toggle {
+  background-color: rgba(var(--primary-rgb), .3);
+  width: fit-content;
+}
+
+[dark-mode] :is(.sidebar ul li.active > a, .sidebar ul li a:hover, .navbar .active) {
+  color: var(--color-accent);
+}
+
+[dark-mode] :is(.markdown-section code, .markdown-section pre) {
+  background-color: var(--dark-tertiary);
+  color: var(--dark-white);
+}
+
+[dark-mode] :is(.token.tag, .token.selector) {
+  color: var(--dark-code);
+}
+
+[dark-mode] .search input {
+  caret-color: var(--dark-white);
+  color: var(--dark-white);
+}
