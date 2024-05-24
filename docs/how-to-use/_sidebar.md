@@ -1,0 +1,14 @@
+- Getting Started
+  - [Installation](/getting-started/installation.md)
+  - [Custom Elements](/getting-started/custom-elements.md)
+- Themes
+  - [Default](/themes/default.md)
+- Layouts
+  - [One Column](/layouts/one-column.md)
+- Components
+  - [Accordion](/components/accordion.md)
+  - [Blockquote](/components/blockquote.md)
+  - [Columns](/components/columns.md)
+  - [Media Container](/components/media-widget.md)
+- Customizations
+  - [Typography](/customizations/typography.md)
