@@ -2,46 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>StrataCSS</title>
+  <title>StrataCSS - How to Develop</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1" defer></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js" defer></script>
-  <script src="scripts.js" defer></script>
+  <script src="../scripts.js" defer></script>
 </head>
-<body index>
+<body>
   <div class="navbar">
-    <a href="#">Logo</a>
+    <a href="/../index.html">Logo</a>
     <ul>
-      <li><a href="/how-to-use/how-to-use.html">How to Use</a></li>
-      <li><a href="/how-to-dev/how-to-dev.html">How to Develop</a></li>
+      <li><a href="/../how-to-use/how-to-use.html">How to Use</a></li>
+      <li><a href="#" class="active">How to Develop</a></li>
       <li>|</li>
       <li><button><i class="fa-regular fa-moon"></i></button></li>
       <li><a href="https://github.com/franreyn/pimaonline-stratacss" target="_blank"><i class="fa-brands fa-github"></i></a></li>
     </ul>
   </div>
-  <section class="cover-main">
-    <h1>StrataCSS</h1>
-    <blockquote>Elevate your courses</blockquote>
-    <ul>
-      <li>Simple and lightweight</li>
-      <li>Multiple themes</li>
-    </ul>
-    <div>
-      <a href="https://github.com/franreyn/pimaonline-stratacss" target="_blank" rel="noopener">GitHub</a>
-      <a href="/how-to-use/how-to-use.html#/getting-started/installation">Get Started</a>
-    </div>
-  </section>
   <div id="app"></div>
   <script>
     window.$docsify = {
       name: '',
       repo: '',
-      loadSidebar: false,
+      loadSidebar: '_sidebar.md',
       coverpage: false,
       search: {
         maxAge: 86400000, // Expiration time, the default one day
