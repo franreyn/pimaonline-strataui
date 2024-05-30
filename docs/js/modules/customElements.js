@@ -1,4 +1,27 @@
-// Function to define a custom element
+/**
+  * Define Custom Elements: The customElementsData array specifies custom elements.
+  * Base Class: BaseWidget provides common setup for custom elements.
+  * Create and Register Elements: createCustomElements function creates new custom element classes and registers them with the browser.
+ */
+
+// Data for custom elements
+export const customElementsData = [
+  { jsxName: "CallOutWidget", customHtmlTag: "callout-widget" },
+  { jsxName: "AssignmentsWidget", customHtmlTag: "assignments-widget", ariaProp: "role", ariaValue: "list" },
+  { jsxName: "AssignmentItem", customHtmlTag: "assignment-item", ariaProp: "role", ariaValue: "listItem" },
+  { jsxName: "AccordionWidget", customHtmlTag: "accordion-widget" },
+  { jsxName: "AccordionItem", customHtmlTag: "accordion-item" },
+  { jsxName: "AccordionContent", customHtmlTag: "accordion-content" },
+  { jsxName: "ColumnOne", customHtmlTag: "column-one", ariaProp: "role", ariaValue: "main" },
+  { jsxName: "ColumnTwo", customHtmlTag: "column-two", ariaProp: "role", ariaValue: "region" },
+  { jsxName: "ContentBlock", customHtmlTag: "content-block" },
+  { jsxName: "MediaWidget", customHtmlTag: "media-widget" },
+  { jsxName: "MediaObject", customHtmlTag: "media-object" },
+  { jsxName: "MediaInfo", customHtmlTag: "media-info" },
+  { jsxName: "ColumnsWidget", customHtmlTag: "columns-widget" },
+];
+
+// Function to define a custom element with the given name and class
 export function defineCustomElement(name, elementClass) {
   customElements.define(name, elementClass); // Define a custom element with the given name and class
 }
@@ -30,12 +53,36 @@ export class BaseWidget extends HTMLElement {
     // Override this method in subclasses to provide custom styles
     return "";
   }
-}
 
-// Subclass of BaseWidget, specific for the "columns-widget" element
-export class ColumnsWidget extends BaseWidget {
-  // Override the getStyles method to provide custom styles for ColumnsWidget
-  getStyles() {
-    return "";
+  // Method to set ARIA attributes
+  setAriaAttributes(ariaAttributes) {
+    for (const [prop, value] of Object.entries(ariaAttributes)) {
+      this.setAttribute(prop, value);
+    }
   }
 }
+
+// Factory function to create and define custom elements
+export function createCustomElements(config) {
+  config.forEach(({ customHtmlTag, ariaProp, ariaValue }) => {
+    class CustomElement extends BaseWidget {
+      constructor() {
+        super();
+        if (ariaProp && ariaValue) {
+          this.setAriaAttributes({ [ariaProp]: ariaValue });
+        }
+      }
+
+      // Optionally, add custom styles for each element here
+      getStyles() {
+        return ""; // Add styles as needed
+      }
+    }
+
+    // Define the custom element
+    defineCustomElement(customHtmlTag, CustomElement);
+  });
+}
+
+// Call the function to define custom elements
+createCustomElements(customElementsData);
