@@ -11,28 +11,28 @@ export default function SecondColContent(): React.ReactElement {
         </AssignmentsWidget>
       </ContentBlock>
       <ContentBlock>
-        <h4 className="icon-image">Image</h4>
+        <h3 className="icon-image">Image</h3>
         <figure>
           <img src="https://via.placeholder.com/800x800" alt="" />
         </figure>
       </ContentBlock>
       <ContentBlock>
-        <h4 className="icon-pencil">Quick Vocabulary</h4>
+        <h3 className="icon-pencil">Quick Vocabulary</h3>
         <dl>
-          <dt>Feathers:</dt>
-          <dd>Covers a penguin's body and keeps them dry.</dd>
-          <dt>Incubate:</dt>
-          <dd>Grow under conditions that promote development.</dd>
-          <dt>Huddle:</dt>
-          <dd>A disorganized and densely packed crowd.</dd>
-          <dt>Waddle:</dt>
-          <dd>A penguin's walk swaying from side to side.</dd>
+          <dt>Rhetoric:</dt>
+          <dd>The art of effective and persuasive communication that is appropriate to a given situation.</dd>
+          <dt>Logos:</dt>
+          <dd>An appeal to rational, logical understanding. Is the author using facts and "hard" research to present a case? Is the argument coherent and cohesive?</dd>
+          <dt>Pathos:</dt>
+          <dd>An appeal to emotions. Is the author trying to evoke strong feelings for or against something?</dd>
+          <dt>Ethos:</dt>
+          <dd>An appeal to ethical considerations. Is the author credible and knowledgeable? Are the actions or understandings that they are calling for ethical?</dd>
         </dl>
       </ContentBlock>
       <ContentBlock>
         <div className="border border-yellow">
-          <h4>Did you know?!</h4>
-          <p>The Galapagos Penguin is the only penguin species that ventures north of the equator in the wild.</p>
+          <h3>Did you know?!</h3>
+          <p>The term "pangram" refers to a sentence that includes every letter of the alphabet at least once.</p>
         </div>
       </ContentBlock>
     </ColumnTwo>
