@@ -15,6 +15,7 @@ accordion-widget {
 
   accordion-item {
     display: block;
+    border-bottom: 1px solid var(--color-pcc-ltgrey);
 
     &>h3,h4 {
       margin: 0;
