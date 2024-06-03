@@ -6,9 +6,8 @@ const CallOutWrapper: React.FC<any> = customElements["CallOutWidget"]; // Access
 export default function BorderWidget(): React.ReactElement {
   return (
     <CallOutWrapper>
-      <h3>Callout Widget</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.
-      </p>
+      <h3>Think while you read</h3>
+      <p>How do we create effective and persuasive writing?</p>
     </CallOutWrapper>
   )
 }
