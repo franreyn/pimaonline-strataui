@@ -7,14 +7,13 @@ type ButtonLinkProps = {
   href: string;
   children: React.ReactNode;
   target?: string;
-  button?: boolean;
 };
 
-export default function ButtonWidget({ href, target, button, children, ...props }: ButtonLinkProps) {
+export default function ButtonWidget({ href, target, children }: ButtonLinkProps) {
 
   return (
-    <ButtonLink button>
-      <a href={href} target={target} {...props}>{children}</a>
+    <ButtonLink>
+      <a href={href} target={target}>{children}</a>
     </ButtonLink>
   );
 }
