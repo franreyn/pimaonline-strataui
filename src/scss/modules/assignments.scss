@@ -17,7 +17,7 @@ assignment-item {
   border-radius: 0px;
   margin: 0;
   margin-bottom: .8rem;
-  padding: .6rem;
+  padding: .6rem .6rem 1.5rem;
   transition: .3s
 }
 
@@ -37,8 +37,9 @@ assignment-item ol li,assignment-item ul li {
   margin: 0
 }
 
-assignment-item p,assignment-item ol,assignment-item ul,assignment-item .btn {
-  font-size: .95em
+assignment-item p,assignment-item ol,assignment-item ul {
+  font-size: .95em;
+  margin-bottom: 1.5rem;
 }
 
 assignment-item::before,assignment-item::marker {
