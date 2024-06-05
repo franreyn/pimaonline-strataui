@@ -1,20 +1,14 @@
-button-link {
+a.button {
   background-color: var(--color-pcc-primary);
   padding: 10px;
   border-radius: var(--subtle-radius);
   margin-bottom: 1rem;
+  color: var(--color-pcc-white);
+  text-decoration: none;
 
   &:hover {
     background-color: var(--color-pcc-primary-hover);
-  }
-
-  a {
     color: var(--color-pcc-white);
     text-decoration: none;
-
-    &:hover {
-      color: var(--color-pcc-white);
-      text-decoration: none;
-    }
   }
 }
