@@ -10,11 +10,11 @@ The `columns widget` uses a custom tag and is defined in the `CustomElements.ts 
 
 The `<columns-widget>` wraps all children elements. A child element could be a `<p>`, `<img>`, etc. There are a few HTML examples below of the `columns widget`.
 
-### Attributes
+### Classes
 
-1. `<columns-widget wide-narrow>` - The `wide-narrow` attribute makes the left column wider than the right column. This is typically used to place a block of text (wide column) next to an image (narrow column).
+1. `<columns-widget class="wide-narrow">` - The `wide-narrow` class makes the left column wider than the right column. This is typically used to place a block of text (wide column) next to an image (narrow column).
 
-2. `<columns-widget narrow-wide>` - The `narrow-wide` attribute is the reverse where the left column is narrower than the right column.
+2. `<columns-widget class="narrow-wide">` - The `narrow-wide` class is the reverse where the left column is narrower than the right column.
 
 ## HTML 
 
@@ -35,7 +35,7 @@ The `columns widget` in the HTML should have this structure.
 </columns-widget>
 
 <!-- Example 3: This will display the paragraph in a wider column on the left and the image in a narrower column on the right -->
-<columns-widget>
+<columns-widget class="wide-narrow">
   <p>The sky, an ever-changing canvas of infinite blue, is a window to the vastness of the universe. By day, the sun's warm rays illuminate the heavens, painting wispy clouds in shades of white and gray. At dusk, the sky transforms into a masterpiece of vibrant hues, as the setting sun sets the clouds ablaze with fiery oranges and pinks. And when night falls, the sky becomes a tapestry of twinkling stars, guiding wanderers with their timeless light. In its expanse, one finds solace, wonder, and endless possibility.</p>
   <img src="https://unsplash.it/id/114/500/300" alt="">
 </columns-widget>
@@ -62,21 +62,21 @@ columns-widget > *, columns-widget > * > * {
 }
 
 @media screen and (min-width: 768px) {
-  columns-widget[wide-narrow]:not(#two-column columns-widget[wide-narrow]) {
+  columns-widget.wide-narrow:not(#two-column columns-widget.wide-narrow) {
     grid-template-columns: 65% calc(35% - 1rem);
   }
   
-  columns-widget[narrow-wide]:not(#two-column columns-widget[narrow-wide]) {
+  columns-widget.narrow-wide:not(#two-column columns-widget.narrow-wide) {
     grid-template-columns: 35% calc(65% - 1rem);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #two-column columns-widget[wide-narrow] {
+  #two-column columns-widget.wide-narrow {
     grid-template-columns: 65% calc(35% - 1rem);
   }
   
-  #two-column columns-widget[narrow-wide] {
+  #two-column columns-widget.narrow-wide {
     grid-template-columns: 35% calc(65% - 1rem);
   }
 }
