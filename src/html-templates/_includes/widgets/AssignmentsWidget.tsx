@@ -1,6 +1,5 @@
 import React from "react";
 import customElements from "../CreateCustomElement";
-import ButtonWidget from "./ButtonWidget";
 
 // Accessing AssignmentsWidget and AssignmentItem from customElements
 const AssignmentsWidgetWrapper: React.FC<any> = customElements["AssignmentsWidget"];
@@ -12,17 +11,17 @@ export default function AssignmentsWidget(): React.ReactElement {
       <AssignmentItem>
         <h3>Module 1 Readings</h3>
         <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-        <ButtonWidget href="#" target="_blank">Module 1 Readings</ButtonWidget>
+        <a href="#" target="_blank" className="button">Module 1 Readings</a>
       </AssignmentItem>
       <AssignmentItem>
         <h3>Reading Review Activity</h3>
         <p>Rhetorical Analysis Review Activity</p>
-        <ButtonWidget href="#" target="_blank">Reading Review Activity</ButtonWidget>
+        <a href="#" target="_blank" className="button">Reading Review Activity</a>
       </AssignmentItem>
       <AssignmentItem>
         <h3>Writing Assignment 1</h3>
         <p>Rhetorical Analysis Draft</p>
-        <ButtonWidget href="#" target="_blank">Writing Assignment 1</ButtonWidget>
+        <a href="#" target="_blank" className="button">Writing Assignment 1</a>
       </AssignmentItem>
     </AssignmentsWidgetWrapper>
   )
