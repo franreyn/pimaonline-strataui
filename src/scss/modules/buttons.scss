@@ -11,4 +11,8 @@ a.button {
     color: var(--color-pcc-white);
     text-decoration: none;
   }
+
+  &:visited {
+    color: var(--color-pcc-white);
+  }
 }
