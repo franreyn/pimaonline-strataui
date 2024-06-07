@@ -1,8 +1,7 @@
-
 callout-widget {
   display: block;
-  background-color: rgba(0,174,239,.06);
-  border-left: 3px solid #045594;
+  background-color: var(--color-accent-tint);
   margin: 1.4rem 0;
-  padding: .6rem
+  padding: .6rem;
+  border-radius: var(--subtle-radius);
 }

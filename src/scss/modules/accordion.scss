@@ -4,22 +4,24 @@ accordion-widget {
 
   accordion-content {
     display: block;
-    border: 1px solid rgba(13, 13, 13, 0.07);
-    border-radius: var(--subtle-radius);
     padding: 10px;
 
     p {
       margin: 0;
     }
+
+    &.show {
+      background-color: var(--color-primary-tint1);
+    }
   }
 
   accordion-item {
     display: block;
-    border-bottom: 1px solid var(--color-pcc-ltgrey);
+    border: 1px solid var(--color-primary);
+    border-bottom: none;
 
     &>h3,h4 {
       margin: 0;
-      background-color: rgba(13, 13, 13, 0.07);
       padding: 10px;
       display:flex;
       justify-content: space-between;
@@ -31,6 +33,19 @@ accordion-widget {
       &:hover {
         background-color: rgba(13, 13, 13, 0.1);
       }
+    }
+
+    h3.arrow-down, h4.arrow-down {
+      background-color: var(--color-primary-tint1);
+    }
+
+    &:first-child {
+      border-radius: var(--top-radius);
+    }
+
+    &:last-child {
+      border-radius: var(--bottom-radius);
+      border-bottom: 1px solid var(--color-primary);
     }
 
   }

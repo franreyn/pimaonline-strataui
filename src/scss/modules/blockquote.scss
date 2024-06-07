@@ -4,7 +4,6 @@ blockquote {
   margin: 3.3rem 0;
   padding: .6rem;
   position: relative;
-  text-align: center;
 
   p,
   ul li,
@@ -17,17 +16,7 @@ blockquote {
     font-family: "FontAwesome";
     font-size: 1em;
     position: absolute;
-    right: 50%;
-    top: -20px;
-  }
-
-  &::after {
-    bottom: -20px;
-    content: "\F10E";
-    font-family: "FontAwesome";
-    font-size: 1em;
-    position: absolute;
-    right: 50%;
+    left: 0;
   }
 }
 
@@ -35,14 +24,6 @@ blockquote {
   blockquote {
     padding: 1.1rem 2.2rem;
     margin: 2.2rem 0;
-
-    &::before {
-      top: -5px;
-    }
-
-    &::after {
-      bottom: -10px;
-    }
   }
 }
 

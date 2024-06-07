@@ -8,6 +8,7 @@ import { AccordionContent } from './widgets/AccordionWidget';
 import { MediaWidget } from './widgets/MediaWidget';
 import { MediaObject } from './widgets/MediaWidget';
 import { MediaInfo } from './widgets/MediaWidget';
+import ColumnsWrapper from './widgets/ColumnsWidget';
 
 export default function FirstColContent(): React.ReactElement {
   return (
@@ -113,17 +114,13 @@ export default function FirstColContent(): React.ReactElement {
         </table>
       </ContentBlock>
       <ContentBlock>
-        <div className="card-horizontal">
-          <div className="card-body">
-            <p>The writing skills that you learn in this class will not only help you be a better academic writer. These skills can be used in your daily life to make your communication more grounded in logic and reasoning. These ideas date back to Aristotle, but their use and validity extends to present day.</p>
-          </div>
-          <div className="card-img">
-            <figure>
-              <img src="https://via.placeholder.com/500x300" alt="" />
-              <figcaption>This is an image caption.</figcaption>
-            </figure>
-          </div>
-        </div>
+        <ColumnsWrapper className="wide-narrow">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet doloribus obcaecati soluta repudiandae laborum quidem, neque ratione minus voluptates sint deserunt sapiente labore ipsum assumenda eaque illum velit. Veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet doloribus obcaecati soluta repudiandae laborum quidem, neque ratione minus voluptates sint deserunt sapiente labore ipsum assumenda eaque illum velit. Veritatis.</p>
+          <figure>
+            <img src="https://via.placeholder.com/500x300" alt="" />
+            <figcaption>This is an image caption.</figcaption>
+          </figure>
+        </ColumnsWrapper>
       </ContentBlock>
     </ColumnOne>
   );

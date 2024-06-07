@@ -1,10 +1,11 @@
 table {
   border-collapse: collapse !important;
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
   margin: 40px 20px 15px 20px;
   text-rendering: optimizeLegibility;
+  border: 1px solid var(--color-primary);
 
   th {
     font-size: 1.0625em;
@@ -19,7 +20,6 @@ table {
   thead,
   tr,
   td {
-    border: 1px solid rgba(var(--color-pcc-black-rgb), 0.155);
     vertical-align: top;
   }
 
@@ -40,7 +40,7 @@ table {
   }
 
   tbody tr {
-    color: var(--color-pcc-black);
+    color: var(--color-primary);
     font-size: 1rem;
     padding: 0.8rem;
   }
@@ -54,6 +54,7 @@ table td,
 table th {
   font-size: 1em;
   padding: 10px 10px 20px 10px;
+  border: 1px solid var(--color-primary);
 }
 
 @media screen and (min-width: 730px) {
@@ -69,12 +70,11 @@ table th {
   table.custom-width th:nth-child(2) {
     width: 20%;
   }
-}
-
-@media screen and (min-width: 998px) {
-  /* zebra stripes */
   tr:nth-child(even) {
-    background: rgba(var(--color-pcc-black-rgb), 0.05);
+    background-color: var(--color-primary-tint1);
+  }
+  table th {
+    background-color: var(--color-primary);
   }
 }
 
@@ -82,7 +82,7 @@ table th {
 @media screen and (max-width: 768px) {
   table {
     background: none;
-    background-color: var(--color-pcc-white);
+    background-color: var(--color-white);
     display: inline-table !important; /*fixes table snapping in all browsers, including ie*/
     margin: 10px auto;
 
@@ -93,18 +93,19 @@ table th {
     tbody td {
       display: block;
       padding: 0.6rem;
+      border-bottom: 1px solid var(--color-primary);
 
       a {
-        color: var(--color-pcc-white);
+        color: var(--color-white);
 
         &:hover {
-          color: var(--color-pcc-ltgrey);
+          color: var(--color-primary-tint1);
         }
       }
 
       &:first-child {
-        background: var(--color-table-drk-blue);
-        color: var(--color-pcc-white);
+        color: var(--color-white);
+        background-color: var(--color-primary);
       }
 
       &::before {
@@ -116,6 +117,10 @@ table th {
       }
     }
   }
+
+  td:nth-of-type(odd) {
+    background-color: var(--color-primary-tint1);
+  }
 }
 
 td#alignright {
@@ -124,10 +129,6 @@ td#alignright {
 
 footer ul {
   margin: 10px;
-}
-
-.footnotes {
-  border-top: 1px solid rgba(var(--color-pcc-black-rgb), 0.09);
 }
 
 .no-margin {
@@ -150,13 +151,8 @@ table.two-column-table {
       padding: 0;
       vertical-align: top;
 
-      &:first-child {
-        color: rgba(var(--color-pcc-black-rgb), 0.45);
-
-        &::after {
-          content: ":";
-        }
-      }
+      &:first-child::after {
+        content: ":";      }
 
       &:nth-child(2) {
         padding-left: 5%;
@@ -179,7 +175,6 @@ table.two-column-table {
     padding-left: 0;
 
     li:before {
-      color: var(--color-table-drk-blue);
       content: "\F101";
       font-family: "FontAwesome";
       font-size: 1em;

@@ -2,6 +2,7 @@ import React from 'react';
 import AssignmentsWidget from './widgets/AssignmentsWidget';
 import ContentBlock from './grid-components/ContentBlock';
 import ColumnTwo from './grid-components/ColumnTwo';
+import CallOutWidget from './widgets/CallOutWidget';
 
 export default function SecondColContent(): React.ReactElement {
   return (
@@ -30,10 +31,7 @@ export default function SecondColContent(): React.ReactElement {
         </dl>
       </ContentBlock>
       <ContentBlock>
-        <div className="border border-yellow">
-          <h3>Did you know?!</h3>
-          <p>The term "pangram" refers to a sentence that includes every letter of the alphabet at least once.</p>
-        </div>
+        <CallOutWidget></CallOutWidget>
       </ContentBlock>
     </ColumnTwo>
   );
