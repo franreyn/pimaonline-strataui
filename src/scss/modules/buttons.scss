@@ -1,18 +1,18 @@
 a.button {
-  background-color: var(--color-pcc-primary);
+  background-color: var(--color-accent);
   padding: 10px;
   border-radius: var(--subtle-radius);
   margin-bottom: 1rem;
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   text-decoration: none;
 
   &:hover {
-    background-color: var(--color-pcc-primary-hover);
-    color: var(--color-pcc-white);
+    background-color: var(--color-hover);
+    color: var(--color-white);
     text-decoration: none;
   }
 
   &:visited {
-    color: var(--color-pcc-white);
+    color: var(--color-white);
   }
 }

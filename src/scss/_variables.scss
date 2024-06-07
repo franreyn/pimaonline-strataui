@@ -1,18 +1,11 @@
 :root {
-  --color-pcc-primary: rgba(4, 85, 148, 1);
-  --color-pcc-secondary: rgba(247, 144, 45, 1);
-  --color-pcc-tertiary: rgba(0, 174, 239, 1);
-  --color-pcc-black: rgba(13, 13, 13, 1);
-  --color-pcc-dkgrey: rgba(128, 128, 128, 1);
-  --color-pcc-ltgrey: rgba(227, 227, 227, 1);
-  --color-pcc-primary-hover: rgba(3, 64, 111, 1);
-  --color-pcc-secondary-hover: rgba(236, 119, 9, 1);
-  --color-pcc-tertiary-hover: rgba(0, 146, 199, 1);
-  --color-pcc-white: rgba(255, 255, 255, 1);
-  --color-error: rgba(189, 66, 84, 1);
-  --color-pcc-primary-tint1: rgba(4, 85, 148, .1);
-  --color-pcc-primary-tint2: rgba(4, 85, 148, .5);
-  --color-pcc-tertiary-tint: rgba(0, 174, 239, 0.06);
+  --color-primary: rgba(13, 13, 13, 1);
+  --color-accent: rgba(0, 39, 246, .7);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-hover: rgba(0, 32, 194, .8);
+  --color-primary-tint1: rgba(13, 13, 13, .08);
+  --color-primary-tint2: rgba(4, 85, 148, .04);
+  --color-accent-tint: rgba(0, 39, 246, .1);
   --bottom-radius: 0 0 5px 5px;
   --top-radius: 5px 5px 0 0;
   --round-radius: 15px;
@@ -22,19 +15,16 @@
   --sm-shadow: 0 .2rem .2rem rgba(0,0,0,.075);
   --reg-shadow: 0 .25rem .25rem rgba(0,0,0,.1);
   --lg-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
-  --color-primary: rgba(#000000);
   --color-btn-blue: rgba(46, 94, 142, 1);
   --color-btn-blue-hover: rgba(28, 57, 87, 1);
   --color-dkgrey-hover: rgba(108, 110, 112, 1);
   --color-edit-text: rgba(178, 3, 3, 1);
   --color-light-blue: rgba(180, 231, 248, 1);
   --color-link-blue: rgba(0, 91, 226, 1);
-  --color-black-rgb: 13, 13, 13;
   --color-muted-black: rgba(35, 35, 35, 1);
   --color-link-purple: rgb(108, 0, 169);
   --color-footnotes-blue: rgba(0, 57, 143, 1);
   --color-btn-primary: rgba(4, 85, 148, 1);
   --color-btn-primary-hover: rgba(3, 64, 111, 1);
-  --color-pcc-black-rgb: 13, 13, 13;
   --color-table-drk-blue: rgba(29, 74, 105, 1);
 }

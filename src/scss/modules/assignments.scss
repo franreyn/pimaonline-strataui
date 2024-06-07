@@ -12,13 +12,13 @@
 
 assignment-item {
   display: block;
-  background-color: var(--color-pcc-ltgrey);
-  border-top: 1px solid var(--color-pcc-primary);
-  border-radius: 0px;
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--subtle-radius);
   margin: 0;
   margin-bottom: .8rem;
   padding: .6rem .6rem 1.5rem;
-  transition: .3s
+  transition: .3s;
 }
 
 assignment-item:hover {
@@ -26,11 +26,12 @@ assignment-item:hover {
 }
 
 assignment-item h2,assignment-item h3,assignment-item h4 {
-  background-color: rgba(13,13,13,.03);
+  background-color: var(--color-accent-tint);
   font-size: 1.15em;
   font-weight: 600;
   margin: -0.6rem -0.6rem .6rem -0.6rem !important;
-  padding: .3rem .6rem
+  padding: .3rem .6rem;
+  border-radius: var(--top-radius);
 }
 
 assignment-item ol li,assignment-item ul li {
