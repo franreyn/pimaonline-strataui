@@ -1,0 +1,59 @@
+#second-column assignments-widget,#second-column assignments-widget {
+  margin: 0;
+  padding: 0
+}
+
+#content-wrapper assignments-widget,#content-wrapper assignments-widget {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between
+}
+
+assignment-item {
+  display: block;
+  background-color: transparent;
+  border: 1px solid var(--color-docs-primary);
+  border-radius: var(--subtle-radius);
+  margin: 0;
+  margin-bottom: .8rem;
+  padding: .6rem .6rem 1.5rem;
+  transition: .3s;
+}
+
+assignment-item:hover {
+  transform: translate(0, -5px)
+}
+
+assignment-item h2,assignment-item h3,assignment-item h4 {
+  background-color: var(--color-accent-tint);
+  font-size: 1.15em;
+  font-weight: 600;
+  margin: -0.6rem -0.6rem .6rem -0.6rem !important;
+  padding: .3rem .6rem;
+  border-radius: var(--top-radius);
+}
+
+assignment-item ol li,assignment-item ul li {
+  margin: 0
+}
+
+assignment-item p,assignment-item ol,assignment-item ul {
+  font-size: .95em;
+  margin-bottom: 1.5rem;
+}
+
+assignment-item::before,assignment-item::marker {
+  content: none
+}
+
+@media screen and (min-width: 576px) {
+  #content-wrapper assignment-item {
+      flex-basis:45%
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #content-wrapper assignment-item {
+      flex-basis:30%
+  }
+}
