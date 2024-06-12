@@ -145,6 +145,7 @@ column-two {
 
   img {
     border-top: 5px solid var(--color-primary);
+    margin: 0;
   }
 
   .text-container {
@@ -322,26 +323,24 @@ img {
   border-style: none;
   display: block;
   height: auto;
-  margin: 0 !important;
+  margin: 25px auto;
   max-width: 100%;
-
-  .center {
-    display: block;
-    margin: 25px auto;
-  }
 }
 
 //FIGURES
 figure {
-  margin: 0;
+  margin: 25px auto;
+
+  img {
+    margin: 0;
+  }
 
   figcaption,
   .caption {
     border-bottom: 1px solid rgba(var(--color-black-rgb), 0.045);
     color: var(--color-pcc-dkgrey);
-    font-size: 0.85em;
     font-style: italic;
-    padding: 0 0 5px 0;
+    padding: 10px 0;
   }
 }
 
