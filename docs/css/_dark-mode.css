@@ -1,0 +1,77 @@
+/* Docsify UI */
+
+body[dark-mode] {
+  background-color: var(--dark-primary);
+  color: var(--dark-white);
+}
+
+[dark-mode] section.cover.show {
+  background-color: var(--dark-primary) !important;
+}
+
+[dark-mode] :is(.navbar a, .navbar button, .anchor span, .cover-main *, .sidebar) {
+  color: var(--dark-white);
+}
+
+[dark-mode] :is(.navbar, .sidebar) {
+  background-color: var(--dark-primary);
+}
+
+[dark-mode] .search {
+  border-color: var(--color-docs-primary);
+}
+
+[dark-mode] input[type="search"] {
+  background-color: transparent;
+}
+
+[dark-mode] .sidebar ul li a {
+  color: var(--dark-secondary);
+}
+
+[dark-mode] button.sidebar-toggle {
+  background-color: rgba(var(--primary-rgb), .3);
+  width: fit-content;
+}
+
+[dark-mode] :is(.sidebar ul li.active > a, .sidebar ul li a:hover, .navbar .active) {
+  color: var(--color-docs-accent);
+}
+
+[dark-mode] :is(.markdown-section code, .markdown-section pre) {
+  background-color: var(--dark-tertiary);
+  color: var(--dark-white);
+}
+
+[dark-mode] :is(.token.tag, .token.selector) {
+  color: var(--dark-code);
+}
+
+[dark-mode] .search input {
+  caret-color: var(--dark-white);
+  color: var(--dark-white);
+}
+
+/* Assignments widget */
+
+[dark-mode] assignment-item h2, [dark-mode] assignment-item h3, [dark-mode] assignment-item h4 {
+  background-color: var(--dark-white);
+}
+
+/* Accordion widget */
+
+[dark-mode] accordion-item :is(h3, h4) {
+  color: var(--dark-white);
+}
+
+[dark-mode] accordion-item :is(h3, h4):hover {
+  background-color: var(--dark-tertiary);
+}
+
+[dark-mode] accordion-item:first-child :is(h3, h4) {
+  border-radius: var(--top-radius);
+}
+
+[dark-mode] accordion-item:last-child :is(h3, h4) {
+  border-radius: var(--bottom-radius);
+}
