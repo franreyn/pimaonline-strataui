@@ -1,0 +1,49 @@
+footer {
+  margin: 0 auto;
+  max-width: 998px;
+  width: 100%;
+  grid-area: footer;
+  padding: 5px 0;
+}
+
+.footnotes {
+  padding: 15px;
+}
+
+#one-column .footnotes {
+  padding: 15px 95px;
+}
+
+#two-column footer,
+#two-col-widget footer {
+  max-width: 1170px;
+}
+
+.toggle-footnotes {
+  text-align: center;
+  cursor: pointer;
+}
+
+.toggle-footnotes:hover {
+  background-color: transparent;
+  color: var(--color-footnotes-blue);
+  text-decoration: underline;
+}
+
+.toggle-footnotes:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.toggle-footnotes {
+  margin: 5px;
+  text-decoration: none;
+}
+
+.footnotes {
+  display: none;
+}
+
+.show {
+  display: block;
+}
