@@ -3,16 +3,10 @@ import React from 'react';
 export default function Footer(): React.ReactElement {
   return (
     <footer>
-      <div id="footer">
-        <p className="text-center toggle-footnotes" tabIndex={0}>[Show Footnotes]</p>
-        <div className="footnotes">
-          <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
-          <ul>
-            <li>Lorem culim ghus.</li>
-            <li>Ipsum guar havana.</li>
-            <li>Doloret kava chec.</li>
-          </ul>
-        </div>
+      <p className="text-center toggle-footnotes" tabIndex={0}>[Show Footnotes]</p>
+      <div className="footnotes">
+        <p>Definition of Rhetorical Analysis: Rhetorical analysis involves examining how authors or speakers use words to influence an audience. It focuses on understanding the strategies employed to convey messages and achieve desired effects<sup>1</sup>.</p>
+        <p>"Rhetorical Analysis," Purdue Online Writing Lab (OWL), accessed June 24, 2024, https://owl.purdue.edu/owl/general_writing/the_writing_process/rhetorical_analysis/index.html.</p>
       </div>
     </footer>
   );
