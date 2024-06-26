@@ -3,6 +3,15 @@ columns-widget {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin: 1rem 0;
+  &.top {
+    align-items: flex-start;
+  }
+  &.middle {
+    align-items: center;
+  }
+  &.bottom {
+    align-items: flex-end;
+  }
 }
 
 columns-widget > *, columns-widget > * > * {
@@ -30,3 +39,4 @@ columns-widget > *, columns-widget > * > * {
     grid-template-columns: 35% calc(65% - 1rem);
   }
 }
+
