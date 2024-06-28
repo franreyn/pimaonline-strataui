@@ -10,6 +10,7 @@
   - [Assignments](/components/assignments.md)
   - [Blockquote](/components/blockquote.md)
   - [Columns](/components/columns.md)
+  - [Footer](/components/footer.md)
   - [Media Container](/components/media-widget.md)
 - Customizations
   - [Typography](/customizations/typography.md)

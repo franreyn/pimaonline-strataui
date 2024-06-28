@@ -183,6 +183,10 @@ body[index] .navbar {
   color: var(--color-docs-accent);
 }
 
+.markdown-section p {
+  word-break: break-word;
+}
+
 .token.string {
   color: var(--color-docs-accent);
 }
