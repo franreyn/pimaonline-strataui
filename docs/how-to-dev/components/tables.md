@@ -181,18 +181,6 @@ td#alignright {
   text-align: right;
 }
 
-footer ul {
-  margin: 10px;
-}
-
-.no-margin {
-  margin: 0 !important;
-}
-
-.no-padding {
-  padding: 0 !important;
-}
-
 table.two-column-table {
   border-collapse: collapse;
   margin: 0;
@@ -245,6 +233,7 @@ table.two-column-table tr td {
   border: none;
 }
 
+/* Can be added to th elements to adjust the width of the column */
 .sm-table-col {
   width: 20%;
 }
