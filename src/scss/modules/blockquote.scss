@@ -4,6 +4,8 @@ blockquote {
   margin: 3.3rem 0;
   padding: .6rem;
   position: relative;
+  left: 7%;
+  max-width: 90%;
 
   p,
   ul li,
@@ -16,7 +18,7 @@ blockquote {
     font-family: "FontAwesome";
     font-size: 1em;
     position: absolute;
-    left: 0;
+    left: -7%;
   }
 }
 
@@ -24,6 +26,19 @@ blockquote {
   blockquote {
     padding: 1.1rem 2.2rem;
     margin: 2.2rem 0;
+    left: 0;
+    max-width: 100%;
+    &::before {
+      left: 0;
+    }
+  }
+
+  columns-widget blockquote {
+    left: 10%;
+    max-width: 90%;
+    &::before {
+      left: -10%;
+    }
   }
 }
 
