@@ -12,5 +12,6 @@
   - [Columns](/components/columns.md)
   - [Footer](/components/footer.md)
   - [Media Container](/components/media-widget.md)
+  - [Tables](/components/tables.md)
 - Customizations
   - [Typography](/customizations/typography.md)
