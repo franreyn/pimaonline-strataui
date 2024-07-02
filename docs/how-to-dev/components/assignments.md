@@ -5,7 +5,9 @@ Use the `assignments-widget` to organize each assignment into cards.
 
 ## HTML 
 
-The `<assignments-widget>` wraps all `<assignment-item>` elements. An `<assignment-item>` typically consists of an `<h3>` heading which is the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+The `<assignments-widget>` wraps all `<assignment-item>` elements. Both are custom elements and the configurations can be found in `/src/ts/config.ts` and `/src/ts/modules/customElements.ts`.
+
+An `<assignment-item>` typically consists of an `<h3>` heading which is the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
 
 ```html
 <assignments-widget>
@@ -30,7 +32,7 @@ The `<assignments-widget>` wraps all `<assignment-item>` elements. An `<assignme
 
 # CSS
 
-The `assignments widget` uses flexbox to responsively display the cards.
+The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
 ```css
 #second-column assignments-widget,#second-column assignments-widget {
@@ -93,3 +95,8 @@ assignment-item::before,assignment-item::marker {
   }
 }
 ```
+
+
+# JS
+
+_There is no JS for this widget._
