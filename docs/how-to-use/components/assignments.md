@@ -1,6 +1,6 @@
 # Assignments Widget
 
-Use the `assignments-widget` to organize each assignment into cards.
+Use the `assignments-widget` to organize each assignment into cards that subtly animate on mouse hover.
 
 ## Structure
 
@@ -8,23 +8,23 @@ The `<assignments-widget>` wraps all `<assignment-item>` elements. An `<assignme
 
 ## HTML 
 
-The `columns widget` in the HTML should have this structure.
+The `assignments widget` should have this HTML structure.
 
 ```html
 <assignments-widget>
   <assignment-item>
-    <h3>Assignment Item</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+    <h3>Module 1 Readings</h3>
+    <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
     <a href="#" class="button">Link To Assignment</a>
   </assignment-item>
   <assignment-item>
-    <h3>Assignment Item</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+    <h3>Reading Review Activity 1</h3>
+    <p>Revision and Editing Review Activity</p>
     <a href="#" class="button">Link To Assignment</a>
   </assignment-item>
   <assignment-item>
-    <h3>Assignment Item</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+    <h3>Information Literacy Discussion 1</h3>
+    <p>The Importance of Listening</p>
     <a href="#" class="button">Link To Assignment</a>
   </assignment-item>
 </assignments-widget>
@@ -33,18 +33,18 @@ The `columns widget` in the HTML should have this structure.
 <div class="example-container">
   <assignments-widget>
     <assignment-item>
-      <h3>Assignment Item</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+      <h3>Module 1 Readings</h3>
+      <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
       <a href="#" class="button">Link To Assignment</a>
     </assignment-item>
     <assignment-item>
-      <h3>Assignment Item</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+      <h3>Reading Review Activity 1</h3>
+      <p>Revision and Editing Review Activity</p>
       <a href="#" class="button">Link To Assignment</a>
     </assignment-item>
     <assignment-item>
-      <h3>Assignment Item</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.</p>
+      <h3>Information Literacy Discussion 1</h3>
+      <p>The Importance of Listening</p>
       <a href="#" class="button">Link To Assignment</a>
     </assignment-item>
   </assignments-widget>
