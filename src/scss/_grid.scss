@@ -256,15 +256,29 @@ column-two {
 }
 
 //CONTENT BODY
-content-block {
+#one-column content-block {
   display: block;
   margin-bottom: 10px;
-  padding: 15px;
+  padding: 50px;
   background-color: var(--color-white);
 
   h2:first-child {
-    margin: -15px -15px 20px;
-    padding: 15px;
+    margin: -50px -50px 20px;
+    padding: 20px;
+    border-top: 5px solid var(--color-primary);
+    border-bottom: 1.5px solid var(--color-primary);
+  }
+}
+
+#two-column content-block {
+  display: block;
+  margin-bottom: 10px;
+  padding: 20px;
+  background-color: var(--color-white);
+
+  h2:first-child {
+    margin: -20px -20px 20px;
+    padding: 20px;
     border-top: 5px solid var(--color-primary);
     border-bottom: 1.5px solid var(--color-primary);
   }
@@ -274,16 +288,47 @@ content-block:last-child {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 1024px) {
-  #one-column content-block {
-    padding: 15px 95px;
-  
+//EXTRA PADDING VARIATION CLASS
+body#one-column.alt-padding > column-one > content-block {
+  padding: 50px !important;
+
+  h2:first-child {
+    margin: -50px -50px 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 90px !important;
+
     h2:first-child {
-      margin: -15px -95px 20px;
-      padding: 15px 95px;
+    margin: -90px -90px 40px;
     }
   }
 }
+
+body#two-column.alt-padding > column-one > content-block {
+  padding: 50px !important;
+
+  h2:first-child {
+    margin: -50px -50px 40px !important;
+  }
+}
+
+body#two-column.alt-padding > column-two > content-block {
+  padding: 50px !important;
+
+  h2:first-child {
+    margin: -50px -50px 40px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 30px !important;
+
+    h2:first-child {
+    margin: -30px -30px 40px;
+    }
+  }
+}
+
 
 //INTERIOR ELEMENTS
 video {
