@@ -287,7 +287,7 @@ content-block:last-child {
 }
 
 //EXTRA PADDING VARIATION CLASS
-#one-column > column-one > content-block.padded {
+body#one-column.alt-padding > column-one > content-block {
   padding: 50px !important;
 
   h2:first-child {
@@ -303,7 +303,7 @@ content-block:last-child {
   }
 }
 
-#two-column > column-one > content-block.padded {
+body#two-column.alt-padding > column-one > content-block {
   padding: 50px !important;
 
   h2:first-child {
@@ -311,7 +311,7 @@ content-block:last-child {
   }
 }
 
-#two-column > column-two > content-block.padded {
+body#two-column.alt-padding > column-two > content-block {
   padding: 50px !important;
 
   h2:first-child {
