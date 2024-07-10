@@ -10,7 +10,7 @@ const callTabsWidget = () => {
   tabsWidgets.forEach((tabsWidget, index) => {
     let tabInputs: NodeListOf<HTMLInputElement> = tabsWidget.querySelectorAll("input");
     let tabLabels: NodeListOf<HTMLLabelElement> = tabsWidget.querySelectorAll("label");
-    let tabDivs: NodeListOf<HTMLDivElement> = tabsWidget.querySelectorAll("div");
+    let tabDivs: NodeListOf<HTMLDivElement> = tabsWidget.querySelectorAll("tab-content");
 
     // Check that there are more than just one tab
     if (tabInputs.length < 2 || tabLabels.length < 2 || tabDivs.length < 2) {
@@ -19,7 +19,7 @@ const callTabsWidget = () => {
 
     // If there is just the hide tab and 1 other tab throw an error
     if (tabInputs.length < 3 || tabLabels.length < 3 || tabDivs.length < 3) {
-      let LabelSpan: HTMLElement | null = tabLabels[1].querySelector("span");
+      let LabelSpan: HTMLElement | null = tabLabels[1].querySelector("tab-title");
       if (LabelSpan) {
         if (LabelSpan.textContent === "Hide" || LabelSpan.textContent === "") {
           console.warn("Document error: add more tabs, than just 1 tab and the hide tab");
@@ -29,7 +29,7 @@ const callTabsWidget = () => {
 
     // Check that the last tab is a hide tab 
     let lastTabLabelIndex: number = tabLabels.length - 1;
-    let lastTabLabelSpan: HTMLElement | null = tabLabels[lastTabLabelIndex].querySelector("span");
+    let lastTabLabelSpan: HTMLElement | null = tabLabels[lastTabLabelIndex].querySelector("tab-title");
     if (lastTabLabelSpan) {
       if (lastTabLabelSpan.textContent !== "Hide") {
         console.warn("Document error: ensure last tab is a hide tab and label text is 'Hide'")
