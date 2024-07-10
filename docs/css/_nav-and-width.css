@@ -1,0 +1,71 @@
+:root {
+  --max-width: 1200px;
+}
+
+/* Breakpoints
+- mobile menu - 768px
+*/
+
+
+body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+main {
+  width: auto;
+}
+
+.navbar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+body.sticky .sidebar-toggle {
+  position: absolute;
+}
+
+.sidebar-toggle-button.closed span:nth-child(1) {
+  transform: rotate(0deg);
+  transition: .3s ease;
+}
+
+.sidebar-toggle-button.closed span:nth-child(2) {
+  opacity: 1;
+  transition: .3s ease;
+}
+
+.sidebar-toggle-button.closed span:nth-child(3) {
+  transform: rotate(0deg);
+  transition: .3s ease;
+}
+
+.sidebar-toggle-button span:nth-child(1) {
+  transform: rotate(-45deg) translate(-8px, 5px);
+  transition: .3s ease;
+}
+
+.sidebar-toggle-button span:nth-child(2) {
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.sidebar-toggle-button span:nth-child(3) {
+  transform: rotate(45deg) translate(-3px, 0px);
+  transition: .3s ease;
+}
+
+/* Edit sidebar when screen is large and there is not a mobile menu */
+@media screen and (min-width: 768px) {
+  .sidebar {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    top: auto;
+    bottom: auto;
+    left: auto;
+  }
+
+  body.close .sidebar {
+    display: none;
+  }
+}
