@@ -14,6 +14,9 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "MediaObject", customHtmlTag: "media-object" },
   { jsxName: "MediaInfo", customHtmlTag: "media-info" },
   { jsxName: "ColumnsWidget", customHtmlTag: "columns-widget" },
+  { jsxName: "TabsWidget", customHtmlTag: "tabs-widget" },
+  { jsxName: "TabTitle", customHtmlTag: "tab-title" },
+  { jsxName: "TabContent", customHtmlTag: "tab-content" },
 ];
 
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)
