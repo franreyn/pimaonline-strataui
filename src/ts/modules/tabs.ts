@@ -63,7 +63,7 @@ const callTabsWidget = () => {
         const tabContent = tabItem.querySelector("tab-content");
         if (tabContent) {
           tabContent.classList.add("tab-panel");
-          tabContent.setAttribute("tabindex", "0");
+          tabContent.setAttribute("aria-hidden", "true");
           tabContent.setAttribute("id", `tabHeading${tabItemsNum}`);
         } else {
           // Error check: if tab-content tag is missing
