@@ -4,70 +4,71 @@ tabs-widget {
   padding: 0;
   margin-bottom: 2.2rem;
   max-width: 860px;
+}
 
-  input {
-    position: absolute;
-    opacity: 0;
+tab-item {
+  display: contents;
+}
 
-    &:focus {
-      outline: 1px dotted #212121;
-      outline: 5px auto -webkit-focus-ring-color;
-    }
+tab-item input {
+  position: absolute;
+  opacity: 0;
+}
 
-    &:checked {
+tab-item input:focus {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
+}
 
-      + label {
-        background-color: var(--color-primary-tint2);
-        color: var(--color-primary);
-        z-index: 2;
-        transition: .5s;
-        
-        &:nth-last-of-type(2) {
-          border-radius: 0;
-        }
+tab-item input:checked + label {
+  background-color: var(--color-primary-tint2);
+  color: var(--color-pcc-black);
+  z-index: 2;
+  transition: .5s;
+}
 
-        + .tab-panel {
-          display: block;
-          z-index: 1;
-          border: 2px solid var(--color-primary-tint1);
-          
-          &:nth-last-of-type(2) {
-            border-radius: 0 0 var(--subtle-radius) var(--subtle-radius);
-          }
-        }
-        
-        &.hide-tab {
-          background-color: var(--color-white);
-          color: var(--color-primary);
-          text-decoration: underline;
-        }
-      }
-    }
-  } 
+tab-item input:checked + label + tab-content {
+  display: block;
+  z-index: 1;
+  border: 2px solid var(--color-primary-tint1);
+}
 
-  label {
-    background-color: var(--color-primary-tint1);
-    border-bottom: 1px solid var(--color-primary-tint2);
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-    transition: .5s;
-    color: var(--color-grey);
+tab-item input:checked + label:nth-last-of-type(2) {
+  border-radius: 0;
+}
 
-    &:first-of-type {
-      border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
-    }
+tab-item input:checked + label + tab-content:nth-last-of-type(2) {
+  border-radius: 0 0 var(--subtle-radius) var(--subtle-radius);
+}
 
-    &:nth-last-of-type(2) {
-      border-radius: 0 0 var(--subtle-radius) var(--subtle-radius);
-    }
+tab-item input:checked + label.hide-tab {
+  background-color: var(--color-pcc-white);
+  color: var(--color-pcc-black);
+  text-decoration: underline;
+}
 
-    &.hide-tab {
-      background-color: transparent !important;
-      border: none !important;
-      color: var(--color-black);
-    }
-  }
+tab-item label {
+  background-color: var(--color-primary-tint1);
+  border-bottom: 1px solid var(--color-pcc-ltgrey);
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  transition: .5s;
+  color: var(--color-pcc-dkgrey);
+}
+
+tab-item label:first-of-type {
+  border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
+}
+
+tab-item label:nth-last-of-type(2) {
+  border-radius: 0 0 var(--subtle-radius) var(--subtle-radius);
+}
+
+tab-item label.hide-tab {
+  background-color: transparent !important;
+  border: none !important;
+  color: var(--color-pcc-black);
 }
 
 .hide-panel {
@@ -80,32 +81,33 @@ tabs-widget {
 }
 
 @media (min-width: 700px) {
-
   tabs-widget label {
-    width: fit-content;
-    margin-right: 5px;
-    border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
+      width: fit-content;
+      margin-right: 5px;
+      border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
   }
 
-  tabs-widget label:nth-last-of-type(2), tabs-widget input:checked + label:nth-last-of-type(2), tabs-widget label:nth-last-of-type(2),tabs-widget input:checked + label:nth-last-of-type(2) {
-    border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
+  tabs-widget label:nth-last-of-type(2),
+  tabs-widget input:checked + label:nth-last-of-type(2) {
+      border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
   }
 
-  .tab-panel, tabs-widget input:checked + label + .tab-panel:nth-last-of-type(2), tabs-widget input:checked + label + .tab-panel:nth-last-of-type(2) {
-    order: 99;
-    border-radius: 0 var(--subtle-radius) var(--subtle-radius) var(--subtle-radius);
+  tab-content,
+  tabs-widget input:checked + label + tab-content:nth-last-of-type(2) {
+      order: 99;
+      border-radius: 0 var(--subtle-radius) var(--subtle-radius) var(--subtle-radius);
   }
 }
 
-.tab-panel {
+tab-content {
   display: none;
-  background: var(--color-white);
+  background: var(--color-pcc-white);
   padding: 1.1rem .6rem;
   overflow: auto;
   width: 100%;
   height: 300px;
+}
 
-  > * {
-    margin-top: 1.1rem;
-  }
+tab-content > * {
+  margin-top: 1.1rem;
 }
