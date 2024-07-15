@@ -1,114 +1,152 @@
 // Define the type for tabsWidgets
-const tabsWidgets: NodeListOf<Element> = document.querySelectorAll("tabs-widget");
-
+const tabsWidgetsGroups: NodeListOf<Element> = document.querySelectorAll("tabs-widget");
 // Define the type for callTabsWidget function
 const callTabsWidget = () => {
 
-  // Define the type for tabsWidgetNum
-  let tabsWidgetsNum: number = 0;
+  // Number of tab-items, should increment by 1 for each tab-item (starts at one to represent tab #1)
+  let tabItemsNum: number = 1;
 
-  tabsWidgets.forEach((tabsWidget, index) => {
-    let tabInputs: NodeListOf<HTMLInputElement> = tabsWidget.querySelectorAll("input");
-    let tabLabels: NodeListOf<HTMLLabelElement> = tabsWidget.querySelectorAll("label");
-    let tabDivs: NodeListOf<HTMLDivElement> = tabsWidget.querySelectorAll("tab-content");
+  // Loop through each tabs widget
+  tabsWidgetsGroups.forEach((tabsWidgetsGroup, tabsWidgetsGroupIndex) => {
 
-    // Check that there are more than just one tab
-    if (tabInputs.length < 2 || tabLabels.length < 2 || tabDivs.length < 2) {
-      console.warn("Document error: add more than just one tab for tabs widget");
-    }
+    // Reset counter for counting how many tab items are in each tabs-widget group
+    let tabItemsPerGroup = 0;
 
-    // If there is just the hide tab and 1 other tab throw an error
-    if (tabInputs.length < 3 || tabLabels.length < 3 || tabDivs.length < 3) {
-      let LabelSpan: HTMLElement | null = tabLabels[1].querySelector("tab-title");
-      if (LabelSpan) {
-        if (LabelSpan.textContent === "Hide" || LabelSpan.textContent === "") {
-          console.warn("Document error: add more tabs, than just 1 tab and the hide tab");
-        }
-      }
-    }
+    // Number of tab groups, should increment by 1 for each tabs-widget on the page
+    let tabGroupNum: number = tabsWidgetsGroupIndex + 1;
 
-    // Check that the last tab is a hide tab 
-    let lastTabLabelIndex: number = tabLabels.length - 1;
-    let lastTabLabelSpan: HTMLElement | null = tabLabels[lastTabLabelIndex].querySelector("tab-title");
-    if (lastTabLabelSpan) {
-      if (lastTabLabelSpan.textContent !== "Hide") {
-        console.warn("Document error: ensure last tab is a hide tab and label text is 'Hide'")
-      }
-    }
+    // Check if tab-items are present for this tabs-widget group
+    const tabItems = tabsWidgetsGroup.querySelectorAll("tab-item");
 
-    // Check amount of tab elements present 
-    if (tabInputs.length < tabLabels.length || tabInputs.length < tabDivs.length) {
-      console.warn("Document error: missing tab input(s) in tab widget");
-    }
-
-    if (tabLabels.length < tabInputs.length || tabLabels.length < tabDivs.length) {
-      console.warn("Document error: missing tab label(s) in tab widget");
-    }
-
-    let tabGroupNum: number = index + 1;
+    // If there is a tab container around each tab item
+    if (tabItems.length > 0) {
 
     // Add region and aria-label to parent div      
-    tabsWidget.setAttribute("role", "region");
-    tabsWidget.setAttribute("aria-label", `tab group ${tabGroupNum}`);
+    tabsWidgetsGroup.setAttribute("role", "region");
+    tabsWidgetsGroup.setAttribute("aria-label", `tab group ${tabGroupNum}`);
 
-    // Iterate over the entries of the tabInputs NodeList using a for loop. Inside the loop, tabIndex is the index of the current tab input element. tabInput is the actual input element itself.
-    for (let tabIndex: number = 0; tabIndex < tabInputs.length; tabIndex++) {
+      tabItems.forEach((tabItem, tabItemIndex) => {
+        // Create tab input 
+        const tabInput = document.createElement("input");
+        tabInput.classList.add("tab-input");
+        tabInput.setAttribute("type", "radio");
+        tabInput.setAttribute("id", `tab${tabItemsNum}`);
+        tabInput.setAttribute("name", `hint-group-${tabGroupNum}`);
+        tabInput.setAttribute("aria-describedby", `tabHeading${tabItemsNum}`);
 
-      // Add the hide-tab class to the "Hide" label
-      if (tabLabels[tabIndex]?.textContent?.trim() === "Hide") {
-        tabLabels[tabIndex].classList.add("hide-tab");
-      }
+        // Add tab input to tab item
+        tabItem.prepend(tabInput);
 
-      let tabNum: number = tabsWidgetsNum + 1;
+        // Create tab label for tab title
+        const tabLabel = document.createElement("label");
+        tabLabel.classList.add("tab-header");
+        tabLabel.setAttribute("for", `tab${tabItemsNum}`);
 
-      // Check on present variables
-      if (!tabInputs || !tabDivs) {
-        console.warn("Document error: no inputs found for tabs widget");
-        console.warn("Document error: no divs (tab panels) found for tabs widget");
-      }
+        // Check for tab-title tag and add it to tab label
+        const tabTitle = tabItem.querySelector("tab-title");
 
-      if (!tabLabels) {
-        console.warn("Document error: no labels found for tabs widget");
-      }
-
-      // Add class, id, name, and aria-described by for inputs
-      tabInputs[tabIndex]?.classList.add("tab-input");
-      tabInputs[tabIndex]?.setAttribute("type", "radio");
-      tabInputs[tabIndex]?.setAttribute("id", `tab${tabNum}`);
-      tabInputs[tabIndex]?.setAttribute("name", `hint-group-${tabGroupNum}`);
-      tabInputs[tabIndex]?.setAttribute("aria-describedby", `tabHeading${tabNum}`);
-
-      // Add class and for for labels
-      tabLabels[tabIndex]?.classList.add("tab-header");
-      tabLabels[tabIndex]?.setAttribute("for", `tab${tabNum}`);
-
-      // Add class, tabindex, and id for divs
-      if (tabDivs[tabIndex]) {
-        tabDivs[tabIndex]?.classList.add("tab-panel");
-        tabDivs[tabIndex]?.setAttribute("tabindex", "0");
-        tabDivs[tabIndex]?.setAttribute("id", `tabHeading${tabNum}`);
-      }
-
-      // Add attributes ensure the first tab is open
-      if (tabIndex === 0) {
-        tabInputs[tabIndex].checked = true; // Check the first tab input and set checked to true
-      } else {
-        tabInputs[tabIndex].checked = false;
-      }
-
-      //Add attributes for hide tab
-      if (tabIndex + 1 == tabInputs.length) {
-        tabLabels[tabIndex].classList.add("hide-tab");
-        if (tabDivs[tabIndex]) {
-          tabDivs[tabIndex].classList.add("hide-panel");
+        if(tabTitle) {
+          // Add tab title to tab label
+          tabLabel.appendChild(tabTitle);
+        } else {
+          // Error check: if tab-title tag is missing
+          console.warn(`Document error: missing tab-title tag for tab-item ${tabItemsNum} in tabs-widget group ${tabGroupNum}`);
         }
-      }
-      tabsWidgetsNum++;
+
+        // Target the location right after the input element
+        const tabItemSecondChild = tabItem.children[1];
+
+        // Add tab label to tab item
+        tabItem.insertBefore(tabLabel, tabItemSecondChild);
+
+        // Add tab-content attributes
+        const tabContent = tabItem.querySelector("tab-content");
+        if (tabContent) {
+          tabContent.classList.add("tab-panel");
+          tabContent.setAttribute("tabindex", "0");
+          tabContent.setAttribute("id", `tabHeading${tabItemsNum}`);
+        } else {
+          // Error check: if tab-content tag is missing
+          console.warn(`Document error: missing tab-content tag for tab-item ${tabItemsNum} in tabs-widget group ${tabGroupNum}`);
+        }
+
+        // Increment the number of tab items since last one is added dynamically
+        tabItemsNum++;
+
+        // Check and add hide tab dynamically
+        if (tabItemIndex + 1 == tabItems.length) {
+          const hideTabCheck = tabItem.querySelector("tab-title");
+          if (hideTabCheck) {
+            if (hideTabCheck.textContent !== "Hide") {
+              // If last tab doesn't say "hide" then create last tab item as hide tab
+              const hideTabItem = document.createElement("tab-item");
+
+              // Add hide tab item to tab items
+              tabsWidgetsGroup.appendChild(hideTabItem);
+
+              // Create hide tab title
+              const hideTabTitle = document.createElement("tab-title");
+              hideTabTitle.textContent = "Hide";
+
+              // Create label for hide tab
+              const hideTabLabel = document.createElement("label");
+              hideTabLabel.classList.add("tab-header");
+              hideTabLabel.classList.add("hide-tab");
+              hideTabLabel.setAttribute("for", `tab${tabItemsNum}`);
+
+              // Add hide title to hide tab label
+              hideTabLabel.appendChild(hideTabTitle);
+
+              // Create hide input 
+              const hideTabInput = document.createElement("input");
+              hideTabInput.classList.add("tab-input");
+              hideTabInput.setAttribute("type", "radio");
+              hideTabInput.setAttribute("id", `tab${tabItemsNum}`);
+              hideTabInput.setAttribute("name", `hint-group-${tabGroupNum}`);
+              hideTabInput.setAttribute("aria-describedby", `tabHeading${tabItemsNum}`);
+              hideTabInput.classList.add("hide-tab");
+
+              // Add hide input to hide tab item
+              hideTabItem.prepend(hideTabInput);
+
+              // Target the location right after the input element
+              const hideSecondItem = hideTabItem.children[1];
+
+              // Add hide tab label to hide tab item
+              hideTabItem.insertBefore(hideTabLabel, hideSecondItem);
+
+              // After creating a new tab item, increment count by one
+              tabItemsNum++;
+            } else {
+             // If the last tab says "hide" then assume it is the hide tab
+             tabItemsNum++;
+            }
+          }
+        }
+
+        // Add attributes ensure the first tab is open
+        if (tabItemsPerGroup === 0) {
+          tabInput.checked = true; // Check the first tab input and set checked to true
+        } else {
+          tabInput.checked = false;
+        }
+        // Increment the number of tab items per group
+        tabItemsPerGroup++;
+      })
+    } else {
+      // Error check: if tab-item container is missing
+      console.warn(`Document error: missing tab-item container within the tabs-widget group ${tabGroupNum}`);
     }
+
+  // Error check: check if there is only one tab in the tabs-widget group
+  if(tabItemsPerGroup == 1) {
+    console.warn(`Document error: tabs-widget group ${tabGroupNum} is only using one tab. Consider using the accordion widget instead or adding more tabs`);
+  }
   });
+
 };
 
 // Check if tabsWidgets exist before calling callTabsWidget function
-if (tabsWidgets.length > 0) {
+if (tabsWidgetsGroups.length > 0) {
   callTabsWidget();
 }
