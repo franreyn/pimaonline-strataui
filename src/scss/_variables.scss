@@ -1,7 +1,10 @@
 :root {
   --color-primary: rgba(13, 13, 13, 1);
+  --color-secondary: rgba(247, 144, 45, 1); // temporary value
   --color-accent: rgba(0, 39, 246, .7);
   --color-white: rgba(255, 255, 255, 1);
+  --color-dkgrey: rgba(128, 128, 128, 1);
+  --color-ltgrey: rgba(227, 227, 227, 1);
   --color-hover: rgba(0, 32, 194, .8);
   --color-primary-tint1: rgba(13, 13, 13, .08);
   --color-primary-tint2: rgba(4, 85, 148, .04);
@@ -27,4 +30,5 @@
   --color-btn-primary: rgba(4, 85, 148, 1);
   --color-btn-primary-hover: rgba(3, 64, 111, 1);
   --color-table-drk-blue: rgba(29, 74, 105, 1);
+  --slider-bkg: rgba(250, 250, 250, 1);
 }
