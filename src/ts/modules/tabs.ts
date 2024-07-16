@@ -22,7 +22,7 @@ const callTabsWidget = () => {
     if (tabItems.length > 0) {
 
     // Add region and aria-label to parent div      
-    tabsWidgetsGroup.setAttribute("role", "region");
+    tabsWidgetsGroup.setAttribute("role", "reigon");
     tabsWidgetsGroup.setAttribute("aria-label", `tab group ${tabGroupNum}`);
 
       tabItems.forEach((tabItem, tabItemIndex) => {
@@ -32,15 +32,20 @@ const callTabsWidget = () => {
         tabInput.setAttribute("type", "radio");
         tabInput.setAttribute("id", `tab${tabItemsNum}`);
         tabInput.setAttribute("name", `hint-group-${tabGroupNum}`);
-        tabInput.setAttribute("aria-describedby", `tabHeading${tabItemsNum}`);
+        tabInput.setAttribute("aria-controls", `tabHeading${tabItemsNum}`)
+        // Associate tab input with tab label
+        tabInput.setAttribute("aria-labelledby",`tabLabel${tabItemsNum}`);
 
         // Add tab input to tab item
         tabItem.prepend(tabInput);
+        
+
 
         // Create tab label for tab title
         const tabLabel = document.createElement("label");
         tabLabel.classList.add("tab-header");
         tabLabel.setAttribute("for", `tab${tabItemsNum}`);
+        tabLabel.setAttribute("id", `tabLabel${tabItemsNum}`);
 
         // Check for tab-title tag and add it to tab label
         const tabTitle = tabItem.querySelector("tab-title");
@@ -52,6 +57,7 @@ const callTabsWidget = () => {
           // Error check: if tab-title tag is missing
           console.warn(`Document error: missing tab-title tag for tab-item ${tabItemsNum} in tabs-widget group ${tabGroupNum}`);
         }
+      
 
         // Target the location right after the input element
         const tabItemSecondChild = tabItem.children[1];
@@ -63,7 +69,7 @@ const callTabsWidget = () => {
         const tabContent = tabItem.querySelector("tab-content");
         if (tabContent) {
           tabContent.classList.add("tab-panel");
-          tabContent.setAttribute("aria-hidden", "true");
+          tabContent.setAttribute("tabindex", "0");
           tabContent.setAttribute("id", `tabHeading${tabItemsNum}`);
         } else {
           // Error check: if tab-content tag is missing
