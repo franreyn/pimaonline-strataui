@@ -78,7 +78,7 @@ The content body element are the sub grid components that contain the actual con
 content-block {
   margin-bottom: 10px;
   padding: 15px;
-  background-color: var(--color-pcc-white);
+  background-color: var(--color-white);
 
   h2:first-child {
     margin: 0 0 20px 0;
