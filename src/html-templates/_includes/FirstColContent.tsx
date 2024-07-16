@@ -9,12 +9,34 @@ import { MediaWidget } from './widgets/MediaWidget';
 import { MediaObject } from './widgets/MediaWidget';
 import { MediaInfo } from './widgets/MediaWidget';
 import ColumnsWrapper from './widgets/ColumnsWidget';
+import { TabContent, TabsWidget, TabTitle } from './widgets/TabsWidget';
 
 export default function FirstColContent(): React.ReactElement {
   return (
     <ColumnOne>
       <ContentBlock>
         <h2>Module 1 Overview</h2>
+        <TabsWidget>
+          <input/>
+          <label>
+            <TabTitle>Tab Title 1</TabTitle>
+          </label>
+          <TabContent>
+            <h4>Tab 1 Heading</h4>
+          </TabContent>
+          <input/>
+          <label>
+            <TabTitle>Tab Title 1</TabTitle>
+          </label>
+          <TabContent>
+            <h4>Tab 1 Heading</h4>
+          </TabContent>
+          <input/>
+          <label>
+            <TabTitle>Hide</TabTitle>
+          </label>
+          <div></div>
+        </TabsWidget>
         <blockquote>
           <p>The scariest moment is always just before you start.</p>
           <p>- Stephen King</p>
