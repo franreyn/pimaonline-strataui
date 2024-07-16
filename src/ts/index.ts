@@ -7,3 +7,4 @@ import "./modules/arrows";
 import "./modules/responsiveTables";
 import "./modules/mediaWidget";
 import "./modules/tabs";
+import "./modules/slider";

@@ -171,11 +171,11 @@ column-two {
       text-align: left;
 
       li {
-        color: var(--color-pcc-white);
+        color: var(--color-white);
 
         &::before,
         &::after {
-          color: var(--color-pcc-white);
+          color: var(--color-white);
         }
       }
     }
@@ -212,7 +212,7 @@ column-two {
 
 //SYLLABUS HEADER
 .syllabus-header {
-  background-color: var(--color-pcc-white);
+  background-color: var(--color-white);
   justify-content: center;
   text-align: center;
 
@@ -394,7 +394,7 @@ figure {
 //LABELS
 .label {
   border-radius: 1px;
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   display: inline;
   font-size: 0.7em;
   font-weight: 700;
@@ -474,7 +474,7 @@ a:active,
 //BUTTONS
 button {
   background-color: var(--color-btn-blue);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   border: none;
   font-size: 1em;
   margin: 5px;
@@ -487,7 +487,7 @@ button {
 
 .btn {
   background-color: var(--color-btn-blue);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   border: 3px solid var(--color-btn-blue);
   border-radius: 0.3em;
   cursor: pointer;
@@ -508,7 +508,7 @@ button {
 
   &:hover {
     background-color: var(--color-btn-blue-hover);
-    color: var(--color-pcc-white);
+    color: var(--color-white);
     text-decoration: none;
   }
 }
@@ -517,43 +517,43 @@ button {
 .btn-primary {
   background-color: var(--color-btn-primary);
   border-color: var(--color-btn-primary);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
 
   &:hover {
     background-color: var(--color-btn-primary-hover);
     border-color: var(--color-btn-primary-hover);
-    color: var(--color-pcc-white);
+    color: var(--color-white);
   }
 }
 
 .btn-secondary {
   background-color: var(--color-pcc-secondary);
   border-color: var(--color-pcc-secondary);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
 
   &:hover {
     background-color: var(--color-pcc-secondary-hover);
     border-color: var(--color-pcc-secondary-hover);
-    color: var(--color-pcc-white);
+    color: var(--color-white);
   }
 }
 
 .btn-tertiary {
   background-color: var(--color-pcc-tertiary);
   border-color: var(--color-pcc-tertiary);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
 
   &:hover {
     background-color: var(--color-pcc-tertiary-hover);
     border-color: var(--color-pcc-tertiary-hover);
-    color: var(--color-pcc-white);
+    color: var(--color-white);
   }
 }
 
 .btn-gray {
   background-color: var(--color-pcc-dkgrey);
   border-color: var(--color-pcc-dkgrey);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
 
   &:hover {
     background-color: var(--color-dkgrey-hover);
