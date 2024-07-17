@@ -1,0 +1,28 @@
+ul.vocab-cards-widget {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1em;
+  list-style-type: none;
+}
+
+li {
+  border-radius: var(--round-radius);
+  background-color: var(--color-pcc-white);
+  box-shadow: var(--sm-shadow);
+  margin: 10px auto;
+  max-width: 275px;
+  padding: 1em;
+  justify-content: center;
+  transition: .5s;
+
+  h3 {
+    margin: .5em 0;
+  }
+
+  &:hover {
+    transform: translate(0, -5px);
+    transition: .5s;
+    box-shadow: var(--reg-shadow);
+
+  }
+}
