@@ -1,0 +1,282 @@
+// Grid
+body[blue] {
+  background-color: var(--blue-theme-bg);
+
+  .header {
+    img {
+      border-color: var(--blue-theme-primary);
+    }
+    .text-container {
+      background-color: var(--blue-theme-primary);
+    }
+  }
+
+  .caption {
+    color: var(--blue-theme-primary);
+  }
+
+  content-block {
+    h2:first-child {
+      border-color: var(--blue-theme-primary);
+    }
+  }
+
+  .highlight {
+    background-color: var(--blue-theme-tertiary);
+    border-color: var(--blue-theme-tertiary);
+  }
+
+  hr {
+    border-color: var(--blue-theme-tertiary);
+  }
+
+  figure {
+    figcaption,
+    .caption {
+      border-color: var(--blue-theme-tertiary);
+      color: var(--blue-theme-primary);
+    }
+  }
+
+  .label {
+    color: var(--color-white);
+  }
+
+  .label-default {
+    background-color: var(--blue-theme-primary);
+  }
+
+  .label-muted {
+    background-color: var(--blue-theme-tertiary);
+    color: var(--blue-theme-primary);
+  }
+
+  a,
+  .toggle-footnotes {
+    background-color: transparent;
+    color: var(--blue-theme-secondary);
+  }
+
+  a:visited {
+    color: var(--color-link-purple);
+  }
+
+  a:hover,
+  a:active,
+  .toggle-footnotes:hover {
+    background-color: transparent;
+    color: var(--blue-theme-hover);
+  }
+
+  .button {
+    background-color: var(--blue-theme-secondary);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--blue-theme-hover);
+      color: var(--blue-theme-primary);
+    }
+    &:visited {
+      background-color: var(--blue-theme-secondary);
+      color: var(--color-white);
+    }
+  }
+
+  .btn {
+    background-color: var(--blue-theme-secondary);
+    color: var(--color-white);
+    border-color: var(--blue-theme-secondary);
+
+    &:hover {
+      background-color: var(--blue-theme-hover);
+      color: var(--color-white);
+    }
+    &:visited {
+      background-color: var(--blue-theme-secondary);
+      color: var(--color-white);
+    }
+  }
+  
+
+  .outline {
+    color: var(--blue-theme-secondary);
+  }
+
+  // Typography
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--blue-theme-primary);
+  }
+
+  // Accordion module
+
+  accordion-widget {
+    accordion-content {
+      p {
+        &.show {
+          background-color: var(--blue-theme-tertiary);
+        }   
+      }
+    }
+    accordion-item {
+      border-color: var(--blue-theme-primary);
+      &>h3,h4 {
+        p {
+          &:hover {
+            background-color: var(--blue-theme-hover);
+          }
+        }
+    }
+
+      h3.arrow-down, h4.arrow-down {
+        background-color: var(--blue-theme-tertiary);
+      }
+
+      &:last-child {
+        border-color: var(--blue-theme-primary);
+      }
+    }
+  }
+
+  // Assignments module
+
+  assignment-item {
+    border-color: var(--blue-theme-primary);
+  }
+
+  assignment-item h2,assignment-item h3,assignment-item h4 {
+    background-color: var(--blue-theme-tertiary);
+  }
+
+  // Blockquote module
+
+  blockquote {
+    &::before {
+      color: var(--blue-theme-secondary);
+    }
+    .attribution {
+      color: var(--blue-theme-secondary);
+    }
+  }
+
+  // Buttons
+
+  a.button {
+    background-color: var(--blue-theme-secondary);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--blue-theme-hover);
+      color: var(--color-white);
+    }
+
+    &:visited {
+      color: var(--color-white);
+    }
+  }
+
+  // Callout module
+
+  callout-widget {
+    background-color: var(--blue-theme-tertiary);
+  }
+
+  // Slider module
+
+  slider-widget {
+    background-color: var(--slider-bkg);
+
+    .slider-arrow {
+      background-color: var(--blue-theme-primary);
+    }
+  }
+  
+  .slider-dot {
+    background-color: var(--blue-theme-faded);
+
+    &.active {
+      background-color: var(--blue-theme-secondary);
+    }
+  }
+
+  // Tables module
+
+  table {
+    border-color: var(--blue-theme-primary);
+
+    tbody tr {
+      color: var(--blue-theme-primary);
+    }
+  }
+
+  table td,
+  table th {
+    border-color: var(--blue-theme-primary);
+  }
+
+  @media screen and (min-width: 768px) {
+    tr:nth-child(even) {
+      background-color: var(--blue-theme-tertiary);
+    }
+    table th {
+      background-color: var(--blue-theme-primary);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    table {
+
+      tbody td {
+        border-color: var(--blue-theme-primary);
+
+        a {
+          color: var(--blue-theme-secondary);
+
+          &:hover {
+            color: var(--blue-theme-hover);
+          }
+        }
+
+        &:first-child {
+          background-color: var(--blue-theme-primary);
+        }
+      }
+    }
+
+    td:nth-of-type(odd) {
+      background-color: var(--blue-theme-tertiary);
+    }
+  }
+    
+
+  // Tabs module
+
+  tab-item input:checked + label {
+    background-color: var(--blue-theme-primary);
+    color: white;
+  }
+
+  tab-item input:checked + label + tab-content {
+    border-color: var(--blue-theme-primary);
+  }
+
+  tab-item label {
+    background-color: white;
+    border-color: var(--blue-theme-primary);
+    color: var(--blue-theme-primary);
+  }
+
+  tab-item label.hide-tab {
+    background-color: transparent !important;
+    color: white;
+  }
+
+  tab-content {
+    background: var(--blue-theme-tertiary);
+  }
+
+  .tab-panel {
+    background-color: var(--blue-theme-tertiary);
+    border-color: var(--blue-theme-primary);
+  }
+}
