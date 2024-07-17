@@ -1,3 +1,13 @@
+
+
+/* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are   *
+ * targetting, and the value should be the standard HTML tag you want to replace it with.
+ */
+export const customTagPairs: { [customTagName: string]: string } =  {
+  "vocab-cards-widget": "ul",
+  "vocab-card": "li",
+}
+
 // Variable used to define custom HTML tags
 // To add new custom elements, add new objects here
 export const customElementsData: { jsxName: string, customHtmlTag: string }[] = [
