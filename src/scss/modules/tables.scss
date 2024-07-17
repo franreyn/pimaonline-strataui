@@ -1,11 +1,10 @@
 table {
   border-collapse: collapse !important;
-  color: var(--color-white);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
-  margin: 40px 20px 15px 20px;
+  margin: 2rem 1rem;
   text-rendering: optimizeLegibility;
-  border: 1px solid var(--color-primary);
+  border: 1px solid;
 
   th {
     font-size: 1.0625em;
@@ -40,7 +39,6 @@ table {
   }
 
   tbody tr {
-    color: var(--color-primary);
     font-size: 1rem;
     padding: 0.8rem;
   }
@@ -54,7 +52,7 @@ table td,
 table th {
   font-size: 1em;
   padding: 10px 10px 20px 10px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid;
 }
 
 @media screen and (min-width: 730px) {
@@ -73,19 +71,11 @@ table th {
   table.custom-width th:nth-child(2) {
     width: 20%;
   }
-  tr:nth-child(even) {
-    background-color: var(--color-primary-tint1);
-  }
-  table th {
-    background-color: var(--color-primary);
-  }
 }
 
 //Responsive table CSS for mobile
 @media screen and (max-width: 768px) {
   table {
-    background: none;
-    background-color: var(--color-white);
     display: inline-table !important; /*fixes table snapping in all browsers, including ie*/
     margin: 10px auto;
 
@@ -96,20 +86,7 @@ table th {
     tbody td {
       display: block;
       padding: 0.6rem;
-      border-bottom: 1px solid var(--color-primary);
-
-      a {
-        color: var(--color-white);
-
-        &:hover {
-          color: var(--color-primary-tint1);
-        }
-      }
-
-      &:first-child {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-      }
+      border-bottom: 1px solid;
 
       &::before {
         content: attr(data-th) ": ";
@@ -119,10 +96,6 @@ table th {
         width: auto;
       }
     }
-  }
-
-  td:nth-of-type(odd) {
-    background-color: var(--color-primary-tint1);
   }
 }
 
