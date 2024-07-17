@@ -11,10 +11,27 @@ import { MediaInfo } from './widgets/MediaWidget';
 import ColumnsWrapper from './widgets/ColumnsWidget';
 import { TabContent, TabsWidget, TabTitle } from './widgets/TabsWidget';
 import { SliderItem, SliderWidget } from './widgets/SliderWidget';
+import { VocabCard, VocabCardsWidget } from './widgets/VocabCards';
 
 export default function FirstColContent(): React.ReactElement {
   return (
     <ColumnOne>
+      <ContentBlock>
+        <h2>Module 1 Overview</h2>
+        <VocabCardsWidget>
+      <VocabCard>
+        <h3>Word 1</h3>
+        <p>Definition of word 1.</p>
+      </VocabCard>
+      <VocabCard>
+        <h3>Word 2</h3>
+        <p>Definition of word 2.</p>
+      </VocabCard>
+      <VocabCard>
+        <h3>Word 3</h3>
+        <p>Definition of word 3.</p>
+      </VocabCard>
+    </VocabCardsWidget>
     <SliderWidget className="h-400">
       <SliderItem>
       <h3 className="icon-book-open">Aenean euismod</h3>
@@ -33,8 +50,6 @@ export default function FirstColContent(): React.ReactElement {
           </div>
           </SliderItem>  
     </SliderWidget>
-      <ContentBlock>
-        <h2>Module 1 Overview</h2>
         <TabsWidget>
           <input/>
           <label>
