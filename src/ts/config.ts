@@ -17,6 +17,8 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "MediaObject", customHtmlTag: "media-object" },
   { jsxName: "MediaInfo", customHtmlTag: "media-info" },
   { jsxName: "ColumnsWidget", customHtmlTag: "columns-widget" },
+  { jsxName: "SliderWidget", customHtmlTag: "slider-widget" },
+  { jsxName: "SliderItem", customHtmlTag: "slider-item" },
   { jsxName: "TabsWidget", customHtmlTag: "tabs-widget" },
   { jsxName: "TabTitle", customHtmlTag: "tab-title" },
   { jsxName: "TabContent", customHtmlTag: "tab-content" },
