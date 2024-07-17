@@ -29,6 +29,8 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "TabsWidget", customHtmlTag: "tabs-widget" },
   { jsxName: "TabTitle", customHtmlTag: "tab-title" },
   { jsxName: "TabContent", customHtmlTag: "tab-content" },
+  { jsxName: "VocabCardsWidget", customHtmlTag: "vocab-cards-widget" },
+  { jsxName: "VocabCard", customHtmlTag: "vocab-card" },
 ];
 
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)
