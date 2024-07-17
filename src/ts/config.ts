@@ -1,3 +1,6 @@
+// Edit Font Awesome Version Number
+export const fontAwesomeVersionNum: string = "6.5.2";
+
 // Variable used to define custom HTML tags
 // To add new custom elements, add new objects here
 export const customElementsData: { jsxName: string, customHtmlTag: string }[] = [
