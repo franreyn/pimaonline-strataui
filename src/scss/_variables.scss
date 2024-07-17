@@ -1,28 +1,20 @@
 :root {
+  // Basic theme color variables
   --color-primary: rgba(13, 13, 13, 1);
-  --color-grey: rgba(68, 68, 68, 1);
-  --color-gray: rgba(68, 68, 68, 1);
-  --color-secondary: rgba(247, 144, 45, 1); // temporary value
-  --color-accent: rgba(0, 39, 246, .7);
-  --color-white: rgba(255, 255, 255, 1);
-  --color-dkgrey: rgba(128, 128, 128, 1);
-  --color-ltgrey: rgba(227, 227, 227, 1);
-  --color-hover: rgba(0, 32, 194, .8);
   --color-primary-tint1: rgba(13, 13, 13, .08);
   --color-primary-tint2: rgba(4, 85, 148, .04);
+  --color-secondary: rgba(247, 144, 45, 1); // temporary value
+  --color-accent: rgba(0, 39, 246, .7);
   --color-accent-tint: rgba(0, 39, 246, .1);
-  --bottom-radius: 0 0 5px 5px;
-  --top-radius: 5px 5px 0 0;
-  --round-radius: 15px;
-  --subtle-radius: 5px;
-  --no-radius: 0px;
-  --no-shadow: none;
-  --sm-shadow: 0 .2rem .2rem rgba(0,0,0,.075);
-  --reg-shadow: 0 .25rem .25rem rgba(0,0,0,.1);
-  --lg-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
+  --color-hover: rgba(0, 32, 194, .8);
+  --color-white: rgba(255, 255, 255, 1);
+  --color-grey: rgba(68, 68, 68, 1);
+  --color-gray: rgba(68, 68, 68, 1);
+  --color-dkgrey: rgba(128, 128, 128, 1);
+  --color-dkgrey-hover: rgba(108, 110, 112, 1);
+  --color-ltgrey: rgba(227, 227, 227, 1);
   --color-btn-blue: rgba(46, 94, 142, 1);
   --color-btn-blue-hover: rgba(28, 57, 87, 1);
-  --color-dkgrey-hover: rgba(108, 110, 112, 1);
   --color-edit-text: rgba(178, 3, 3, 1);
   --color-light-blue: rgba(180, 231, 248, 1);
   --color-link-blue: rgba(0, 91, 226, 1);
@@ -33,4 +25,57 @@
   --color-btn-primary-hover: rgba(3, 64, 111, 1);
   --color-table-drk-blue: rgba(29, 74, 105, 1);
   --slider-bkg: rgba(250, 250, 250, 1);
+
+  // Border radius variables
+  --bottom-radius: 0 0 5px 5px;
+  --top-radius: 5px 5px 0 0;
+  --round-radius: 15px;
+  --subtle-radius: 5px;
+  --no-radius: 0px;
+
+  // Box shadow variables
+  --no-shadow: none;
+  --sm-shadow: 0 .2rem .2rem rgba(0,0,0,.075);
+  --reg-shadow: 0 .25rem .25rem rgba(0,0,0,.1);
+  --lg-shadow: 0 .25rem .5rem rgba(0,0,0,.25);
+
+  // Blue theme variables
+  --blue-theme-primary: rgba(38, 52, 121, 1);
+  --blue-theme-secondary: rgba(0, 39, 246, 1);
+  --blue-theme-tertiary: rgba(232, 235, 255, 1);
+  --blue-theme-hover: rgba(158, 171, 255, 1);
+  --blue-theme-bg: rgba(241, 243, 255, 1);
+  --blue-theme-faded: rgba(158, 171, 255, 1);
+  
+  // Gold theme variables
+  --gold-theme-primary: rgba(193, 116, 0, 1);
+  --gold-theme-secondary: rgba(255, 153, 0, 1);
+  --gold-theme-tertiary: rgba(255, 237, 211, 1);
+  --gold-theme-hover: rgba(233, 188, 120, 1);
+  --gold-theme-bg: rgba(255, 248, 238, 1);
+  --gold-theme-faded: rgba(233, 188, 120, 1);
+  
+  // Green theme variables
+  --green-theme-primary: rgba(69, 96, 52, 1);
+  --green-theme-secondary: rgba(52, 137, 0, 1);
+  --green-theme-tertiary: rgba(224, 236, 217, 1);
+  --green-theme-hover: rgba(171, 197, 155, 1);
+  --green-theme-bg: rgba(238, 245, 234, 1);
+  --green-theme-faded: rgba(171, 197, 155, 1);
+  
+  // Purple theme variables
+  --purple-theme-primary: rgba(73, 39, 94, 1);
+  --purple-theme-secondary: rgba(119, 0, 212, 1);
+  --purple-theme-tertiary: rgba(231, 213, 235, 1);
+  --purple-theme-hover: rgba(180, 120, 227, 1);
+  --purple-theme-bg: rgba(252, 248, 255, 1);
+  --purple-theme-faded:rgba(180, 120, 227, 1);
+  
+  // Red theme variables
+  --red-theme-primary: rgba(193, 47, 1, 1);
+  --red-theme-secondary: rgba(255, 33, 33, 1);
+  --red-theme-tertiary: rgba(255, 225, 215, 1);
+  --red-theme-hover: rgba(255, 152, 152, 1);
+  --red-theme-bg: rgba(255, 242, 237, 1);
+  --red-theme-faded: rgba(255, 152, 152, 1);
 }
