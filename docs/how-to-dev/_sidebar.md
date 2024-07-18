@@ -11,6 +11,7 @@
   - [Blockquote](/components/blockquote.md)
   - [Columns](/components/columns.md)
   - [Footer](/components/footer.md)
+  - [Labels](/components/label.md)
   - [Media Container](/components/media-widget.md)
   - [Tables](/components/tables.md)
   - [Tabs](/components/tabs.md)
