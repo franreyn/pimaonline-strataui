@@ -2,6 +2,10 @@
 body[red] {
   background-color: var(--red-theme-bg);
 
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-muted-black);
+  }
+
   .header {
     img {
       border-color: var(--red-theme-primary);
@@ -17,7 +21,8 @@ body[red] {
 
   content-block {
     h2:first-child {
-      border-color: var(--red-theme-primary);
+      border-color: var(--red-theme-primary) !important;
+      color: var(--color-muted-black);
     }
   }
 
@@ -100,12 +105,6 @@ body[red] {
 
   .outline {
     color: var(--red-theme-secondary);
-  }
-
-  // Typography
-
-  h1, h2, h3, h4, h5, h6 {
-    color: var(--red-theme-primary);
   }
 
   // Accordion module
@@ -205,7 +204,7 @@ body[red] {
     border-color: var(--red-theme-primary);
 
     tbody tr {
-      color: var(--red-theme-primary);
+      color: var(--color-muted-black);
     }
   }
 
@@ -263,7 +262,7 @@ body[red] {
   tab-item label {
     background-color: white;
     border-color: var(--red-theme-primary);
-    color: var(--red-theme-primary);
+    color: var(--color-muted-black);
   }
 
   tab-item label.hide-tab {
