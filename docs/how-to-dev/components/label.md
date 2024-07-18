@@ -4,6 +4,14 @@
 
 Labels are used to create badge-like icons using any text.
 
+## Editing Labels
+
+If you are going to be adding, editing, or removing labels, you'll have to do it in mulitple places. 
+
+1. `config.ts` - edit the key value pair of strings that associate the custom tag with the HTML tag. 
+2. `_grid.css` - edit the styles associated with the specific label.
+3. `label.ts` - edit the query selector and classes added to ensure it has the right classes after HTML tag conversion happens.
+
 ## HTML
 
 To add the different labels, you can add the custom HTML label. 
