@@ -1,6 +1,15 @@
 // Edit Font Awesome Version Number
 export const fontAwesomeVersionNum: string = "6.5.2";
 
+
+
+/* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are targetting, and the value should be the standard HTML tag you want to replace it with.
+ */
+export const customTagPairs: { [customTagName: string]: string } =  {
+  "vocab-cards-widget": "ul",
+  "vocab-card": "li",
+}
+
 // Variable used to define custom HTML tags
 // To add new custom elements, add new objects here
 export const customElementsData: { jsxName: string, customHtmlTag: string }[] = [
@@ -22,6 +31,8 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "TabsWidget", customHtmlTag: "tabs-widget" },
   { jsxName: "TabTitle", customHtmlTag: "tab-title" },
   { jsxName: "TabContent", customHtmlTag: "tab-content" },
+  { jsxName: "VocabCardsWidget", customHtmlTag: "vocab-cards-widget" },
+  { jsxName: "VocabCard", customHtmlTag: "vocab-card" },
 ];
 
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)
