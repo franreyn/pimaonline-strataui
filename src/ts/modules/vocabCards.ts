@@ -1,6 +1,5 @@
 const vocabCardsWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("vocab-cards-widget");
 
-
 if (vocabCardsWidgets.length > 0) {
   // Add aria attributes to ul.vocab-cards
   vocabCardsWidgets.forEach((vocabCardsWidget: HTMLElement) => {
