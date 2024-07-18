@@ -3,6 +3,7 @@
   - [Custom Elements](/getting-started/custom-elements.md)
 - Themes
   - [Default](/themes/default.md)
+  - [Preinstalled Themes](/themes/preinstalled-themes.md)
 - Layouts
   - [One Column](/layouts/one-column.md)
 - Components

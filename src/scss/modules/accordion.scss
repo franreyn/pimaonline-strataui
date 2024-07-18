@@ -1,5 +1,5 @@
 accordion-widget {
-  margin-bottom: 15px;
+  margin: 2rem 0;
   display: block;
 
   accordion-content {
@@ -9,15 +9,11 @@ accordion-widget {
     p {
       margin: 0;
     }
-
-    &.show {
-      background-color: var(--color-primary-tint1);
-    }
   }
 
   accordion-item {
     display: block;
-    border: 1px solid var(--color-primary);
+    border: 1px solid;
     border-bottom: none;
 
     &>h3,h4 {
@@ -29,14 +25,6 @@ accordion-widget {
       p {
         margin: 0;
       }
-  
-      &:hover {
-        background-color: rgba(13, 13, 13, 0.1);
-      }
-    }
-
-    h3.arrow-down, h4.arrow-down {
-      background-color: var(--color-primary-tint1);
     }
 
     &:first-child {
@@ -45,7 +33,7 @@ accordion-widget {
 
     &:last-child {
       border-radius: var(--bottom-radius);
-      border-bottom: 1px solid var(--color-primary);
+      border-bottom: 1px solid;
     }
 
   }

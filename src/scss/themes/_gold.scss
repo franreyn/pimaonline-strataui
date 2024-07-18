@@ -1,0 +1,285 @@
+// Grid
+body[gold] {
+  background-color: var(--gold-theme-bg);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--gold-theme-primary);
+  }
+  
+  h3, h4, h5, h6 {
+    color: var(--color-muted-black);
+  }
+
+  .header {
+    img {
+      border-color: var(--gold-theme-primary);
+    }
+    .text-container {
+      background-color: var(--gold-theme-primary);
+    }
+  }
+
+  .caption {
+    color: var(--gold-theme-primary);
+  }
+
+  content-block {
+    h2:first-child {
+      border-color: var(--gold-theme-primary) !important;
+      color: var(--color-muted-black);
+    }
+  }
+
+  .highlight {
+    background-color: var(--gold-theme-tertiary);
+    border-color: var(--gold-theme-tertiary);
+  }
+
+  hr {
+    border-color: var(--gold-theme-tertiary);
+  }
+
+  figure {
+    figcaption,
+    .caption {
+      border-color: var(--gold-theme-tertiary);
+      color: var(--gold-theme-primary);
+    }
+  }
+
+  .label {
+    color: var(--color-white);
+  }
+
+  .label-default {
+    background-color: var(--gold-theme-primary);
+  }
+
+  .label-muted {
+    background-color: var(--gold-theme-tertiary);
+    color: var(--gold-theme-primary);
+  }
+
+  a,
+  .toggle-footnotes {
+    background-color: transparent;
+    color: var(--gold-theme-secondary);
+  }
+
+  a:visited {
+    color: var(--color-link-purple);
+  }
+
+  a:hover,
+  a:active,
+  .toggle-footnotes:hover {
+    background-color: transparent;
+    color: var(--gold-theme-hover);
+  }
+
+  .button {
+    background-color: var(--gold-theme-secondary);
+    color: black;
+
+    &:hover {
+      background-color: var(--gold-theme-hover);
+      color: var(--gold-theme-primary);
+    }
+    &:visited {
+      background-color: var(--gold-theme-secondary);
+      color: black;
+    }
+  }
+
+  .btn {
+    background-color: var(--gold-theme-secondary);
+    color: var(--color-white);
+    border-color: var(--gold-theme-secondary);
+
+    &:hover {
+      background-color: var(--gold-theme-hover);
+      color: var(--color-white);
+    }
+    &:visited {
+      background-color: var(--gold-theme-secondary);
+      color: black;
+    }
+  }
+  
+
+  .outline {
+    color: var(--gold-theme-secondary);
+  }
+
+  // Accordion module
+
+  accordion-widget {
+    accordion-content {
+      p {
+        &.show {
+          background-color: var(--gold-theme-tertiary);
+        }   
+      }
+    }
+    accordion-item {
+      border-color: var(--gold-theme-primary);
+      &>h3,h4 {
+        p {
+          &:hover {
+            background-color: var(--gold-theme-hover);
+          }
+        }
+    }
+
+      h3.arrow-down, h4.arrow-down {
+        background-color: var(--gold-theme-tertiary);
+      }
+
+      &:last-child {
+        border-color: var(--gold-theme-primary);
+      }
+    }
+  }
+
+  // Assignments module
+
+  assignment-item {
+    border-color: var(--gold-theme-primary);
+  }
+
+  assignment-item h2,assignment-item h3,assignment-item h4 {
+    background-color: var(--gold-theme-tertiary);
+  }
+
+  // Blockquote module
+
+  blockquote {
+    &::before {
+      color: var(--gold-theme-secondary);
+    }
+    .attribution {
+      color: var(--gold-theme-secondary);
+    }
+  }
+
+  // Buttons
+
+  a.button {
+    background-color: var(--gold-theme-secondary);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--gold-theme-hover);
+      color: var(--color-white);
+    }
+
+    &:visited {
+      color: black;
+    }
+  }
+
+  // Callout module
+
+  callout-widget {
+    background-color: var(--gold-theme-tertiary);
+  }
+
+  // Slider module
+
+  slider-widget {
+    background-color: var(--slider-bkg);
+
+    .slider-arrow {
+      background-color: var(--gold-theme-primary);
+    }
+  }
+  
+  .slider-dot {
+    background-color: var(--gold-theme-faded);
+
+    &.active {
+      background-color: var(--gold-theme-secondary);
+    }
+  }
+
+  // Tables module
+
+  table {
+    border-color: var(--gold-theme-primary);
+
+    tbody tr {
+      color: var(--color-muted-black);
+    }
+  }
+
+  table td,
+  table th {
+    border-color: var(--gold-theme-primary);
+  }
+
+  @media screen and (min-width: 768px) {
+    tr:nth-child(even) {
+      background-color: var(--gold-theme-tertiary);
+    }
+    table th {
+      background-color: var(--gold-theme-primary);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    table {
+
+      tbody td {
+        border-color: var(--gold-theme-primary);
+
+        a {
+          color: var(--gold-theme-secondary);
+
+          &:hover {
+            color: var(--gold-theme-hover);
+          }
+        }
+
+        &:first-child {
+          background-color: var(--gold-theme-primary);
+        }
+      }
+    }
+
+    td:nth-of-type(odd) {
+      background-color: var(--gold-theme-tertiary);
+    }
+  }
+    
+
+  // Tabs module
+
+  tab-item input:checked + label {
+    background-color: var(--gold-theme-primary);
+    color: white;
+  }
+
+  tab-item input:checked + label + tab-content {
+    border-color: var(--gold-theme-primary);
+  }
+
+  tab-item label {
+    background-color: white;
+    border-color: var(--gold-theme-primary);
+    color: var(--color-muted-black);
+  }
+
+  tab-item label.hide-tab {
+    background-color: transparent !important;
+    color: white;
+  }
+
+  tab-content {
+    background: var(--gold-theme-tertiary);
+  }
+
+  .tab-panel {
+    background-color: var(--gold-theme-tertiary);
+    border-color: var(--gold-theme-primary);
+  }
+}
