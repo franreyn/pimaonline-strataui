@@ -13,5 +13,7 @@
   - [Footer](/components/footer.md)
   - [Media Container](/components/media-widget.md)
   - [Tables](/components/tables.md)
+  - [Tabs](/components/tabs.md)
+  - [Vocab Cards](/components/vocab-cards.md)
 - Customizations
   - [Typography](/customizations/typography.md)
