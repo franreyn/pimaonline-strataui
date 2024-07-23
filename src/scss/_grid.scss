@@ -391,30 +391,6 @@ figure {
   }
 }
 
-//LABELS
-.label, default-label, muted-label {
-  border-radius: 1px;
-  color: var(--color-white);
-  display: inline;
-  font-size: 0.7em;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0.2em 0.6em 0.3em;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
-
-.label-default, default-label {
-  background-color: var(--color-primary);
-}
-
-.label-muted, muted-label {
-  background-color: var(--color-ltgrey);
-  color: var(--color-muted-black);
-}
-
 dt {
   display: block;
   float: none;
