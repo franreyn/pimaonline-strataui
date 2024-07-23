@@ -1,5 +1,6 @@
 - Getting Started
   - [Installation](/getting-started/installation.md)
+  - [Layouts](/getting-started/layouts.md)
   - [Custom Elements](/getting-started/custom-elements.md)
 - Themes
   - [Default](/themes/default.md)
