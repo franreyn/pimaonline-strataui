@@ -2,8 +2,7 @@ slider-widget {
   position: relative;
   display: block;
   padding: 1rem 1rem 4rem;
-  margin: 1rem 0;
-  background-color: var(--slider-bkg);
+  margin: 2rem 0;
 
   .slider-arrow {
     position: absolute;
@@ -13,9 +12,8 @@ slider-widget {
     padding: 0;
     border-radius: 100%;
     font-size: 1rem;
-    width: 42px;
-    height: 42px;
-    background-color: var(--color-secondary);
+    width: 35px;
+    height: 35px;
 
     &.fa-chevron-left {
       left: 35%;
@@ -56,13 +54,8 @@ slider-item {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--color-ltgrey);
   margin: 0 5px;
   cursor: pointer;
-
-  &.active {
-    background-color: var(--color-dkgrey);
-   }
 }
 
 @media screen and (min-width: 768px) {

@@ -1,10 +1,10 @@
 media-widget {
-  border: 1px solid rgba(51, 51, 51, 0.1);
+  border: 1px solid;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   max-width: 100%;
-  margin: 1.4rem auto;
+  margin: 2rem auto;
   padding: .3rem;
   border-radius: var(--subtle-radius);
 
