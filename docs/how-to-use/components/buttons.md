@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Buttons
 
 ## Button Links

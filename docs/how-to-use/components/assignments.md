@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Assignments Widget
 
 Use the `assignments-widget` to organize each assignment into cards that subtly animate on mouse hover.

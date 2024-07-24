@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Tables
 
 Use tables to organize content into cells.

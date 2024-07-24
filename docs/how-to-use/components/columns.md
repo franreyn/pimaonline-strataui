@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Columns Widget
 
 Use the `columns-widget` to display content side-by-side in columns.

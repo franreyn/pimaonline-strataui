@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Accordion Widget
 
 Use the `accordion-widget` to display content in drop-downs that users can interact with.

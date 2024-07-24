@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Footer
 
 Footers are used to display footnotes or citations related to the content.
