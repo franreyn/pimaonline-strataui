@@ -10,6 +10,7 @@
   - [Accordion](/components/accordion.md)
   - [Assignments](/components/assignments.md)
   - [Blockquote](/components/blockquote.md)
+  - [Callout](/components/callout.md)
   - [Columns](/components/columns.md)
   - [Footer](/components/footer.md)
   - [Labels](/components/labels.md)

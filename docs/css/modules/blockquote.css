@@ -1,0 +1,25 @@
+.example-container blockquote {
+  border-left: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  position: relative;
+  margin-left: 1rem;
+}
+
+.example-container blockquote::before {
+  content: "\f10d";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  margin-left: -2rem;
+  font-family: "FontAwesome";
+}
+
+[dark-mode] .example-container blockquote {
+  color: var(--dark-white);
+}
+
+[dark-mode] .example-container blockquote::before {
+  color: var(--dark-white);
+}
