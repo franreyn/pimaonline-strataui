@@ -15,7 +15,11 @@ li {
   transition: .5s;
 
   h3,h4,h5 {
-    margin: .5em 0;
+    margin: .5rem 0;
+  }
+
+  p {
+    margin: .5rem 0;
   }
 
   &:hover {
