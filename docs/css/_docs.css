@@ -1,5 +1,6 @@
 body {
   color: var(--color-docs-primary);
+  font-size: var(--body-font-size);
 }
 
 body[index] main {
@@ -150,6 +151,10 @@ body[index] .navbar {
   margin-top: 60px;
 }
 
+.sidebar li {
+  margin: var(--sidebar-li-margin);
+}
+
 .sidebar-toggle span {
   background-color: var(--color-docs-accent);
 }
@@ -159,14 +164,31 @@ body[index] .navbar {
   text-decoration: none;
 }
 
+.sidebar ul li > a {
+  padding-left: 10px;
+  transition: .3s ease;
+}
+
 .sidebar ul li.active>a {
   color: var(--color-docs-accent);
+  background-color: var(--color-docs-active-link);
   border-color: var(--color-docs-accent);
+  padding-left: 10px;
+  transition: .3s ease;
+}
+
+.sidebar ul li ul {
+  border-left: 1px solid var(--color-docs-light-grey);
+  margin: .5rem .25rem;
+}
+
+.search {
+  margin-top: 40px;
 }
 
 .search .input-wrap input:focus {
-  box-shadow: 0 0 5px var(--color-docs-accent);
-  border: 1px solid var(--color-docs-accent);
+  box-shadow: 0 0 5px var(--color-docs-nav-search-focus);
+  border: 1px solid var(--color-docs-nav-search-focus);
 }
 
 .matching-post a:hover, .search .search-keyword {
@@ -179,6 +201,19 @@ body[index] .navbar {
 
 /* CODE SNIPPETS */
 
+.markdown-section h1 {
+  color: var(--color-docs-accent);
+  background-color: var(--color-docs-title-bkg);
+  margin-bottom: 0;
+  padding: .25rem 1rem .5rem;
+}
+
+.markdown-section h1 + p {
+  margin-top: 0;
+  padding: .25rem 1rem 2rem;
+  background-color: var(--color-docs-title-bkg)
+}
+
 .markdown-section a {
   color: var(--color-docs-accent);
 }
@@ -187,12 +222,16 @@ body[index] .navbar {
   word-break: break-word;
 }
 
+.markdown-section code {
+  color: var(--color-docs-code);
+}
+
 .token.string {
   color: var(--color-docs-accent);
 }
 
 .token.selector, .token.tag {
-  color: var(--color-code);
+  color: var(--color-docs-code);
 }
 
 .example-container {
@@ -200,4 +239,14 @@ body[index] .navbar {
   padding: 1rem;
   border: 1px solid rgba(var(--primary-rgb), .2);
   border-radius: 5px;
+}
+
+.section-text {
+  margin-bottom: 0rem !important;
+  padding: 2rem 1rem .5rem;
+  background-color: var(--color-docs-title-bkg);
+  color: var(--color-docs-accent);
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  letter-spacing: .05rem;
 }
