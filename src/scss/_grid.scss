@@ -2,7 +2,6 @@
 @use "variables";
 
 body {
-  background-color: var(--color-primary-tint1);
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0;
@@ -47,7 +46,6 @@ column-one {
 footer {
   grid-area: footer;
   padding: 5px 0;
-  background-color: var(--color-white);
 
   .footnotes {
     padding: 15px;
@@ -146,19 +144,17 @@ column-two {
   text-align: center;
 
   img {
-    border-top: 5px solid var(--color-primary);
+    border-top: 5px solid;
     margin: 0;
   }
 
   .text-container {
-    background-color: var(--color-primary);
     padding: 10px 0 25px 0;
 
     :is(h1, h2, h3, h4, p) {
       line-height: 1.2;
       margin: auto;
       max-width: 600px;
-      color: var(--color-white);
     }
 
     p {
@@ -169,15 +165,6 @@ column-two {
     ol {
       margin-left: 30%;
       text-align: left;
-
-      li {
-        color: var(--color-pcc-white);
-
-        &::before,
-        &::after {
-          color: var(--color-pcc-white);
-        }
-      }
     }
   }
 }
@@ -212,7 +199,6 @@ column-two {
 
 //SYLLABUS HEADER
 .syllabus-header {
-  background-color: var(--color-pcc-white);
   justify-content: center;
   text-align: center;
 
@@ -251,7 +237,6 @@ column-two {
 
 //CAPTION
 .caption {
-  color: var(--color-pcc-dkgrey);
   font-size: 0.85em;
 }
 
@@ -260,13 +245,12 @@ column-two {
   display: block;
   margin-bottom: 10px;
   padding: 50px;
-  background-color: var(--color-white);
 
   h2:first-child {
     margin: -50px -50px 20px;
     padding: 20px;
-    border-top: 5px solid var(--color-primary);
-    border-bottom: 1.5px solid var(--color-primary);
+    border-top: 5px solid;
+    border-bottom: 1.5px solid;
   }
 }
 
@@ -274,13 +258,12 @@ column-two {
   display: block;
   margin-bottom: 10px;
   padding: 20px;
-  background-color: var(--color-white);
 
   h2:first-child {
     margin: -20px -20px 20px;
     padding: 20px;
-    border-top: 5px solid var(--color-primary);
-    border-bottom: 1.5px solid var(--color-primary);
+    border-top: 5px solid;
+    border-bottom: 1.5px solid;
   }
 }
 
@@ -336,17 +319,11 @@ video {
 }
 
 .edit {
-  color: var(--color-edit-text);
   font-weight: bold;
 }
 
 .highlight {
-  background-color: transparent;
-  background-image: linear-gradient(to bottom, var(--color-light-blue), var(--color-light-blue));
-  border-bottom: 2px solid var(--color-light-blue);
-  border-left: 2px solid var(--color-light-blue);
-  border-right: 2px solid var(--color-light-blue);
-  border-top: 2px solid var(--color-light-blue);
+  border: 2px solid;
 }
 
 .monospace {
@@ -355,7 +332,7 @@ video {
 
 hr {
   border: none;
-  border-bottom: 1px solid rgba(var(--color-black-rgb), 0.3);
+  border-bottom: 1px solid;
   margin: 10px;
 }
 
@@ -384,8 +361,7 @@ figure {
 
   figcaption,
   .caption {
-    border-bottom: 1px solid rgba(var(--color-black-rgb), 0.045);
-    color: var(--color-pcc-dkgrey);
+    border-bottom: 1px solid;
     font-style: italic;
     padding: 10px 0;
   }
@@ -394,7 +370,6 @@ figure {
 //LABELS
 .label {
   border-radius: 1px;
-  color: var(--color-pcc-white);
   display: inline;
   font-size: 0.7em;
   font-weight: 700;
@@ -404,15 +379,6 @@ figure {
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;
-}
-
-.label-default {
-  background-color: var(--color-pcc-primary);
-}
-
-.label-muted {
-  background-color: rgba(var(--color-black-rgb), 0.15);
-  color: var(--color-muted-black);
 }
 
 dt {
@@ -434,19 +400,13 @@ a {
 a,
 .toggle-footnotes {
   background-color: transparent;
-  color: var(--color-link-blue);
   text-decoration: underline;
-}
-
-a:visited {
-  color: var(--color-link-purple) ;
 }
 
 a:hover,
 a:active,
 .toggle-footnotes:hover {
   background-color: transparent;
-  color: var(--color-footnotes-blue);
   text-decoration: underline;
 }
 
@@ -472,23 +432,9 @@ a:active,
 }
 
 //BUTTONS
-button {
-  background-color: var(--color-btn-blue);
-  color: var(--color-pcc-white);
-  border: none;
-  font-size: 1em;
-  margin: 5px;
-  padding: 10px;
-
-  button:hover {
-    background-color: var(--color-btn-blue-hover);
-  }
-}
 
 .btn {
-  background-color: var(--color-btn-blue);
-  color: var(--color-pcc-white);
-  border: 3px solid var(--color-btn-blue);
+  border: 3px solid;
   border-radius: 0.3em;
   cursor: pointer;
   display: inline-block;
@@ -507,57 +453,7 @@ button {
   vertical-align: middle;
 
   &:hover {
-    background-color: var(--color-btn-blue-hover);
-    color: var(--color-pcc-white);
     text-decoration: none;
-  }
-}
-
-//Custom .btn colors
-.btn-primary {
-  background-color: var(--color-btn-primary);
-  border-color: var(--color-btn-primary);
-  color: var(--color-pcc-white);
-
-  &:hover {
-    background-color: var(--color-btn-primary-hover);
-    border-color: var(--color-btn-primary-hover);
-    color: var(--color-pcc-white);
-  }
-}
-
-.btn-secondary {
-  background-color: var(--color-pcc-secondary);
-  border-color: var(--color-pcc-secondary);
-  color: var(--color-pcc-white);
-
-  &:hover {
-    background-color: var(--color-pcc-secondary-hover);
-    border-color: var(--color-pcc-secondary-hover);
-    color: var(--color-pcc-white);
-  }
-}
-
-.btn-tertiary {
-  background-color: var(--color-pcc-tertiary);
-  border-color: var(--color-pcc-tertiary);
-  color: var(--color-pcc-white);
-
-  &:hover {
-    background-color: var(--color-pcc-tertiary-hover);
-    border-color: var(--color-pcc-tertiary-hover);
-    color: var(--color-pcc-white);
-  }
-}
-
-.btn-gray {
-  background-color: var(--color-pcc-dkgrey);
-  border-color: var(--color-pcc-dkgrey);
-  color: var(--color-pcc-white);
-
-  &:hover {
-    background-color: var(--color-dkgrey-hover);
-    border-color: var(--color-dkgrey-hover);
   }
 }
 
@@ -575,10 +471,6 @@ button {
 }
 
 //.btn support classes
-.outline {
-  background-color: transparent;
-  color: var(--color-pcc-black);
-}
 
 .pill {
   border-radius: 10em;

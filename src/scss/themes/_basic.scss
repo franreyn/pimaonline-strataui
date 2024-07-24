@@ -1,0 +1,334 @@
+// Grid
+
+body {
+  background-color: var(--color-primary-tint1);
+}
+
+footer {
+  background-color: var(--color-white);
+}
+
+.header {
+  img {
+    border-color: var(--color-primary);
+  }
+  .text-container {
+    background-color: var(--color-primary);
+    :is(h1, h2, h3, h4, p) {
+      color: var(--color-white);
+    }
+    ul,
+    ol {
+      li {
+        color: var(--color-white);
+        &::before,
+        &::after {
+          color: var(--color-white);
+        }
+      }
+    }
+  }
+}
+
+.syllabus-header {
+  background-color: var(--color-white);
+}
+
+.caption {
+  color: var(--color-pcc-dkgrey);
+}
+
+content-block {
+  background-color: var(--color-white);
+
+  h2:first-child {
+    border-color: var(--color-primary);
+  }
+}
+
+.edit {
+  color: var(--color-edit-text);
+}
+
+.highlight {
+  background-color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+}
+
+hr {
+  border-color: rgba(var(--color-black-rgb), 0.3);
+}
+
+figure {
+  figcaption,
+  .caption {
+    border-color: rgba(var(--color-black-rgb), 0.045);
+    color: var(--color-pcc-dkgrey);
+  }
+}
+
+.label {
+  color: var(--color-white);
+}
+
+.label-default {
+  background-color: var(--color-pcc-primary);
+}
+
+.label-muted {
+  background-color: rgba(var(--color-black-rgb), 0.15);
+  color: var(--color-muted-black);
+}
+
+a,
+.toggle-footnotes {
+  background-color: transparent;
+  color: var(--color-link-blue);
+}
+
+a:visited {
+  color: var(--color-link-purple) ;
+}
+
+a:hover,
+a:active,
+.toggle-footnotes:hover {
+  background-color: transparent;
+  color: var(--color-footnotes-blue);
+}
+
+.button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-btn-blue-hover);
+  }
+  &:visited {
+    background-color: var(--color-accent-tint);
+    color: var(--color-white);
+  }
+}
+
+.btn {
+  background-color: var(--color-btn-blue);
+  color: var(--color-white);
+  border-color: var(--color-btn-blue);
+
+  &:hover {
+    background-color: var(--color-btn-blue-hover);
+    color: var(--color-white);
+  }
+}
+
+.btn-gray {
+  background-color: var(--color-dkgrey);
+  border-color: var(--color-dkgrey);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-dkgrey-hover);
+    border-color: var(--color-dkgrey-hover);
+  }
+}
+
+.outline {
+  background-color: transparent;
+  color: var(--color-accent);
+}
+
+// Typography
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-primary);
+}
+p {
+  color: var(--color-muted-black);
+}
+
+// Accordion module
+
+accordion-widget {
+  accordion-content {
+    p {
+      &.show {
+        background-color: var(--color-primary-tint1);
+       }   
+    }
+  }
+  accordion-item {
+    border-color: var(--color-primary);
+    &>h3,h4 {
+      p {
+        &:hover {
+          background-color: rgba(13, 13, 13, 0.1);
+        }
+      }
+   }
+
+    h3.arrow-down, h4.arrow-down {
+      background-color: var(--color-primary-tint1);
+    }
+
+    &:last-child {
+      border-color: var(--color-primary);
+    }
+  }
+}
+
+// Assignments module
+
+assignment-item {
+  border-color: var(--color-primary);
+}
+
+assignment-item h2,assignment-item h3,assignment-item h4 {
+  background-color: var(--color-accent-tint);
+}
+
+// Blockquote module
+
+blockquote {
+  &::before {
+    color: var(--color-accent); 
+  }
+  .attribution {
+    color: var(--color-accent);
+  }
+  p,
+  ul li,
+  ol li {
+    color: rgba(57, 62, 84, 1);
+  }
+}
+
+// Buttons
+
+a.button {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-hover);
+    color: var(--color-white);
+  }
+
+  &:visited {
+    color: var(--color-white);
+  }
+}
+
+// Callout module
+
+callout-widget {
+  background-color: var(--color-accent-tint);
+}
+
+// Media module
+
+media-widget {
+  border-color: rgba(51, 51, 51, 0.1);
+}
+
+// Slider module
+
+slider-widget {
+  background-color: var(--slider-bkg);
+
+  .slider-arrow {
+    background-color: var(--color-muted-black);
+    color: white;
+  }
+}
+ 
+.slider-dot {
+  background-color: var(--color-ltgrey);
+
+  &.active {
+    background-color: var(--color-dkgrey);
+   }
+}
+
+// Tables module
+
+table {
+  color: var(--color-white);
+  border-color: var(--color-primary);
+
+  tbody tr {
+    color: var(--color-primary);
+  }
+}
+
+table td,
+table th {
+  border-color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  tr:nth-child(even) {
+    background-color: var(--color-primary-tint1);
+  }
+  table th {
+    background-color: var(--color-primary);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  table {
+    background: none;
+    background-color: var(--color-white);
+
+    tbody td {
+      border-bottom: 1px solid var(--color-primary);
+
+      a {
+        color: var(--color-white);
+
+        &:hover {
+          color: var(--color-primary-tint1);
+        }
+      }
+
+      &:first-child {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+      }
+    }
+  }
+
+  td:nth-of-type(odd) {
+    background-color: var(--color-primary-tint1);
+  }
+}
+
+// Tabs module
+
+tab-item input:checked + label {
+  background-color: var(--color-muted-black);
+  color: white;
+}
+
+tab-item input:checked + label + tab-content {
+  border-color: var(--color-muted-black);
+}
+
+tab-item label {
+  background-color: white;
+  border-color: var(--color-muted-black);
+  color: var(--color-muted-black);
+}
+
+tab-item label.hide-tab {
+  background-color: transparent !important;
+  color: white;
+}
+
+tab-content {
+  background: var(--slider-bkg);
+}
+
+.tab-panel {
+  background-color: var(--slider-bkg);
+  border-color: var(--color-muted-black);
+}

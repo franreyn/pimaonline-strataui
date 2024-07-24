@@ -6,3 +6,8 @@ import "./modules/toggleButtons";
 import "./modules/arrows";
 import "./modules/responsiveTables";
 import "./modules/mediaWidget";
+import "./modules/tabs";
+import "./modules/slider";
+import "./modules/addFontAwesome";
+import "./modules/vocabCards";
+import "./modules/tagConversion";

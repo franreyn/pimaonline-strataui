@@ -22,13 +22,13 @@ a.button {
   padding: 10px;
   border-radius: var(--subtle-radius);
   margin-bottom: 1rem;
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   text-decoration: none;
 }
 
 a.button:hover {
   background-color: var(--color-pcc-primary-hover);
-  color: var(--color-pcc-white);
+  color: var(--color-white);
   text-decoration: none;
 }
 ```

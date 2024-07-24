@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <link rel="stylesheet" href="../../dist/css/index.css">
   <script src="../../dist/js/scripts.js" defer=""></script>
   <title>One Column Layout</title>
@@ -23,6 +22,107 @@
   <column-one>
     <content-block>
       <h2>Welcome to [course name here]</h2>
+      <vocab-cards-widget>
+        <vocab-card>
+          <h3>Vocab Term</h3>
+          <p>The vocabulary term and definition.</p>
+          </vocab-card>
+          <vocab-card>
+            <h3>Vocab Term</h3>
+            <p>The vocabulary term and definition.</p>
+            </vocab-card>
+            <vocab-card>
+              <h3>Vocab Term</h3>
+              <p>The vocabulary term and definition.</p>
+              </vocab-card>
+              <vocab-card>
+                <h3>Vocab Term</h3>
+                <p>The vocabulary term and definition.</p>
+                </vocab-card>
+      </vocab-cards-widget>
+      <tabs-widget>
+        <tab-item>
+           <tab-title>Tab Title 1</tab-title> 
+        <tab-content> 
+          <h4>Tab 1 Heading Inside</h4>
+          <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
+            short as a couple of sentences.</p>
+          </tab-content> 
+        </tab-item>
+        <tab-item>        
+            <tab-title>Tab Title 2 and how long can I make it?</tab-title>
+          <tab-content>
+            <h4>Tab 2 Heading Inside</h4>
+            <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
+              short as a couple of sentences.</p>
+          </tab-content>
+        </tab-item>
+        <tab-item>        
+          <tab-title>Tab Title 3</tab-title>
+        <tab-content>
+          <h4>Tab 3 Heading Inside</h4>
+          <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
+            short as a couple of sentences.</p>
+        </tab-content>
+      </tab-item>
+      </tabs-widget>
+      <tabs-widget>
+        <tab-item>
+          <tab-title>Tab Title 1</tab-title>
+        <tab-content>
+          <h4>Tab 1 Heading Inside</h4>
+          <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
+            short as a couple of sentences.</p>
+          </tab-content>
+        </tab-item>
+        <tab-item>        
+            <tab-title>Tab Title 2</tab-title>
+          <tab-content>
+            <h4>Tab 2 Heading Inside</h4>
+            <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
+              short as a couple of sentences.</p>
+          </tab-content>
+        </tab-item>
+      </tabs-widget>
+      <!-- End of new tabs -->
+      <slider-widget class="h-400">
+        <slider-item>
+          <h3 class="icon-book-open">Aenean euismod</h3>
+          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
+            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
+            lorem condimentum malesuada mollis eget nulla.</p>
+          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
+            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
+            lorem condimentum malesuada mollis eget nulla.</p>
+        </slider-item>
+        <slider-item>
+          <div class="card-horizontal">
+            <div class="card-body">
+              <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis
+                lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
+            </div>
+            <div class="card-img"> <img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt=""> </div>
+          </div>
+        </slider-item>
+        <slider-item>
+          <media-container class="reverse">
+            <media-object>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </media-object>
+            <media-info>
+              <p>This is a description of the video</p>
+            </media-info>
+          </media-container>
+        </slider-item>
+      </slider-widget>
       <media-container class="reverse">
         <media-object>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
@@ -35,15 +135,6 @@
           <p>This is a description of the video</p>
         </media-info>
       </media-container>
-      <div class="media-container">
-        <div class="media-object"><iframe width="560" height="315"
-            src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe></div>
-        <div class="media-info">
-          <p>This is a description of the video</p>
-        </div>
-      </div>
       <table>
         <thead>
           <tr>

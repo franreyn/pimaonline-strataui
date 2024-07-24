@@ -9,12 +9,68 @@ import { MediaWidget } from './widgets/MediaWidget';
 import { MediaObject } from './widgets/MediaWidget';
 import { MediaInfo } from './widgets/MediaWidget';
 import ColumnsWrapper from './widgets/ColumnsWidget';
+import { TabContent, TabsWidget, TabTitle } from './widgets/TabsWidget';
+import { SliderItem, SliderWidget } from './widgets/SliderWidget';
+import { VocabCard, VocabCardsWidget } from './widgets/VocabCards';
 
 export default function FirstColContent(): React.ReactElement {
   return (
     <ColumnOne>
       <ContentBlock>
         <h2>Module 1 Overview</h2>
+        <VocabCardsWidget>
+      <VocabCard>
+        <h3>Word 1</h3>
+        <p>Definition of word 1.</p>
+      </VocabCard>
+      <VocabCard>
+        <h3>Word 2</h3>
+        <p>Definition of word 2.</p>
+      </VocabCard>
+      <VocabCard>
+        <h3>Word 3</h3>
+        <p>Definition of word 3.</p>
+      </VocabCard>
+    </VocabCardsWidget>
+    <SliderWidget className="h-400">
+      <SliderItem>
+      <h3 className="icon-book-open">Aenean euismod</h3>
+          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
+            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
+            lorem condimentum malesuada mollis eget nulla.</p>
+        </SliderItem>  
+        <SliderItem>
+        <div className="card-horizontal">
+            <div className="card-body">
+              <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis
+                lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
+            </div>
+          </div>
+          </SliderItem>  
+    </SliderWidget>
+        <TabsWidget>
+          <input/>
+          <label>
+            <TabTitle>Tab Title 1</TabTitle>
+          </label>
+          <TabContent>
+            <h4>Tab 1 Heading</h4>
+          </TabContent>
+          <input/>
+          <label>
+            <TabTitle>Tab Title 1</TabTitle>
+          </label>
+          <TabContent>
+            <h4>Tab 1 Heading</h4>
+          </TabContent>
+          <input/>
+          <label>
+            <TabTitle>Hide</TabTitle>
+          </label>
+          <div></div>
+        </TabsWidget>
         <blockquote>
           <p>The scariest moment is always just before you start.</p>
           <p>- Stephen King</p>
