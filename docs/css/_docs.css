@@ -187,6 +187,10 @@ body[index] .navbar {
   word-break: break-word;
 }
 
+.markdown-section pre {
+  max-height: 500px;
+}
+
 .token.string {
   color: var(--color-docs-accent);
 }
