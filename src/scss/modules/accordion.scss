@@ -6,6 +6,10 @@ accordion-widget {
     display: block;
     padding: 10px;
 
+    h4:first-child {
+      padding: 0;
+    }
+
     p {
       margin: 0;
     }
@@ -16,7 +20,7 @@ accordion-widget {
     border: 1px solid;
     border-bottom: none;
 
-    &>h3,h4 {
+    &>h3,>h4 {
       margin: 0;
       padding: 10px;
       display:flex;

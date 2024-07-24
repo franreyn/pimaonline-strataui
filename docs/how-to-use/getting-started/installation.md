@@ -1,3 +1,30 @@
 # Installation
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## HTML head
+
+To use Strata in your course, ensure that your HTML page is loading the correct dependencies. Ensure at the top of your HTML document, it has the following elements.
+
+1. Strata CSS Styles - This adds all the visual styles to all the widgets and themes.
+
+```html
+
+```
+
+2. Strata JS Framework - This enables you to use custom HTML elements, and creates all the dynamic formatting of the code.
+
+```html
+
+```
+
+At the top of your HTML file, after the document type and `<html>` tag, ensure the `<head>` tag contains the following links:
+
+```html
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../../dist/css/index.css">
+  <script src="../../dist/js/scripts.js" defer=""></script>
+  <title>One Column Layout</title>
+</head>
+```
