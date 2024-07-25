@@ -2,7 +2,6 @@
 
 The callout widget is used to draw attention to an important piece of information.
 
-
 ## HTML
 
 The following is an example of the HTML used for the `callout-widget`.
@@ -54,3 +53,7 @@ callout-widget {
   background-color: var(--red-theme-tertiary);
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

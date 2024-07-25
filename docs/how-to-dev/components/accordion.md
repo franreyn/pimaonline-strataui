@@ -2,23 +2,25 @@
 
 ## Custom Elements
 
-The accordion widget uses custom tags and are defined in the `CustomElements.ts file`. 
+The accordion widget uses custom tags and are defined in the `CustomElements.ts file`.
 
 ### Accordion Structure
 
 1. `<accordion-widget>` - wraps all accordion groups
 2. `<accordion-item>` - wraps each individual accordion
-4. `<h3>` or `<h4>` - clickable area and accordion title
+3. `<h3>` or `<h4>` - clickable area and accordion title
 4. `<accordion-content>` - the content for the accordion that is hidden and shown
 
-## HTML 
+## HTML
 
-The accordion in the HTML should have this structure. 
+The accordion in the HTML should have this structure.
 
 ```html
 <accordion-widget>
   <accordion-item>
-    <h4></h4> or <h3></h3>
+    <h4></h4>
+    or
+    <h3></h3>
     <accordion-content>
       <p></p>
     </accordion-content>
@@ -30,7 +32,7 @@ The accordion in the HTML should have this structure.
 
 _The accordion CSS is in the `accordion.scss` file._
 
-The styles help ensure that the accordion title and content are distinct and different and also help control the display values for the accordion content. 
+The styles help ensure that the accordion title and content are distinct and different and also help control the display values for the accordion content.
 
 ```css
 accordion-widget {
@@ -48,25 +50,24 @@ accordion-widget {
   }
 
   accordion-item {
-
     display: block;
 
-    &>h3,h4 {
+    & > h3,
+    h4 {
       margin: 0;
       background-color: rgba(13, 13, 13, 0.07);
       padding: 10px;
-      display:flex;
+      display: flex;
       justify-content: space-between;
-  
+
       p {
         margin: 0;
       }
-  
+
       &:hover {
         background-color: rgba(13, 13, 13, 0.1);
       }
     }
-
   }
 
   .arrow-right:after {
@@ -93,9 +94,9 @@ accordion-widget {
 }
 ```
 
-## JS 
+## JS
 
-_The javascript can be found in the `accordion.ts` file._ 
+_The javascript can be found in the `accordion.ts` file._
 
 The first line is a query selector to select all accordion widgets on the page.
 
@@ -109,20 +110,19 @@ The next item in the file is the `validateAccordion()` function which reviews ea
 
 ```js
 const validateAccordion = (accordionWidget: HTMLElement) => {
-
   // Check if there are any accordion items inside the accordion widget
-  const accordionItems = accordionWidget.querySelectorAll('accordion-item');
+  const accordionItems = accordionWidget.querySelectorAll("accordion-item");
 
   // If there are no accordion items, log a warning
   if (accordionItems.length === 0) {
-    console.warn('Document Error: no accordion items found inside the accordion widget.');
+    console.warn("Document Error: no accordion items found inside the accordion widget.");
     return;
   }
 
   // Check if there are any headings and content inside each accordion item
   accordionItems.forEach((item, index) => {
-    const heading = item.querySelector('h3, h4');
-    const content = item.querySelector('accordion-content');
+    const heading = item.querySelector("h3, h4");
+    const content = item.querySelector("accordion-content");
 
     // If there are no heading for the accordion item, log a warning
     if (!heading) {
@@ -135,9 +135,8 @@ const validateAccordion = (accordionWidget: HTMLElement) => {
       console.warn(`No content found for accordion item ${index + 1}.`);
       return;
     }
-  })
-
-}
+  });
+};
 ```
 
 After the validation, we define the main function that is going to add all the necessary attributes to the HTML elements. This function is called at the bottom of the file if any accordion widgets are found on the page.
@@ -145,10 +144,8 @@ After the validation, we define the main function that is going to add all the n
 ```js
 // Handle accordions
 const handleAccordions = () => {
-
   // Iterate over each accordion widget
   accordionWidgets.forEach((accordionWidget) => {
-
     // Validate the accordion widget
     validateAccordion(accordionWidget);
 
@@ -157,7 +154,6 @@ const handleAccordions = () => {
     // Iterate over each accordion item
     if (accordionItems.length > 0) {
       accordionItems.forEach((accordionItem) => {
-
         const accordionHeading: HTMLHeadingElement | null = accordionItem.querySelector("accordion-item>h3, accordion-item>h4");
 
         // Add classes and attributes to the accordion heading and content
@@ -176,20 +172,17 @@ const handleAccordions = () => {
         }
       });
     }
-
-  })
-}
+  });
+};
 
 // If there are any accordion widgets, call handleAccordions
-if (accordionWidgets.length > 0) { handleAccordions() }
+if (accordionWidgets.length > 0) {
+  handleAccordions();
+}
 ```
 
 The javascript that controls the functionality for the show and hide part of the accordion widget is actually located in the `toggleButtons.ts`. This same javascript helps control the footer and footnotes.
 
-
-
-
-
-
-
-
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

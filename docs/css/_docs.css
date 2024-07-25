@@ -246,8 +246,6 @@ body[index] .navbar {
   color: var(--color-docs-attributes);
 }
 
-
-
 .example-container {
   margin: 3rem 0;
   padding: 1rem;
@@ -263,4 +261,12 @@ body[index] .navbar {
   font-weight: 700;
   /* text-transform: uppercase; */
   letter-spacing: .05rem;
+}
+
+/* Footer */
+
+.footer {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 100%;
 }

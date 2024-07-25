@@ -8,7 +8,7 @@ Use the `assignments-widget` to organize each assignment into cards that subtly 
 
 The `<assignments-widget>` wraps all `<assignment-item>` elements. An `<assignment-item>` typically consists of an `<h3>` heading which is the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
 
-## HTML 
+## HTML
 
 The `assignments widget` should have this HTML structure.
 
@@ -51,3 +51,7 @@ The `assignments widget` should have this HTML structure.
     </assignment-item>
   </assignments-widget>
 </div>
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

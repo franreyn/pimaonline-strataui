@@ -1,18 +1,18 @@
 # Font Awesome
 
-For icon usage, the Font Awesome CDN is used. 
+For icon usage, the Font Awesome CDN is used.
 
 ## Javascript
- 
+
 The Typescript that is converted to Javascript, takes the document `<head>` and inserts the link to the CDN so that icons are enabled in the page.
 
-The CDN link path is in the _ts > modules > addFontAwesome.ts_ file. 
+The CDN link path is in the _ts > modules > addFontAwesome.ts_ file.
 
 ```js
 import { fontAwesomeVersionNum } from "../config";
 
 // Create a link element
-const fontAwesomeLink: HTMLLinkElement = document.createElement('link');
+const fontAwesomeLink: HTMLLinkElement = document.createElement("link");
 
 // Get the document head
 const documentHead: HTMLElement = document.head;
@@ -37,3 +37,6 @@ To change the version number, you can change it in _ts > modules > config.ts_ fi
 export const fontAwesomeVersionNum: string = "6.5.2";
 ```
 
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

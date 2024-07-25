@@ -2,30 +2,27 @@
 
 Tabs create small containers for instructors to separate information.
 
+## HTML
 
-## HTML 
-
-Tabs follow the standard HTML structure as detailed below. 
+Tabs follow the standard HTML structure as detailed below.
 
 ```html
-      <tabs-widget>
-        <tab-item>
-          <tab-title>Tab Title 1</tab-title>
-        <tab-content>
-          <h4>Tab 1 Heading Inside</h4>
-          <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
-            short as a couple of sentences.</p>
-          </tab-content>
-        </tab-item>
-        <tab-item>        
-            <tab-title>Tab Title 2</tab-title>
-          <tab-content>
-            <h4>Tab 2 Heading Inside</h4>
-            <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as
-              short as a couple of sentences.</p>
-          </tab-content>
-        </tab-item>
-      </tabs-widget>
+<tabs-widget>
+  <tab-item>
+    <tab-title>Tab Title 1</tab-title>
+    <tab-content>
+      <h4>Tab 1 Heading Inside</h4>
+      <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as short as a couple of sentences.</p>
+    </tab-content>
+  </tab-item>
+  <tab-item>
+    <tab-title>Tab Title 2</tab-title>
+    <tab-content>
+      <h4>Tab 2 Heading Inside</h4>
+      <p>Some long text to demonstrate a tab widget. This text can be something as long as multiple paragraphs or as short as a couple of sentences.</p>
+    </tab-content>
+  </tab-item>
+</tabs-widget>
 ```
 
 ## CSS
@@ -59,7 +56,7 @@ tab-item input:checked + label {
   background-color: var(--color-primary-tint2);
   color: var(--color-pcc-black);
   z-index: 2;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 tab-item input:checked + label + tab-content {
@@ -88,7 +85,7 @@ tab-item label {
   padding: 5px;
   width: 100%;
   text-align: center;
-  transition: .5s;
+  transition: 0.5s;
   color: var(--color-pcc-dkgrey);
 }
 
@@ -117,27 +114,27 @@ tab-item label.hide-tab {
 
 @media (min-width: 700px) {
   tabs-widget label {
-      width: fit-content;
-      margin-right: 5px;
-      border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
+    width: fit-content;
+    margin-right: 5px;
+    border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
   }
 
   tabs-widget label:nth-last-of-type(2),
   tabs-widget input:checked + label:nth-last-of-type(2) {
-      border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
+    border-radius: var(--subtle-radius) var(--subtle-radius) 0 0;
   }
 
   tab-content,
   tabs-widget input:checked + label + tab-content:nth-last-of-type(2) {
-      order: 99;
-      border-radius: 0 var(--subtle-radius) var(--subtle-radius) var(--subtle-radius);
+    order: 99;
+    border-radius: 0 var(--subtle-radius) var(--subtle-radius) var(--subtle-radius);
   }
 }
 
 tab-content {
   display: none;
   background: var(--color-pcc-white);
-  padding: 1.1rem .6rem;
+  padding: 1.1rem 0.6rem;
   overflow: auto;
   width: 100%;
   height: 300px;
@@ -146,7 +143,6 @@ tab-content {
 tab-content > * {
   margin-top: 1.1rem;
 }
-
 ```
 
 ## JS
@@ -160,13 +156,11 @@ The JS also serves, as a way to check the console for errors.
 const tabsWidgetsGroups: NodeListOf<Element> = document.querySelectorAll("tabs-widget");
 // Define the type for callTabsWidget function
 const callTabsWidget = () => {
-
   // Number of tab-items, should increment by 1 for each tab-item (starts at one to represent tab #1)
   let tabItemsNum: number = 1;
 
   // Loop through each tabs widget
   tabsWidgetsGroups.forEach((tabsWidgetsGroup, tabsWidgetsGroupIndex) => {
-
     // Reset counter for counting how many tab items are in each tabs-widget group
     let tabItemsPerGroup = 0;
 
@@ -178,13 +172,12 @@ const callTabsWidget = () => {
 
     // If there is a tab container around each tab item
     if (tabItems.length > 0) {
-
-    // Add region and aria-label to parent div      
-    tabsWidgetsGroup.setAttribute("role", "region");
-    tabsWidgetsGroup.setAttribute("aria-label", `tab group ${tabGroupNum}`);
+      // Add region and aria-label to parent div
+      tabsWidgetsGroup.setAttribute("role", "region");
+      tabsWidgetsGroup.setAttribute("aria-label", `tab group ${tabGroupNum}`);
 
       tabItems.forEach((tabItem, tabItemIndex) => {
-        // Create tab input 
+        // Create tab input
         const tabInput = document.createElement("input");
         tabInput.classList.add("tab-input");
         tabInput.setAttribute("type", "radio");
@@ -203,7 +196,7 @@ const callTabsWidget = () => {
         // Check for tab-title tag and add it to tab label
         const tabTitle = tabItem.querySelector("tab-title");
 
-        if(tabTitle) {
+        if (tabTitle) {
           // Add tab title to tab label
           tabLabel.appendChild(tabTitle);
         } else {
@@ -255,7 +248,7 @@ const callTabsWidget = () => {
               // Add hide title to hide tab label
               hideTabLabel.appendChild(hideTabTitle);
 
-              // Create hide input 
+              // Create hide input
               const hideTabInput = document.createElement("input");
               hideTabInput.classList.add("tab-input");
               hideTabInput.setAttribute("type", "radio");
@@ -276,8 +269,8 @@ const callTabsWidget = () => {
               // After creating a new tab item, increment count by one
               tabItemsNum++;
             } else {
-             // If the last tab says "hide" then assume it is the hide tab
-             tabItemsNum++;
+              // If the last tab says "hide" then assume it is the hide tab
+              tabItemsNum++;
             }
           }
         }
@@ -290,18 +283,17 @@ const callTabsWidget = () => {
         }
         // Increment the number of tab items per group
         tabItemsPerGroup++;
-      })
+      });
     } else {
       // Error check: if tab-item container is missing
       console.warn(`Document error: missing tab-item container within the tabs-widget group ${tabGroupNum}`);
     }
 
-  // Error check: check if there is only one tab in the tabs-widget group
-  if(tabItemsPerGroup == 1) {
-    console.warn(`Document error: tabs-widget group ${tabGroupNum} is only using one tab. Consider using the accordion widget instead or adding more tabs`);
-  }
+    // Error check: check if there is only one tab in the tabs-widget group
+    if (tabItemsPerGroup == 1) {
+      console.warn(`Document error: tabs-widget group ${tabGroupNum} is only using one tab. Consider using the accordion widget instead or adding more tabs`);
+    }
   });
-
 };
 
 // Check if tabsWidgets exist before calling callTabsWidget function
@@ -309,3 +301,7 @@ if (tabsWidgetsGroups.length > 0) {
   callTabsWidget();
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

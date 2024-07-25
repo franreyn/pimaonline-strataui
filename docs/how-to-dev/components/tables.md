@@ -2,10 +2,9 @@
 
 Tables organize content in cells.
 
+## HTML
 
-## HTML 
-
-Tables follow the standard HTML structure as detailed below. 
+Tables follow the standard HTML structure as detailed below.
 
 ```html
 <table>
@@ -45,7 +44,6 @@ Tables follow the standard HTML structure as detailed below.
   </tbody>
 </table>
 ```
-
 
 ## CSS
 
@@ -194,7 +192,8 @@ table.two-column-table {
       vertical-align: top;
 
       &:first-child::after {
-        content: ":";      }
+        content: ":";
+      }
 
       &:nth-child(2) {
         padding-left: 5%;
@@ -247,8 +246,7 @@ table.two-column-table tr td {
 }
 ```
 
-
-## JS 
+## JS
 
 The JS for the table widget is located in `/src/ts/modules/responsiveTables.ts`. The JS hides the content of all `<th>` elements and adds `data-th` attributes with the respective `<th>` content to each of the `<td>` elements.
 
@@ -267,12 +265,12 @@ const initResponsiveTables = () => {
 
     if (tableHeaders.length > 0) {
       // Initialize an array to store header text
-      const headerTexts: string[] = [...tableHeaders].map(headerText => headerText.textContent?.replace(/\r?\n|\r/, "") || "");
+      const headerTexts: string[] = [...tableHeaders].map((headerText) => headerText.textContent?.replace(/\r?\n|\r/, "") || "");
 
       // Check if `tableBody` is not null before proceeding
       if (tableBody) {
         // Loop through each row in the table body
-        [...tableBody.rows].forEach(row => {
+        [...tableBody.rows].forEach((row) => {
           // Loop through each cell in the current row
           [...row.cells].forEach((cell, index) => {
             // Set a `data-th` attribute on the current cell with the corresponding header text
@@ -293,3 +291,7 @@ if (responsiveTables.length > 0) {
   initResponsiveTables();
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

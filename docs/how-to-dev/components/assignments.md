@@ -2,8 +2,7 @@
 
 Use the `assignments-widget` to organize each assignment into cards.
 
-
-## HTML 
+## HTML
 
 The `<assignments-widget>` wraps all `<assignment-item>` elements. Both are custom elements and the configurations can be found in `/src/ts/config.ts` and `/src/ts/modules/customElements.ts`.
 
@@ -29,21 +28,22 @@ An `<assignment-item>` typically consists of an `<h3>` heading which is the titl
 </assignments-widget>
 ```
 
-
 # CSS
 
 The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
 ```css
-#second-column assignments-widget,#second-column assignments-widget {
+#second-column assignments-widget,
+#second-column assignments-widget {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
-#content-wrapper assignments-widget,#content-wrapper assignments-widget {
+#content-wrapper assignments-widget,
+#content-wrapper assignments-widget {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 assignment-item {
@@ -52,51 +52,60 @@ assignment-item {
   border: 1px solid var(--color-docs-primary);
   border-radius: var(--subtle-radius);
   margin: 0;
-  margin-bottom: .8rem;
-  padding: .6rem .6rem 1.5rem;
-  transition: .3s;
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 0.6rem 1.5rem;
+  transition: 0.3s;
 }
 
 assignment-item:hover {
-  transform: translate(0, -5px)
+  transform: translate(0, -5px);
 }
 
-assignment-item h2,assignment-item h3,assignment-item h4 {
+assignment-item h2,
+assignment-item h3,
+assignment-item h4 {
   background-color: var(--color-accent-tint);
   font-size: 1.15em;
   font-weight: 600;
-  margin: -0.6rem -0.6rem .6rem -0.6rem !important;
-  padding: .3rem .6rem;
+  margin: -0.6rem -0.6rem 0.6rem -0.6rem !important;
+  padding: 0.3rem 0.6rem;
   border-radius: var(--top-radius);
 }
 
-assignment-item ol li,assignment-item ul li {
-  margin: 0
+assignment-item ol li,
+assignment-item ul li {
+  margin: 0;
 }
 
-assignment-item p,assignment-item ol,assignment-item ul {
-  font-size: .95em;
+assignment-item p,
+assignment-item ol,
+assignment-item ul {
+  font-size: 0.95em;
   margin-bottom: 1.5rem;
 }
 
-assignment-item::before,assignment-item::marker {
-  content: none
+assignment-item::before,
+assignment-item::marker {
+  content: none;
 }
 
 @media screen and (min-width: 576px) {
   #content-wrapper assignment-item {
-      flex-basis:45%
+    flex-basis: 45%;
   }
 }
 
 @media screen and (min-width: 768px) {
   #content-wrapper assignment-item {
-      flex-basis:30%
+    flex-basis: 30%;
   }
 }
 ```
 
-
 # JS
 
 _There is no JS for this widget._
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

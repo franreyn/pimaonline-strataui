@@ -4,7 +4,6 @@
 
 Use blockquotes to draw attention to an important quote or piece of information.
 
-
 ## HTML
 
 The following is an example of the HTML used for the `blockquote`.
@@ -16,3 +15,7 @@ The following is an example of the HTML used for the `blockquote`.
 <div class="example-container">
   <blockquote>The biggest adventure you can ever take is to live the life of your dreams.</blockquote>
 </div>
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

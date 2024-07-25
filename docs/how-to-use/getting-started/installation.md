@@ -22,11 +22,15 @@ At the top of your HTML file, after the document type and `<html>` tag, ensure t
 
 ```html
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="../../dist/css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../../dist/css/index.css" />
   <script src="../../dist/js/scripts.js" defer=""></script>
   <title>One Column Layout</title>
 </head>
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

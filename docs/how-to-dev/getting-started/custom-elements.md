@@ -1,17 +1,17 @@
 # Custom Elements
 
-In Strata CSS, we use JS and HTML to create custom HTML tags that are semantic and accessible. 
+In Strata CSS, we use JS and HTML to create custom HTML tags that are semantic and accessible.
 
 ## Create a New Custom Element
 
-In order to create a new custom element, you'll need 2 things to start. 
+In order to create a new custom element, you'll need 2 things to start.
 
 1. The name of the JSX Component in React.
 2. The name of the custom HTML tag.
 
 ### JSX React Component
 
-For our test environment, create a new component for each custom element or widget. For this step, just ensure you have a name for the component. The name of the component is needed for the `config.ts` file. 
+For our test environment, create a new component for each custom element or widget. For this step, just ensure you have a name for the component. The name of the component is needed for the `config.ts` file.
 
 #### CallOutWidget.tsx
 
@@ -25,10 +25,12 @@ export default function BorderWidget(): React.ReactElement {
   return (
     <CallOutWrapper>
       <h3>Border Widget</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh sed imperdiet.
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue
+        nibh sed imperdiet.
       </p>
     </CallOutWrapper>
-  )
+  );
 }
 ```
 
@@ -40,8 +42,8 @@ The custom HTML tag will render in the final output of the HTML and will allow i
 
 In order to ensure custom HTML tags are semantic and work, please follow these rules when deciding on an HTML custom tag name.
 
-1. Has to have a `-` and two words in the tag. 
-2. Unless it is a `div` or `span`, you'll most likely need aria information. 
+1. Has to have a `-` and two words in the tag.
+2. Unless it is a `div` or `span`, you'll most likely need aria information.
 3. Must be declared to the DOM.
 4. Must consist of all lowercase letters.
 5. If display is not `inline`, ensure to specify that value in CSS.
@@ -49,7 +51,7 @@ In order to ensure custom HTML tags are semantic and work, please follow these r
 
 #### customElements.ts
 
-This Javascript is responsible for converting any custom HTML elements into defined DOM elements. 
+This Javascript is responsible for converting any custom HTML elements into defined DOM elements.
 
 **(do not edit this code)**
 
@@ -74,16 +76,15 @@ customElementsData.forEach((customElement: { jsxName: string, customHtmlTag: str
 
 // Export the object containing all custom elements
 export default customElements;
-
 ```
 
 ## Add New Custom Element to Strata CSS
 
-After having a valid custom element name, and after creating a React test component, you'll be ready to add it to Strata CSS officially. 
+After having a valid custom element name, and after creating a React test component, you'll be ready to add it to Strata CSS officially.
 
 1. Go to `config.ts`
 
-This file holds all the variables that the user can edit and configure. 
+This file holds all the variables that the user can edit and configure.
 
 2. Add the object to the array named `customElementsData`
 
@@ -99,7 +100,7 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
 
 3. If aria information is needed, add the information to the array named `customElementAria`
 
-This array takes an object as an element. It consists of three strings. The HTML tag name, the aria property, and the value for that aria property. 
+This array takes an object as an element. It consists of three strings. The HTML tag name, the aria property, and the value for that aria property.
 
 ```js
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)
@@ -108,3 +109,7 @@ export const customElementAria: { customHtmlTag: string, ariaProp: string, ariaV
   { customHtmlTag: "assignment-item", ariaProp: "role", ariaValue: "listItem" },
 ];
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>
