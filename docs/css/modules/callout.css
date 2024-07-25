@@ -1,0 +1,11 @@
+callout-widget {
+  background-color: var(--color-accent-tint);
+  display: block;
+  margin: 2rem 0;
+  padding: 2rem;
+  border-radius: var(--subtle-radius);
+}
+
+[dark-mode] callout-widget {
+  background-color: var(--dark-tertiary);
+}

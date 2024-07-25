@@ -29,6 +29,59 @@ The structure for the `media widget` relies on custom tags that are nested in a 
 
 The styles for the `media widget` are based off of the tags used. 
 
+```css
+media-widget {
+  border: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: .3rem;
+  border-radius: var(--subtle-radius);
+
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+
+  media-object {
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 55%;
+    position: relative;
+    width: 100%;
+
+    iframe {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  media-info {
+    padding: .8rem 0;
+    width: 100%;
+
+    p {
+      margin: 0;
+    }
+
+    .ratio-16x9 {
+      padding-bottom: 56.25% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 890px) {
+  media-widget {
+    max-width: 90%;
+  }
+}
+```
+
+
 ### Utility Classes
 
 There are two utility classes used for the `media widget`. 
