@@ -12,6 +12,11 @@ ul.list-group, ol.list-group {
      padding: 10px 15px;
      text-decoration: none;
      margin: 0;
+     width: auto;
+
+     &::marker {
+      display: none;
+     }
 
      &:last-of-type {
       border-bottom: none;
@@ -47,4 +52,11 @@ ul.list-group, ol.list-group {
 
  .half-width {
   max-width: 50% !important;
+ }
+
+ // When screen is too small, ensure half-width really takes up full width
+ @media screen and (max-width: 576px) {
+  .half-width {
+    max-width: 100% !important;
+   }
  }
