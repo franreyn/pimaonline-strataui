@@ -1,0 +1,50 @@
+// List groups
+ul.list-group, ol.list-group {
+  max-width: max-content;
+  border: 1px solid grey;
+  border-radius: var(--round-radius);
+  padding: 0;
+ 
+  .list-group-item {
+     border-bottom: 1px solid grey;
+     position: relative;
+     display: block;
+     padding: 10px 15px;
+     text-decoration: none;
+     margin: 0;
+
+     &:last-of-type {
+      border-bottom: none;
+     }
+
+     &:hover {
+      background-color: #f6f6f6;
+     
+      &:first-of-type {
+        border-top-left-radius: var(--round-radius);
+        border-top-right-radius: var(--round-radius);
+      }
+      &:last-of-type {
+        border-bottom-left-radius: var(--round-radius);
+        border-bottom-right-radius: var(--round-radius);
+      }
+    }
+  }
+ 
+  ul > li {
+     list-style-type: none;
+  }
+
+  li > ul > li {
+    list-style-type: disc !important;
+    display: list-item !important;
+ }
+ }
+
+ .full-width {
+  max-width: 100% !important;
+ }
+
+ .half-width {
+  max-width: 50% !important;
+ }
