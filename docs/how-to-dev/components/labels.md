@@ -1,23 +1,20 @@
-
-
 # Labels
 
 Labels are used to create badge-like icons using any text.
 
 ## Editing Labels
 
-If you are going to be adding, editing, or removing labels, you'll have to do it in mulitple places. 
+If you are going to be adding, editing, or removing labels, you'll have to do it in mulitple places.
 
-1. `config.ts` - edit the key value pair of strings that associate the custom tag with the HTML tag. 
+1. `config.ts` - edit the key value pair of strings that associate the custom tag with the HTML tag.
 2. `labels.scss` - edit the styles associated with the specific label.
 
 ## HTML
 
-To add the different labels, you can add the custom HTML label. 
+To add the different labels, you can add the custom HTML label.
 
 ```html
-<default-label>Default Label</default-label>
-<muted-label>Muted Label</muted-label>
+<default-label>Default Label</default-label> <muted-label>Muted Label</muted-label>
 ```
 
 ## CSS
@@ -27,11 +24,16 @@ The CSS for the labels are to ensure the font is small enough to fit within the 
 The styles are located in the `_grid.scss` file.
 
 ```scss
-default-label, muted-label, success-label, warning-label, danger-label, info-label {
+default-label,
+muted-label,
+success-label,
+warning-label,
+danger-label,
+info-label {
   border-radius: 1px;
   color: var(--color-white);
   display: inline;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
@@ -66,5 +68,4 @@ info-label {
   background-color: var(--info-label-color);
   color: var(--color-black);
 }
-
 ```
