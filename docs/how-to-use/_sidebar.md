@@ -15,6 +15,7 @@
   - [Columns](/components/columns.md)
   - [Footer](/components/footer.md)
   - [Labels](/components/labels.md)
+  - [List Groups](components/list-groups.md)
   - [Media Container](/components/media-widget.md)
   - [Tables](/components/tables.md)
   - [Tabs](/components/tabs.md)
