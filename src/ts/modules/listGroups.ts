@@ -1,19 +1,24 @@
-const listGroups = document.querySelectorAll('unordered-list-group, ordered-list-group');
+const listGroups: NodeListOf<HTMLElement> = document.querySelectorAll('unordered-list-group, ordered-list-group');
 
-const handleListGroups = (listGroups: NodeListOf<Element>) => {
+// Function to handle list groups
+const handleListGroups = (listGroups: NodeListOf<HTMLElement>) => {
 
-  listGroups.forEach((listGroup: Element) => {
-    const listItems: NodeListOf<Element> = listGroup.querySelectorAll('list-group-item');
+  // Loop through each list group
+  listGroups.forEach((listGroup: HTMLElement) => {
+    const listItems: NodeListOf<HTMLElement> = listGroup.querySelectorAll('list-group-item');
 
+    // Add class to list group
     listGroup.classList.add("list-group");
 
-    listItems.forEach((listItem: Element) => {
+    listItems.forEach((listItem: HTMLElement) => {
+      // Add class to list items
       listItem.classList.add("list-group-item");
     });
   });
 
 }
 
+// Check if list groups exist
 if(listGroups.length > 0) {
   handleListGroups(listGroups)
 }
