@@ -222,17 +222,31 @@ body[index] .navbar {
   word-break: break-word;
 }
 
-.markdown-section code {
+.markdown-section code, .token.property {
   color: var(--color-docs-code);
 }
 
 .token.string {
-  color: var(--color-docs-accent);
+  color: var(--color-docs-token);
 }
 
 .token.selector, .token.tag {
-  color: var(--color-docs-code);
+  color: var(--color-docs-code-text);
 }
+
+.token.attr-value, .token.control, .token.directive, .token.unit, .token.atrule, .token.regex, .token.statement {
+  color: var(--color-docs-token);
+}
+
+.token.function, .token.keyword {
+  color: var(--color-docs-code-text);
+}
+
+.token.attr-name, .token.boolean, .token.number, .token.important {
+  color: var(--color-docs-attributes);
+}
+
+
 
 .example-container {
   margin: 3rem 0;
