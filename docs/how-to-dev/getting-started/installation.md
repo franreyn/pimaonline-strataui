@@ -1,5 +1,7 @@
 # Installation
 
+In order to use Strata CSS, ensure you follow these steps and have the correct code in your HTML page.
+
 ## HTML head
 
 To use Strata in your course, ensure that your HTML page is loading the correct dependencies. Ensure at the top of your HTML document, it has the following elements.

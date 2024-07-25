@@ -1,5 +1,7 @@
 # Installation
 
+In order to use Strata CSS, ensure you follow these steps and have the correct code in your HTML page.
+
 ## HTML head
 
 To use Strata in your course, ensure that your HTML page is loading the correct dependencies. Ensure at the top of your HTML document, it has the following elements.
@@ -20,10 +22,10 @@ At the top of your HTML file, after the document type and `<html>` tag, ensure t
 
 ```html
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="../../dist/css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="../../dist/css/index.css" />
   <script src="../../dist/js/scripts.js" defer=""></script>
   <title>One Column Layout</title>
 </head>
