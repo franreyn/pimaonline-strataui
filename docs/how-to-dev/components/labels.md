@@ -37,7 +37,7 @@ info-label {
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
-  padding: 0.2em 0.6em 0.3em;
+  padding: 0.2rem 0.6rem 0.3rem;
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;

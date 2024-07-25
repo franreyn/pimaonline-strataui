@@ -421,7 +421,7 @@ a:active,
 
 .btn {
   border: 3px solid;
-  border-radius: 0.3em;
+  border-radius: 0.3rem;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -450,16 +450,16 @@ a:active,
 
 .btn-xl {
   padding: 35px 50px !important;
-  font-size: 1.5em;
-  border-radius: 0.3em;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
   line-height: 1.5;
-  border-width: 0.125em;
+  border-width: 0.125rem;
 }
 
 //.btn support classes
 
 .pill {
-  border-radius: 10em;
+  border-radius: 10rem;
   padding: 5px 20px;
 }
 
