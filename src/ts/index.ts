@@ -10,5 +10,4 @@ import "./modules/tabs";
 import "./modules/slider";
 import "./modules/addFontAwesome";
 import "./modules/vocabCards";
-import "./modules/label";
 import "./modules/tagConversion";

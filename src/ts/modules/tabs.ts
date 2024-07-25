@@ -1,3 +1,5 @@
+import { InputHTMLAttributes } from "react";
+
 // Define the type for tabsWidgets
 const tabsWidgetsGroups: NodeListOf<Element> = document.querySelectorAll("tabs-widget");
 // Define the type for callTabsWidget function

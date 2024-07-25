@@ -12,12 +12,19 @@ import ColumnsWrapper from './widgets/ColumnsWidget';
 import { TabContent, TabsWidget, TabTitle } from './widgets/TabsWidget';
 import { SliderItem, SliderWidget } from './widgets/SliderWidget';
 import { VocabCard, VocabCardsWidget } from './widgets/VocabCards';
+import { DefaultLabel, MutedLabel, SuccessLabel, WarningLabel, DangerLabel, InfoLabel } from './widgets/Labels';
 
 export default function FirstColContent(): React.ReactElement {
   return (
     <ColumnOne>
       <ContentBlock>
         <h2>Module 1 Overview</h2>
+        <MutedLabel>Muted Label</MutedLabel>
+        <DefaultLabel>Default Label</DefaultLabel>
+        <SuccessLabel>Success Label</SuccessLabel>
+        <WarningLabel>Warning Label</WarningLabel>
+        <DangerLabel>Danger Label</DangerLabel>
+        <InfoLabel>Info Label</InfoLabel>
         <VocabCardsWidget>
       <VocabCard>
         <h3>Word 1</h3>

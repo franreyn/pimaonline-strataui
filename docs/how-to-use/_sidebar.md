@@ -1,5 +1,6 @@
 - Getting Started
   - [Installation](/getting-started/installation.md)
+  - [Quick Start](/getting-started/quick-start.md)
   - [Custom Elements](/getting-started/custom-elements.md)
 - Themes
   - [Default](/themes/default.md)
@@ -10,9 +11,10 @@
   - [Accordion](/components/accordion.md)
   - [Assignments](/components/assignments.md)
   - [Blockquote](/components/blockquote.md)
+  - [Callout](/components/callout.md)
   - [Columns](/components/columns.md)
   - [Footer](/components/footer.md)
-  - [Labels](/components/label.md)
+  - [Labels](/components/labels.md)
   - [Media Container](/components/media-widget.md)
   - [Tables](/components/tables.md)
   - [Tabs](/components/tabs.md)

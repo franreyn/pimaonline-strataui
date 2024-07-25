@@ -6,8 +6,6 @@ export const fontAwesomeVersionNum: string = "6.5.2";
 /* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are targetting, and the value should be the standard HTML tag you want to replace it with.
  */
 export const customTagPairs: { [customTagName: string]: string } =  {
-  "muted-label": "label",
-  "default-label": "label",
   "vocab-cards-widget": "ul",
   "vocab-card": "li",
 }
@@ -35,6 +33,12 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "TabContent", customHtmlTag: "tab-content" },
   { jsxName: "VocabCardsWidget", customHtmlTag: "vocab-cards-widget" },
   { jsxName: "VocabCard", customHtmlTag: "vocab-card" },
+  { jsxName: "MutedLabel", customHtmlTag: "muted-label" },
+  { jsxName: "DefaultLabel", customHtmlTag: "default-label" },
+  { jsxName: "SuccessLabel", customHtmlTag: "success-label" },
+  { jsxName: "WarningLabel", customHtmlTag: "warning-label" },
+  { jsxName: "DangerLabel", customHtmlTag: "danger-label" },
+  { jsxName: "InfoLabel", customHtmlTag: "info-label" },
 ];
 
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)
