@@ -1,7 +1,14 @@
+@import url("https://use.typekit.net/kzu5cdc.css"); /* Zeitung Font - Adobe Fonts */
+
 
 /* Custom Values */
 :root {
   --body-font-size: 16px;
+
+  /* Fonts */
+  --zeitung-font-family: "zeitung-pro", sans-serif;
+  --lato-font-family: "lato", sans-serif;
+
   /* Headings */
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
