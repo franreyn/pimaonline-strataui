@@ -13,7 +13,7 @@ body[index] .navbar {
   background-color: transparent;
 }
 
-/* HEADINGS */
+/* Typography */
 
 h1,h2,h3,h4,h5,h6 {
   font-family: var(--zeitung-font-family);
@@ -247,6 +247,10 @@ p.section-text {
 
 .markdown-section pre {
   max-height: 500px;
+}
+
+.markdown-section em {
+  color: var(--color-docs-secondary);
 }
 
 .markdown-section code, .token.property {
