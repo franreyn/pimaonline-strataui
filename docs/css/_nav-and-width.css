@@ -16,6 +16,10 @@ main {
   width: auto;
 }
 
+.sidebar .sidebar-nav {
+  padding-bottom: 50px;
+}
+
 .navbar {
   max-width: var(--max-width);
   margin: 0 auto;
@@ -68,9 +72,6 @@ body.sticky .sidebar-toggle {
   .sidebar {
     max-width: var(--max-width);
     margin: 0 auto;
-    top: auto;
-    bottom: auto;
-    left: auto;
   }
 
   body.close .sidebar {
