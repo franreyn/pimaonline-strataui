@@ -1,0 +1,42 @@
+default-label, muted-label, success-label, warning-label, danger-label, info-label {
+  border-radius: 1px;
+  color: var(--color-white);
+  display: inline;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.2rem 0.6rem 0.3rem;
+  text-align: center;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border-radius: 1px;
+}
+
+default-label {
+  background-color: var(--color-primary);
+}
+
+muted-label {
+  background-color: var(--muted-label-color);
+  color: var(--color-black);
+}
+
+success-label {
+  background-color: var(--success-label-color);
+}
+
+danger-label {
+  background-color: var(--danger-label-color);
+}
+
+warning-label {
+  background-color: var(--warning-label-color);
+  color: var(--color-black);
+}
+
+info-label {
+  background-color: var(--info-label-color);
+  color: var(--color-black);
+}
+

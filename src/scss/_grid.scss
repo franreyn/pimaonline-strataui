@@ -158,7 +158,7 @@ column-two {
     }
 
     p {
-      font-size: 1.255em;
+      font-size: 1.255rem;
     }
 
     ul,
@@ -210,7 +210,7 @@ column-two {
   }
 
   h1 {
-    font-size: 3.2em;
+    font-size: 3.2rem;
     margin-bottom: 15px !important;
   }
 
@@ -237,7 +237,7 @@ column-two {
 
 //CAPTION
 .caption {
-  font-size: 0.85em;
+  font-size: 0.85rem;
 }
 
 //CONTENT BODY
@@ -367,20 +367,6 @@ figure {
   }
 }
 
-//LABELS
-.label {
-  border-radius: 1px;
-  display: inline;
-  font-size: 0.7em;
-  font-weight: 700;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0.2em 0.6em 0.3em;
-  text-align: center;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
-
 dt {
   display: block;
   float: none;
@@ -435,7 +421,7 @@ a:active,
 
 .btn {
   border: 3px solid;
-  border-radius: 0.3em;
+  border-radius: 0.3rem;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -464,16 +450,16 @@ a:active,
 
 .btn-xl {
   padding: 35px 50px !important;
-  font-size: 1.5em;
-  border-radius: 0.3em;
+  font-size: 1.5rem;
+  border-radius: 0.3rem;
   line-height: 1.5;
-  border-width: 0.125em;
+  border-width: 0.125rem;
 }
 
 //.btn support classes
 
 .pill {
-  border-radius: 10em;
+  border-radius: 10rem;
   padding: 5px 20px;
 }
 

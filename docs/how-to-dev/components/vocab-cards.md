@@ -37,7 +37,7 @@ The styles for this widget help with spacing and adds a slight hover animation.
 ul.vocab-cards-widget {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 1rem;
   list-style-type: none;
 
   li {
@@ -53,6 +53,11 @@ ul.vocab-cards-widget {
     h4,
     h5 {
       margin: 0.5em 0;
+    }
+    h3,
+    h4,
+    h5 {
+      margin: 0.5rem 0;
     }
 
     &:hover {

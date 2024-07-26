@@ -1,5 +1,3 @@
-<p class="section-text">Getting Started</p>
-
 # Installation
 
 In order to use Strata CSS, ensure you follow these steps and have the correct code in your HTML page.
@@ -32,7 +30,3 @@ At the top of your HTML file, after the document type and `<html>` tag, ensure t
   <title>One Column Layout</title>
 </head>
 ```
-
-  <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
-  </div>

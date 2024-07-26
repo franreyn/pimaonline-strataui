@@ -33,6 +33,12 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "TabContent", customHtmlTag: "tab-content" },
   { jsxName: "VocabCardsWidget", customHtmlTag: "vocab-cards-widget" },
   { jsxName: "VocabCard", customHtmlTag: "vocab-card" },
+  { jsxName: "MutedLabel", customHtmlTag: "muted-label" },
+  { jsxName: "DefaultLabel", customHtmlTag: "default-label" },
+  { jsxName: "SuccessLabel", customHtmlTag: "success-label" },
+  { jsxName: "WarningLabel", customHtmlTag: "warning-label" },
+  { jsxName: "DangerLabel", customHtmlTag: "danger-label" },
+  { jsxName: "InfoLabel", customHtmlTag: "info-label" },
 ];
 
 // Variable used to know which custom elements  (jsx name, aria property ,aria value)

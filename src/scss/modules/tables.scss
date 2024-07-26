@@ -7,19 +7,28 @@ table {
   border: 1px solid;
 
   th {
-    font-size: 1.0625em;
+    font-size: 1.0625rem;
     font-weight: bold;
     line-height: normal;
     padding: 5px;
     text-align: left;
     vertical-align: top;
     border: none;
+
+    h3,h4,h5 {
+      margin-top: 0;
+    }
+
   }
 
   thead,
   tr,
   td {
     vertical-align: top;
+
+    h3,h4,h5 {
+      margin-top: 0;
+    }
   }
 
   caption {
@@ -50,7 +59,7 @@ table {
 
 table td,
 table th {
-  font-size: 1em;
+  font-size: 1rem;
   padding: 10px 10px 20px 10px;
   border: 1px solid;
 }
@@ -153,7 +162,7 @@ table.two-column-table {
     li:before {
       content: "\F101";
       font-family: "FontAwesome";
-      font-size: 1em;
+      font-size: 1rem;
       font-weight: 400;
       margin-right: 10px;
       opacity: 1;

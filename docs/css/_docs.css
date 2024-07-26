@@ -245,6 +245,10 @@ p.section-text {
   word-break: break-word;
 }
 
+.markdown-section pre {
+  max-height: 500px;
+}
+
 .markdown-section code, .token.property {
   color: var(--color-docs-code);
 }

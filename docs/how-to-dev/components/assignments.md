@@ -65,7 +65,7 @@ assignment-item h2,
 assignment-item h3,
 assignment-item h4 {
   background-color: var(--color-accent-tint);
-  font-size: 1.15em;
+  font-size: 1.15rem;
   font-weight: 600;
   margin: -0.6rem -0.6rem 0.6rem -0.6rem !important;
   padding: 0.3rem 0.6rem;
@@ -80,7 +80,7 @@ assignment-item ul li {
 assignment-item p,
 assignment-item ol,
 assignment-item ul {
-  font-size: 0.95em;
+  font-size: 00.95rem;
   margin-bottom: 1.5rem;
 }
 
