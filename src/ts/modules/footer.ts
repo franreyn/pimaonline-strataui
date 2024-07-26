@@ -13,7 +13,6 @@ const handleFooter = (footer: HTMLElement) => {
   footerToggle.tabIndex = 0;
   footerToggle.innerHTML = "[Show Footnotes]";
 
-  console.log(footerToggle);
 
   // Create a new div element
   const footerContent = document.createElement("div");
@@ -21,8 +20,6 @@ const handleFooter = (footer: HTMLElement) => {
 
   // Capture all the content in existing footer and move inside footerContentDiv
   const footerTextContent = footer.innerHTML;
-  console.log("footer container", footerContainer)
-  console.log("footer text content", footerTextContent);
   footer.innerHTML = "";
   footerContent.innerHTML = footerTextContent;
 
@@ -31,7 +28,6 @@ const handleFooter = (footer: HTMLElement) => {
 
   // Append the footerContentDiv to the footerContainer
   footerContainer.appendChild(footerToggle);
-  console.log("footer appended")
   footerContainer.appendChild(footerContent);
 
   // Save reference to the next sibling before replacing
@@ -41,7 +37,6 @@ const handleFooter = (footer: HTMLElement) => {
   footerToggle.addEventListener("click", () => {
     footerToggle.textContent = (footerToggle.textContent === "[Show Footnotes]") ? "[Hide Footnotes]" : "[Show Footnotes]";
     if (nextElement) {
-      console.log(nextElement);
       nextElement.classList.toggle("show");
     }
   });
@@ -49,6 +44,5 @@ const handleFooter = (footer: HTMLElement) => {
 };
 
 if (footer) {
-  console.log("footer exists");
   handleFooter(footer);
 }
