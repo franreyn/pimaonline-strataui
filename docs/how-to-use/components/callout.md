@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Callout Widget
 
 The callout widget uses a shaded background to draw attention to an important piece of information. The color of the background depends on which theme you use.
