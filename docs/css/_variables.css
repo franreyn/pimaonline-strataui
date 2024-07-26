@@ -6,7 +6,7 @@
   --color-docs-dark-blue: rgba(25, 30, 63, 1);
   --color-docs-accent: rgba(79, 111, 244, 1);
   --color-docs-active-link: rgba(79, 111, 244, .05);
-  --color-docs-nav-bkg: rgba(79, 111, 244, .07);
+  --color-docs-nav-bkg: rgba(79, 111, 244, .1);
   --color-docs-nav-search-focus: rgba(79, 111, 244, .5);
   --color-docs-code-text: rgb(76, 97, 228);
   --color-docs-code: #b5297e;
