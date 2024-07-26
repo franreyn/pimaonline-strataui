@@ -37,17 +37,17 @@ body.sticky .sidebar-toggle {
   width: 18px;
 }
 
-.sidebar-toggle-button.closed span:nth-child(1) {
+body.close .sidebar-toggle-button span:nth-child(1) {
   transform: rotate(0deg);
   transition: .3s ease;
 }
 
-.sidebar-toggle-button.closed span:nth-child(2) {
+body.close .sidebar-toggle-button span:nth-child(2) {
   opacity: 1;
   transition: .3s ease;
 }
 
-.sidebar-toggle-button.closed span:nth-child(3) {
+body.close .sidebar-toggle-button span:nth-child(3) {
   transform: rotate(0deg);
   transition: .3s ease;
 }
@@ -79,10 +79,6 @@ body.sticky .sidebar-toggle {
     display: none;
   }
 
-  /* body.close .sidebar {
-    transform: translateX(300px);
-  }  */
-
 }
 
 /* Edit sidebar when screen is small and there is a mobile menu */
@@ -107,36 +103,4 @@ body.sticky .sidebar-toggle {
     margin: 0 auto;
     left: auto;
   }
-
-    /* Mobile nav bar behavior */
-    body.close .sidebar-toggle-button span:nth-child(1) {
-      transform: rotate(0deg);
-      transition: .3s ease;
-    }
-    
-    body.close .sidebar-toggle-button span:nth-child(2) {
-      opacity: 1;
-      transition: .3s ease;
-    }
-    
-    body.close .sidebar-toggle-button span:nth-child(3) {
-      transform: rotate(0deg);
-      transition: .3s ease;
-    }
-    
-    .sidebar-toggle-button span:nth-child(1) {
-      transform: rotate(-45deg) translate(-5px, 4px);
-      transition: .3s ease;
-    }
-    
-    .sidebar-toggle-button span:nth-child(2) {
-      opacity: 0;
-      transition: .3s ease;
-    }
-    
-    .sidebar-toggle-button span:nth-child(3) {
-      transform: rotate(45deg) translate(-4px, -4px);
-      transition: .3s ease;
-    }
-
 }
