@@ -14,3 +14,4 @@ import "./modules/footer";
 
 // Ensure this file is loaded last
 import "./modules/toggleButtons";
+import "./modules/listGroups";
