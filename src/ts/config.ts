@@ -8,6 +8,9 @@ export const fontAwesomeVersionNum: string = "6.5.2";
 export const customTagPairs: { [customTagName: string]: string } =  {
   "vocab-cards-widget": "ul",
   "vocab-card": "li",
+  "unordered-list-group": "ul",
+  "ordered-list-group": "ol",
+  "list-group-item": "li",
 }
 
 // Variable used to define custom HTML tags
