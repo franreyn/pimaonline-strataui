@@ -1,8 +1,9 @@
 - Getting Started
-  - [Installation](/getting-started/installation.md)
-  - [Quick Start](/getting-started/quick-start.md)
-  - [Layouts](/getting-started/layouts.md)
-  - [Custom Elements](/getting-started/custom-elements.md)
+  - [Introduction](/getting-started/introduction)
+  - [Installation](/getting-started/installation)
+  - [Quick Start](/getting-started/quick-start)
+  - [Layouts](/getting-started/layouts)
+  - [Custom HTML Elements](/getting-started/custom-html-elements)
 - Themes
   - [Default](/themes/default.md)
   - [Preinstalled Themes](/themes/preinstalled-themes.md)
