@@ -1,4 +1,4 @@
-# _typography.scss Documentation
+# \_typography.scss Documentation
 
 This styles can be found in the `_typography.scss` file. This file contains styles related to typography for Strata CSS.
 
@@ -24,12 +24,18 @@ body {
   line-height: 1.35;
 }
 ```
+
 These styles set the base font size for the HTML document and the font family, size, font smoothing, and line height for the body of the document.
 
 ## Heading Styles
 
 ```scss
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-pcc-primary);
   font-family: "Lato", sans-serif;
   padding-left: 0px;
@@ -62,6 +68,7 @@ ol {
   padding: 0 0 0 20px;
 }
 ```
+
 These styles apply to unordered (ul) and ordered (ol) lists. They set the list style position, margin, and padding for these elements.
 
 ## Two and Three Column Lists
@@ -79,4 +86,9 @@ ol.two-col {
   }
 }
 ```
+
 These styles apply to unordered and ordered lists with the class "two-col" or "three-col". They set the number of columns for these lists to 1 by default, and increase to 2 or 3 columns when the viewport is at least 700 pixels wide.
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

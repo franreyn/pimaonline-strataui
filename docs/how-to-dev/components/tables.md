@@ -291,3 +291,7 @@ if (responsiveTables.length > 0) {
   initResponsiveTables();
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

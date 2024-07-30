@@ -46,9 +46,14 @@ ul.vocab-cards-widget {
     box-shadow: var(--sm-shadow);
     margin: 10px auto;
     max-width: 275px;
-    padding: 1rem;
+    padding: 1em;
     transition: 0.5s;
 
+    h3,
+    h4,
+    h5 {
+      margin: 0.5em 0;
+    }
     h3,
     h4,
     h5 {
@@ -101,3 +106,7 @@ export const customTagPairs: { [customTagName: string]: string } = {
   "vocab-card": "li",
 };
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

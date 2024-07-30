@@ -35,16 +35,37 @@ body[dark-mode] {
 }
 
 [dark-mode] :is(.sidebar ul li.active > a, .sidebar ul li a:hover, .navbar .active) {
-  color: var(--color-docs-accent);
+  color: var(--dark-sidebar-text);
 }
 
-[dark-mode] :is(.markdown-section code, .markdown-section pre) {
+[dark-mode] :is(.markdown-section pre) {
+  background-color: var(--dark-tertiary);
+}
+
+[dark-mode] :is(.markdown-section pre code,.token.punctuation) {
   background-color: var(--dark-tertiary);
   color: var(--dark-white);
 }
 
-[dark-mode] :is(.token.tag, .token.selector) {
+[dark-mode] :is(.markdown-section code) {
+  background-color: var(--dark-tertiary);
+  color: var(--dark-code-text);
+}
+
+[dark-mode] :is(.markdown-section code, .token.property) {
   color: var(--dark-code);
+}
+
+[dark-mode] :is(.token.attr-value, .token.control, .token.directive,.token.atrule, .token.unit, .token.string ) {
+  color: var(--dark-code-token);
+}
+
+[dark-mode] :is(.token.function, .token.keyword,.token.selector, .token.tag) {
+  color: var(--dark-code-text);
+}
+
+[dark-mode] :is(.token.attr-name, .token.boolean, .token.number, .token.important) {
+  color: var(--dark-code-attributes);
 }
 
 [dark-mode] .search input {

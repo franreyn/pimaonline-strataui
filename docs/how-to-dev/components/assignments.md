@@ -80,7 +80,7 @@ assignment-item ul li {
 assignment-item p,
 assignment-item ol,
 assignment-item ul {
-  font-size: 0.95rem;
+  font-size: 00.95rem;
   margin-bottom: 1.5rem;
 }
 
@@ -105,3 +105,7 @@ assignment-item::marker {
 # JS
 
 _There is no JS for this widget._
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

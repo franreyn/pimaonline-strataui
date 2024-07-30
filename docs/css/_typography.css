@@ -1,0 +1,69 @@
+@import url("https://use.typekit.net/kzu5cdc.css"); /* Zeitung Font - Adobe Fonts */
+
+
+/* Custom Values */
+:root {
+  --body-font-size: 16px;
+
+  /* Fonts */
+  --zeitung-font-family: "zeitung-pro", sans-serif;
+  --lato-font-family: "lato", sans-serif;
+
+  /* Headings */
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.75rem;
+  --h4-font-size: 1.5rem;
+  --h5-font-size: 1.25rem;
+  --h6-font-size: 1rem;
+
+  /* Paragraph */
+  --p-font-size: 1rem;
+  --p-line-height: 1.5;
+  --p-margin-bottom: 1.5rem;
+  --p-color: #333;
+  --p-font-weight: 400;
+  --p-font-style: normal;
+  --p-text-transform: none;
+  --p-letter-spacing: 0;
+  --p-text-align: left;
+  --p-text-decoration: none;
+  --p-white-space: normal;
+
+  /* Navigation */
+  --sidebar-li-margin: .25rem 0;
+}
+
+/* Original Docsify letter scaling */
+/* :root {
+  --body-font-size: 15px;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.75rem;
+  --h3-font-size: 1.5rem;
+  --h4-font-size: 1.25rem;
+  --h5-font-size: 1rem;
+  --h6-font-size: 1rem;
+  --p-font-size: 1rem;
+  --p-line-height: 1.5;
+  --p-margin-bottom: 1.5rem;
+  --p-color: #333;
+  --p-font-weight: 400;
+  --p-font-style: normal;
+  --p-text-transform: none;
+  --p-letter-spacing: 0;
+  --p-text-align: left;
+  --p-text-decoration: none;
+  --p-white-space: normal;
+  --a-font-size: 16px;
+  --li-font-size: 14px;
+  --figure-font-size: 1.2rem;
+  --side-bar-h1: 1.5rem;
+  --section-cover-h1: 2.5rem;
+  --secotion-cover-blockquote: 1.5rem;
+} */
+
+/* Text that affects the markdown area (actual documentation) */
+
+
+
+/* Styles that affect other UI elements in Docsify */

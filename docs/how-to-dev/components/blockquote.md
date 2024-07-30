@@ -2,7 +2,6 @@
 
 Blockquotes can be used to draw attention to an important quote or piece of information.
 
-
 ## HTML
 
 The following is an example of the HTML used for the `blockquote`.
@@ -30,3 +29,7 @@ blockquote::after {
   content: "\f10e";
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

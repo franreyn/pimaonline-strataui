@@ -1,3 +1,5 @@
+<p class="section-text">Components</p>
+
 # Accordion Widget
 
 Use the `accordion-widget` to display content in drop-downs that users can interact with.
@@ -9,9 +11,9 @@ Use the `accordion-widget` to display content in drop-downs that users can inter
 3. `<h3>` or `<h4>` - clickable area and accordion title
 4. `<accordion-content>` - the content for the accordion that is hidden and shown
 
-## HTML 
+## HTML
 
-The accordion in the HTML should have this structure. 
+The accordion in the HTML should have this structure.
 
 ```html
 <accordion-widget>
@@ -58,3 +60,7 @@ The accordion in the HTML should have this structure.
     </accordion-item>
   </accordion-widget>
 </div>
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

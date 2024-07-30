@@ -1,10 +1,12 @@
+<p class="section-text">Components</p>
+
 # Tables
 
 Use tables to organize content into cells.
 
-## HTML 
+## HTML
 
-Tables follow the standard HTML structure as detailed below. 
+Tables follow the standard HTML structure as detailed below.
 
 ### Example 1: The width of each column is determined by the width of the content
 
@@ -325,3 +327,7 @@ Tables follow the standard HTML structure as detailed below.
     </tbody>
   </table>
 </div>
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

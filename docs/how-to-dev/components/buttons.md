@@ -4,9 +4,9 @@
 
 Links can be styled as buttons by adding a class to the `<a>` tag. `<button>` should not be used for links because that doesn't follow accessibility standards.
 
-### HTML 
+### HTML
 
-Add `class="button"` to links you want to style as buttons. 
+Add `class="button"` to links you want to style as buttons.
 
 ```html
 <a href="#" class="button">Link</a>
@@ -33,6 +33,10 @@ a.button:hover {
 }
 ```
 
-### JS 
+### JS
 
-_There is no JS for button components._ 
+_There is no JS for button components._
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

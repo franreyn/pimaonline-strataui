@@ -6,7 +6,7 @@ Use the `<slider-widget>` tag as the parent element of as many `<slider-item>` c
 
 ## HTML
 
-There are two essential elements to include in the HTML for this widget. 
+There are two essential elements to include in the HTML for this widget.
 
 1. Wrap the entire widget in a `<slider-widget>` tag
 2. Each slide within the widget must be a `<slider-item>` tag.
@@ -24,22 +24,26 @@ _By default, the height of the slides will be 300px. Unless one of the classes a
 
 ```html
 <slider-widget class="h-400">
-        <slider-item>
-          <h3 class="icon-book-open">Aenean euismod</h3>
-          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
-            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
-            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
-            lorem condimentum malesuada mollis eget nulla.</p>
-        </slider-item>
-        <slider-item>
-          <div class="card-horizontal">
-            <div class="card-body">
-              <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis
-                lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
-            </div>
-            <div class="card-img"> <img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt=""> </div>
-          </div>
-        </slider-item>
-      </slider-widget>
+  <slider-item>
+    <h3 class="icon-book-open">Aenean euismod</h3>
+    <p>
+      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
+      ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
+      condimentum malesuada mollis eget nulla.
+    </p>
+  </slider-item>
+  <slider-item>
+    <div class="card-horizontal">
+      <div class="card-body">
+        <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
+      </div>
+      <div class="card-img"><img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt="" /></div>
+    </div>
+  </slider-item>
+</slider-widget>
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

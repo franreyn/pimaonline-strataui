@@ -5,10 +5,10 @@ The grid components help make up the different layouts in Strata CSS.
 The grid components are:
 
 1. ContentBlock component
-2. OneColumn component 
+2. OneColumn component
 3. TwoColumn component
 
-The one and two column layouts, determine if the layout has one large column, or two columns with main content on the left hand side and supplemental content on the left hand side. 
+The one and two column layouts, determine if the layout has one large column, or two columns with main content on the left hand side and supplemental content on the left hand side.
 
 The content body component, helps separate smaller peices of information and resides within one of the columns.
 
@@ -71,7 +71,7 @@ column-two,
 
 ### Content Body Element
 
-The content body element are the sub grid components that contain the actual content. They fit inside the different columns and ensure that the learning content has a background and uniform padding. 
+The content body element are the sub grid components that contain the actual content. They fit inside the different columns and ensure that the learning content has a background and uniform padding.
 
 ```scss
 //CONTENT BODY
@@ -107,7 +107,7 @@ column-one {
 
 ## SCSS
 
-The SCSS to control the layout is in `_grid.scss`. Contains the CSS styles that control the layout. It also contains some generic elements and gives them a basic style. 
+The SCSS to control the layout is in `_grid.scss`. Contains the CSS styles that control the layout. It also contains some generic elements and gives them a basic style.
 
 It also consists of basic styles for the following:
 
@@ -116,4 +116,7 @@ It also consists of basic styles for the following:
 3. One and two columns
 4. Typography for header and footnotes
 5. Syllabus header
-6. Buttons, links, images, figures, and utility elements 
+6. Buttons, links, images, figures, and utility elements
+<div class="footer">
+  <p>&copy; 2024 StrataCSS</p>
+</div>

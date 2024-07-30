@@ -9,35 +9,33 @@ This file will take the `customTagPairs` object and swap custom tags for the sem
 You do not need to edit the `tagConversion.ts` file. If you need to change any tags, please edit the object in `config.ts`
 
 ```js
-export const customTagPairs: { [customTagName: string]: string } =  {
+export const customTagPairs: { [customTagName: string]: string } = {
   "vocab-cards-widget": "ul",
   "vocab-card": "li",
-}
+};
 ```
 
 ## tagConversion.ts
 
 ```js
 // Imported object mapping custom tag names to standard tag names
-import { customTagPairs } from '../config'; // Adjust path as per your project structure
+import { customTagPairs } from "../config"; // Adjust path as per your project structure
 
 // Wrap setTimeout in a Promise for asynchronous behavior
 function delay(ms: number): Promise<void> {
-  return new Promise(resolve => setTimeout(resolve, ms));
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 // Refactored event listener using async/await
 document.addEventListener("DOMContentLoaded", async () => {
-
   try {
     await delay(500); // Wait for 500ms
 
     // Replace custom tags using imported object
-    Object.keys(customTagPairs).forEach(customTagName => {
+    Object.keys(customTagPairs).forEach((customTagName) => {
       const standardTagName: string = customTagPairs[customTagName];
       replaceCustomTags(customTagName, standardTagName);
     });
-
   } catch (error) {
     console.error("Error occurred:", error);
   }
@@ -45,11 +43,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 // Function to replace custom tags
 export function replaceCustomTags(customTagName: string, standardTagName: string) {
-
   // Get all custom elements
   const customElements: NodeListOf<HTMLElement> = document.querySelectorAll(customTagName);
 
-  customElements.forEach(customElement => {
+  customElements.forEach((customElement) => {
     // Create the new standard element
     const newElement: HTMLElement = document.createElement(standardTagName);
 
@@ -68,3 +65,7 @@ export function replaceCustomTags(customTagName: string, standardTagName: string
   });
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

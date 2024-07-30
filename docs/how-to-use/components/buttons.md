@@ -1,12 +1,14 @@
+<p class="section-text">Components</p>
+
 # Buttons
 
 ## Button Links
 
 Links can be styled as buttons by adding a class to the `<a>` tag. `<button>` should not be used for links because that doesn't follow accessibility standards.
 
-### HTML 
+### HTML
 
-Add `class="button"` to links you want to style as buttons. 
+Add `class="button"` to links you want to style as buttons.
 
 ```html
 <a href="#" class="button">Link</a>
@@ -15,3 +17,7 @@ Add `class="button"` to links you want to style as buttons.
 <div class="example-container">
   <a href="#" class="button">Link</a>
 </div>
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

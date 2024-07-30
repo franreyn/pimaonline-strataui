@@ -6,7 +6,7 @@ Use the `<slider-widget>` tag as the parent element of as many `<slider-item>` c
 
 ## HTML
 
-There are two essential elements to include in the HTML for this widget. 
+There are two essential elements to include in the HTML for this widget.
 
 1. Wrap the entire widget in a `<slider-widget>` tag
 2. Each slide within the widget must be a `<slider-item>` tag.
@@ -23,32 +23,32 @@ You can use the following classes to change the height of the slider container f
 _By default, the height of the slides will be 300px. Unless one of the classes above are added to the `<slider-widget>` tag_
 
 ```html
-      <slider-widget class="h-400">
-        <slider-item>
-          <h3 class="icon-book-open">Aenean euismod</h3>
-          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
-            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
-            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
-            lorem condimentum malesuada mollis eget nulla.</p>
-          <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
-            Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
-            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
-            lorem condimentum malesuada mollis eget nulla.</p>
-        </slider-item>
-        <slider-item>
-          <div class="card-horizontal">
-            <div class="card-body">
-              <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis
-                lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
-            </div>
-            <div class="card-img"> <img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt=""> </div>
-          </div>
-        </slider-item>
-      </slider-widget>
+<slider-widget class="h-400">
+  <slider-item>
+    <h3 class="icon-book-open">Aenean euismod</h3>
+    <p>
+      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
+      ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
+      condimentum malesuada mollis eget nulla.
+    </p>
+    <p>
+      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
+      ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
+      condimentum malesuada mollis eget nulla.
+    </p>
+  </slider-item>
+  <slider-item>
+    <div class="card-horizontal">
+      <div class="card-body">
+        <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
+      </div>
+      <div class="card-img"><img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt="" /></div>
+    </div>
+  </slider-item>
+</slider-widget>
 ```
-
 
 ## CSS
 
@@ -108,7 +108,7 @@ slider-item {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
- 
+
 .slider-dot {
   width: 10px;
   height: 10px;
@@ -119,22 +119,22 @@ slider-item {
 
   &.active {
     background-color: var(--color-dkgrey);
-   }
+  }
 }
 
 @media screen and (min-width: 768px) {
   slider-widget:not(#second-column slider-widget) {
     padding: 1rem 2rem;
-    
+
     .slider-arrow {
       &.fa-chevron-left {
-        left: -.5rem;
+        left: -0.5rem;
         transform: translateY(-50%);
         top: 50%;
       }
 
       &.fa-chevron-right {
-        right: -.5rem;
+        right: -0.5rem;
         transform: translateY(-50%);
         top: 50%;
       }
@@ -153,8 +153,7 @@ slider-item {
 }
 ```
 
-
-## JS 
+## JS
 
 _This is Typescript, which is converted to JS when compiled_
 
@@ -239,7 +238,7 @@ const handleSliderWidget = () => {
   // Initialize each slider with navigation buttons, dots, and keyboard navigation
   document.querySelectorAll<HTMLElement>('slider-widget').forEach((slider: HTMLElement, sliderIndex: number) => {
 
-    
+
     // Set accessibility attributes for the slider
     slider.setAttribute("tabindex", "0");
     slider.setAttribute("role", "group");
@@ -459,6 +458,10 @@ if (sliderItems.length > 0) {
   if(sliderWidgets.length === 0) {
     // Error check: slider-item elements found but no slider-widget elements found
     console.warn(`Document error: slider-item elements found but no slider-widget elements found. Please add a slider-widget element to contain the slider-item elements.`);
-  } 
+  }
 }
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>

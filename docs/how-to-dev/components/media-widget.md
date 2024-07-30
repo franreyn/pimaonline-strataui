@@ -1,20 +1,19 @@
-# Media Widget 
+# Media Widget
 
 The `media widget` is used to help ensure that embeded iframes are responsive and sized appropriately.
 
-## HTML 
+## HTML
 
-The structure for the `media widget` relies on custom tags that are nested in a specifc order. 
+The structure for the `media widget` relies on custom tags that are nested in a specifc order.
 
-- The `<media-widget>` tag wraps all the content. 
+- The `<media-widget>` tag wraps all the content.
 - The `<media-object>` tag wraps the `iframe` only.
 - The `<media-info>` tag wraps any text, that is related to the media. _(This portion of the widget is optional)_
 
 ```html
 <media-widget>
   <media-object>
-    <iframe>
-      </iframe>
+    <iframe> </iframe>
   </media-object>
   <!-- Media Info is optional -->
   <media-info>
@@ -24,10 +23,9 @@ The structure for the `media widget` relies on custom tags that are nested in a 
 </media-widget>
 ```
 
+## CSS
 
-## CSS 
-
-The styles for the `media widget` are based off of the tags used. 
+The styles for the `media widget` are based off of the tags used.
 
 ```css
 media-widget {
@@ -84,9 +82,9 @@ media-widget {
 
 ### Utility Classes
 
-There are two utility classes used for the `media widget`. 
+There are two utility classes used for the `media widget`.
 
-1. Aspect Ratio Utility Classes 
+1. Aspect Ratio Utility Classes
 
 Some videos have different aspect ratios and require more or less padding for the `iframe` area. Use the following classes to help resize the `iframe` window. Apply these classes to the `<media-widget>` tag.
 
@@ -118,14 +116,13 @@ The text for the `media-info` section is located at the bottom of the `iframe` b
 
 ```css
 .reverse {
-    flex-direction: column-reverse;
-  }
+  flex-direction: column-reverse;
+}
 ```
 
+## JS
 
-## JS 
-
-The JavaScript associated with this widget is for applying custom aria attributes for better accessibility. 
+The JavaScript associated with this widget is for applying custom aria attributes for better accessibility.
 
 ```js
 // Define a constant for media widgets, selecting all elements with the tag "media-widget"
@@ -161,8 +158,14 @@ const addMediaWidgetsAria = (): void => {
       mediaInfo.id = `${[mediaLoopId]}`;
     }
   });
-}
+};
 
 // Call the function to add ARIA attributes if media widgets are present
-if (mediaWidgets.length > 0) { addMediaWidgetsAria(); }
+if (mediaWidgets.length > 0) {
+  addMediaWidgetsAria();
+}
 ```
+
+  <div class="footer">
+    <p>&copy; 2024 StrataCSS</p>
+  </div>
