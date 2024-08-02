@@ -1,37 +1,32 @@
-# Slider Widget
+<p class="section-text">Widgets</p>
 
-Use the Slider widget to add content to slides. Users are able to rotate through the different slides like a carousel.
+# Slider
 
-Use the `<slider-widget>` tag as the parent element of as many `<slider-item>` children elements as necessary.
+Add content to slides. Users are able to rotate through the different slides like a carousel.
 
-## HTML
+## How to Use
 
-There are two essential elements to include in the HTML for this widget.
+Use the `<slider-widget>` tag as the parent element of as many `<slider-item>` children elements as needed.
 
-1. Wrap the entire widget in a `<slider-widget>` tag
-2. Each slide within the widget must be a `<slider-item>` tag.
-
-_By adding this HTML, the widget should function correctly. If there are any other errors in the code, but the HTML is correct, it must be part of the CSS or JS assocated with this widget._
+1. Add `<slider-widget>` as a container to wrap all slides.
+2. Add `<slider-item>` as a container for each slide.
+3. Add text, image, or widget content to each slide.
 
 ### Additional Classes
 
 You can use the following classes to change the height of the slider container for all slides.
 
-- Add `.h-400` class to the `<slider-widget>` element to make the height of the sliders 400px;
-- Add `.h-500` class to the `<slider-widget>` element to make the height of the sliders 500px;
+- Add `h-400` class to the `<slider-widget>` element to make the height of the sliders 400px;
+- Add `h-500` class to the `<slider-widget>` element to make the height of the sliders 500px;
 
-_By default, the height of the slides will be 300px. Unless one of the classes above are added to the `<slider-widget>` tag_
+_By default, the height of the slides will be 300px. Unless one of the classes above are added to the `<slider-widget>` tag._
+
+### HTML Example
 
 ```html
 <slider-widget class="h-400">
   <slider-item>
     <h3 class="icon-book-open">Aenean euismod</h3>
-    <p>
-      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
-      ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
-      condimentum malesuada mollis eget nulla.
-    </p>
     <p>
       Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
       bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
@@ -50,9 +45,33 @@ _By default, the height of the slides will be 300px. Unless one of the classes a
 </slider-widget>
 ```
 
+### Preview
+
+<div class="example-container">
+<slider-widget class="h-400">
+  <slider-item>
+    <h3 class="icon-book-open">Aenean euismod</h3>
+    <p>
+      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
+      ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
+      condimentum malesuada mollis eget nulla.
+    </p>
+  </slider-item>
+  <slider-item>
+    <div class="card-horizontal">
+      <div class="card-body">
+        <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
+      </div>
+      <div class="card-img"><img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt="" /></div>
+    </div>
+  </slider-item>
+</slider-widget>
+</div>
+
 ## CSS
 
-The Slider widget includes a container for the slider (`slider-widget`), navigation arrows (`slider-arrow`), individual slides within the slider (`slider-item`), a bar for navigation dots (`slider-dots-bar`), and the dots themselves (`slider-dot`).
+The slider widget includes a container for the `<slider-widget>`, navigation arrows `<slider-arrow>`, individual slides within the slider `<slider-item>`, a bar for navigation dots `.slider-dots-bar`, and the dots themselves.
 
 ```css
 slider-widget {
@@ -155,9 +174,7 @@ slider-item {
 
 ## JS
 
-_This is Typescript, which is converted to JS when compiled_
-
-This JavaScript code initializes and manages a slider widget with multiple functionalities. It selects all elements with the class `.slider-widget`, ensures that each slider has direct children with the class `.slider-item`, creates navigation buttons and dots, handles slide transitions, and provides keyboard navigation. Additionally, it checks for proper navigation elements and verifies that slider items are not empty. The code also includes functionality to vertically center the content of a slide if it is short and does not contain videos.
+This JavaScript code initializes and manages a slider widget with multiple functionalities. It selects all elements with the class `slider-widget`, ensures that each slider has direct children with the class `slider-item`, creates navigation buttons and dots, handles slide transitions, and provides keyboard navigation. Additionally, it checks for proper navigation elements and verifies that slider items are not empty. The code also includes functionality to vertically center the content of a slide if it is short and does not contain videos.
 
 ```js
 const sliderWidgets: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>("slider-widget");
@@ -463,5 +480,5 @@ if (sliderItems.length > 0) {
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

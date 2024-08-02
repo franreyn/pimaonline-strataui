@@ -1,10 +1,16 @@
-# Vocab Cards Widget
+<p class="section-text">Widgets</p>
 
-Vocab cards widget is used to create vocabulary term and definition pairs.
+# Vocab Cards
 
-## HTML
+Create a set of flashcards with terms and definitions.
 
-The HTML that the ID writes can use the custom tags associated with the widget and should look like this:
+## How to Use
+
+1. Wrap the group of vocab cards in a `<vocab-cards-widget>` container.
+2. Wrap each vocab card in a `<vocab-card>` container.
+3. Within each vocab card, add an `<h3>` for vocab term and `<p>` for term definition.
+
+### HTML Example
 
 ```html
 <vocab-cards-widget>
@@ -27,9 +33,30 @@ The HTML that the ID writes can use the custom tags associated with the widget a
 </vocab-cards-widget>
 ```
 
-The tags are eventually converted into semantic HTML.
+### Preview
 
-## SCSS
+<div class="example-container">
+<ul class="vocab-cards-widget">
+  <li>
+    <h3>Vocab Term</h3>
+    <p>The vocabulary term and definition.</p>
+  </li>
+  <li>
+    <h3>Vocab Term</h3>
+    <p>The vocabulary term and definition.</p>
+  </li>
+  <li>
+    <h3>Vocab Term</h3>
+    <p>The vocabulary term and definition.</p>
+  </li>
+  <li>
+    <h3>Vocab Term</h3>
+    <p>The vocabulary term and definition.</p>
+  </li>
+</ul>
+</div>
+
+## CSS
 
 The styles for this widget help with spacing and adds a slight hover animation.
 
@@ -71,7 +98,7 @@ ul.vocab-cards-widget {
 
 ## JS
 
-The `vocabCards.ts` file that adds the attributes and classes.
+The `vocabCards.ts` file adds the attributes and classes.
 
 ```js
 const vocabCardsWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("vocab-cards-widget");
@@ -98,15 +125,6 @@ if (vocabCardsWidgets.length > 0) {
 
 This widget leverages the use of `tagConversion.ts` to convert the tags into `<ul>` and `<li>` tags. If you need to change the tags see the `config.ts` file.
 
-```js
-/* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are targetting, and the value should be the standard HTML tag you want to replace it with.
- */
-export const customTagPairs: { [customTagName: string]: string } = {
-  "vocab-cards-widget": "ul",
-  "vocab-card": "li",
-};
-```
-
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

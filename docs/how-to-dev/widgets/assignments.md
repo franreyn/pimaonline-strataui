@@ -1,12 +1,16 @@
-# Assignments Widget
+<p class="section-text">Widgets</p>
 
-Use the `assignments-widget` to organize each assignment into cards.
+# Assignments
 
-## HTML
+Organizes each assignment into cards that subtly animate on mouse hover.
 
-The `<assignments-widget>` wraps all `<assignment-item>` elements. Both are custom elements and the configurations can be found in `/src/ts/config.ts` and `/src/ts/modules/customElements.ts`.
+## How to Use
 
-An `<assignment-item>` typically consists of an `<h3>` heading which is the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+1. Add `<assignments-widget>`. This container will wrap all assignment items.
+2. Add `<assignment-item>` container for each individual assignment.
+3. Within each `<assignment-item>` add an `<h3>` which act as the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+
+### HTML Example
 
 ```html
 <assignments-widget>
@@ -28,7 +32,29 @@ An `<assignment-item>` typically consists of an `<h3>` heading which is the titl
 </assignments-widget>
 ```
 
-# CSS
+### Preview
+
+<div class="example-container">
+  <assignments-widget>
+    <assignment-item>
+      <h3>Module 1 Readings</h3>
+      <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
+      <a href="#" class="button">Link To Assignment</a>
+    </assignment-item>
+    <assignment-item>
+      <h3>Reading Review Activity 1</h3>
+      <p>Revision and Editing Review Activity</p>
+      <a href="#" class="button">Link To Assignment</a>
+    </assignment-item>
+    <assignment-item>
+      <h3>Information Literacy Discussion 1</h3>
+      <p>The Importance of Listening</p>
+      <a href="#" class="button">Link To Assignment</a>
+    </assignment-item>
+  </assignments-widget>
+</div>
+
+## CSS
 
 The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
@@ -102,10 +128,10 @@ assignment-item::marker {
 }
 ```
 
-# JS
+## JS
 
 _There is no JS for this widget._
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

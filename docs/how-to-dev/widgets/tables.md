@@ -1,10 +1,19 @@
+<p class="section-text">Widgets</p>
+
 # Tables
 
-Tables organize content in cells.
+Use tables to organize content into cells.
 
-## HTML
+## How to Use
 
 Tables follow the standard HTML structure as detailed below.
+
+1. Wrape the entire table with the `<table>` container.
+2. The portion of the table that has the table headings, wrap wih `<thead>`. Then follow the example below to add the table headings.
+3. Add the `<tbody>` which holds all the cells for the table besides the table headings.
+4. Build the table by row. Add the `<tr>` to wrap the content that belongs within that row. Within each row, use `<td>` for each cell. Ensure each row has the same amount of cells.
+
+### Example 1: The width of each column is determined by the width of the content
 
 ```html
 <table>
@@ -44,6 +53,47 @@ Tables follow the standard HTML structure as detailed below.
   </tbody>
 </table>
 ```
+
+### Example 1: Preview
+
+<div class="example-container">
+  <table>
+    <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Points</th>
+        <th>Due Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#">Module 1 Interactive Readings</a></td>
+        <td>0</td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>Reading Review Activity 1: Rhetorical Analysis</td>
+        <td>15</td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>Discussion 1A: Ad Analysis</td>
+        <td>20</td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>Discussion 1B: Rhetorical Analysis Thesis/Outline</td>
+        <td>30</td>
+        <td>TBD</td>
+      </tr>
+      <tr>
+        <td>Assignment 1: Rhetorical Analysis Draft</td>
+        <td>10</td>
+        <td>TBD</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## CSS
 
@@ -293,5 +343,5 @@ if (responsiveTables.length > 0) {
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>
