@@ -4,5 +4,11 @@
 @import "./modules/buttons.css";
 @import "./modules/callout.css";
 @import "./modules/columns.css";
+@import "./modules/header.css";
+@import "./modules/labels.css";
+@import "./modules/list-group.css";
 @import "./modules/footer.css";
+@import "./modules/slider.css";
 @import "./modules/tables.css";
+@import "./modules/tabs.css";
+@import "./modules/vocab-cards.css";
