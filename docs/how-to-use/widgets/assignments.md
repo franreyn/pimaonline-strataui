@@ -1,16 +1,16 @@
-<p class="section-text">Components</p>
+<p class="section-text">Widgets</p>
 
-# Assignments Widget
+# Assignments
 
-Use the `assignments-widget` to organize each assignment into cards that subtly animate on mouse hover.
+Organizes each assignment into cards that subtly animate on mouse hover.
 
-## Structure
+## How to Use
 
-The `<assignments-widget>` wraps all `<assignment-item>` elements. An `<assignment-item>` typically consists of an `<h3>` heading which is the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+1. Add `<assignments-widget>`. This container will wrap all assignment items.
+2. Add `<assignment-item>` container for each individual assignment.
+3. Within each `<assignment-item>` add an `<h3>` which act as the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
 
-## HTML
-
-The `assignments widget` should have this HTML structure.
+### HTML Example
 
 ```html
 <assignments-widget>
@@ -31,6 +31,8 @@ The `assignments widget` should have this HTML structure.
   </assignment-item>
 </assignments-widget>
 ```
+
+### Preview
 
 <div class="example-container">
   <assignments-widget>
@@ -53,5 +55,5 @@ The `assignments widget` should have this HTML structure.
 </div>
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

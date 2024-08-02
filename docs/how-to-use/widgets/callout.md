@@ -1,21 +1,27 @@
-<p class="section-text">Components</p>
+<p class="section-text">Widgets</p>
 
-# Callout Widget
+# Callout
 
-The callout widget uses a shaded background to draw attention to an important piece of information. The color of the background depends on which theme you use.
+A shaded background to draw attention to an important piece of information.
 
-## HTML
+## How to Use
 
-The following is an example of the HTML used for the `callout-widget`.
+1. Wrap content with the `<callout-widget>`.
+
+_Note: The color of the background depends on which theme you use._
+
+### HTML Example
 
 ```html
 <callout-widget>Note: Your thesis should present a specific argument or perspective that you will support with evidence throughout your paper.</callout-widget>
 ```
 
+### Preview
+
 <div class="example-container">
   <callout-widget>Note: Your thesis should present a specific argument or perspective that you will support with evidence throughout your paper.</callout-widget>
 </div>
 
-  <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
-  </div>
+<div class="footer">
+  <p>&copy; 2024 Strata UI</p>
+</div>

@@ -1,21 +1,25 @@
-<p class="section-text">Components</p>
+<p class="section-text">Widgets</p>
 
 # Blockquote
 
-Use blockquotes to draw attention to an important quote or piece of information.
+Draw attention to an important quote or piece of information.
 
-## HTML
+## How to Use
 
-The following is an example of the HTML used for the `blockquote`.
+1. Wrap the quote in the `<blockquote>` tags.
+
+### HTML Example
 
 ```html
 <blockquote>The biggest adventure you can ever take is to live the life of your dreams.</blockquote>
 ```
 
+### Preview
+
 <div class="example-container">
   <blockquote>The biggest adventure you can ever take is to live the life of your dreams.</blockquote>
 </div>
 
-  <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
-  </div>
+<div class="footer">
+  <p>&copy; 2024 Strata UI</p>
+</div>
