@@ -1,6 +1,6 @@
 # Grid Components
 
-The grid components help make up the different layouts in Strata CSS.
+The grid components help make up the different layouts in Strata UI.
 
 The grid components are:
 
@@ -117,6 +117,7 @@ It also consists of basic styles for the following:
 4. Typography for header and footnotes
 5. Syllabus header
 6. Buttons, links, images, figures, and utility elements
+
 <div class="footer">
-  <p>&copy; 2024 StrataCSS</p>
+  <p>&copy; 2024 Strata UI</p>
 </div>
