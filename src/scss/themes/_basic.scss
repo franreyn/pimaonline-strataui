@@ -12,7 +12,7 @@ footer {
   img {
     border-color: var(--color-primary);
   }
-  .text-container {
+  header-text {
     background-color: var(--color-primary);
     :is(h1, h2, h3, h4, p) {
       color: var(--color-white);

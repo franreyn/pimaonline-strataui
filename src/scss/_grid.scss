@@ -148,7 +148,8 @@ column-two {
     margin: 0;
   }
 
-  .text-container {
+  header-text {
+    display: block;
     padding: 10px 0 25px 0;
 
     :is(h1, h2, h3, h4, p) {
@@ -170,7 +171,7 @@ column-two {
 }
 
 @media screen and (min-width: 730px) {
-  .header .text-container {
+  .header header-text {
     &:is(h1, h2, h3, h4, p) {
       max-width: 760px;
     }
@@ -186,7 +187,7 @@ column-two {
 }
 
 @media screen and (min-width: 998px) {
-  .header .text-container {
+  .header header-text {
     &:is(h1, h2, h3, h4, p) {
       max-width: 1160px;
     }
