@@ -2,7 +2,7 @@
 
 # Quick Start
 
-The easiest way to get started with StrataCSS is to copy and paste one of the following sample HTML templates into your project.
+The easiest way to get started with Strata UI is to copy and paste one of the following sample HTML templates into your project.
 
 ## One Column Template
 
@@ -405,5 +405,5 @@ The main content is displayed in the left column while any supplementary content
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>
