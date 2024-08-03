@@ -1,17 +1,22 @@
+<p class="section-text">Customizations</p>
+
 # Tag Conversion
 
-This file will take the `customTagPairs` object and swap custom tags for the semantic HTML tag along with any existing attributes and classes.
+This file will take the `customTagPairs` object from the `config.ts` file and swap custom tags for the semantic HTML tag along with any existing attributes and classes.
 
 ## config.ts
 
 ### Editing Tag Conversions
 
-You do not need to edit the `tagConversion.ts` file. If you need to change any tags, please edit the object in `config.ts`
+You do not need to edit the `tagConversion.ts` file. If you need to add, remove, or change any tags, please edit the object in `config.ts`
 
 ```js
 export const customTagPairs: { [customTagName: string]: string } = {
   "vocab-cards-widget": "ul",
   "vocab-card": "li",
+  "unordered-list-group": "ul",
+  "ordered-list-group": "ol",
+  "list-group-item": "li",
 };
 ```
 
@@ -67,5 +72,5 @@ export function replaceCustomTags(customTagName: string, standardTagName: string
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>
