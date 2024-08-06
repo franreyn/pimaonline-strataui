@@ -3,7 +3,6 @@ import "./modules/grid";
 import "./modules/customElements";
 import "./modules/accordion";
 import "./modules/arrows";
-import "./modules/header";
 import "./modules/responsiveTables";
 import "./modules/mediaWidget";
 import "./modules/tabs";
