@@ -1,19 +1,17 @@
 import { customElementAria } from "../config";
 
-// Function to add aria label to custom elements
-customElementAria.forEach((customElement: { customHtmlTag: string, ariaProp: string, ariaValue: string }) => {
+// Function to add ARIA labels to custom elements
+const addAriaLabels = () => {
+  customElementAria.forEach(({ customHtmlTag, ariaProp, ariaValue }) => {
+    // Find all instances of the custom element on the page
+    const customHtmlAriaElements: NodeListOf<HTMLElement> = document.querySelectorAll(customHtmlTag);
 
-  // For each custom element, find all instances on the page
-  let customHtmlAriaElements: NodeListOf<HTMLElement> = document.querySelectorAll(customElement.customHtmlTag);
-
-  if (customHtmlAriaElements.length > 0) {
+    // Set the ARIA attribute and value for each instance
     customHtmlAriaElements.forEach((customHtmlAriaElement: HTMLElement) => {
-      // For each instance, set the corresponding aria attribute and value
-      if (customHtmlAriaElement instanceof HTMLElement) {
-        customHtmlAriaElement.setAttribute(customElement.ariaProp, customElement.ariaValue);
-      } else {
-        console.error("Document error: element is not an HTMLElement:", customHtmlAriaElement);
-      }
+      customHtmlAriaElement.setAttribute(ariaProp, ariaValue);
     });
-  }
-})
+  });
+};
+
+// Ensure the script runs after the document is fully loaded
+document.addEventListener('DOMContentLoaded', addAriaLabels);
