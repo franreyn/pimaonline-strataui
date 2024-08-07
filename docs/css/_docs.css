@@ -141,8 +141,8 @@ p.section-text {
 }
 
 .cover-main div a:last-child:hover {
-  background-color: var(--color-code);
-  border-color: var(--color-code);
+  background-color: var(--color-docs-code);
+  border-color: var(--color-docs-code);
 }
 
 .cover-main * {
