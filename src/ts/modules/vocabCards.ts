@@ -1,6 +1,6 @@
 const vocabCardsWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("vocab-cards-widget");
 
-if (vocabCardsWidgets.length > 0) {
+const handleVocabCards = () => {
   // Add aria attributes to ul.vocab-cards
   vocabCardsWidgets.forEach((vocabCardsWidget: HTMLElement) => {
     vocabCardsWidget.setAttribute("role", "region");
@@ -17,6 +17,8 @@ if (vocabCardsWidgets.length > 0) {
       })
     }
   })
+}
 
-
+if (vocabCardsWidgets.length > 0) {
+  handleVocabCards();
 }
