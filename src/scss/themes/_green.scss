@@ -6,12 +6,16 @@ body[green] {
     color: var(--color-muted-black);
   }
 
-  .header {
+  header {
     img {
       border-color: var(--green-theme-primary);
     }
-    .text-container {
+    header-text {
       background-color: var(--green-theme-primary);
+    }
+
+    h1 {
+      color: var(--color-white);
     }
   }
 
@@ -59,7 +63,7 @@ body[green] {
   a,
   .toggle-footnotes {
     background-color: transparent;
-    color: var(--green-theme-secondary);
+    color: var(--color-link-blue);
   }
 
   a:visited {
@@ -70,7 +74,7 @@ body[green] {
   a:active,
   .toggle-footnotes:hover {
     background-color: transparent;
-    color: var(--green-theme-hover);
+    color: var(--color-footnotes-blue);
   }
 
   .button {
@@ -229,7 +233,7 @@ body[green] {
         border-color: var(--green-theme-primary);
 
         a {
-          color: var(--green-theme-secondary);
+          color: var(--color-white);
 
           &:hover {
             color: var(--green-theme-hover);
@@ -265,9 +269,15 @@ body[green] {
     color: var(--color-muted-black);
   }
 
+  tab-item input:checked + label.hide-tab {
+    background-color: var(--color-muted-black);
+    color: var(--color-black);
+  }
+  
   tab-item label.hide-tab {
     background-color: transparent !important;
-    color: white;
+    color: var(--color-black);
+    font-weight: 500;
   }
 
   tab-content {

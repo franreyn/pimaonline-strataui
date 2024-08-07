@@ -8,11 +8,11 @@ footer {
   background-color: var(--color-white);
 }
 
-.header {
+header {
   img {
     border-color: var(--color-primary);
   }
-  .text-container {
+  header-text {
     background-color: var(--color-primary);
     :is(h1, h2, h3, h4, p) {
       color: var(--color-white);
@@ -62,7 +62,7 @@ hr {
 figure {
   figcaption,
   .caption {
-    border-color: rgba(var(--color-black-rgb), 0.045);
+    border-color: var(--color-black);
     color: var(--color-pcc-dkgrey);
   }
 }
@@ -286,7 +286,7 @@ table th {
         color: var(--color-white);
 
         &:hover {
-          color: var(--color-primary-tint1);
+          color: var(--color-link-blue);
         }
       }
 
@@ -309,6 +309,11 @@ tab-item input:checked + label {
   color: white;
 }
 
+tab-item input:checked + label.hide-tab {
+  background-color: var(--color-muted-black);
+  color: var(--color-black);
+}
+
 tab-item input:checked + label + tab-content {
   border-color: var(--color-muted-black);
 }
@@ -321,7 +326,8 @@ tab-item label {
 
 tab-item label.hide-tab {
   background-color: transparent !important;
-  color: white;
+  color: var(--color-black);
+  font-weight: 500;
 }
 
 tab-content {
