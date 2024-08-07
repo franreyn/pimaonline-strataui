@@ -1,8 +1,6 @@
 // Edit Font Awesome Version Number
 export const fontAwesomeVersionNum: string = "6.5.2";
 
-
-
 /* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are targetting, and the value should be the standard HTML tag you want to replace it with.
  */
 export const customTagPairs: { [customTagName: string]: string } =  {
