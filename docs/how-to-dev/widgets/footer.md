@@ -15,6 +15,10 @@ Wrap all items in the footer with the `<footer>` container. All items within the
   <p>
     Definition of Rhetorical Analysis: Rhetorical analysis involves examining how authors or speakers use words to influence an audience. It focuses on understanding the strategies employed to convey messages and achieve
     desired effects<sup>1</sup>.
+      <ul>
+    <li>Example text 1</li>
+    <li>Example text 2</li>
+  </ul>
   </p>
   <p>"Rhetorical Analysis," Purdue Online Writing Lab (OWL), accessed June 24, 2024, https://owl.purdue.edu/owl/general_writing/the_writing_process/rhetorical_analysis/index.html.</p>
 </footer>
@@ -25,6 +29,10 @@ Wrap all items in the footer with the `<footer>` container. All items within the
 <div class="example-container">
   <footer>
       <p>Definition of Rhetorical Analysis: Rhetorical analysis involves examining how authors or speakers use words to influence an audience. It focuses on understanding the strategies employed to convey messages and achieve desired effects<sup>1</sup>.</p>
+        <ul>
+    <li>Example text 1</li>
+    <li>Example text 2</li>
+  </ul>
       <p>"Rhetorical Analysis," Purdue Online Writing Lab (OWL), accessed June 24, 2024, https://owl.purdue.edu/owl/general_writing/the_writing_process/rhetorical_analysis/index.html.</p>
   </footer>
 </div>
