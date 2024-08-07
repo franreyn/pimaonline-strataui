@@ -6,7 +6,7 @@ A shaded background to draw attention to an important piece of information.
 
 ## How to Use
 
-1. Wrap content with the `<callout-widget>`.
+1. Wrap content with the `<callout-widget>` tag.
 
 _Note: The color of the background depends on which theme you use._
 
