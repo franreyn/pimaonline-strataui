@@ -13,7 +13,7 @@ A responsive wrapper that holds all media content such as videos, iframes, or in
 
 ### Utility Classes
 
-There are two utility classes used for the `media widget`.
+There are two utility classes used for the media widget.
 
 #### Aspect Ratio Utility Classes
 
