@@ -2,6 +2,10 @@ accordion-widget {
   margin: 2rem 0;
   display: block;
 
+  h3.font-size-h4 {
+    margin-top: 0;
+  }
+
   accordion-content {
     display: block;
     padding: 10px;
