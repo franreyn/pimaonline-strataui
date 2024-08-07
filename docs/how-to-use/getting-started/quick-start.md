@@ -21,12 +21,12 @@ All content is displayed in a single column.
     <title>One Column Layout</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
@@ -199,12 +199,12 @@ The main content is displayed in the left column while any supplementary content
     <title>Two Column Layout</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>

@@ -23,12 +23,12 @@ This is the code for a basic one-column layout.
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Course Intro</h1>
         <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
@@ -84,12 +84,12 @@ This is the code for a basic two-column layout.
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman&#x27;s hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Course Intro</h1>
         <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
