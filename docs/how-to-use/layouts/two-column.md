@@ -67,7 +67,7 @@ For example, in the primary column, an overview page with introductory video and
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur
               congue nibh sed imperdiet.
             </p>
-            <a href="#" class="button">Link To Assignment</a>
+            <a href="javascript:void(0);" class="button">Link To Assignment</a>
           </assignment-item>
           <assignment-item>
             <h3>Assignment Item</h3>
@@ -75,7 +75,7 @@ For example, in the primary column, an overview page with introductory video and
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur
               congue nibh sed imperdiet.
             </p>
-            <a href="#" class="button">Link To Assignment</a>
+            <a href="javascript:void(0);" class="button">Link To Assignment</a>
           </assignment-item>
           <assignment-item>
             <h3>Assignment Item</h3>
@@ -83,7 +83,7 @@ For example, in the primary column, an overview page with introductory video and
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada, laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur
               congue nibh sed imperdiet.
             </p>
-            <a href="#" class="button">Link To Assignment</a>
+            <a href="javascript:void(0);" class="button">Link To Assignment</a>
           </assignment-item>
         </assignments-widget>
       </content-block>

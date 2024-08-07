@@ -127,7 +127,7 @@ All content is displayed in a single column.
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Module 1 Interactive Readings</a></td>
+              <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
               <td>0</td>
               <td>TBD</td>
             </tr>
@@ -305,7 +305,7 @@ The main content is displayed in the left column while any supplementary content
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Module 1 Interactive Readings</a></td>
+              <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
               <td>0</td>
               <td>TBD</td>
             </tr>
@@ -352,17 +352,17 @@ The main content is displayed in the left column while any supplementary content
           <assignment-item>
             <h3>Module 1 Readings</h3>
             <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-            <a href="#" target="_blank" class="button">Module 1 Readings</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Module 1 Readings</a></assignment-item
           >
           <assignment-item>
             <h3>Reading Review Activity</h3>
             <p>Rhetorical Analysis Review Activity</p>
-            <a href="#" target="_blank" class="button">Reading Review Activity</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Reading Review Activity</a></assignment-item
           >
           <assignment-item>
             <h3>Writing Assignment 1</h3>
             <p>Rhetorical Analysis Draft</p>
-            <a href="#" target="_blank" class="button">Writing Assignment 1</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Writing Assignment 1</a></assignment-item
           >
         </assignments-widget>
       </content-block>

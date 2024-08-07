@@ -13,13 +13,13 @@ _Note: buttons and the HTML tag `<button>` should **not** be used for links beca
 ### HTML Example
 
 ```html
-<a href="#" class="button">Link</a>
+<a href="javascript:void(0);" class="button">Link</a>
 ```
 
 ### Preview
 
 <div class="example-container">
-  <a href="#" class="button">Link</a>
+  <a href="javascript:void(0);" class="button">Link</a>
 </div>
 
 ### CSS

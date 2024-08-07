@@ -26,7 +26,7 @@ Tables follow the standard HTML structure as detailed below.
   </thead>
   <tbody>
     <tr>
-      <td><a href="#">Module 1 Interactive Readings</a></td>
+      <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
       <td>0</td>
       <td>TBD</td>
     </tr>
@@ -67,7 +67,7 @@ Tables follow the standard HTML structure as detailed below.
     </thead>
     <tbody>
       <tr>
-        <td><a href="#">Module 1 Interactive Readings</a></td>
+        <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
         <td>0</td>
         <td>TBD</td>
       </tr>

@@ -17,17 +17,17 @@ Organizes each assignment into cards that subtly animate on mouse hover.
   <assignment-item>
     <h3>Module 1 Readings</h3>
     <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-    <a href="#" class="button">Link To Assignment</a>
+    <a href="javascript:void(0);" class="button">Link To Assignment</a>
   </assignment-item>
   <assignment-item>
     <h3>Reading Review Activity 1</h3>
     <p>Revision and Editing Review Activity</p>
-    <a href="#" class="button">Link To Assignment</a>
+    <a href="javascript:void(0);" class="button">Link To Assignment</a>
   </assignment-item>
   <assignment-item>
     <h3>Information Literacy Discussion 1</h3>
     <p>The Importance of Listening</p>
-    <a href="#" class="button">Link To Assignment</a>
+    <a href="javascript:void(0);" class="button">Link To Assignment</a>
   </assignment-item>
 </assignments-widget>
 ```
@@ -39,17 +39,17 @@ Organizes each assignment into cards that subtly animate on mouse hover.
     <assignment-item>
       <h3>Module 1 Readings</h3>
       <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-      <a href="#" class="button">Link To Assignment</a>
+      <a href="javascript:void(0);" class="button">Link To Assignment</a>
     </assignment-item>
     <assignment-item>
       <h3>Reading Review Activity 1</h3>
       <p>Revision and Editing Review Activity</p>
-      <a href="#" class="button">Link To Assignment</a>
+      <a href="javascript:void(0);" class="button">Link To Assignment</a>
     </assignment-item>
     <assignment-item>
       <h3>Information Literacy Discussion 1</h3>
       <p>The Importance of Listening</p>
-      <a href="#" class="button">Link To Assignment</a>
+      <a href="javascript:void(0);" class="button">Link To Assignment</a>
     </assignment-item>
   </assignments-widget>
 </div>
