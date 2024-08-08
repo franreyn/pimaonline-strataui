@@ -37,7 +37,7 @@ The two column layout uses grid as well and a combination of flex to ensure that
 
 ```scss
 #two-column,
-#two-col-widget  {
+#two-col-widget {
   display: grid;
   grid-row-gap: 10px;
   justify-content: center;
@@ -50,7 +50,7 @@ The two column layout uses grid as well and a combination of flex to ensure that
   grid-template-areas:
     "header"
     "body"
-    "#second-column"
+    "column-two"
     "footer";
 }
 
@@ -64,7 +64,7 @@ column-two,
 }
 
 #two-column content-block:last-child,
-#two-col-widget content-block:last-child  {
+#two-col-widget content-block:last-child {
   flex-grow: 1;
 }
 ```
