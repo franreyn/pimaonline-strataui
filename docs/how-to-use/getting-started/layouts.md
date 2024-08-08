@@ -153,7 +153,7 @@ This is the code for a basic two-column layout.
         <h4 class="icon-image">Image</h4>
         <figure><img src="https://via.placeholder.com/800x800" alt="" /></figure>
       </content-block>
-    <column-two>
+    </column-two>
   </body>
 </html>
 ```
