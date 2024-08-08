@@ -48,12 +48,12 @@ assignment-item::before,assignment-item::marker {
 
 @media screen and (min-width: 576px) {
   #content-wrapper assignment-item {
-     flex-basis:45%
+      flex-basis:45%
   }
 }
 
 @media screen and (min-width: 768px) {
   #content-wrapper assignment-item {
-     flex-basis:30%
+      flex-basis:30%
   }
 }
