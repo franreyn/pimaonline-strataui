@@ -120,7 +120,7 @@ This is the code for a basic two-column layout.
         </p>
       </content-block>
     </column-one>
-    <#second-column>
+    <column-two>
       <content-block>
         <assignments-widget>
           <assignment-item>
@@ -153,7 +153,7 @@ This is the code for a basic two-column layout.
         <h4 class="icon-image">Image</h4>
         <figure><img src="https://via.placeholder.com/800x800" alt="" /></figure>
       </content-block>
-    </#second-column>
+    <column-two>
   </body>
 </html>
 ```
