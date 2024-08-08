@@ -346,7 +346,7 @@ The main content is displayed in the left column while any supplementary content
         </columns-widget>
       </content-block>
     </column-one>
-    <#second-column>
+    <column-two>
       <content-block>
         <assignments-widget>
           <assignment-item>
@@ -389,7 +389,7 @@ The main content is displayed in the left column while any supplementary content
           <p>How do we create effective and persuasive writing?</p>
         </callout-widget>
       </content-block>
-    </#second-column>
+    </column-two>
     <footer>
       <p class="text-center toggle-footnotes" tabindex="0">[Show Footnotes]</p>
       <div class="footnotes">
