@@ -6,7 +6,7 @@ Display footnotes or citations related to the content in a collapsable drawer.
 
 ## How to Use
 
-Wrap all items in the footer with the `<footer>` container. All items within the footer will be hidden and when the footer is toggled, it'll open the container and show all the content located within the `<footer>` container.
+Enclose all elements within the footer section using the `<footer>` tag. Initially, the content inside the footer will be hidden. When the footer is toggled, the container will expand, revealing all the elements nested within it.
 
 ### HTML Example
 
