@@ -4,6 +4,7 @@ import { arrowsWidgetJs } from "./modules/widgets/arrows.js";
 import { toggleButtonsJs } from "./modules/widgets/toggleButtons.js";
 import { tabsWidgetJs } from "./modules/widgets/tabs.js";
 import { footerWidgetJs } from "./modules/widgets/footer.js";
+import { responsiveTablesJs } from "./modules/widgets/responsiveTables.js";
 
 (function () {
   var widgetCheckPlugin = function (hook, vm) {
@@ -16,6 +17,7 @@ import { footerWidgetJs } from "./modules/widgets/footer.js";
       toggleButtonsJs();
       tabsWidgetJs();
       footerWidgetJs();
+      responsiveTablesJs();
     })
   }
 
