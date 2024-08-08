@@ -5,8 +5,6 @@ import customElements from "../CreateCustomElement";
 const SliderWidgetWrapper: React.FC<SliderWidgetProps> = customElements["SliderWidget"];
 const SliderItemWrapper: React.FC<SliderItemsProps> = customElements["SliderItem"];
 
-
-// AccordionItem and AccordionContent are not defined in CreateCustomElement
 interface SliderWidgetProps {
   children: React.ReactNode;
   className?: string;

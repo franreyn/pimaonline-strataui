@@ -5,8 +5,6 @@ import customElements from "../CreateCustomElement";
 const VocabCardsWidgetWrapper: React.FC<VocabCardWidgetProps> = customElements["VocabCardsWidget"];
 const VocabCardWrapper: React.FC<VocabCardItemProps> = customElements["VocabCard"];
 
-
-// AccordionItem and AccordionContent are not defined in CreateCustomElement
 interface VocabCardWidgetProps {
   children: React.ReactNode;
   className?: string;

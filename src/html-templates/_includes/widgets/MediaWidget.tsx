@@ -6,8 +6,6 @@ const MediaWidgetWrapper: React.FC<MediaWidgetProps> = customElements["MediaWidg
 const MediaObjectWrapper: React.FC<MediaObjectProps> = customElements["MediaObject"];
 const MediaInfoWrapper: React.FC<MediaInfoProps> = customElements["MediaInfo"];
 
-
-// AccordionItem and AccordionContent are not defined in CreateCustomElement
 interface MediaWidgetProps {
   children: React.ReactNode;
   className?: string;
