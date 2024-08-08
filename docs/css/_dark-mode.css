@@ -96,3 +96,38 @@ body[dark-mode] {
 [dark-mode] accordion-item:last-child :is(h3, h4) {
   border-radius: var(--bottom-radius);
 }
+
+[dark-mode] table thead {
+  color: var(--color-white);
+  background-color: var(--color-docs-primary);
+}
+
+[dark-mode] table tr {
+  color: var(--color-white);
+  background-color: var(--dark-primary);
+}
+
+[dark-mode] table td, [dark-mode] table th {
+  border: 1px solid var(--dark-secondary);
+}
+
+
+@media screen and (min-width: 768px) {
+  body[dark-mode] tr:nth-child(even) {
+    background-color: var(--color-docs-dark-blue) !important;
+  }
+
+  body[dark-mode]  tr:nth-child(odd) {
+    background-color: var(--dark-primary) !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body[dark-mode] tr:nth-child(even) {
+    background-color: var(--color-docs-dark-blue) !important;
+  }
+
+  body[dark-mode]  tr:nth-child(odd) {
+    background-color: var(--dark-primary) !important;
+  }
+}
