@@ -13,7 +13,6 @@ accordion-widget accordion-content p {
 }
 
 accordion-widget accordion-content.show {
-  background-color: var(--color-primary-tint1);
   display: block;
 }
 
@@ -24,7 +23,7 @@ accordion-widget accordion-item {
 }
 
 accordion-widget accordion-item > h3, accordion-widget accordion-item h4 {
-  margin: 0;
+  margin: 0 !important;
   padding: 10px;
   display: flex;
   justify-content: space-between;
