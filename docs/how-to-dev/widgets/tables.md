@@ -19,9 +19,9 @@ Tables follow the standard HTML structure as detailed below.
 <table>
   <thead>
     <tr>
-      <th>Assignment</th>
-      <th>Points</th>
-      <th>Due Date</th>
+      <th scope="col">Assignment</th>
+      <th scope="col">Points</th>
+      <th scope="col">Due Date</th>
     </tr>
   </thead>
   <tbody>
@@ -60,9 +60,9 @@ Tables follow the standard HTML structure as detailed below.
   <table>
     <thead>
       <tr>
-        <th>Assignment</th>
-        <th>Points</th>
-        <th>Due Date</th>
+        <th scope="col">Assignment</th>
+        <th scope="col">Points</th>
+        <th scope="col">Due Date</th>
       </tr>
     </thead>
     <tbody>

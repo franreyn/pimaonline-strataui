@@ -21,9 +21,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
 <table>
   <thead>
     <tr>
-      <th>Assignment</th>
-      <th>Points</th>
-      <th>Due Date</th>
+      <th scope="col">Assignment</th>
+      <th scope="col">Points</th>
+      <th scope="col">Due Date</th>
     </tr>
   </thead>
   <tbody>
@@ -62,9 +62,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
   <table>
     <thead>
       <tr>
-        <th>Assignment</th>
-        <th>Points</th>
-        <th>Due Date</th>
+        <th scope="col">Assignment</th>
+        <th scope="col">Points</th>
+        <th scope="col">Due Date</th>
       </tr>
     </thead>
     <tbody>
@@ -103,9 +103,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
 <table>
   <thead>
     <tr>
-      <th class="sm-table-col">Assignment</th>
-      <th>Points</th>
-      <th>Due Date</th>
+      <th scope="col" class="sm-table-col">Assignment</th>
+      <th scope="col">Points</th>
+      <th scope="col">Due Date</th>
     </tr>
   </thead>
   <tbody>
@@ -144,9 +144,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
   <table>
     <thead>
       <tr>
-        <th class="sm-table-col">Assignment</th>
-        <th>Points</th>
-        <th>Due Date</th>
+        <th scope="col" class="sm-table-col">Assignment</th>
+        <th scope="col">Points</th>
+        <th scope="col">Due Date</th>
       </tr>
     </thead>
     <tbody>
@@ -226,9 +226,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
   <table>
     <thead>
       <tr>
-        <th class="md-table-col">Assignment</th>
-        <th>Points</th>
-        <th>Due Date</th>
+        <th scope="col" class="md-table-col">Assignment</th>
+        <th scope="col">Points</th>
+        <th scope="col">Due Date</th>
       </tr>
     </thead>
     <tbody>
@@ -267,9 +267,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
 <table>
   <thead>
     <tr>
-      <th class="lg-table-col">Assignment</th>
-      <th>Points</th>
-      <th>Due Date</th>
+      <th scope="col" class="lg-table-col">Assignment</th>
+      <th scope="col">Points</th>
+      <th scope="col">Due Date</th>
     </tr>
   </thead>
   <tbody>
@@ -308,9 +308,9 @@ To see more about how HTML tables are structured, check out the [official MDN do
   <table>
     <thead>
       <tr>
-        <th class="lg-table-col">Assignment</th>
-        <th>Points</th>
-        <th>Due Date</th>
+        <th scope="col" class="lg-table-col">Assignment</th>
+        <th scope="col">Points</th>
+        <th scope="col">Due Date</th>
       </tr>
     </thead>
     <tbody>
