@@ -142,7 +142,7 @@ slider-item {
 }
 
 @media screen and (min-width: 768px) {
-  slider-widget:not(#second-column slider-widget) {
+  slider-widget:not(column-two slider-widget) {
     padding: 1rem 2rem;
 
     .slider-arrow {
@@ -166,7 +166,7 @@ slider-item {
 }
 
 @media screen and (min-width: 1024px) {
-  .short-content:not(#second-column .short-content) > div {
+  .short-content:not(column-two .short-content) > div {
     transform: translateY(25%);
   }
 }

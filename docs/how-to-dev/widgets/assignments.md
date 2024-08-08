@@ -59,8 +59,8 @@ Organizes each assignment into cards that subtly animate on mouse hover.
 The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
 ```css
-#second-column assignments-widget,
-#second-column assignments-widget {
+column-two assignments-widget,
+column-two assignments-widget {
   margin: 0;
   padding: 0;
 }
