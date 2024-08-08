@@ -108,11 +108,6 @@ table td, table th {
   color: var(--color-light-blue);
 }
 
-  table tbody td:first-child {
-    color: var(--color-white);
-    background-color: var(--color-primary);
- }
-
   table tbody td::before {
     content: attr(data-th) ": ";
     display: inline-block;
