@@ -14,7 +14,8 @@ footer {
   padding: 15px 95px;
 }
 
-#two-column footer {
+#two-column footer,
+#two-col-widget footer {
   max-width: 1170px;
 }
 

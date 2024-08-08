@@ -33,8 +33,8 @@ An `<assignment-item>` typically consists of an `<h3>` heading which is the titl
 The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
 ```css
-column-two assignments-widget,
-column-two assignments-widget {
+#second-column assignments-widget,
+#second-column assignments-widget {
   margin: 0;
   padding: 0;
 }

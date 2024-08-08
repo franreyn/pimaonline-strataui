@@ -16,12 +16,12 @@ Add the corresponding attribute above to the `<body>` to apply the color palette
 
 ```html
 <body green>
-  <header>
+  <header class="header">
     <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-    <header-text>
+    <div class="text-container">
       <h1>Course Intro</h1>
       <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-    </header-text>
+    </div>
   </header>
   <column-one>
     <content-block>

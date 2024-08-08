@@ -21,12 +21,12 @@ All content is displayed in a single column.
     <title>One Column Layout</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <header-text>
+      <div class="text-container">
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </header-text>
+      </div>
     </header>
     <column-one>
       <content-block>
@@ -199,12 +199,12 @@ The main content is displayed in the left column while any supplementary content
     <title>Two Column Layout</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <header-text>
+      <div class="text-container">
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </header-text>
+      </div>
     </header>
     <column-one>
       <content-block>
@@ -346,7 +346,7 @@ The main content is displayed in the left column while any supplementary content
         </columns-widget>
       </content-block>
     </column-one>
-    <column-two>
+    <#second-column>
       <content-block>
         <assignments-widget>
           <assignment-item>
@@ -389,7 +389,7 @@ The main content is displayed in the left column while any supplementary content
           <p>How do we create effective and persuasive writing?</p>
         </callout-widget>
       </content-block>
-    </column-two>
+    </#second-column>
     <footer>
       <p class="text-center toggle-footnotes" tabindex="0">[Show Footnotes]</p>
       <div class="footnotes">

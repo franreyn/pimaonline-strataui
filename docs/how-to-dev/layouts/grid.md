@@ -36,7 +36,8 @@ Using grid and grid template, the CSS creates a general layout of the page.
 The two column layout uses grid as well and a combination of flex to ensure that the height of the two columns match regardless of the content size.
 
 ```scss
-#two-column {
+#two-column,
+#two-col-widget  {
   display: grid;
   grid-row-gap: 10px;
   justify-content: center;
@@ -49,18 +50,21 @@ The two column layout uses grid as well and a combination of flex to ensure that
   grid-template-areas:
     "header"
     "body"
-    "column-two"
+    "#second-column"
     "footer";
 }
 
 #two-column column-one,
-column-two {
+#two-col-widget column-one,
+column-two,
+#column-widget {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-#two-column content-block:last-child {
+#two-column content-block:last-child,
+#two-col-widget content-block:last-child  {
   flex-grow: 1;
 }
 ```
@@ -85,7 +89,8 @@ content-block:last-child {
   margin-bottom: 0px;
 }
 
-#two-column content-block:last-child {
+#two-column content-block:last-child,
+#two-col-widget content-block:last-child {
   flex-grow: 1;
 }
 

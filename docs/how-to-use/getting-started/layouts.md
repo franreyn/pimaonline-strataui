@@ -23,12 +23,12 @@ This is the code for a basic one-column layout.
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <header-text>
+      <div class="text-container">
         <h1>Course Intro</h1>
         <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-      </header-text>
+      </div>
     </header>
     <column-one>
       <content-block>
@@ -84,12 +84,12 @@ This is the code for a basic two-column layout.
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman&#x27;s hand typing on a computer" />
-      <header-text>
+      <div class="text-container">
         <h1>Course Intro</h1>
         <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-      </header-text>
+      </div>
     </header>
     <column-one>
       <content-block>
@@ -120,7 +120,7 @@ This is the code for a basic two-column layout.
         </p>
       </content-block>
     </column-one>
-    <column-two>
+    <#second-column>
       <content-block>
         <assignments-widget>
           <assignment-item>
@@ -153,7 +153,7 @@ This is the code for a basic two-column layout.
         <h4 class="icon-image">Image</h4>
         <figure><img src="https://via.placeholder.com/800x800" alt="" /></figure>
       </content-block>
-    </column-two>
+    </#second-column>
   </body>
 </html>
 ```
