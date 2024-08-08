@@ -56,15 +56,8 @@ For example, the singular column in the one column layout could have lots of tex
         </p>
         <media-container class="reverse">
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
           </media-object>
           <media-info>

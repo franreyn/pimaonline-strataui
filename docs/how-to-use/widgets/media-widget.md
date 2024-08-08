@@ -42,15 +42,7 @@ You can use the `reverse` class on the `<media-widget>` tag to make the `<media-
 ```html
 <media-widget>
   <media-object>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
   </media-object>
   <media-info>
@@ -64,15 +56,7 @@ You can use the `reverse` class on the `<media-widget>` tag to make the `<media-
 <div class="example-container">
 <media-widget>
   <media-object>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    >
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
     </iframe>
   </media-object>
   <media-info>

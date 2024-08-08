@@ -34,15 +34,7 @@ For example, in the primary column, an overview page with introductory video and
         <h2>Welcome to [course name here]</h2>
         <media-container class="reverse">
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
           </media-object>
           <media-info>
