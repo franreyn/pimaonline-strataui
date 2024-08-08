@@ -7,16 +7,13 @@ const addGrid = (): void => {
   if (courseBody !== null) {
     if (columnOne && columnTwo) {
       courseBody.id = "two-column";
-    } 
-      // If only columnOne exists and columnTwo, thirdColumn, columnWidget, and videoWrapper do not exist, the id of courseBody is set to "one-column"
-   else if (columnOne && !columnTwo) {
+    }
+    // If only columnOne exists and columnTwo, thirdColumn, columnWidget, and videoWrapper do not exist, the id of courseBody is set to "one-column"
+    else if (columnOne && !columnTwo) {
       courseBody.id = "one-column";
       // If columnOne exists, columnTwo does not exist, and either thirdColumn or columnWidget exists, an error message is logged stating that <body> is missing an id because column-two doesn’t exist
-    } else if (columnOne && !columnTwo) {
-      // Error message for when the second column's container does not contain column-two
-      console.warn("Document error: <body> is missing id because column-two doesn't exist.");
-      // If none of the above conditions are met, an error message is logged stating that the page layout could not be determined for setting <body> id
-    } else {
+    }
+    else {
       // Error message for when there are no layout classes present
       console.warn("Document error: unable to determine the page layout for setting <body> id.");
     }
@@ -46,7 +43,7 @@ const addGrid = (): void => {
     // Checks the foundNestedElement variable. If it’s true, it logs an error message indicating there’s additional content outside specified elements.
     if (foundNestedElement) {
       // Error message for there are elements outside of the grid structure
-      console.warn("Document error: Additional content outside #content-wrapper, column-two, #third-column, or footer.");
+      console.warn("Document error: additional content outside #content-wrapper, column-two, #third-column, or footer.");
     }
     // If foundNestedElement is false, it logs an error message indicating no <body> element was found in the document.
   } else {
