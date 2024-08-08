@@ -18,8 +18,8 @@ Add the corresponding attribute above to the `<body>` to apply the color palette
 <body green>
   <header class="header">
     <img
-      src="https://via.placeholder.com/1920X600" 
-      alt="decorative image of a woman's hand typing on a computer" 
+      src="https://via.placeholder.com/1920X600"
+      alt="decorative image of a woman's hand typing on a computer"
     />
     <div class="text-container">
       <h1>Course Intro</h1>
