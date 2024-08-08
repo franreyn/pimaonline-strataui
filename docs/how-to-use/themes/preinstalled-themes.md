@@ -17,10 +17,10 @@ Add the corresponding attribute above to the `<body>` to apply the color palette
 ```html
 <body green>
   <header class="header">
-    <img 
+    <img
       src="https://via.placeholder.com/1920X600" 
       alt="decorative image of a woman's hand typing on a computer" 
-      />
+    />
     <div class="text-container">
       <h1>Course Intro</h1>
       <p>
