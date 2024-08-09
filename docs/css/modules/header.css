@@ -1,103 +1,103 @@
 /* HEADER */
-.header {
+header {
   grid-area: header;
   position: relative;
   text-align: center;
 }
 
-.header img {
+header img {
   border-top: 5px solid;
   margin: 0;
 }
 
-.header .text-container {
+header-text {
   display: block;
   padding: 10px 0 25px 0;
 }
 
-.header .text-container h1,
-.header .text-container h2,
-.header .text-container h3,
-.header .text-container h4,
-.header .text-container p {
+header header-text h1,
+header header-text h2,
+header header-text h3,
+header header-text h4,
+header header-text p {
   line-height: 1.2;
   margin: auto;
   max-width: 600px;
 }
 
-.header .text-container p {
+header header-text p {
   font-size: 1.255rem;
 }
 
-.header .text-container ul,
-.header .text-container ol {
+header header-text ul,
+header header-text ol {
   margin-left: 30%;
   text-align: left;
 }
 
-.header img {
+header img {
   border-color: var(--color-primary);
 }
 
-.text-container {
+header-text {
   background-color: var(--color-primary);
 }
 
-.text-container h1,
-.text-container h2,
-.text-container h3,
-.text-container h4,
-.text-container p {
+header-text h1,
+header-text h2,
+header-text h3,
+header-text h4,
+header-text p {
   color: var(--color-white) !important;
 }
 
-.text-container ul li,
-.text-container ol li {
+header-text ul li,
+header-text ol li {
   color: var(--color-white);
 }
 
-.text-container ul li::before,
-.text-container ul li::after,
-.text-container ol li::before,
-.text-container ol li::after {
+header-text ul li::before,
+header-text ul li::after,
+header-text ol li::before,
+header-text ol li::after {
   color: var(--color-white);
 }
 
 
 @media screen and (min-width: 730px) {
-  .header .text-container h1,
-  .header .text-container h2,
-  .header .text-container h3,
-  .header .text-container h4,
-  .header .text-container p {
+  header header-text h1,
+  header header-text h2,
+  header header-text h3,
+  header header-text h4,
+  header header-text p {
     max-width: 760px;
   }
 
-  .header .text-container h1,
-  .header .text-container h2,
-  .header .text-container h3,
-  .header .text-container h4 {
+  header header-text h1,
+  header header-text h2,
+  header header-text h3,
+  header header-text h4 {
     line-height: 1.1;
   }
 
-  .header .text-container p {
+  header header-text p {
     line-height: 1.155;
   }
 }
 
 @media screen and (min-width: 998px) {
-  .header .text-container h1,
-  .header .text-container h2,
-  .header .text-container h3,
-  .header .text-container h4,
-  .header .text-container p {
+  header header-text h1,
+  header header-text h2,
+  header header-text h3,
+  header header-text h4,
+  header header-text p {
     max-width: 1160px;
   }
 
-  .header .text-container h1,
-  .header .text-container h2,
-  .header .text-container h3,
-  .header .text-container h4 {
+  header header-text h1,
+  header header-text h2,
+  header header-text h3,
+  header header-text h4 {
     line-height: 1.155;
   }
 }

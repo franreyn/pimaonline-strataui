@@ -27,7 +27,7 @@ The header is the first thing the student sees and includes the title of the pag
 ### Preview
 
 <div class="example-container">
-<header class="header">
+<header>
   <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
   <header-text>
     <h1>Course Intro</h1>
