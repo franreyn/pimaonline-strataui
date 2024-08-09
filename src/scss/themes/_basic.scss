@@ -288,6 +288,14 @@ table th {
         &:hover {
           color: var(--color-link-blue);
         }
+
+        &:visited {
+          color: var(--color-white);
+        }
+
+        &:visited:hover {
+          color: var(--color-link-blue);
+        }
       }
 
       &:first-child {

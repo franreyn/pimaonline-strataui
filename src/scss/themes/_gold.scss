@@ -242,6 +242,14 @@ body[gold] {
           &:hover {
             color: var(--gold-theme-hover);
           }
+          
+          &:visited {
+            color: var(--color-white);
+          }
+
+          &:visited:hover {
+            color: var(--gold-theme-hover);
+          }
         }
 
         &:first-child {

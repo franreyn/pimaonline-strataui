@@ -237,6 +237,14 @@ body[red] {
           &:hover {
             color: var(--red-theme-hover);
           }
+          
+          &:visited {
+            color: var(--color-white);
+          }
+
+          &:visited:hover {
+            color: var(--red-theme-hover);
+          }
         }
 
         &:first-child {

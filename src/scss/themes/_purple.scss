@@ -237,6 +237,14 @@ body[purple] {
           &:hover {
             color: var(--purple-theme-hover);
           }
+          
+          &:visited {
+            color: var(--color-white);
+          }
+
+          &:visited:hover {
+            color: var(--purple-theme-hover);
+          }
         }
 
         &:first-child {

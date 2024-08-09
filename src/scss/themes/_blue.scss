@@ -238,6 +238,14 @@ body[blue] {
           &:hover {
             color: var(--blue-theme-hover);
           }
+          
+          &:visited {
+            color: var(--color-white);
+          }
+
+          &:visited:hover {
+            color: var(--blue-theme-hover);
+          }
         }
 
         &:first-child {
