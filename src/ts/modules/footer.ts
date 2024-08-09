@@ -19,7 +19,7 @@ const handleFooter = (footer: HTMLElement) => {
   footerContent.classList.add("footnotes");
 
   // Capture all the content in existing footer and move inside footerContentDiv
-  const footerTextContent = footer.innerHTML;
+  const footerTextContent: string = footer.innerHTML;
   footer.innerHTML = "";
   footerContent.innerHTML = footerTextContent;
 

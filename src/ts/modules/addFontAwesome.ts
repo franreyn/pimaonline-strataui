@@ -1,17 +1,34 @@
 import { fontAwesomeVersionNum } from "../config";
 
-// Create a link element
-const fontAwesomeLink: HTMLLinkElement = document.createElement('link');
-
-// Get the document head
-const documentHead: HTMLElement = document.head;
-
 // Define the Font Awesome CDN URL
 const fontAwesomeCdn: string = `https://cdnjs.cloudflare.com/ajax/libs/font-awesome/${fontAwesomeVersionNum}/css/all.min.css`;
 
-// Add Font Awesome attributes and add the link to the document head
-fontAwesomeLink.setAttribute("href", `${fontAwesomeCdn}`);
-fontAwesomeLink.setAttribute("rel", "stylesheet");
+// Helper function to set multiple attributes
+const setAttributes = (element: HTMLElement, attributes: { [key: string]: string }) => {
+  Object.keys(attributes).forEach(key => element.setAttribute(key, attributes[key]));
+}
 
-// Append the link to the document head
-documentHead.appendChild(fontAwesomeLink);
+// Function to load Font Awesome
+const loadFontAwesome = () => {
+  // Ensure document.head exists
+  const documentHead: HTMLElement | null = document.head;
+  if (!documentHead) {
+    console.error("Document Error: document.head is not available.");
+    return;
+  }
+
+  // Create a link element
+  const fontAwesomeLink: HTMLLinkElement = document.createElement("link");
+
+  // Set attributes
+  setAttributes(fontAwesomeLink, {
+    href: fontAwesomeCdn,
+    rel: "stylesheet"
+  });
+
+  // Append the link to the document head
+  documentHead.appendChild(fontAwesomeLink);
+}
+
+// Load Font Awesome after the document is fully loaded
+document.addEventListener("DOMContentLoaded", loadFontAwesome);

@@ -7,7 +7,6 @@ const TabsWidgetWrapper: React.FC<TabsWidgetProps> = customElements["TabsWidget"
 const TabTitleWrapper: React.FC<TabTitleProps> = customElements["TabTitle"];
 const TabContentWrapper: React.FC<TabContentProps> = customElements["TabContent"];
 
-// AccordionItem and AccordionContent are not defined in CreateCustomElement
 interface TabsWidgetProps {
   children: React.ReactNode;
 }

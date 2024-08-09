@@ -1,18 +1,18 @@
-import React from 'react';
-import CallOutWidget from './widgets/CallOutWidget';
-import ContentBlock from './grid-components/ContentBlock';
-import ColumnOne from './grid-components/ColumnOne';
-import { AccordionWidget } from './widgets/AccordionWidget';
-import { AccordionItem } from './widgets/AccordionWidget';
-import { AccordionContent } from './widgets/AccordionWidget';
-import { MediaWidget } from './widgets/MediaWidget';
-import { MediaObject } from './widgets/MediaWidget';
-import { MediaInfo } from './widgets/MediaWidget';
-import ColumnsWrapper from './widgets/ColumnsWidget';
-import { TabContent, TabsWidget, TabTitle } from './widgets/TabsWidget';
-import { SliderItem, SliderWidget } from './widgets/SliderWidget';
-import { VocabCard, VocabCardsWidget } from './widgets/VocabCards';
-import { DefaultLabel, MutedLabel, SuccessLabel, WarningLabel, DangerLabel, InfoLabel } from './widgets/Labels';
+import React from "react";
+import CallOutWidget from "./widgets/CallOutWidget";
+import ContentBlock from "./grid-components/ContentBlock";
+import ColumnOne from "./grid-components/ColumnOne";
+import { AccordionWidget } from "./widgets/AccordionWidget";
+import { AccordionItem } from "./widgets/AccordionWidget";
+import { AccordionContent } from "./widgets/AccordionWidget";
+import { MediaWidget } from "./widgets/MediaWidget";
+import { MediaObject } from "./widgets/MediaWidget";
+import { MediaInfo } from "./widgets/MediaWidget";
+import ColumnsWrapper from "./widgets/ColumnsWidget";
+import { TabContent, TabsWidget, TabTitle } from "./widgets/TabsWidget";
+import { SliderItem, SliderWidget } from "./widgets/SliderWidget";
+import { VocabCard, VocabCardsWidget } from "./widgets/VocabCards";
+import { DefaultLabel, MutedLabel, SuccessLabel, WarningLabel, DangerLabel, InfoLabel } from "./widgets/Labels";
 
 export default function FirstColContent(): React.ReactElement {
   return (

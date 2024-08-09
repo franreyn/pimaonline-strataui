@@ -6,12 +6,15 @@ body[purple] {
     color: var(--color-muted-black);
   }
 
-  .header {
+  header {
     img {
       border-color: var(--purple-theme-primary);
     }
-    .text-container {
+    header-text {
       background-color: var(--purple-theme-primary);
+    }
+    h1 {
+      color: var(--color-white);
     }
   }
 
@@ -59,7 +62,7 @@ body[purple] {
   a,
   .toggle-footnotes {
     background-color: transparent;
-    color: var(--purple-theme-secondary);
+    color: var(--color-link-blue);
   }
 
   a:visited {
@@ -70,7 +73,7 @@ body[purple] {
   a:active,
   .toggle-footnotes:hover {
     background-color: transparent;
-    color: var(--purple-theme-hover);
+    color: var(--color-footnotes-blue);
   }
 
   .button {
@@ -229,9 +232,17 @@ body[purple] {
         border-color: var(--purple-theme-primary);
 
         a {
-          color: var(--purple-theme-secondary);
+          color: var(--color-white);
 
           &:hover {
+            color: var(--purple-theme-hover);
+          }
+          
+          &:visited {
+            color: var(--color-white);
+          }
+
+          &:visited:hover {
             color: var(--purple-theme-hover);
           }
         }
@@ -265,9 +276,15 @@ body[purple] {
     color: var(--color-muted-black);
   }
 
+  tab-item input:checked + label.hide-tab {
+    background-color: var(--color-muted-black);
+    color: var(--color-black);
+  }
+  
   tab-item label.hide-tab {
     background-color: transparent !important;
-    color: white;
+    color: var(--color-black);
+    font-weight: 500;
   }
 
   tab-content {

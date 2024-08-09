@@ -1,5 +1,5 @@
 
-#second-column assignments-widget,#second-column assignments-widget {
+column-two assignments-widget,column-two assignments-widget {
   margin: 2rem 0;
   padding: 0
 }
@@ -39,8 +39,8 @@ assignment-item ol li,assignment-item ul li {
 
 assignment-item p,assignment-item ol,assignment-item ul {
   font-size: .95rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
 assignment-item::before,assignment-item::marker {

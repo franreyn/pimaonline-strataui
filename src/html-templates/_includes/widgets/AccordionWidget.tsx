@@ -6,8 +6,6 @@ const AccordionWidgetWrapper: React.FC<AccordionWidgetProps> = customElements["A
 const AccordionItemWrapper: React.FC<AccordionItemProps> = customElements["AccordionItem"];
 const AccordionContentWrapper: React.FC<AccordionContentProps> = customElements["AccordionContent"];
 
-
-// AccordionItem and AccordionContent are not defined in CreateCustomElement
 interface AccordionWidgetProps {
   children: React.ReactNode;
 }
