@@ -1,5 +1,5 @@
 // Imported object mapping custom tag names to standard tag names
-import { customTagPairs } from '../config'; // Adjust path as per your project structure
+import { customTagPairs } from "../config"; // Adjust path as per your project structure
 
 // Wrap setTimeout in a Promise for asynchronous behavior
 function delay(ms: number): Promise<void> {

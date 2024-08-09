@@ -4,16 +4,16 @@ const slideHeight: number = 300;
 
 const handleSliderWidget = () => {
 
-  // Function to check if all direct children of each slider have the 'slider-item' class
+  // Function to check if all direct children of each slider have the "slider-item" class
   const checkSliderChildren = () => {
     [...sliderWidgets].forEach((slider: HTMLElement) => {
 
-      // Check if every direct child of the slider has the 'slider-item' tag
+      // Check if every direct child of the slider has the "slider-item" tag
       let sliderChildren: boolean = [...slider.children].every(child => child.tagName.toLowerCase()==="slider-item");
 
-      // Log an error message if any direct child does not have the 'slider-item'
+      // Log an error message if any direct child does not have the "slider-item"
       if (!sliderChildren) {
-        console.warn(`Document error: not all direct children of slider-widget have the slider-item tag name`);
+        console.warn("Document error: not all direct children of slider-widget have the slider-item tag name");
       }
     });
   };
@@ -28,7 +28,7 @@ const handleSliderWidget = () => {
     });
     // Iterate over each dot
     sliderDots.forEach((sliderDot: HTMLElement, sliderDotIndex: number) => {
-      // Toggle the 'active' class based on whether the dot corresponds to the active slide
+      // Toggle the "active" class based on whether the dot corresponds to the active slide
       sliderDot.classList.toggle("active", sliderDotIndex === newIndex);
     });
   };
@@ -74,7 +74,7 @@ const handleSliderWidget = () => {
 
 
   // Initialize each slider with navigation buttons, dots, and keyboard navigation
-  document.querySelectorAll<HTMLElement>('slider-widget').forEach((slider: HTMLElement, sliderIndex: number) => {
+  document.querySelectorAll<HTMLElement>("slider-widget").forEach((slider: HTMLElement, sliderIndex: number) => {
 
     
     // Set accessibility attributes for the slider
@@ -117,7 +117,7 @@ const handleSliderWidget = () => {
         hideSlidesAndDots(sliderItems, sliderDots, currentSlide);
         // Ensure the current slide is displayed
         sliderItems[currentSlide].style.display = "block";
-        // Add the 'active' class to the current dot
+        // Add the "active" class to the current dot
         sliderDot.classList.add("active");
         // Call the function to align the slide content if necessary
         totalSlideContentHeight(sliderItems[currentSlide]);
@@ -129,7 +129,7 @@ const handleSliderWidget = () => {
 
       // Hide the slide if it's not the current one
       sliderItem.style.display = sliderIndex !== currentSlide ? "none" : "block";
-      // If it's the current slide, add the 'active' class to the corresponding dot
+      // If it's the current slide, add the "active" class to the corresponding dot
       if (sliderIndex === currentSlide) {
         sliderDot.classList.add("active");
       }
@@ -200,13 +200,13 @@ const handleSliderWidget = () => {
     let touchStartX: number = 0;
     let touchEndX: number = 0;
 
-    // Event listener for the 'touchstart' event, which fires when a touch point is placed on the touch surface
+    // Event listener for the "touchstart" event, which fires when a touch point is placed on the touch surface
     slider.addEventListener("touchstart", (e: TouchEvent) => {
       // Store the X coordinate of the touch point when the touch starts
       touchStartX = e.changedTouches[0].screenX;
     }, false);
 
-    // Event listener for the 'touchend' event, which fires when a touch point is removed from the touch surface
+    // Event listener for the "touchend" event, which fires when a touch point is removed from the touch surface
     slider.addEventListener("touchend", (e: TouchEvent) => {
       // Store the X coordinate of the touch point when the touch ends
       touchEndX = e.changedTouches[0].screenX;
