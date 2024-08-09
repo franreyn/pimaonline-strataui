@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>StrataCSS - How to Use</title>
+  <title>Strata UI Documentation</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,14 +12,13 @@
   <script src="//cdn.jsdelivr.net/npm/docsify@4.13.1" defer></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js" defer></script>
   <script src="../js/scripts.js" type="module" defer></script>
+  <script src="../js/widgetCheck.js" type="module" defer></script>
 </head>
 <body>
   <div class="navbar">
-    <a href="/../index.html">Logo</a>
+    <a href="../how-to-use.html">Logo</a>
     <ul>
-      <li><a href="#" class="active">How to Use</a></li>
-      <li><a href="/../how-to-dev/how-to-dev.html">How to Develop</a></li>
-      <li>|</li>
+      <li><a href="javascript:void(0);" class="active">Documentation</a></li>
       <li><button><i class="fa-regular fa-moon"></i></button></li>
       <li><a href="https://github.com/franreyn/pimaonline-stratacss" target="_blank"><i class="fa-brands fa-github"></i></a></li>
     </ul>
@@ -28,18 +27,18 @@
   <script>
     window.$docsify = {
       auto2top: true,
-      name: '',
-      repo: '',
-      loadSidebar: '_sidebar.md',
+      name: "",
+      repo: "",
+      loadSidebar: "_sidebar.md",
       coverpage: false,
       search: {
         maxAge: 86400000, // Expiration time, the default one day
-        paths: "auto", // or 'auto'
-        placeholder: 'Type to search', // Localization
-        noData: 'No Search Results', // Localization
+        paths: "auto", // or "auto"
+        placeholder: "Type to search", // Localization
+        noData: "No Search Results", // Localization
         depth: 2, // Headline depth, 1 - 6
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        
+
       },
     }
   </script>

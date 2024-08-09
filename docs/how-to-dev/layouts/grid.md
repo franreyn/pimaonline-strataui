@@ -1,6 +1,6 @@
 # Grid Components
 
-The grid components help make up the different layouts in Strata CSS.
+The grid components help make up the different layouts in Strata UI.
 
 The grid components are:
 
@@ -36,8 +36,7 @@ Using grid and grid template, the CSS creates a general layout of the page.
 The two column layout uses grid as well and a combination of flex to ensure that the height of the two columns match regardless of the content size.
 
 ```scss
-#two-column,
-#two-col-widget {
+#two-column {
   display: grid;
   grid-row-gap: 10px;
   justify-content: center;
@@ -55,16 +54,13 @@ The two column layout uses grid as well and a combination of flex to ensure that
 }
 
 #two-column column-one,
-#two-col-widget column-one,
-column-two,
-#column-widget {
+column-two {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-#two-column content-block:last-child,
-#two-col-widget content-block:last-child {
+#two-column content-block:last-child {
   flex-grow: 1;
 }
 ```
@@ -89,8 +85,7 @@ content-block:last-child {
   margin-bottom: 0px;
 }
 
-#two-column content-block:last-child,
-#two-col-widget content-block:last-child {
+#two-column content-block:last-child {
   flex-grow: 1;
 }
 
@@ -117,6 +112,7 @@ It also consists of basic styles for the following:
 4. Typography for header and footnotes
 5. Syllabus header
 6. Buttons, links, images, figures, and utility elements
+
 <div class="footer">
-  <p>&copy; 2024 StrataCSS</p>
+  <p>&copy; 2024 Strata UI</p>
 </div>

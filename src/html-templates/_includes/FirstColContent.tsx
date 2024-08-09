@@ -44,8 +44,8 @@ export default function FirstColContent(): React.ReactElement {
       <h3 className="icon-book-open">Aenean euismod</h3>
           <p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
             Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="#">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
-            tempor ante <a href="#" target="_blank" rel="noopener">Curabitur</a>, " <a href="#" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
+            bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum
+            tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, " <a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget
             lorem condimentum malesuada mollis eget nulla.</p>
         </SliderItem>  
         <SliderItem>
@@ -149,7 +149,7 @@ export default function FirstColContent(): React.ReactElement {
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Module 1 Interactive Readings</a></td>
+              <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
               <td>0</td>
               <td>TBD</td>
             </tr>

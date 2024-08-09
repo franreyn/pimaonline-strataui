@@ -12,21 +12,21 @@ columns-widget > *, columns-widget > * > * {
 }
 
 @media screen and (min-width: 768px) {
-  columns-widget[wide-narrow]:not(#two-column columns-widget[wide-narrow]) {
+  columns-widget.wide-narrow:not(#two-column columns-widget.wide-narrow) {
     grid-template-columns: 65% calc(35% - 1rem);
   }
   
-  columns-widget[narrow-wide]:not(#two-column columns-widget[narrow-wide]) {
+  columns-widget.narrow-wide:not(#two-column columns-widget.narrow-wide) {
     grid-template-columns: 35% calc(65% - 1rem);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  #two-column columns-widget[wide-narrow] {
+  #two-column columns-widget.wide-narrow {
     grid-template-columns: 65% calc(35% - 1rem);
   }
   
-  #two-column columns-widget[narrow-wide] {
+  #two-column columns-widget.narrow-wide {
     grid-template-columns: 35% calc(65% - 1rem);
   }
 }

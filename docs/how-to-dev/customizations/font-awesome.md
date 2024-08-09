@@ -1,10 +1,12 @@
+<p class="section-text">Customizations</p>
+
 # Font Awesome
 
-For icon usage, the Font Awesome CDN is used.
+Font Awesom Icons for Strata UI
 
 ## Javascript
 
-The Typescript that is converted to Javascript, takes the document `<head>` and inserts the link to the CDN so that icons are enabled in the page.
+The Typescript that is converted to Javascript, takes the document `<head>` and inserts the link to the Font Awesome CDN so that icons are enabled in the page.
 
 The CDN link path is in the _ts > modules > addFontAwesome.ts_ file.
 
@@ -38,5 +40,5 @@ export const fontAwesomeVersionNum: string = "6.5.2";
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

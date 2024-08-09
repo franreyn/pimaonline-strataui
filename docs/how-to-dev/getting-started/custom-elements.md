@@ -1,6 +1,8 @@
-# Custom Elements
+<p class="section-text">Getting Started</p>
 
-In Strata CSS, we use JS and HTML to create custom HTML tags that are semantic and accessible.
+# Custom Elements in JSX
+
+These custom elements are for React testing in `html-templates` folder
 
 ## Create a New Custom Element
 
@@ -111,5 +113,5 @@ export const customElementAria: { customHtmlTag: string, ariaProp: string, ariaV
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

@@ -2,7 +2,7 @@
 
 # Quick Start
 
-The easiest way to get started with StrataCSS is to copy and paste one of the following sample HTML templates into your project.
+The easiest way to get started with Strata UI is to copy and paste one of the following sample HTML templates into your project.
 
 ## One Column Template
 
@@ -21,12 +21,12 @@ All content is displayed in a single column.
     <title>One Column Layout</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
@@ -91,13 +91,7 @@ All content is displayed in a single column.
         <h2>Videos</h2>
         <media-widget>
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3klMM9BkW5o?si=uM-RJ4PpzoNrv5lK"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3klMM9BkW5o?si=uM-RJ4PpzoNrv5lK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </media-object>
           <media-info>
             <p>How to Use Rhetoric to Get What You Want</p>
@@ -105,13 +99,7 @@ All content is displayed in a single column.
         </media-widget>
         <media-widget class="reverse">
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oTlOa409BAY?si=s71diVzSvz09WDIO"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oTlOa409BAY?si=s71diVzSvz09WDIO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </media-object>
           <media-info>
             <p>Answer These Questions to Identify Your Own Culture</p>
@@ -127,7 +115,7 @@ All content is displayed in a single column.
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Module 1 Interactive Readings</a></td>
+              <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
               <td>0</td>
               <td>TBD</td>
             </tr>
@@ -199,12 +187,12 @@ The main content is displayed in the left column while any supplementary content
     <title>Two Column Layout</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman's hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Module 1</h1>
         <p>Drafting Your Rhetorical Analysis</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
@@ -269,13 +257,7 @@ The main content is displayed in the left column while any supplementary content
         <h2>Videos</h2>
         <media-widget>
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/3klMM9BkW5o?si=uM-RJ4PpzoNrv5lK"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3klMM9BkW5o?si=uM-RJ4PpzoNrv5lK" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </media-object>
           <media-info>
             <p>How to Use Rhetoric to Get What You Want</p>
@@ -283,13 +265,7 @@ The main content is displayed in the left column while any supplementary content
         </media-widget>
         <media-widget class="reverse">
           <media-object>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/oTlOa409BAY?si=s71diVzSvz09WDIO"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oTlOa409BAY?si=s71diVzSvz09WDIO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           </media-object>
           <media-info>
             <p>Answer These Questions to Identify Your Own Culture</p>
@@ -305,7 +281,7 @@ The main content is displayed in the left column while any supplementary content
           </thead>
           <tbody>
             <tr>
-              <td><a href="#">Module 1 Interactive Readings</a></td>
+              <td><a href="javascript:void(0);">Module 1 Interactive Readings</a></td>
               <td>0</td>
               <td>TBD</td>
             </tr>
@@ -352,17 +328,17 @@ The main content is displayed in the left column while any supplementary content
           <assignment-item>
             <h3>Module 1 Readings</h3>
             <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-            <a href="#" target="_blank" class="button">Module 1 Readings</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Module 1 Readings</a></assignment-item
           >
           <assignment-item>
             <h3>Reading Review Activity</h3>
             <p>Rhetorical Analysis Review Activity</p>
-            <a href="#" target="_blank" class="button">Reading Review Activity</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Reading Review Activity</a></assignment-item
           >
           <assignment-item>
             <h3>Writing Assignment 1</h3>
             <p>Rhetorical Analysis Draft</p>
-            <a href="#" target="_blank" class="button">Writing Assignment 1</a></assignment-item
+            <a href="javascript:void(0);" target="_blank" class="button">Writing Assignment 1</a></assignment-item
           >
         </assignments-widget>
       </content-block>
@@ -405,5 +381,5 @@ The main content is displayed in the left column while any supplementary content
 ```
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

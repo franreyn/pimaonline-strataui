@@ -1,8 +1,12 @@
-# \_typography.scss Documentation
+<p class="section-text">Customizations</p>
 
-This styles can be found in the `_typography.scss` file. This file contains styles related to typography for Strata CSS.
+# \_typography.scss
 
-## Import
+Control the typography settings for Strata UI
+
+The styles can be found in the `_typography.scss` file. This file contains styles related to typography for Strata UI.
+
+## Import Variables
 
 ```scss
 @import "variables";
@@ -90,5 +94,5 @@ ol.two-col {
 These styles apply to unordered and ordered lists with the class "two-col" or "three-col". They set the number of columns for these lists to 1 by default, and increase to 2 or 3 columns when the viewport is at least 700 pixels wide.
 
   <div class="footer">
-    <p>&copy; 2024 StrataCSS</p>
+    <p>&copy; 2024 Strata UI</p>
   </div>

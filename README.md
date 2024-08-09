@@ -1,1 +1,1 @@
-# Strata CSS by PimaOnline
+# Strata UI by PimaOnline
