@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
-import Header from '../_includes/Header';
-import FirstColContent from '../_includes/FirstColContent';
-import SecondColContent from '../_includes/SecondColContent';
-import Footer from '../_includes/Footer';
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import Header from "../_includes/Header";
+import FirstColContent from "../_includes/FirstColContent";
+import SecondColContent from "../_includes/SecondColContent";
+import Footer from "../_includes/Footer";
 
 export default function TwoColumn(): string {
   const htmlString = ReactDOMServer.renderToStaticMarkup(

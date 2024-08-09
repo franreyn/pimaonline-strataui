@@ -295,6 +295,6 @@ if (sliderWidgets.length > 0) {
 if (sliderItems.length > 0) {
   if(sliderWidgets.length === 0) {
     // Error check: slider-item elements found but no slider-widget elements found
-    console.warn(`Document error: slider-item elements found but no slider-widget elements found. Please add a slider-widget element to contain the slider-item elements.`);
+    console.warn("Document error: slider-item elements found but no slider-widget elements found. Please add a slider-widget element to contain the slider-item elements.");
   } 
 }

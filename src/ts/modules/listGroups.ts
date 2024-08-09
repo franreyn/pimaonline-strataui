@@ -1,9 +1,9 @@
 // Select list groups
-const listGroups: NodeListOf<HTMLElement> = document.querySelectorAll('unordered-list-group, ordered-list-group');
+const listGroups: NodeListOf<HTMLElement> = document.querySelectorAll("unordered-list-group, ordered-list-group");
 
 // Function to handle individual list group
 const handleListGroup = (listGroup: HTMLElement) => {
-  const listItems: NodeListOf<HTMLElement> = listGroup.querySelectorAll('list-group-item');
+  const listItems: NodeListOf<HTMLElement> = listGroup.querySelectorAll("list-group-item");
 
   // Add class to list group
   listGroup.classList.add("list-group");

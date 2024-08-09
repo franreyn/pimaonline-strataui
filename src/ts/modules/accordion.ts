@@ -2,18 +2,18 @@ const accordionWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("acc
 
 const validateAccordionWidget = (accordionWidget: HTMLElement) => {
   // Check if there are any accordion items inside the accordion widget
-  const accordionItems = accordionWidget.querySelectorAll('accordion-item');
+  const accordionItems = accordionWidget.querySelectorAll("accordion-item");
 
   // If there are no accordion items, log a warning
   if (accordionItems.length === 0) {
-    console.warn('Document Error: no accordion items found inside the accordion widget.');
+    console.warn("Document Error: no accordion items found inside the accordion widget.");
     return;
   }
 
   // Check if there are any headings and content inside each accordion item
   accordionItems.forEach((item, index) => {
-    const heading: HTMLElement | null = item.querySelector(':scope > h3,:scope >  h4');
-    const content: HTMLElement | null = item.querySelector('accordion-content');
+    const heading: HTMLElement | null = item.querySelector(":scope > h3,:scope >  h4");
+    const content: HTMLElement | null = item.querySelector("accordion-content");
 
     // If there are no heading for the accordion item, log a warning
     if (!heading) {

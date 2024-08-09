@@ -1,5 +1,5 @@
-import React from 'react';
-import customElements from './CreateCustomElement';
+import React from "react";
+import customElements from "./CreateCustomElement";
 
 // Custom tag for header-text
 const HeaderText: React.FC<HeaderTextProps> = customElements["HeaderText"];

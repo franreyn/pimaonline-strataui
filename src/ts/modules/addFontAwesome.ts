@@ -13,12 +13,12 @@ const loadFontAwesome = () => {
   // Ensure document.head exists
   const documentHead: HTMLElement | null = document.head;
   if (!documentHead) {
-    console.error('Document Error: document.head is not available.');
+    console.error("Document Error: document.head is not available.");
     return;
   }
 
   // Create a link element
-  const fontAwesomeLink: HTMLLinkElement = document.createElement('link');
+  const fontAwesomeLink: HTMLLinkElement = document.createElement("link");
 
   // Set attributes
   setAttributes(fontAwesomeLink, {
@@ -31,4 +31,4 @@ const loadFontAwesome = () => {
 }
 
 // Load Font Awesome after the document is fully loaded
-document.addEventListener('DOMContentLoaded', loadFontAwesome);
+document.addEventListener("DOMContentLoaded", loadFontAwesome);

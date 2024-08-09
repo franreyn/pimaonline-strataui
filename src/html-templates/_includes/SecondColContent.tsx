@@ -1,8 +1,8 @@
-import React from 'react';
-import AssignmentsWidget from './widgets/AssignmentsWidget';
-import ContentBlock from './grid-components/ContentBlock';
-import ColumnTwo from './grid-components/ColumnTwo';
-import CallOutWidget from './widgets/CallOutWidget';
+import React from "react";
+import AssignmentsWidget from "./widgets/AssignmentsWidget";
+import ContentBlock from "./grid-components/ContentBlock";
+import ColumnTwo from "./grid-components/ColumnTwo";
+import CallOutWidget from "./widgets/CallOutWidget";
 
 export default function SecondColContent(): React.ReactElement {
   return (

@@ -14,4 +14,4 @@ const addAriaLabels = () => {
 };
 
 // Ensure the script runs after the document is fully loaded
-document.addEventListener('DOMContentLoaded', addAriaLabels);
+document.addEventListener("DOMContentLoaded", addAriaLabels);
