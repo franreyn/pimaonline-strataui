@@ -6,7 +6,7 @@ export const accordionWidgetJs = () => {
   const validateAccordion = (accordionWidget) => {
 
     // Check if there are any accordion items inside the accordion widget
-    const accordionItems = accordionWidget.querySelectorAll('accordion-item");
+    const accordionItems = accordionWidget.querySelectorAll("accordion-item");
 
     // If there are no accordion items, log a warning
     if (accordionItems.length === 0) {
