@@ -1,16 +1,16 @@
 export const sliderWidgetJs = () => {
-  const sliderWidgets = document.querySelectorAll('slider-widget');
-  const sliderItems = document.querySelectorAll('slider-item');
+  const sliderWidgets = document.querySelectorAll("slider-widget");
+  const sliderItems = document.querySelectorAll("slider-item");
   const slideHeight = 300;
 
   const handleSliderWidget = () => {
-    // Function to check if all direct children of each slider have the 'slider-item' class
+    // Function to check if all direct children of each slider have the "slider-item" class
     const checkSliderChildren = () => {
       sliderWidgets.forEach((slider) => {
-        // Check if every direct child of the slider has the 'slider-item' tag
+        // Check if every direct child of the slider has the "slider-item" tag
         let sliderChildren = Array.from(slider.children).every(child => child.tagName.toLowerCase() === "slider-item");
 
-        // Log an error message if any direct child does not have the 'slider-item'
+        // Log an error message if any direct child does not have the "slider-item"
         if (!sliderChildren) {
           console.warn(`Document error: not all direct children of slider-widget have the slider-item tag name`);
         }
@@ -27,7 +27,7 @@ export const sliderWidgetJs = () => {
       });
       // Iterate over each dot
       sliderDots.forEach((sliderDot, sliderDotIndex) => {
-        // Toggle the 'active' class based on whether the dot corresponds to the active slide
+        // Toggle the "active" class based on whether the dot corresponds to the active slide
         sliderDot.classList.toggle("active", sliderDotIndex === newIndex);
       });
     };
@@ -72,7 +72,7 @@ export const sliderWidgetJs = () => {
     };
 
     // Initialize each slider with navigation buttons, dots, and keyboard navigation
-    document.querySelectorAll('slider-widget').forEach((slider, sliderIndex) => {
+    document.querySelectorAll("slider-widget").forEach((slider, sliderIndex) => {
       // Set accessibility attributes for the slider
       slider.setAttribute("tabindex", "0");
       slider.setAttribute("role", "group");
@@ -113,7 +113,7 @@ export const sliderWidgetJs = () => {
           hideSlidesAndDots(sliderItems, sliderDots, currentSlide);
           // Ensure the current slide is displayed
           sliderItems[currentSlide].style.display = "block";
-          // Add the 'active' class to the current dot
+          // Add the "active" class to the current dot
           sliderDot.classList.add("active");
           // Call the function to align the slide content if necessary
           totalSlideContentHeight(sliderItems[currentSlide]);
@@ -125,7 +125,7 @@ export const sliderWidgetJs = () => {
 
         // Hide the slide if it's not the current one
         sliderItem.style.display = sliderIndex !== currentSlide ? "none" : "block";
-        // If it's the current slide, add the 'active' class to the corresponding dot
+        // If it's the current slide, add the "active" class to the corresponding dot
         if (sliderIndex === currentSlide) {
           sliderDot.classList.add("active");
         }
@@ -196,7 +196,7 @@ export const sliderWidgetJs = () => {
       let touchStartX = 0;
       let touchEndX = 0;
 
-      // Event listener for the 'touchstart' event, which fires when a touch point is placed on the touch surface
+      // Event listener for the "touchstart" event, which fires when a touch point is placed on the touch surface
       slider.addEventListener("touchstart", (e) => {
         // Store the X coordinate of the touch point when the touch starts
         touchStartX = e.changedTouches[0].screenX;

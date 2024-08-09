@@ -296,7 +296,7 @@ const handleSliderWidget = () => {
         hideSlidesAndDots(sliderItems, sliderDots, currentSlide);
         // Ensure the current slide is displayed
         sliderItems[currentSlide].style.display = "block";
-        // Add the 'active' class to the current dot
+        // Add the "active" class to the current dot
         sliderDot.classList.add("active");
         // Call the function to align the slide content if necessary
         totalSlideContentHeight(sliderItems[currentSlide]);
@@ -308,7 +308,7 @@ const handleSliderWidget = () => {
 
       // Hide the slide if it's not the current one
       sliderItem.style.display = sliderIndex !== currentSlide ? "none" : "block";
-      // If it's the current slide, add the 'active' class to the corresponding dot
+      // If it's the current slide, add the "active" class to the corresponding dot
       if (sliderIndex === currentSlide) {
         sliderDot.classList.add("active");
       }
@@ -379,13 +379,13 @@ const handleSliderWidget = () => {
     let touchStartX: number = 0;
     let touchEndX: number = 0;
 
-    // Event listener for the 'touchstart' event, which fires when a touch point is placed on the touch surface
+    // Event listener for the "touchstart" event, which fires when a touch point is placed on the touch surface
     slider.addEventListener("touchstart", (e: TouchEvent) => {
       // Store the X coordinate of the touch point when the touch starts
       touchStartX = e.changedTouches[0].screenX;
     }, false);
 
-    // Event listener for the 'touchend' event, which fires when a touch point is removed from the touch surface
+    // Event listener for the "touchend" event, which fires when a touch point is removed from the touch surface
     slider.addEventListener("touchend", (e: TouchEvent) => {
       // Store the X coordinate of the touch point when the touch ends
       touchEndX = e.changedTouches[0].screenX;

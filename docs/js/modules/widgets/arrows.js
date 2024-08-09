@@ -1,6 +1,6 @@
 export const arrowsWidgetJs = () => {
   // This code runs without needing any specific widgets to be on the page and just handles the animation for arrows turning when clicked
-  const arrowRightElements = document.querySelectorAll('.arrow-right');
+  const arrowRightElements = document.querySelectorAll(".arrow-right");
 
   const handleArrowRotation = () => {
 
@@ -8,10 +8,10 @@ export const arrowsWidgetJs = () => {
     arrowRightElements.forEach((arrow) => {
 
       // Add an event listener for any HTML elements that have the ".arrow-right" class
-      arrow.addEventListener('click', (event) => {
+      arrow.addEventListener("click", (event) => {
 
         // Cast event target type to HTML element and access classes and toggl the "arrow-down" class
-        (event.target).classList.toggle('arrow-down');
+        (event.target).classList.toggle("arrow-down");
       });
     });
   }
