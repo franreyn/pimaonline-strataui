@@ -15,11 +15,3 @@
   margin-left: -2rem;
   font-family: "FontAwesome";
 }
-
-[dark-mode] .example-container blockquote {
-  color: var(--dark-white);
-}
-
-[dark-mode] .example-container blockquote::before {
-  color: var(--dark-white);
-}
