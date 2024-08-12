@@ -6,6 +6,13 @@
 - mobile menu - 768px
 */
 
+.logo {
+  min-height:auto;
+  min-width: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../_images/full-logo_dark.svg");
+}
 
 body {
   max-width: var(--max-width);
@@ -98,9 +105,17 @@ body.close .sidebar-toggle-button span:nth-child(3) {
   body .content {
     transform: translateX(300px);
   }
+  
   .sidebar {
     max-width: var(--max-width);
     margin: 0 auto;
     left: auto;
+  }
+}
+
+/* Edit sidebar when screen is extra small */
+@media screen and (max-width: 575px) {
+  .logo {
+    background-image: url("../_images/logomark_blue.svg")
   }
 }
