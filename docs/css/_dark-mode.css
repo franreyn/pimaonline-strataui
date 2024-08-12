@@ -5,9 +5,34 @@ body[dark-mode] {
   color: var(--dark-white);
 }
 
+[dark-mode] .markdown-section :is(h1,h2,h3,h4,h5) {
+  color: var(--dark-white);
+}
+
+[dark-mode] p {
+  color: var(--dark-white);
+}
+
+/* Cover page */
+
 [dark-mode] section.cover.show {
   background-color: var(--dark-primary) !important;
 }
+
+[dark-mode] section.cover .cover-main {
+	background-color: var(--dark-tertiary);
+}
+
+[dark-mode] section.cover .cover-main .vocab-cards-widget .card {
+	background-color: var(--dark-primary);
+}
+
+[dark-mode] section.cover .top-banner :is(h2,h3,h4,p) {
+  color: var(--color-white);
+  text-align: center;
+}
+
+/* Navbar */
 
 [dark-mode] :is(.navbar a, .navbar button, .anchor span, .cover-main *, .sidebar) {
   color: var(--dark-white);
@@ -25,6 +50,10 @@ body[dark-mode] {
   background-color: transparent;
 }
 
+[dark-mode] input[type="search"]::placeholder {
+  color: var(--dark-secondary);
+}
+
 [dark-mode] .sidebar ul li a {
   color: var(--dark-secondary);
 }
@@ -32,6 +61,24 @@ body[dark-mode] {
 [dark-mode] button.sidebar-toggle {
   background-color: rgba(var(--primary-rgb), .3);
   width: fit-content;
+}
+
+[dark-mode] .logo {
+  background-image: url("../_images/full-logo_light.svg");
+}
+
+/* Markdown section */
+
+[dark-mode] :is(.markdown-section a) {
+	color: var(--dark-link-color);
+}
+
+[dark-mode] :is(.markdown-section strong) {
+	color: var(--dark-white);
+}
+
+[dark-mode] :is(.markdown-section a:hover) {
+	color: var(--dark-link-color-hover);
 }
 
 [dark-mode] :is(.sidebar ul li.active > a, .sidebar ul li a:hover, .navbar .active) {
@@ -73,10 +120,32 @@ body[dark-mode] {
   color: var(--dark-white);
 }
 
-/* Assignments widget */
+/* Footer */
 
-[dark-mode] assignment-item h2, [dark-mode] assignment-item h3, [dark-mode] assignment-item h4 {
-  background-color: var(--dark-white);
+[dark-mode] .footer p {
+	color: var(--dark-secondary);
+}
+
+[dark-mode] .toggle-footer {
+	color: var(--dark-white);
+}
+
+/* Search clear button */
+
+[dark-mode] .clear-button.show svg path {
+	stroke: var(--dark-primary);
+}
+
+/* List group widget */
+
+[dark-mode] ul.list-group .list-group-item:hover, [dark-mode] ol.list-group .list-group-item:hover {
+	background-color: var(--dark-tertiary);
+}
+
+/* Vocab card widget */
+
+[dark-mode] ul.vocab-cards-widget li {
+	background-color: var(--dark-tertiary);
 }
 
 /* Accordion widget */
@@ -97,20 +166,21 @@ body[dark-mode] {
   border-radius: var(--bottom-radius);
 }
 
+/* Tables */
+
 [dark-mode] table thead {
-  color: var(--color-white);
+  color: var(--dark-white);
   background-color: var(--color-docs-primary);
 }
 
 [dark-mode] table tr {
-  color: var(--color-white);
+  color: var(--dark-white);
   background-color: var(--dark-primary);
 }
 
 [dark-mode] table td, [dark-mode] table th {
   border: 1px solid var(--dark-secondary);
 }
-
 
 @media screen and (min-width: 768px) {
   body[dark-mode] tr:nth-child(even) {
@@ -130,4 +200,20 @@ body[dark-mode] {
   body[dark-mode]  tr:nth-child(odd) {
     background-color: var(--dark-primary) !important;
   }
+}
+
+/* Blockquote  */
+
+[dark-mode] .example-container blockquote {
+  color: var(--dark-white);
+}
+
+[dark-mode] .example-container blockquote::before {
+  color: var(--dark-white);
+}
+
+/* Callout widget */
+
+[dark-mode] callout-widget {
+  background-color: var(--dark-tertiary);
 }

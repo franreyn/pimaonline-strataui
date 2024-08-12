@@ -5,7 +5,3 @@ callout-widget {
   padding: 2rem;
   border-radius: var(--subtle-radius);
 }
-
-[dark-mode] callout-widget {
-  background-color: var(--dark-tertiary);
-}

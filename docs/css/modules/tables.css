@@ -74,10 +74,6 @@ table td, table th {
   table th {
     background-color: var(--color-primary);
  }
-
- [dark-mode] tr:nth-of-type(odd) {
-  color: var(--color-white);
-}
 }
 
 /* Responsive table CSS for mobile */
