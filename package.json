@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "A HTML-based templating system used to create web pages for online courses",
   "main": "index.js",
+  "file": [
+    "README.md",
+    "LICENSE.md",
+    "package.json",
+    "dist/css",
+    "dist/js"
+  ],
   "scripts": {
     "dev": "concurrently \"npm run serve\" \"npm run watch\"",
     "build": "webpack",
