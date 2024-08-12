@@ -1,7 +1,7 @@
 {
-  "name": "pimaonline-strataui",
+  "name": "@pimaonline/pimaonline-strataui",
   "version": "1.0.0",
-  "description": "An HTML-based templating system used to create web pages for online courses",
+  "description": "A HTML-based templating system used to create web pages for online courses",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"npm run serve\" \"npm run watch\"",
