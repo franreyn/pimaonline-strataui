@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A HTML-based templating system used to create web pages for online courses",
   "main": "index.js",
-  "file": [
+  "files": [
     "README.md",
     "LICENSE.md",
     "package.json",
