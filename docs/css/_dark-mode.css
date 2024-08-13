@@ -120,6 +120,16 @@ body[dark-mode] {
   color: var(--dark-white);
 }
 
+/* Custom Code Snippets */
+
+[dark-mode] .code-snippet {
+  background-color: var(--dark-primary) !important;
+}
+
+[dark-mode] .code-snippet>pre {
+  background-color: var(--dark-primary) !important;
+}
+
 /* Footer */
 
 [dark-mode] .footer p {
@@ -216,4 +226,11 @@ body[dark-mode] {
 
 [dark-mode] callout-widget {
   background-color: var(--dark-tertiary);
+}
+
+/* Edit logo when screen is extra small */
+@media screen and (max-width: 575px) {
+  [dark-mode] .logo {
+    background-image: url("../_images/logomark_blue.svg")
+  }
 }
