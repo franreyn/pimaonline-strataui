@@ -18,8 +18,8 @@ strataDarkModeBtn.addEventListener("click", toggleDarkMode);
 // Change the logo based on dark mode
 const darkModeLogo = () => {
   let strataBody = document.querySelector("body");
-  console.log(strataBody);
-  if (strataBody?.hasAttribute('dark-mode')) {
+
+	if (strataBody?.hasAttribute('dark-mode')) {
     topLogo?.setAttribute('src', '../../_images/full-logo_white.png');
   } else {
     topLogo?.setAttribute('src', '../../_images/full-logo_dark.png');
