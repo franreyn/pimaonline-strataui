@@ -1,3 +1,5 @@
+/* Docsify - default behavior is to have menu visible and open on desktop and closed on mobile so the styles are to reflect that same behavior with the custom navbar */
+
 :root {
   --max-width: 1200px;
 }
@@ -76,7 +78,7 @@ body.close .sidebar-toggle-button span:nth-child(3) {
 
 /* Edit sidebar when screen is large and there is not a mobile menu */
 @media screen and (min-width: 768px) {
-  .sidebar {
+  body .sidebar {
     max-width: var(--max-width);
     margin: 0 auto;
     left: auto;
@@ -94,28 +96,54 @@ body.close .sidebar-toggle-button span:nth-child(3) {
     padding: 10px;
   }
 
-  body.close .sidebar {
-    display: none;
-  }
-
-  body.close .content {
+  body .content {
     transform: translateX(0);
   }
 
-  body .content {
-    transform: translateX(300px);
-  }
-  
-  .sidebar {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    left: auto;
-  }
+	/* Reverse toggle button */
+	.sidebar-toggle-button span:nth-child(1) {
+		transform: rotate(0deg);
+		transition: .3s ease;
+	}
+	
+	.sidebar-toggle-button span:nth-child(2) {
+		opacity: 1;
+		transition: .3s ease;
+	}
+	
+	.sidebar-toggle-button span:nth-child(3) {
+		transform: rotate(0deg);
+		transition: .3s ease;
+	}
+	
+	body.close .sidebar-toggle-button span:nth-child(1) {
+		transform: rotate(-45deg) translate(-5px, 4px);
+		transition: .3s ease;
+	}
+	
+	body.close .sidebar-toggle-button span:nth-child(2) {
+		opacity: 0;
+		transition: .3s ease;
+	}
+	
+	body.close .sidebar-toggle-button span:nth-child(3) {
+		transform: rotate(45deg) translate(-4px, -4px);
+		transition: .3s ease;
+	}
 }
 
 /* Edit sidebar when screen is extra small */
 @media screen and (max-width: 575px) {
   .logo {
-    background-image: url("../_images/logomark_blue.svg")
+    background-image: url("../_images/logomark_blue.svg");
+		min-width: 25px;
   }
+
+	.navbar ul {
+		padding-inline-start: 20px;
+	}
+
+	.code-snippet {
+		max-width: 80%;
+	}
 }
