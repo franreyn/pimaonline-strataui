@@ -1,7 +1,5 @@
-import { InputHTMLAttributes } from "react";
-
 // Define the type for tabsWidgets
-const tabsWidgetsGroups: NodeListOf<Element> = document.querySelectorAll("tabs-widget");
+const tabsWidgetsGroups: NodeListOf<Element> = document.querySelectorAll(".tabs-widget");
 // Define the type for callTabsWidget function
 const callTabsWidget = () => {
 
@@ -18,7 +16,7 @@ const callTabsWidget = () => {
     let tabGroupNum: number = tabsWidgetsGroupIndex + 1;
 
     // Check if tab-items are present for this tabs-widget group
-    const tabItems: NodeListOf<HTMLElement> = tabsWidgetsGroup.querySelectorAll("tab-item");
+    const tabItems: NodeListOf<HTMLElement> = tabsWidgetsGroup.querySelectorAll(".tab-item");
 
     // If there is a tab container around each tab item
     if (tabItems.length > 0) {
@@ -48,7 +46,7 @@ const callTabsWidget = () => {
         tabLabel.setAttribute("id", `tabLabel${tabItemsNum}`);
 
         // Check for tab-title tag and add it to tab label
-        const tabTitle: HTMLElement | null = tabItem.querySelector("tab-title");
+        const tabTitle: HTMLElement | null = tabItem.querySelector(".tab-title");
 
         if(tabTitle) {
           // Add tab title to tab label
@@ -66,7 +64,7 @@ const callTabsWidget = () => {
         tabItem.insertBefore(tabLabel, tabItemSecondChild);
 
         // Add tab-content attributes
-        const tabContent: HTMLElement | null = tabItem.querySelector("tab-content");
+        const tabContent: HTMLElement | null = tabItem.querySelector(".tab-content");
         if (tabContent) {
           tabContent.classList.add("tab-panel");
           tabContent.setAttribute("tabindex", "0");
@@ -81,17 +79,19 @@ const callTabsWidget = () => {
 
         // Check and add hide tab dynamically
         if (tabItemIndex + 1 == tabItems.length) {
-          const hideTabCheck: HTMLElement | null = tabItem.querySelector("tab-title");
+          const hideTabCheck: HTMLElement | null = tabItem.querySelector(".tab-title");
           if (hideTabCheck) {
             if (hideTabCheck.textContent !== "Hide") {
               // If last tab doesn't say "hide" then create last tab item as hide tab
-              const hideTabItem: HTMLElement = document.createElement("tab-item");
+              const hideTabItem: HTMLElement = document.createElement("div");
+
+							hideTabItem.classList.add("tab-item");
 
               // Add hide tab item to tab items
               tabsWidgetsGroup.appendChild(hideTabItem);
 
               // Create hide tab title
-              const hideTabTitle: HTMLElement = document.createElement("tab-title");
+              const hideTabTitle: HTMLElement = document.createElement("span");
               hideTabTitle.textContent = "Hide";
 
               // Create label for hide tab

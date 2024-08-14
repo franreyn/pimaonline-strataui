@@ -1,8 +1,8 @@
-const accordionWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("accordion-widget");
+const accordionWidgets: NodeListOf<HTMLElement> = document.querySelectorAll(".accordion-widget");
 
 const validateAccordionWidget = (accordionWidget: HTMLElement) => {
   // Check if there are any accordion items inside the accordion widget
-  const accordionItems = accordionWidget.querySelectorAll("accordion-item");
+  const accordionItems = accordionWidget.querySelectorAll(".accordion-item");
 
   // If there are no accordion items, log a warning
   if (accordionItems.length === 0) {
@@ -13,7 +13,7 @@ const validateAccordionWidget = (accordionWidget: HTMLElement) => {
   // Check if there are any headings and content inside each accordion item
   accordionItems.forEach((item, index) => {
     const heading: HTMLElement | null = item.querySelector(":scope > h3,:scope >  h4");
-    const content: HTMLElement | null = item.querySelector("accordion-content");
+    const content: HTMLElement | null = item.querySelector(".accordion-content");
 
     // If there are no heading for the accordion item, log a warning
     if (!heading) {
@@ -35,7 +35,7 @@ const handleAccordions = () => {
     // Validate the accordion widget
     validateAccordionWidget(accordionWidget);
 
-    const accordionItems: NodeListOf<HTMLElement> = accordionWidget.querySelectorAll("accordion-item");
+    const accordionItems: NodeListOf<HTMLElement> = accordionWidget.querySelectorAll(".accordion-item");
 
     // Iterate over each accordion item
     if (accordionItems.length > 0) {
@@ -48,7 +48,7 @@ const handleAccordions = () => {
           accordionHeading.classList.add("toggle-btn", "accordion-title", "arrow-right");
         }
 
-        const accordionContent: HTMLElement | null = accordionItem.querySelector("accordion-content");
+        const accordionContent: HTMLElement | null = accordionItem.querySelector(".accordion-content");
 
         // Add class to the accordion content
         if (accordionContent) {

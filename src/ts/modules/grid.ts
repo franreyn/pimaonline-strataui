@@ -27,13 +27,13 @@ const addGrid = (): void => {
 
       // Checks each element in the topLevelElements array. If an element doesn’t match certain id, tagName, or className conditions, it sets foundNestedElement to true and stops the loop. Essentially, it’s searching for a specific type of element in the array.
       if (
-        element.tagName !== "COLUMN-ONE" &&
-        element.tagName !== "COLUMN-TWO" &&
+				!element.classList.contains("column-one") &&
+				!element.classList.contains("column-two") &&
         element.tagName !== "HEADER" &&
         element.tagName !== "FOOTER" &&
         element.tagName !== "SCRIPT" &&
         element.id !== "loom-companion-mv3" &&
-        element.className !== "focus-reader-switches"
+        element.className !== "focus-reader-switches" // (review - should this be removed?)
       ) {
         foundNestedElement = true;
         break;
