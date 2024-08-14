@@ -1,4 +1,4 @@
-slider-widget {
+.slider-widget {
   position: relative;
   display: block;
   padding: 1rem 1rem 4rem;
@@ -29,7 +29,7 @@ slider-widget {
   }
 }
 
-slider-item {
+.slider-item {
   display: block;
   height: 300px;
   overflow: auto;
@@ -40,11 +40,11 @@ slider-item {
   }
 }
 
-.h-400 slider-item {
+.h-400 .slider-item {
   height: 400px;
 }
 
-.h-500 slider-item {
+.h-500 .slider-item {
   height: 500px;
 }
 
@@ -64,7 +64,7 @@ slider-item {
 }
 
 @media screen and (min-width: 768px) {
-  slider-widget:not(column-two slider-widget) {
+  .slider-widget:not(.column-two .slider-widget) {
     padding: 1rem 2rem;
     
     .slider-arrow {
@@ -82,13 +82,13 @@ slider-item {
     }
   }
 
-  slider-widget button[class^="icon-chevron-"]::before {
+  .slider-widget button[class^="icon-chevron-"]::before {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .short-content:not(column-two .short-content) > div {
+  .short-content:not(.column-two .short-content) > div {
     transform: translateY(25%);
   }
 }

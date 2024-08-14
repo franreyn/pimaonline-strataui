@@ -1,4 +1,4 @@
-media-widget {
+.media-widget {
   border: 1px solid;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@ media-widget {
     flex-direction: column-reverse;
   }
 
-  media-object {
+  .media-object {
     overflow: hidden;
     padding-top: 2rem;
     padding-bottom: 55%;
@@ -28,7 +28,7 @@ media-widget {
     }
   }
 
-  media-info {
+  .media-info {
     padding: .8rem 0;
     width: 100%;
 
@@ -43,7 +43,7 @@ media-widget {
 }
 
 @media screen and (min-width: 890px) {
-  media-widget {
+  .media-widget {
     max-width: 90%;
   }
 }

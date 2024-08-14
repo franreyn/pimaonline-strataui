@@ -1,4 +1,4 @@
-accordion-widget {
+.accordion-widget {
   margin: 2rem 0;
   display: block;
 
@@ -6,8 +6,7 @@ accordion-widget {
     margin-top: 0;
   }
 
-  accordion-content {
-    display: block;
+  .accordion-content {
     padding: 10px;
 
     h4:first-child {
@@ -19,7 +18,7 @@ accordion-widget {
     }
   }
 
-  accordion-item {
+  .accordion-item {
     display: block;
     border: 1px solid;
     border-bottom: none;

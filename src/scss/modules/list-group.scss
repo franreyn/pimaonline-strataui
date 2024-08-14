@@ -5,7 +5,7 @@ ul.list-group, ol.list-group {
   border-radius: var(--round-radius);
   padding: 0;
  
-  .list-group-item {
+  li {
      border-bottom: 1px solid var(--color-grey);
      position: relative;
      display: block;
