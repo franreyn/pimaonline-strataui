@@ -3,6 +3,18 @@ import { courseBody, columnOne, columnTwo } from "./variables";
 
 const addGrid = (): void => {
 
+	//Error checking for multiple layout classes
+	const columnOneClasses = document.querySelectorAll(".column-one");
+	const columnTwoClasses = document.querySelectorAll(".column-two");
+	
+	if(columnOneClasses.length > 1) {
+		console.warn("Document error: multiple column-one classes found. Please only use one column-one class.");
+	} 
+
+	if(columnTwoClasses.length > 1) {
+		console.warn("Document error: multiple column-two classes found. Please only use one column-two class.");
+	}
+
   // Typescript requires checking for courseBody
   if (courseBody !== null) {
     if (columnOne && columnTwo) {
