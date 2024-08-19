@@ -1,13 +1,12 @@
-const vocabCardsWidgets: NodeListOf<HTMLElement> = document.querySelectorAll("vocab-cards-widget");
+const vocabCardsWidgets: NodeListOf<HTMLElement> = document.querySelectorAll(".vocab-cards-widget");
 
 const handleVocabCards = () => {
   // Add aria attributes to ul.vocab-cards
   vocabCardsWidgets.forEach((vocabCardsWidget: HTMLElement) => {
     vocabCardsWidget.setAttribute("role", "region");
     vocabCardsWidget.setAttribute("aria-label", "vocabulary list");
-    vocabCardsWidget.classList.add("vocab-cards-widget");
 
-    const vocabGroups: NodeListOf<HTMLElement> = vocabCardsWidget.querySelectorAll("li,vocab-card");
+    const vocabGroups: NodeListOf<HTMLElement> = vocabCardsWidget.querySelectorAll("li");
 
     if (vocabGroups.length > 0) {
       // Add aria attributes to li.vocab

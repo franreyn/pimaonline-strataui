@@ -10,7 +10,7 @@ body[purple] {
     img {
       border-color: var(--purple-theme-primary);
     }
-    header-text {
+    .header-text {
       background-color: var(--purple-theme-primary);
     }
     h1 {
@@ -22,7 +22,7 @@ body[purple] {
     color: var(--purple-theme-primary);
   }
 
-  content-block {
+  .content-block {
     h2:first-child {
       border-color: var(--purple-theme-primary) !important;
       color: var(--color-muted-black);
@@ -112,15 +112,15 @@ body[purple] {
 
   // Accordion module
 
-  accordion-widget {
-    accordion-content {
+  .accordion-widget {
+    .accordion-content {
       p {
         &.show {
           background-color: var(--purple-theme-tertiary);
         }   
       }
     }
-    accordion-item {
+    .accordion-item {
       border-color: var(--purple-theme-primary);
       &>h3,h4 {
         p {
@@ -142,11 +142,11 @@ body[purple] {
 
   // Assignments module
 
-  assignment-item {
+  .assignment-item {
     border-color: var(--purple-theme-primary);
   }
 
-  assignment-item h2,assignment-item h3,assignment-item h4 {
+  .assignment-item h2,.assignment-item h3,.assignment-item h4 {
     background-color: var(--purple-theme-tertiary);
   }
 
@@ -179,13 +179,13 @@ body[purple] {
 
   // Callout module
 
-  callout-widget {
+  .callout-widget {
     background-color: var(--purple-theme-tertiary);
   }
 
   // Slider module
 
-  slider-widget {
+  .slider-widget {
     background-color: var(--slider-bkg);
 
     .slider-arrow {
@@ -261,33 +261,33 @@ body[purple] {
 
   // Tabs module
 
-  tab-item input:checked + label {
+  .tab-item input:checked + label {
     background-color: var(--purple-theme-primary);
     color: white;
   }
 
-  tab-item input:checked + label + tab-content {
+  .tab-item input:checked + label + .tab-content {
     border-color: var(--purple-theme-primary);
   }
 
-  tab-item label {
+  .tab-item label {
     background-color: white;
     border-color: var(--purple-theme-primary);
     color: var(--color-muted-black);
   }
 
-  tab-item input:checked + label.hide-tab {
+  .tab-item input:checked + label.hide-tab {
     background-color: var(--color-muted-black);
     color: var(--color-black);
   }
   
-  tab-item label.hide-tab {
+  .tab-item label.hide-tab {
     background-color: transparent !important;
     color: var(--color-black);
     font-weight: 500;
   }
 
-  tab-content {
+  .tab-content {
     background: var(--purple-theme-tertiary);
   }
 

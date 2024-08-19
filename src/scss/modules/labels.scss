@@ -1,4 +1,4 @@
-default-label, muted-label, success-label, warning-label, danger-label, info-label {
+.default-label, .muted-label, .success-label, .warning-label, .danger-label, .info-label {
   border-radius: 1px;
   color: var(--color-white);
   display: inline;
@@ -13,29 +13,29 @@ default-label, muted-label, success-label, warning-label, danger-label, info-lab
   border-radius: 1px;
 }
 
-default-label {
+.default-label {
   background-color: var(--color-primary);
 }
 
-muted-label {
+.muted-label {
   background-color: var(--muted-label-color);
   color: var(--color-black);
 }
 
-success-label {
+.success-label {
   background-color: var(--success-label-color);
 }
 
-danger-label {
+.danger-label {
   background-color: var(--danger-label-color);
 }
 
-warning-label {
+.warning-label {
   background-color: var(--warning-label-color);
   color: var(--color-black);
 }
 
-info-label {
+.info-label {
   background-color: var(--info-label-color);
   color: var(--color-black);
 }

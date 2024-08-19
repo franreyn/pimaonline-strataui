@@ -1,17 +1,7 @@
 // Edit Font Awesome Version Number
 export const fontAwesomeVersionNum: string = "6.5.2";
 
-/* Configure changing custom tag names into semantic normal HTML tags. key should be the custom tag you are targetting, and the value should be the standard HTML tag you want to replace it with.
- */
-export const customTagPairs: { [customTagName: string]: string } = {
-  "vocab-cards-widget": "ul",
-  "vocab-card": "li",
-  "unordered-list-group": "ul",
-  "ordered-list-group": "ol",
-  "list-group-item": "li",
-}
-
-// Variable used to define custom HTML tags
+// Variable used to define custom HTML tags for testing area (review - should be removed)
 // To add new custom elements, add new objects here
 export const customElementsData: { jsxName: string, customHtmlTag: string }[] = [
   { jsxName: "CallOutWidget", customHtmlTag: "callout-widget" },
@@ -41,12 +31,4 @@ export const customElementsData: { jsxName: string, customHtmlTag: string }[] = 
   { jsxName: "WarningLabel", customHtmlTag: "warning-label" },
   { jsxName: "DangerLabel", customHtmlTag: "danger-label" },
   { jsxName: "InfoLabel", customHtmlTag: "info-label" },
-];
-
-// Variable used to know which custom elements  (jsx name, aria property ,aria value)
-export const customElementAria: { customHtmlTag: string, ariaProp: string, ariaValue: string }[] = [
-  { customHtmlTag: "assignments-widget", ariaProp: "role", ariaValue: "list" },
-  { customHtmlTag: "assignment-item", ariaProp: "role", ariaValue: "listItem" },
-  { customHtmlTag: "column-one", ariaProp: "role", ariaValue: "main" },
-  { customHtmlTag: "column-two", ariaProp: "role", ariaValue: "region" },
 ];

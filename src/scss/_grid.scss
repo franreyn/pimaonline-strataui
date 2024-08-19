@@ -26,17 +26,17 @@ body {
 }
 
 header,
-column-one,
+.column-one,
 footer {
   margin: 0 auto;
   max-width: 998px;
   width: 100%;
 }
 
-column-one {
+.column-one {
   grid-area: body;
 
-  content-block {
+  .content-block {
     width: 96%;
     width: -moz-available;
     width: -webkit-fill-available;
@@ -79,18 +79,18 @@ footer {
   max-width: 1170px;
 }
 
-#two-column column-one,
-column-two {
+#two-column .column-one,
+.column-two {
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-#two-column content-block:last-child {
+#two-column .content-block:last-child {
   flex-grow: 1;
 }
 
-column-two {
+.column-two {
   grid-area: column-two;
 }
 
@@ -119,7 +119,7 @@ header {
     margin: 0;
   }
 
-  header-text {
+  .header-text {
     display: block;
     padding: 10px 0 25px 0;
 
@@ -142,7 +142,7 @@ header {
 }
 
 @media screen and (min-width: 730px) {
-  header header-text {
+  header .header-text {
     &:is(h1, h2, h3, h4, p) {
       max-width: 760px;
     }
@@ -158,7 +158,7 @@ header {
 }
 
 @media screen and (min-width: 998px) {
-  header header-text {
+  header .header-text {
     &:is(h1, h2, h3, h4, p) {
       max-width: 1160px;
     }
@@ -213,7 +213,7 @@ header {
 }
 
 //CONTENT BODY
-#one-column content-block {
+#one-column .content-block {
   display: block;
   margin-bottom: 10px;
   padding: 50px;
@@ -226,7 +226,7 @@ header {
   }
 }
 
-#two-column content-block {
+#two-column .content-block {
   display: block;
   margin-bottom: 10px;
   padding: 20px;
@@ -239,12 +239,12 @@ header {
   }
 }
 
-content-block:last-child {
+.content-block:last-child {
   margin-bottom: 0px;
 }
 
 //EXTRA PADDING VARIATION CLASS
-body#one-column.alt-padding > column-one > content-block {
+body#one-column.alt-padding > .column-one > .content-block {
   padding: 50px !important;
 
   h2:first-child {
@@ -260,7 +260,7 @@ body#one-column.alt-padding > column-one > content-block {
   }
 }
 
-body#two-column.alt-padding > column-one > content-block {
+body#two-column.alt-padding > .column-one > .content-block {
   padding: 50px !important;
 
   h2:first-child {
@@ -268,7 +268,7 @@ body#two-column.alt-padding > column-one > content-block {
   }
 }
 
-body#two-column.alt-padding > column-two > content-block {
+body#two-column.alt-padding > .column-two > .content-block {
   padding: 50px !important;
 
   h2:first-child {

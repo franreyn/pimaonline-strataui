@@ -10,7 +10,7 @@ body[green] {
     img {
       border-color: var(--green-theme-primary);
     }
-    header-text {
+    .header-text {
       background-color: var(--green-theme-primary);
     }
 
@@ -23,7 +23,7 @@ body[green] {
     color: var(--green-theme-primary);
   }
 
-  content-block {
+  .content-block {
     h2:first-child {
       border-color: var(--green-theme-primary) !important;
       color: var(--color-muted-black);
@@ -113,15 +113,15 @@ body[green] {
 
   // Accordion module
 
-  accordion-widget {
-    accordion-content {
+  .accordion-widget {
+    .accordion-content {
       p {
         &.show {
           background-color: var(--green-theme-tertiary);
         }   
       }
     }
-    accordion-item {
+    .accordion-item {
       border-color: var(--green-theme-primary);
       &>h3,h4 {
         p {
@@ -143,11 +143,11 @@ body[green] {
 
   // Assignments module
 
-  assignment-item {
+  .assignment-item {
     border-color: var(--green-theme-primary);
   }
 
-  assignment-item h2,assignment-item h3,assignment-item h4 {
+  .assignment-item h2,.assignment-item h3,.assignment-item h4 {
     background-color: var(--green-theme-tertiary);
   }
 
@@ -180,13 +180,13 @@ body[green] {
 
   // Callout module
 
-  callout-widget {
+  .callout-widget {
     background-color: var(--green-theme-tertiary);
   }
 
   // Slider module
 
-  slider-widget {
+  .slider-widget {
     background-color: var(--slider-bkg);
 
     .slider-arrow {
@@ -262,33 +262,33 @@ body[green] {
 
   // Tabs module
 
-  tab-item input:checked + label {
+  .tab-item input:checked + label {
     background-color: var(--green-theme-primary);
     color: white;
   }
 
-  tab-item input:checked + label + tab-content {
+  .tab-item input:checked + label + .tab-content {
     border-color: var(--green-theme-primary);
   }
 
-  tab-item label {
+  .tab-item label {
     background-color: white;
     border-color: var(--green-theme-primary);
     color: var(--color-muted-black);
   }
 
-  tab-item input:checked + label.hide-tab {
+  .tab-item input:checked + label.hide-tab {
     background-color: var(--color-muted-black);
     color: var(--color-black);
   }
   
-  tab-item label.hide-tab {
+  .tab-item label.hide-tab {
     background-color: transparent !important;
     color: var(--color-black);
     font-weight: 500;
   }
 
-  tab-content {
+  .tab-content {
     background: var(--green-theme-tertiary);
   }
 

@@ -1,5 +1,5 @@
-const sliderWidgets: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>("slider-widget");
-const sliderItems: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>("slider-item");
+const sliderWidgets: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".slider-widget");
+const sliderItems: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".slider-item");
 const slideHeight: number = 300;
 
 const handleSliderWidget = () => {
@@ -8,12 +8,12 @@ const handleSliderWidget = () => {
   const checkSliderChildren = () => {
     [...sliderWidgets].forEach((slider: HTMLElement) => {
 
-      // Check if every direct child of the slider has the "slider-item" tag
-      let sliderChildren: boolean = [...slider.children].every(child => child.tagName.toLowerCase()==="slider-item");
+      // Check if every direct child of the slider has the "slider-item" class
+			let sliderChildren: boolean = [...slider.children].every(child => child.classList.contains("slider-item"));
 
       // Log an error message if any direct child does not have the "slider-item"
       if (!sliderChildren) {
-        console.warn("Document error: not all direct children of slider-widget have the slider-item tag name");
+        console.warn("Document error: not all direct children of slider-widget have the slider-item class");
       }
     });
   };
@@ -74,7 +74,7 @@ const handleSliderWidget = () => {
 
 
   // Initialize each slider with navigation buttons, dots, and keyboard navigation
-  document.querySelectorAll<HTMLElement>("slider-widget").forEach((slider: HTMLElement, sliderIndex: number) => {
+  document.querySelectorAll<HTMLElement>(".slider-widget").forEach((slider: HTMLElement, sliderIndex: number) => {
 
     
     // Set accessibility attributes for the slider
@@ -95,7 +95,7 @@ const handleSliderWidget = () => {
     // Initialize the current index for the slider
     let currentSlide: number = 0;
     // Select all slider items within the current slider
-    const sliderItems: HTMLElement[] = Array.from(slider.querySelectorAll<HTMLElement>("slider-item"));
+    const sliderItems: HTMLElement[] = Array.from(slider.querySelectorAll<HTMLElement>(".slider-item"));
     // Create a div to contain the dots for navigation
     const sliderDotsBar: HTMLElement = document.createElement("div");
     sliderDotsBar.className = "slider-dots-bar";
@@ -269,7 +269,7 @@ const handleSliderWidget = () => {
   const checkEmptySliderItems = () => {
     sliderWidgets.forEach((slider: HTMLElement, sliderIndex: number) => {
       // Get all slider-item children of the current slider
-      let sliderItems: HTMLElement[] = Array.from(slider.querySelectorAll<HTMLElement>("slider-item"));
+      let sliderItems: HTMLElement[] = Array.from(slider.querySelectorAll<HTMLElement>(".slider-item"));
 
       // Check each slider-item to see if it is empty
       sliderItems.forEach((item: HTMLElement, itemIndex: number) => {

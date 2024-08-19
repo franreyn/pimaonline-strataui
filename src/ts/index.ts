@@ -1,8 +1,6 @@
 import "./modules/accordion";
 import "./modules/addFontAwesome";
-import "./modules/aria";
 import "./modules/arrows";
-import "./modules/customElements";
 import "./modules/footer";
 import "./modules/grid";
 import "./modules/listGroups";
@@ -10,6 +8,5 @@ import "./modules/mediaWidget";
 import "./modules/responsiveTables";
 import "./modules/slider";
 import "./modules/tabs";
-import "./modules/tagConversion";
 import "./modules/toggleButtons";
 import "./modules/vocabCards";

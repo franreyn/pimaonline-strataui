@@ -1,7 +1,7 @@
 {
   "name": "@pimaonline/pimaonline-strataui",
-  "version": "1.0.1",
-  "description": "A HTML-based templating system used to create web pages for online courses",
+  "version": "2.0.0",
+  "description": "An HTML-based templating system used to create web pages for online courses",
   "main": "index.js",
   "files": [
     "README.md",
