@@ -11,13 +11,13 @@ To use Strata in your course, ensure that your HTML page is loading the correct 
 1. **Strata UI CSS Link** - This adds all the visual styles to all the widgets and themes.
 
 ```html
-
+https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css
 ```
 
 2. **Strata UI JS Link** - This enables you to use custom HTML elements, and creates all the dynamic formatting of the code.
 
 ```html
-
+https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js
 ```
 
 _Note: These links should be present on every HTML page for your course._
@@ -31,8 +31,8 @@ At the top of your HTML file, after the document type and `<html>` tag, ensure t
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="../../dist/css/index.css" />
-  <script src="../../dist/js/scripts.js" defer=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js" defer=""></script>
 </head>
 ```
 

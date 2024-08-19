@@ -16,8 +16,8 @@ All content is displayed in a single column.
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <script src="../js/scripts.js" defer=""></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js" defer=""></script>
     <title>One Column Layout</title>
   </head>
   <body>

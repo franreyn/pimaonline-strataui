@@ -1,4 +1,5 @@
 - Getting Started
+  - [Introduction](/getting-started/introduction.md)
   - [Installation](/getting-started/installation.md)
   - [Custom HTML Elements](/getting-started/custom-html-elements)
 - Themes

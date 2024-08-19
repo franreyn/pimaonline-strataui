@@ -67,7 +67,7 @@ Some HTML elements are not custom. When adding text content, images, or lists. T
 3. Widgets - see **widget** docs for specific usage of custom tags
 4. Images - `<img>`
 
-_Note: If you encounter problems please refer to the [quick start template](getting-started/quick-start?id=main) or documentation to ensure your HTML is correct._
+_Note: If you encounter problems please refer to the [quick start template](getting-started/quick-start) or documentation to ensure your HTML is correct._
 
   <div class="footer">
     <p>&copy; 2024 Strata UI</p>

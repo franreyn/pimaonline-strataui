@@ -10,7 +10,7 @@ Strata UI is an HTML-based templating system to create responsive and pre-design
 
 ## Contributions
 
-Strata UI was created by Pima Community College. If you would like to contribute to this project, please visit our [GitHub](#).
+Strata UI was created by Pima Community College. If you would like to contribute to this project, please visit our [GitHub](https://github.com/franreyn/pimaonline-strataui).
 
 For feature requests, please submit a [ticket](#).
 

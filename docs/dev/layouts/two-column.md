@@ -16,25 +16,26 @@ For example, in the primary column, an overview page with introductory video and
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="../../dist/css/index.css" />
-    <script src="../../dist/js/scripts.js" defer=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js" defer=""></script>
     <title>Two Column Layout</title>
   </head>
 
   <body>
-    <header class="header">
+    <header>
       <img src="https://via.placeholder.com/1920X600" alt="decorative image of a woman&#x27;s hand typing on a computer" />
-      <div class="text-container">
+      <header-text>
         <h1>Course Intro</h1>
         <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
-      </div>
+      </header-text>
     </header>
     <column-one>
       <content-block>
         <h2>Welcome to [course name here]</h2>
         <media-container class="reverse">
           <media-object>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
           </media-object>
           <media-info>

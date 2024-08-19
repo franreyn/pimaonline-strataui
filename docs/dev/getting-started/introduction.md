@@ -33,7 +33,7 @@ View the [quick start template](getting-started/quick-start) to copy and paste a
 
 ## Contributions
 
-Strata UI was created by Pima Online at Pima Community College. If you would like to contribute to this project, please visit our [GitHub](#).
+Strata UI was created by Pima Online at Pima Community College. If you would like to contribute to this project, please visit our [GitHub](https://github.com/franreyn/pimaonline-strataui).
 
 For feature requests, please submit a [ticket](#).
 

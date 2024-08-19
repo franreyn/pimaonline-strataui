@@ -1,7 +1,5 @@
 export const responsiveTablesJs = () => {
-
-console.log("repsonsive")
-
+	
 // Select all tables in the document
 const responsiveTables = document.querySelectorAll("table")
 
