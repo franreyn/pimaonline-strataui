@@ -451,7 +451,7 @@ section.cover h2 {
 .markdown-section h1 + p {
   margin-top: 0;
   padding: .25rem 1rem 2rem;
-  background-color: var(--color-docs-title-bkg)
+  background-color: var(--color-docs-title-bkg);
 }
 
 .markdown-section a {
@@ -463,7 +463,7 @@ section.cover h2 {
   word-break: break-word;
 }
 
-.markdown-section pre, .mardown-section output {
+.markdown-section pre, .markdown-section output {
   max-height: 500px;
   margin: 1rem 0;
 }
@@ -507,6 +507,13 @@ section.cover h2 {
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 2px;
+	border: 2px solid var(--color-docs-light-grey);
+}
+
+.example-container blockquote {
+	border-left: none;
+	color:inherit;
+	margin: inherit;
 }
 
 /* Custom Code Snippets */
@@ -531,7 +538,7 @@ section.cover h2 {
 }
 
 .code-snippet pre>code {
-	color: #525252;
+	color: var(--color-docs-code-text-grey);
 	display:block;
 	text-align: left;
 	font-size: .8rem;
@@ -544,7 +551,7 @@ section.cover h2 {
 }
 
 .code-snippet pre:after {
-	color: #ccc;
+	color: var(--color-docs-coding-language-pretext);
 	font-size: .6rem;
 	font-weight: 600;
 	height: 15px;
