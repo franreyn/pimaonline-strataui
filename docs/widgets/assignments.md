@@ -6,52 +6,58 @@ Organizes each assignment into cards that subtly animate on mouse hover.
 
 ## How to Use
 
-1. Add `<assignments-widget>`. This container will wrap all assignment items.
-2. Add `<assignment-item>` container for each individual assignment.
-3. Within each `<assignment-item>` add an `<h3>` which act as the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+1. Add a `<div>` element with `class="assignments-widget"` to wrap all assignment items together.
+2. For each assignment, create a `<li>` element with `class="assignment-item"`.
+3. Inside each `<li>`, include a `<h3>` element for the assignment title, a `<p>` element for the description, and a `<a>` element with `class="button"` to link to the assignment page.
 
 ### HTML Example
 
 ```html
-<assignments-widget>
-  <assignment-item>
-    <h3>Module 1 Readings</h3>
-    <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-  <assignment-item>
-    <h3>Reading Review Activity 1</h3>
-    <p>Revision and Editing Review Activity</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-  <assignment-item>
-    <h3>Information Literacy Discussion 1</h3>
-    <p>The Importance of Listening</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-</assignments-widget>
+<div class="assignments-widget">
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+</div>
 ```
 
 ### Preview
 
 <div class="example-container">
-  <assignments-widget>
-    <assignment-item>
-      <h3>Module 1 Readings</h3>
-      <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-    <assignment-item>
-      <h3>Reading Review Activity 1</h3>
-      <p>Revision and Editing Review Activity</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-    <assignment-item>
-      <h3>Information Literacy Discussion 1</h3>
-      <p>The Importance of Listening</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-  </assignments-widget>
+	<div class="assignments-widget">
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+	</div>
 </div>
 
   <div class="footer">

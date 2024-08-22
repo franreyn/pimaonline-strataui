@@ -6,7 +6,7 @@ Draw attention to an important quote or piece of information.
 
 ## How to Use
 
-1. Wrap the quote in the `<blockquote>` tags.
+1. Wrap the quote in the `<blockquote>` elements.
 
 ### HTML Example
 

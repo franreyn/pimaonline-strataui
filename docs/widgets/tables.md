@@ -8,10 +8,10 @@ Use tables to organize content into cells.
 
 Tables follow the standard HTML structure as detailed below.
 
-1. Wrap the entire table with the `<table>` container.
-2. The portion of the table that has the table headings, wrap wih `<thead>`. Then follow the example below to add the table headings.
-3. Add the `<tbody>` which holds all the cells for the table besides the table headings.
-4. Build the table by row. Add the `<tr>` to wrap the content that belongs within that row. Within each row, use `<td>` for each cell. Ensure each row has the same amount of cells.
+1. Wrap the entire table with the `<table>` element.
+2. The portion of the table that has the table headings, wrap with the `<thead>` element. Then follow the example below to add the table headings.
+3. Add the `<tbody>` element which holds all the cells for the table besides the table headings.
+4. Build the table by row. Add the `<tr>` element to wrap the content that belongs within that row. Within each row, use the `<td>` element for each cell. Ensure each row has the same amount of cells.
 
 To see more about how HTML tables are structured, check out the [official MDN documentation on table HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics).
 
