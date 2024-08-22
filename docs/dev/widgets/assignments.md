@@ -6,52 +6,64 @@ Organizes each assignment into cards that subtly animate on mouse hover.
 
 ## How to Use
 
-1. Add `<assignments-widget>`. This container will wrap all assignment items.
-2. Add `<assignment-item>` container for each individual assignment.
-3. Within each `<assignment-item>` add an `<h3>` which act as the title of the assignment, a `<p>` element that describes the assignment, and an `<a>` element which is a link styled as a button using `class="button"` that will direct the user to the assignment page.
+1. Add a `<div>` element with `class="assignments-widget"` to wrap all assignment items together.
+2. For each assignment, create a `<li>` element with `class="assignment-item"`.
+3. Inside each `<li>`, include a `<h3>` element for the assignment title, a `<p>` element for the description, and a `<a>` element with `class="button"` to link to the assignment page.
 
 ### HTML Example
 
 ```html
-<assignments-widget>
-  <assignment-item>
-    <h3>Module 1 Readings</h3>
-    <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-  <assignment-item>
-    <h3>Reading Review Activity 1</h3>
-    <p>Revision and Editing Review Activity</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-  <assignment-item>
-    <h3>Information Literacy Discussion 1</h3>
-    <p>The Importance of Listening</p>
-    <a href="javascript:void(0);" class="button">Link To Assignment</a>
-  </assignment-item>
-</assignments-widget>
+<div class="assignments-widget">
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+	<div class="assignment-item">
+		<h3>Assignment Item</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+			laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+			sed imperdiet.</p>
+		<a href="javascript:void(0);" class="button">Link To Assignment</a>
+	</div>
+</div>
 ```
 
 ### Preview
 
 <div class="example-container">
-  <assignments-widget>
-    <assignment-item>
-      <h3>Module 1 Readings</h3>
-      <p>The readings in the list have interactive exercises that will help you determine if you are fully understanding the material.</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-    <assignment-item>
-      <h3>Reading Review Activity 1</h3>
-      <p>Revision and Editing Review Activity</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-    <assignment-item>
-      <h3>Information Literacy Discussion 1</h3>
-      <p>The Importance of Listening</p>
-      <a href="javascript:void(0);" class="button">Link To Assignment</a>
-    </assignment-item>
-  </assignments-widget>
+	<div class="assignments-widget">
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+				laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+				sed imperdiet.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+				laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+				sed imperdiet.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+		<div class="assignment-item">
+			<h3>Assignment Item</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis felis malesuada nulla malesuada,
+				laoreet egestas felis luctus. Vestibulum imperdiet iaculis eros sed hendrerit. Duis consectetur congue nibh
+				sed imperdiet.</p>
+			<a href="javascript:void(0);" class="button">Link To Assignment</a>
+		</div>
+	</div>
 </div>
 
 ## CSS
@@ -59,71 +71,64 @@ Organizes each assignment into cards that subtly animate on mouse hover.
 The `assignments widget` uses flexbox to responsively display the cards. The CSS for this component can be found in `/src/scss/modules/assignments.scss`.
 
 ```css
-column-two assignments-widget,
-column-two assignments-widget {
-  margin: 0;
-  padding: 0;
+
+.column-two .assignments-widget,.column-two .assignments-widget {
+  margin: 2rem 0;
+  padding: 0
 }
 
-#content-wrapper assignments-widget,
-#content-wrapper assignments-widget {
+#content-wrapper .assignments-widget,#content-wrapper .assignments-widget {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
-assignment-item {
+.assignment-item {
   display: block;
   background-color: transparent;
-  border: 1px solid var(--color-docs-primary);
+  border: 1px solid;
   border-radius: var(--subtle-radius);
   margin: 0;
-  margin-bottom: 0.8rem;
-  padding: 0.6rem 0.6rem 1.5rem;
-  transition: 0.3s;
+  margin-bottom: .8rem;
+  padding: .6rem .6rem 1.5rem;
+  transition: .3s;
 }
 
-assignment-item:hover {
-  transform: translate(0, -5px);
+.assignment-item:hover {
+  transform: translate(0, -5px)
 }
 
-assignment-item h2,
-assignment-item h3,
-assignment-item h4 {
-  background-color: var(--color-accent-tint);
+.assignment-item h2,.assignment-item h3,.assignment-item h4 {
   font-size: 1.15rem;
   font-weight: 600;
-  margin: -0.6rem -0.6rem 0.6rem -0.6rem !important;
-  padding: 0.3rem 0.6rem;
+  margin: -0.6rem -0.6rem .6rem -0.6rem !important;
+  padding: .3rem .6rem;
   border-radius: var(--top-radius);
 }
 
-assignment-item ol li,
-assignment-item ul li {
-  margin: 0;
+.assignment-item ol li,.assignment-item ul li {
+  margin: 0
 }
 
-assignment-item p,
-assignment-item ol,
-assignment-item ul {
-  font-size: 00.95rem;
-  margin-bottom: 1.5rem;
+.assignment-item p,.assignment-item ol,.assignment-item ul {
+  font-size: .95rem;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
 }
 
-assignment-item::before,
-assignment-item::marker {
-  content: none;
+.assignment-item::before,.assignment-item::marker {
+  content: none
 }
 
 @media screen and (min-width: 576px) {
-  #content-wrapper assignment-item {
-    flex-basis: 45%;
+  #content-wrapper .assignment-item {
+      flex-basis:45%
   }
 }
 
 @media screen and (min-width: 768px) {
-  #content-wrapper assignment-item {
-    flex-basis: 30%;
+  #content-wrapper .assignment-item {
+      flex-basis:30%
   }
 }
 ```

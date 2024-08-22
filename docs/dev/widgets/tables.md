@@ -8,12 +8,12 @@ Use tables to organize content into cells.
 
 Tables follow the standard HTML structure as detailed below.
 
-1. Wrap the entire table with the `<table>` container.
-2. The portion of the table that has the table headings, wrap wih `<thead>`. Then follow the example below to add the table headings.
-3. Add the `<tbody>` which holds all the cells for the table besides the table headings.
-4. Build the table by row. Add the `<tr>` to wrap the content that belongs within that row. Within each row, use `<td>` for each cell. Ensure each row has the same amount of cells.
+1. Wrap the entire table with the `<table>` element.
+2. The portion of the table that has the table headings, wrap with the `<thead>` element. Then follow the example below to add the table headings.
+3. Add the `<tbody>` element which holds all the cells for the table besides the table headings.
+4. Build the table by row. Add the `<tr>` element to wrap the content that belongs within that row. Within each row, use the `<td>` element for each cell. Ensure each row has the same amount of cells.
 
-### Example 1: The width of each column is determined by the width of the content
+### Example: The width of each column is determined by the width of the content
 
 ```html
 <table>
@@ -54,7 +54,7 @@ Tables follow the standard HTML structure as detailed below.
 </table>
 ```
 
-### Example 1: Preview
+### Example: Preview
 
 <div class="example-container">
   <table>
@@ -102,12 +102,11 @@ The CSS is located in the `/src/scss/modules/tables.scss` file. Included is the 
 ```css
 table {
   border-collapse: collapse !important;
-  color: var(--color-white);
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
-  margin: 40px 20px 15px 20px;
+  margin: 2rem 1rem;
   text-rendering: optimizeLegibility;
-  border: 1px solid var(--color-primary);
+  border: 1px solid;
 
   th {
     font-size: 1.0625rem;
@@ -117,12 +116,21 @@ table {
     text-align: left;
     vertical-align: top;
     border: none;
+
+    h3,h4,h5 {
+      margin-top: 0;
+    }
+
   }
 
   thead,
   tr,
   td {
     vertical-align: top;
+
+    h3,h4,h5 {
+      margin-top: 0;
+    }
   }
 
   caption {
@@ -142,7 +150,6 @@ table {
   }
 
   tbody tr {
-    color: var(--color-primary);
     font-size: 1rem;
     padding: 0.8rem;
   }
@@ -156,12 +163,15 @@ table td,
 table th {
   font-size: 1rem;
   padding: 10px 10px 20px 10px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid;
 }
 
 @media screen and (min-width: 730px) {
   table {
     margin: 20px 0 5px 0;
+  }
+  .column-two table {
+    overflow-wrap: anywhere;
   }
 }
 
@@ -172,19 +182,11 @@ table th {
   table.custom-width th:nth-child(2) {
     width: 20%;
   }
-  tr:nth-child(even) {
-    background-color: var(--color-primary-tint1);
-  }
-  table th {
-    background-color: var(--color-primary);
-  }
 }
 
-/* Responsive table CSS for mobile */
+//Responsive table CSS for mobile
 @media screen and (max-width: 768px) {
   table {
-    background: none;
-    background-color: var(--color-white);
     display: inline-table !important; /*fixes table snapping in all browsers, including ie*/
     margin: 10px auto;
 
@@ -195,20 +197,7 @@ table th {
     tbody td {
       display: block;
       padding: 0.6rem;
-      border-bottom: 1px solid var(--color-primary);
-
-      a {
-        color: var(--color-white);
-
-        &:hover {
-          color: var(--color-primary-tint1);
-        }
-      }
-
-      &:first-child {
-        color: var(--color-white);
-        background-color: var(--color-primary);
-      }
+      border-bottom: 1px solid;
 
       &::before {
         content: attr(data-th) ": ";
@@ -219,14 +208,22 @@ table th {
       }
     }
   }
-
-  td:nth-of-type(odd) {
-    background-color: var(--color-primary-tint1);
-  }
 }
 
 td#alignright {
   text-align: right;
+}
+
+footer ul {
+  margin: 10px;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
 }
 
 table.two-column-table {
@@ -242,8 +239,7 @@ table.two-column-table {
       vertical-align: top;
 
       &:first-child::after {
-        content: ":";
-      }
+        content: ":";      }
 
       &:nth-child(2) {
         padding-left: 5%;
@@ -282,7 +278,6 @@ table.two-column-table tr td {
   border: none;
 }
 
-/* Can be added to th elements to adjust the width of the column */
 .sm-table-col {
   width: 20%;
 }

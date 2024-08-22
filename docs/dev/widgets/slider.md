@@ -6,67 +6,97 @@ Add content to slides. Users are able to rotate through the different slides lik
 
 ## How to Use
 
-Use the `<slider-widget>` tag as the parent element of as many `<slider-item>` children elements as needed.
+Use the `slider-widget` container as the parent container of as many `slider-item` children elements as needed.
 
-1. Add `<slider-widget>` as a container to wrap all slides.
-2. Add `<slider-item>` as a container for each slide.
+1. Add a `<div>` with `class="slider-widget"` as a container to wrap all slides.
+2. Add a `<div>` with `class="slider-item"` as a container for each slide.
 3. Add text, image, or widget content to each slide.
 
 ### Additional Classes
 
 You can use the following classes to change the height of the slider container for all slides.
 
-- Add `h-400` class to the `<slider-widget>` element to make the height of the sliders 400px;
-- Add `h-500` class to the `<slider-widget>` element to make the height of the sliders 500px;
+- Add `h-400` class to the `slider-widget` element to make the height of the sliders 400px;
+- Add `h-500` class to the `slider-widget` element to make the height of the sliders 500px;
 
-_By default, the height of the slides will be 300px. Unless one of the classes above are added to the `<slider-widget>` tag._
+_By default, the height of the slides will be 300px. Unless one of the classes above are added to the `slider-widget` container._
 
 ### HTML Example
 
 ```html
-<slider-widget class="h-400">
-  <slider-item>
-    <h3 class="icon-book-open">Aenean euismod</h3>
-    <p>
-      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl.
-      Vestibulum tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, " <a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin
-      cursus. Suspendisse quis tortor eget lorem condimentum malesuada mollis eget nulla.
-    </p>
-  </slider-item>
-  <slider-item>
-    <div class="card-horizontal">
-      <div class="card-body">
-        <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
-      </div>
-      <div class="card-img"><img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt="" /></div>
-    </div>
-  </slider-item>
-</slider-widget>
+<div class="slider-widget">
+	<div class="slider-item">
+		<h3 class="icon-book-open">Aenean euismod</h3>
+		<p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+			Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+			bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener"
+				href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo
+			nisl. Vestibulum tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, "
+			<a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a> vitae nunc nec tellus
+			sollicitudin cursus. Suspendisse quis tortor eget lorem condimentum malesuada mollis eget nulla.
+		</p>
+		<p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+			Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+			bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener"
+				href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo
+			nisl. Vestibulum tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, "
+			<a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a> vitae nunc nec tellus
+			sollicitudin cursus. Suspendisse quis tortor eget lorem condimentum malesuada mollis eget nulla.
+		</p>
+	</div>
+	<div class="slider-item">
+		<div class="media-widget reverse">
+			<div class="media-object">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+			<div class="media-info">
+				<p>This is a description of the video</p>
+			</div>
+		</div>
+	</div>
+</div>
 ```
 
 ### Preview
 
 <div class="example-container">
-<slider-widget class="h-400">
-  <slider-item>
-    <h3 class="icon-book-open">Aenean euismod</h3>
-    <p>
-      Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet. Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
-      bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener" href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo nisl. Vestibulum tempor
-      ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, " <a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a>vitae nunc nec tellus sollicitudin cursus. Suspendisse quis tortor eget lorem
-      condimentum malesuada mollis eget nulla.
-    </p>
-  </slider-item>
-  <slider-item>
-    <div class="card-horizontal">
-      <div class="card-body">
-        <p>Ut posuere vitae ante varius consequat. Vivamus id condimentum dui, et tincidunt enim. Vivamus mollis lorem nec metus aliquet, vulputate condimentum ante ultricies.</p>
-      </div>
-      <div class="card-img"><img src="https://d2l.pima.edu/shared/images/placeholder/400x400.jpg" alt="" /></div>
-    </div>
-  </slider-item>
-</slider-widget>
+<div class="slider-widget">
+	<div class="slider-item">
+		<h3 class="icon-book-open">Aenean euismod</h3>
+		<p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+			Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+			bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener"
+				href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo
+			nisl. Vestibulum tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, "
+			<a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a> vitae nunc nec tellus
+			sollicitudin cursus. Suspendisse quis tortor eget lorem condimentum malesuada mollis eget nulla.
+		</p>
+		<p>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero. Nunc consectetur tristique aliquet.
+			Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. Curabitur leo nulla, ornare et
+			bibendum imperdiet, congue id purus. Nullam lobortis quam id justo porta suscipit. <a rel="noopener"
+				href="javascript:void(0);">Fusce posuere</a> lectus turpis, egestas rhoncus ex vitae, porttitor commodo
+			nisl. Vestibulum tempor ante <a href="javascript:void(0);" target="_blank" rel="noopener">Curabitur</a>, "
+			<a href="javascript:void(0);" target="_blank" rel="noopener">Vivamus mollis</a> vitae nunc nec tellus
+			sollicitudin cursus. Suspendisse quis tortor eget lorem condimentum malesuada mollis eget nulla.
+		</p>
+	</div>
+	<div class="slider-item">
+		<div class="media-widget reverse">
+			<div class="media-object">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/Dxz8GPU-E1s?wmode=opaque"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</div>
+			<div class="media-info">
+				<p>This is a description of the video</p>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
 
 ## CSS
@@ -74,12 +104,11 @@ _By default, the height of the slides will be 300px. Unless one of the classes a
 The slider widget includes a container for the `<slider-widget>`, navigation arrows `<slider-arrow>`, individual slides within the slider `<slider-item>`, a bar for navigation dots `.slider-dots-bar`, and the dots themselves.
 
 ```css
-slider-widget {
+.slider-widget {
   position: relative;
   display: block;
   padding: 1rem 1rem 4rem;
-  margin: 1rem 0;
-  background-color: var(--slider-bkg);
+  margin: 2rem 0;
 
   .slider-arrow {
     position: absolute;
@@ -89,9 +118,8 @@ slider-widget {
     padding: 0;
     border-radius: 100%;
     font-size: 1rem;
-    width: 42px;
-    height: 42px;
-    background-color: var(--color-secondary);
+    width: 35px;
+    height: 35px;
 
     &.fa-chevron-left {
       left: 35%;
@@ -107,17 +135,22 @@ slider-widget {
   }
 }
 
-slider-item {
+.slider-item {
+  display: block;
   height: 300px;
   overflow: auto;
   padding: 15px;
+
+  h3,h4,h5 {
+    margin-top: 0;
+  }
 }
 
-.h-400 slider-item {
+.h-400 .slider-item {
   height: 400px;
 }
 
-.h-500 slider-item {
+.h-500 .slider-item {
   height: 500px;
 }
 
@@ -127,46 +160,41 @@ slider-item {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
 }
-
+ 
 .slider-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--color-ltgrey);
   margin: 0 5px;
   cursor: pointer;
-
-  &.active {
-    background-color: var(--color-dkgrey);
-  }
 }
 
 @media screen and (min-width: 768px) {
-  slider-widget:not(column-two slider-widget) {
+  .slider-widget:not(.column-two .slider-widget) {
     padding: 1rem 2rem;
-
+    
     .slider-arrow {
       &.fa-chevron-left {
-        left: -0.5rem;
+        left: -.5rem;
         transform: translateY(-50%);
         top: 50%;
       }
 
       &.fa-chevron-right {
-        right: -0.5rem;
+        right: -.5rem;
         transform: translateY(-50%);
         top: 50%;
       }
     }
   }
 
-  slider-widget button[class^="icon-chevron-"]::before {
+  .slider-widget button[class^="icon-chevron-"]::before {
     margin-right: 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .short-content:not(column-two .short-content) > div {
+  .short-content:not(.column-two .short-content) > div {
     transform: translateY(25%);
   }
 }
@@ -177,8 +205,8 @@ slider-item {
 This JavaScript code initializes and manages a slider widget with multiple functionalities. It selects all elements with the class `slider-widget`, ensures that each slider has direct children with the class `slider-item`, creates navigation buttons and dots, handles slide transitions, and provides keyboard navigation. Additionally, it checks for proper navigation elements and verifies that slider items are not empty. The code also includes functionality to vertically center the content of a slide if it is short and does not contain videos.
 
 ```js
-const sliderWidgets: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>("slider-widget");
-const sliderItems: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>("slider-item");
+const sliderWidgets: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".slider-widget");
+const sliderItems: NodeListOf<HTMLElement> = document.querySelectorAll<HTMLElement>(".slider-item");
 const slideHeight: number = 300;
 
 const handleSliderWidget = () => {
@@ -188,7 +216,7 @@ const handleSliderWidget = () => {
     [...sliderWidgets].forEach((slider: HTMLElement) => {
 
       // Check if every direct child of the slider has the 'slider-item' tag
-      let sliderChildren: boolean = [...slider.children].every(child => child.tagName.toLowerCase()==="slider-item");
+      let sliderChildren: boolean = [...slider.children].every(child => child.classList.contains("slider-item"));
 
       // Log an error message if any direct child does not have the 'slider-item'
       if (!sliderChildren) {
