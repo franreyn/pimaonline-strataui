@@ -139,6 +139,10 @@ p.section-text {
   height: 25px;
 }
 
+.version-number {
+	color: var(--color-dkgrey);
+}
+
 /* HOMEPAGE */
 
 section.cover .cover-main {
