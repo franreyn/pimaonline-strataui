@@ -1,16 +1,16 @@
 - Getting Started
   - [Introduction](/getting-started/introduction.md)
   - [Installation](/getting-started/installation.md)
-  - [Custom HTML Elements](/getting-started/custom-html-elements)
+  - [Custom Strata UI Classes](/getting-started/custom-strata-ui-classes)
 - Themes
   - [Default](/themes/default.md)
-  - [Preinstalled Themes](/themes/preinstalled-themes.md)
+  - [Pre-installed Themes](/themes/pre-installed-themes.md)
 - Layouts
   - [Layout Overview](/layouts/layout-overview.md)
   - [Header](/layouts/header.md)
   - [Content Blocks](/layouts/content-blocks.md)
-  - [One Column Example](/layouts/one-column.md)
-  - [Two Column Example](/layouts/two-column.md)
+  - [One-Column Example](/layouts/one-column.md)
+  - [Two-Column Example](/layouts/two-column.md)
 - Widgets
   - [Accordion](/widgets/accordion.md)
   - [Assignments](/widgets/assignments.md)
