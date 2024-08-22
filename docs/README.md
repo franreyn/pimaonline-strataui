@@ -29,7 +29,7 @@ View the [quick start template](getting-started/quick-start) to copy and paste a
 1. [Install Strata UI](getting-started/installation) by adding the necessary links at the top of your HTML file.
 2. [Choose a layout](/layouts/layout-overview.md) depending on the content on the page for your course.
 3. [Choose a theme](/themes/pre-installed-themes.md) from pre-installed themes, or use the default theme.
-4. [Add Strata UI classes](getting-started/custom-strata-classes) for each widget and content.
+4. [Add Strata UI classes](getting-started/custom-strata-ui-classes) for each widget and content.
 
 	<div class="footer">
 		<p>&copy; 2024 Strata UI</p>
