@@ -516,6 +516,23 @@ section.cover h2 {
 	margin: inherit;
 }
 
+.example-container header img {
+	border-color: var(--color-primary);
+}
+.example-container header .header-text {
+	background-color: var(--color-primary);
+}
+.example-container header .header-text :is(h1, h2, h3, h4, p) {
+	color: var(--color-white);
+}
+.example-container header .header-text ul li,.example-container header .header-text ol li {
+	color: var(--color-white);
+}
+.example-container header .header-text ul li::before,.example-container header .header-text ol li::before,.example-container header .header-text ul li::after,.example-container header .header-text ol li::after {
+	color: var(--color-white);
+}
+
+
 /* Custom Code Snippets */
 .code-snippet {
 	margin: 1rem auto;
