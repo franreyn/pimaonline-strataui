@@ -28,7 +28,7 @@ Add the corresponding attribute above to the `<body>` to apply the color palette
     <img src="https://via.placeholder.com/1920X600" alt="" />
     <div class="header-text">
       <h1>Course Intro</h1>
-      <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
+      <p>Donec sollicitudin perspiciatis malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
     </div>
   </header>
   <div class="column-one">

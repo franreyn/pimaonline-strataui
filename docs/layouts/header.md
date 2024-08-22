@@ -19,7 +19,7 @@ The header is the first thing the student sees and includes the title of the pag
   <img src="https://via.placeholder.com/1920X600" alt="" />
   <div class="header-text">
     <h1>Lorem Ipsum</h1>
-    <p>Donec sollicitudin molestie malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
+    <p>Donec sollicitudin perspiciatis malesuada. Nulla porttitor accumsan tincidunt. Proin eget tortor risus. Pellentesque in ipsum id orci porta.</p>
   </div>
 </header>
 ```
