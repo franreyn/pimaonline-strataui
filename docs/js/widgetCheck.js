@@ -9,8 +9,12 @@ import { responsiveTablesJs } from "./modules/widgets/responsiveTables.js";
 (function () {
   var widgetCheckPlugin = function (hook, vm) {
 
-    // Function runs every time the page is changed to add any widget specific JS
+    // Function runs every time the page is changed to add or re-initialize widgets
     hook.doneEach(function () {
+
+			console.log("hook ran")
+
+      // Initialize or re-initialize widgets
       accordionWidgetJs();
       sliderWidgetJs();
       arrowsWidgetJs();
@@ -18,11 +22,10 @@ import { responsiveTablesJs } from "./modules/widgets/responsiveTables.js";
       tabsWidgetJs();
       footerWidgetJs();
       responsiveTablesJs();
-    })
-  }
+    });
+  };
 
-  // Add plugin to docsify's plugin array
+  // Add plugin to Docsify's plugin array
   $docsify = $docsify || {};
   $docsify.plugins = [].concat($docsify.plugins || [], widgetCheckPlugin);
 })();
-
