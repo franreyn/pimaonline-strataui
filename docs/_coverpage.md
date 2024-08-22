@@ -14,23 +14,23 @@ multiple themes and widgets</h3>
 
 ## All You Need is HTML
 
-Strata UI, leverages custom HTML tags and will dynamically add the styles and functionality. No need to learn CSS or JS.
+Strata UI, leverages custom Strata UI classes and will dynamically add the styles and functionality. No need to learn CSS or JS.
 
 <div class="code-snippet">
 <pre data-lang="html">
 <code class="lang-html">
 <span class="token tag">
-<span class="token punctuation">&lt;</span>column-one<span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;</span>div class="column-one"</span><span class="token punctuation">/&gt;</span></span>
 <span class="token tag">
-  <span class="token punctuation">&lt;</span>content-block<span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">&lt;</span>div class="content-block"<span class="token punctuation">&gt;</span></span>
 	<span class="token tag">
 	<span class="token punctuation">&lt;</span>h2<span class="token punctuation">&gt;</span></span>Module 1 Overview<span class="token tag"><span class="token punctuation">&lt;</span>/h2<span class="token punctuation">&gt;</span></span>
 <span class="token tag">
 	<span class="token punctuation">&lt;</span>p<span class="token punctuation">&gt;</span></span>Learning how to use Strata UI<span class="token tag"><span class="token punctuation">&lt;</span>/p<span class="token punctuation">&gt;</span></span>
 	<span class="token tag">
-  <span class="token punctuation">&lt;/</span>content-block</span><span class="token punctuation">&gt;</span>
+  <span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span>
 	<span class="token tag">
-<span class="token punctuation">&lt;/</span>column-one</span><span class="token punctuation">&gt;</span>
+<span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span>
 </code>
 </pre>
 </div>
@@ -46,9 +46,9 @@ With two links at the top of your HTML file, you'll be ready to use Strata UI.
 <span class="token tag">
 <span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag">
-<span class="token tag"><span class="token punctuation">&lt;</span>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css"</span><span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token punctuation">&lt;</span>link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/css/index.css"</span><span class="token punctuation">/&gt;</span></span>
 <span class="token tag">
-<span class="token tag"><span class="token punctuation">&lt;</span>script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js" defer=""</span><span class="token punctuation">&gt;</span><span class="token punctuation">&lt;/</span>script<span class="token punctuation">&gt;</span>
+<span class="token tag"><span class="token punctuation">&lt;</span>script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/js/scripts.js" defer=""</span><span class="token punctuation">&gt;</span><span class="token punctuation">&lt;/</span>script<span class="token punctuation">&gt;</span>
 <span class="token tag">
 <span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span>
 </span>
