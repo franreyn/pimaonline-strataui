@@ -13,8 +13,8 @@ This layout is best for pairing primary learning materials with supplementary le
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-    <script src="../js/scripts.js" defer=""></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/js/scripts.js" defer=""></script>
     <title>Two-Column Layout</title>
   </head>
   <body>
