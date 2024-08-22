@@ -20,7 +20,6 @@ table th h3, table th h4, table th h5 {
 }
 table thead, table tr, table td {
 	vertical-align: top;
-	width: 100%;
 }
 table thead h3, table tr h3, table td h3, table thead h4, table tr h4, table td h4, table thead h5, table tr h5, table td h5 {
 	margin-top: 0;
