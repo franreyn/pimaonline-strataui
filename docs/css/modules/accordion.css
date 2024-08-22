@@ -60,3 +60,19 @@
 .footnotes {
   display: none;
 }
+
+.example-container .accordion-widget .accordion-content p.show {
+	background-color: var(--color-primary-tint1);
+}
+.example-container .accordion-widget .accordion-item {
+	border-color: var(--color-primary);
+}
+.example-container .accordion-widget .accordion-item > h3 p:hover, .example-container .accordion-widget .accordion-item h4 p:hover {
+	background-color: rgba(13, 13, 13, 0.1);
+}
+.example-container .accordion-widget .accordion-item h3.arrow-down, .example-container .accordion-widget .accordion-item h4.arrow-down {
+	background-color: var(--color-primary-tint1);
+}
+.example-container .accordion-widget .accordion-item:last-child {
+	border-color: var(--color-primary);
+}
