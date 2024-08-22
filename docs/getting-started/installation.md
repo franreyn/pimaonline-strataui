@@ -4,7 +4,7 @@
 
 Ready to use Strata UI? Just follow these steps.
 
-## HTML head
+## HTML Head
 
 Ensure the top of your HTML document has the following links.
 
@@ -40,7 +40,7 @@ At the top of your HTML file, after the document type and `<html>` element, ensu
 </html>
 ```
 
-_Note: Don't forget to add a `<title>` to the head of your HTML document (that should match the content of your `<h1>` element)._
+_Note: Don't forget to add a `<title>` to the head of your HTML document (should match the content of your `<h1>` element)._
 
 ```html
 <title>One-Column Layout</title>
