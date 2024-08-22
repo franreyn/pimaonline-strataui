@@ -8,7 +8,7 @@ Organize and separate related information into their own individual tabs.
 
 1. Add a `<div>` with `class="tabs-widget"` to wrap all the tab items.
 2. Add a `<div>` with `class="tab-item"` for each tab item.
-3. Add a `<span>` with `class="tab-title"` to add the title and clickable space for each `<tab-item>`.
+3. Add a `<span>` with `class="tab-title"` to add the title and clickable space for each `tab-item`.
 4. Directly after adding the `tab-title` container add a `<div>` with `class="tab-content"` to the inside of that container. Add text, images, or any other widgets within this space.
 
 _Note: Tabs are best used when there are multiple tabs. If there is only one item hidden, please use an accordion_

@@ -11,7 +11,7 @@ Draw attention to an important quote or piece of information.
 ### HTML Example
 
 ```html
-<blockquote>The biggest adventure you can ever take is to live the life of your dreams.</blockquote>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
 ```
 
 ### Preview

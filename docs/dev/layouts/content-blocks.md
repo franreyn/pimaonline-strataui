@@ -6,7 +6,7 @@ This additional layer of separation improves readability and makes it easier for
 
 Within each column are a series of content blocks, which act as containers around your content. These blocks help to visually separate ideas, content, or learning activities, creating a clearer and more organized structure within each column. 
 
-**Note: There should be no text or widgets used outside of content blocks, unless it is within the header**
+**Note: There should be no text or widgets used outside of content blocks, unless it is within the header.**
 
 ## HTML Example
 

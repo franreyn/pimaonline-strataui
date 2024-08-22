@@ -9,7 +9,7 @@ Displays content in drop-down containers that users can interact with.
 1. Add a `<div>` element with `class="accordion-widget"` to group all the accordion items.
 2. For each accordion, create a `<div>` with `class="accordion-item"` as the container.
 3. Inside each `accordion-item`, add a `<h3>` for the accordion title. This will be clickable to toggle the accordion.
-4. After the `<h3>`, include a `<div>` with `class="accordion-content"` to hold the content visible when the accordion is open. Additional widgets can be added here if needed.
+4. After the `<h3>`, include a `<div>` with `class="accordion-content"` to hold the content that is visible when the accordion is open. Additional widgets can be added here if needed.
 
 ### Utility Class
 

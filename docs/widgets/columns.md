@@ -71,12 +71,12 @@ _Note: Check examples below to see how the utility classes are used._
 
 ```html
 <div class="columns-widget narrow-wide">
+	<img src="https://unsplash.it/id/114/500/300" alt="" />
   <p>
     The sky, an ever-changing canvas of infinite blue, is a window to the vastness of the universe. By day, the sun's warm rays illuminate the heavens, painting wispy clouds in shades of white and gray. At dusk, the sky
     transforms into a masterpiece of vibrant hues, as the setting sun sets the clouds ablaze with fiery oranges and pinks. And when night falls, the sky becomes a tapestry of twinkling stars, guiding wanderers with their
     timeless light. In its expanse, one finds solace, wonder, and endless possibility.
   </p>
-  <img src="https://unsplash.it/id/114/500/300" alt="" />
 </div>
 ```
 
@@ -84,8 +84,8 @@ _Note: Check examples below to see how the utility classes are used._
 
 <div class="example-container">
   <div class="columns-widget narrow-wide">
-    <p>The sky, an ever-changing canvas of infinite blue, is a window to the vastness of the universe. By day, the sun's warm rays illuminate the heavens, painting wispy clouds in shades of white and gray. At dusk, the sky transforms into a masterpiece of vibrant hues, as the setting sun sets the clouds ablaze with fiery oranges and pinks. And when night falls, the sky becomes a tapestry of twinkling stars, guiding wanderers with their timeless light. In its expanse, one finds solace, wonder, and endless possibility.</p>
     <img src="https://unsplash.it/id/114/500/300" alt="">
+    <p>The sky, an ever-changing canvas of infinite blue, is a window to the vastness of the universe. By day, the sun's warm rays illuminate the heavens, painting wispy clouds in shades of white and gray. At dusk, the sky transforms into a masterpiece of vibrant hues, as the setting sun sets the clouds ablaze with fiery oranges and pinks. And when night falls, the sky becomes a tapestry of twinkling stars, guiding wanderers with their timeless light. In its expanse, one finds solace, wonder, and endless possibility.</p>
   </div>
 </div>
 

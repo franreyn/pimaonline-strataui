@@ -9,8 +9,8 @@ The header is the first thing the student sees and includes the title of the pag
 ## How to Use
 
 1. Add a `<header>` element as a container to wrap all the items within the header.
-2. Add the header image using the `<img>`.
-3. Add a `<div>` with `class="header-text"` as a container around the `<h1>` and `<p>`.
+2. Add the header image using the `<img>` element.
+3. Directly after the header image add a `<div>` with `class="header-text"` as a container around the `<h1>` and `<p>`.
 
 ## HTML Example
 

@@ -17,7 +17,7 @@ There are two utility classes used for the media widget.
 
 #### Aspect Ratio Utility Classes
 
-Some videos have different aspect ratios and require more or less padding for the `iframe` area. Use the following classes to help resize the `iframe` window. Apply these classes to the `media-widget` container.
+Some videos have different aspect ratios and require more or less padding for the `iframe` area. Use the following classes to help resize the `iframe` window. Apply these classes to the `media-object` container.
 
 These classes are in order of the largest to the smallest padding.
 
