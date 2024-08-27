@@ -7,17 +7,26 @@ const handleSliderWidget = () => {
   // Function to check if all direct children of each slider have the "slider-item" class
   const checkSliderChildren = () => {
     ;[...sliderWidgets].forEach(slider => {
-      // Check if every direct child of the slider has the "slider-item" class
-      let sliderChildren = [...slider.children].every(child =>
-        child.classList.contains("slider-item")
-      )
+	// Get all direct child div elements of the slider
+	const sliderChildrenDivs = Array.from(slider.children).filter(child =>
+		child.tagName === 'DIV'
+	);
 
-      // Log an error message if any direct child does not have the "slider-item"
-      if (!sliderChildren) {
-        console.warn(
-          "Document error: not all direct children of slider-widget have the slider-item class"
-        )
-      }
+    // Check if every direct child div has the "slider-item" class
+    const allChildrenAreSliderItems = sliderChildrenDivs.every(child =>
+      child.classList.contains("slider-item") || child.classList.contains("slider-dots-bar")
+    );
+
+    if (!allChildrenAreSliderItems) {
+      // Find any child divs that do not have the "slider-item" class
+      sliderChildrenDivs.forEach(child => {
+        if (!child.classList.contains("slider-item") && !child.classList.contains("slider-dots-bar")) {
+          console.warn(
+            "Document error: not all direct child div elements of slider-widget have the slider-item class"
+          );
+        }
+      });
+    }
     })
   }
   checkSliderChildren()
