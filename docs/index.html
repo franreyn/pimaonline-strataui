@@ -13,7 +13,6 @@
 	<script src="//cdn.jsdelivr.net/npm/docsify@4.13.1" defer></script>
 	<script src="//unpkg.com/docsify/lib/plugins/search.min.js" defer></script>
 	<script src="/js/scripts.js" type="module" defer></script>
-	<script src="/js/widgetCheck.js" type="module" defer></script>
 </head>
 
 <body>
@@ -21,27 +20,83 @@
 		<a class="logo" href="/"></a>
 		<ul>
 			<li><a href="/">User Docs</a></li>
-			<li class="version-number">v2.0</li>
+			<li class="version-number">v2.1</li>
 			<li><button><i class="fa-regular fa-moon"></i></button></li>
 			<li><a href="https://github.com/franreyn/pimaonline-strataui" target="_blank"><i
 						class="fa-brands fa-github"></i></a></li>
 		</ul>
 	</div>
 	<div id="app"></div>
+	<!-- Your custom JavaScript embedded in the HTML -->
+	<script type="module">
+		// Determine if in 'dev' environment
+		const isDev = window.location.pathname.includes('/dev/');
+
+		// Define base path for imports
+		const basePath = isDev ? '../js/modules/widgets/' : './js/modules/widgets/';
+
+		// Import widgets dynamically and initialize them
+		async function initializeWidgets() {
+			try {
+				const accordionModule = await import(`${basePath}accordion.js`);
+				accordionModule.accordionWidgetJs();
+
+				const sliderModule = await import(`${basePath}slider.js`);
+				sliderModule.sliderWidgetJs();
+
+				const arrowsModule = await import(`${basePath}arrows.js`);
+				arrowsModule.arrowsWidgetJs();
+
+				const toggleButtonsModule = await import(`${basePath}toggleButtons.js`);
+				toggleButtonsModule.toggleButtonsJs();
+
+				const tabsModule = await import(`${basePath}tabs.js`);
+				tabsModule.tabsWidgetJs();
+
+				const footerModule = await import(`${basePath}footer.js`);
+				footerModule.footerWidgetJs();
+
+				const responsiveTablesModule = await import(`${basePath}responsiveTables.js`);
+				responsiveTablesModule.responsiveTablesJs();
+			} catch (error) {
+				console.error("Error initializing widgets:", error);
+			}
+		}
+
+		// Initialize widgets after DOM content is loaded
+		document.addEventListener("DOMContentLoaded", function () {
+			setTimeout(initializeWidgets, 100);
+
+			// Listen for URL changes and re-initialize widgets
+			window.addEventListener("popstate", function () {
+				setTimeout(initializeWidgets, 100);
+			});
+
+			window.addEventListener("hashchange", function () {
+				setTimeout(initializeWidgets, 100);
+			});
+		});
+	</script>
+
+
 	<script>
 		window.$docsify = {
 			auto2top: true,
 			name: "",
 			repo: "",
-			loadSidebar: "_sidebar.md",
+			loadSidebar: true,
+			alias: {
+				'/.*/_sidebar.md': '/_sidebar.md'
+			},
+			plugins: [],
 			coverpage: true,
 			search: {
-				maxAge: 86400000, // Expiration time, the default one day
-				paths: "auto", // or "auto"
-				placeholder: "Type to search", // Localization
-				noData: "No Search Results", // Localization
-				depth: 2, // Headline depth, 1 - 6
-				hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+				maxAge: 86400000,
+				paths: "auto",
+				placeholder: "Type to search",
+				noData: "No Search Results",
+				depth: 2,
+				hideOtherSidebarContent: false,
 			},
 		}
 	</script>
