@@ -1,74 +1,78 @@
-accordion-widget {
-  margin-bottom: 15px;
-  display: block;
+.accordion-widget {
+	margin: 2rem 0;
+	display: block;
+}
+.accordion-widget h3.font-size-h4 {
+	margin-top: 0;
+}
+.accordion-widget .accordion-content {
+	padding: 10px;
+}
+.accordion-widget .accordion-content h4:first-child {
+	padding: 0;
+}
+.accordion-widget .accordion-content p {
+	margin: 0;
+}
+.accordion-widget .accordion-item {
+	display: block;
+	border: 1px solid;
+	border-bottom: none;
+}
+.accordion-widget .accordion-item > h3, .accordion-widget .accordion-item > h4 {
+	margin: 0;
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.accordion-widget .accordion-item > h3 p, .accordion-widget .accordion-item > h4 p {
+	margin: 0;
+}
+.accordion-widget .accordion-item:first-child {
+	border-radius: var(--top-radius);
+}
+.accordion-widget .accordion-item:last-child {
+	border-radius: var(--bottom-radius);
+	border-bottom: 1px solid;
+}
+.accordion-widget .arrow-right:after {
+	content: "\f054";
+	font-family: "FontAwesome";
+	display: inline-block;
+	font-weight: 900;
+	height: 16px;
+	transform-origin: center;
+	margin-right: 10px;
+	width: 16px;
+}
+.accordion-widget .arrow-down:after {
+	content: "\f078";
+	font-family: "FontAwesome";
+	display: inline-block;
+	font-weight: 900;
+	height: 16px;
+	margin-right: 10px;
+	transform-origin: center;
+	width: 16px;
 }
 
-accordion-widget accordion-content {
+.toggle-btn-content,
+.footnotes {
   display: none;
-  padding: 10px;
 }
 
-accordion-widget accordion-content p {
-  margin: 0;
+.example-container .accordion-widget .accordion-content p.show {
+	background-color: var(--color-primary-tint1);
 }
-
-accordion-widget accordion-content.show {
-  display: block;
+.example-container .accordion-widget .accordion-item {
+	border-color: var(--color-primary);
 }
-
-accordion-widget accordion-item {
-  display: block;
-  border: 1px solid var(--color-primary);
-  border-bottom: none;
+.example-container .accordion-widget .accordion-item > h3 p:hover, .example-container .accordion-widget .accordion-item h4 p:hover {
+	background-color: rgba(13, 13, 13, 0.1);
 }
-
-accordion-widget accordion-item > h3, accordion-widget accordion-item h4 {
-  margin: 0 !important;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.example-container .accordion-widget .accordion-item h3.arrow-down, .example-container .accordion-widget .accordion-item h4.arrow-down {
+	background-color: var(--color-primary-tint1);
 }
-
-accordion-widget accordion-item > h3 p, accordion-widget accordion-item h4 p {
-  margin: 0;
-}
-
-accordion-widget accordion-item > h3:hover, accordion-widget accordion-item h4:hover {
-  background-color: rgba(13, 13, 13, 0.1);
-  cursor: pointer;
-}
-
-accordion-widget accordion-item h3.arrow-down, accordion-widget accordion-item h4.arrow-down {
-  background-color: var(--color-primary-tint1);
-}
-
-accordion-widget accordion-item:first-child {
-  border-radius: var(--top-radius);
-}
-
-accordion-widget accordion-item:last-child {
-  border-radius: var(--bottom-radius);
-  border-bottom: 1px solid var(--color-primary);
-}
-
-accordion-widget .arrow-right:after {
-  content: "\f054";
-  font-family: "FontAwesome";
-  display: inline-block;
-  font-weight: 900;
-  height: 16px;
-  transform-origin: center;
-  margin-right: 10px;
-  width: 16px;
-}
-
-accordion-widget .arrow-down:after {
-  content: "\f078";
-  font-family: "FontAwesome";
-  display: inline-block;
-  font-weight: 900;
-  height: 16px;
-  margin-right: 10px;
-  transform-origin: center;
-  width: 16px;
+.example-container .accordion-widget .accordion-item:last-child {
+	border-color: var(--color-primary);
 }

@@ -1,32 +1,26 @@
 ul.vocab-cards-widget {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	list-style-type: none;
 }
-
 ul.vocab-cards-widget li {
-  border-radius: var(--round-radius);
-  background-color: var(--color-white);
-  box-shadow: var(--sm-shadow);
-  margin: 10px auto;
-  max-width: 275px;
-  padding: 1rem;
-  transition: .5s;
+	border-radius: var(--round-radius);
+	background-color: var(--color-white);
+	box-shadow: var(--sm-shadow);
+	margin: 10px auto;
+	max-width: 275px;
+	padding: 1rem;
+	transition: 0.5s;
 }
-
-ul.vocab-cards-widget li h3,
-ul.vocab-cards-widget li h4,
-ul.vocab-cards-widget li h5 {
-  margin: .5rem 0;
+ul.vocab-cards-widget li h3, ul.vocab-cards-widget li h4, ul.vocab-cards-widget li h5 {
+	margin: 0.5rem 0;
 }
-
 ul.vocab-cards-widget li p {
-  margin: .5rem 0;
+	margin: 0.5rem 0;
 }
-
 ul.vocab-cards-widget li:hover {
-  transform: translate(0, -5px);
-  transition: .5s;
-  box-shadow: var(--reg-shadow);
+	transform: translate(0, -5px);
+	transition: 0.5s;
+	box-shadow: var(--reg-shadow);
 }

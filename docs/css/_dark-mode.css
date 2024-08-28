@@ -160,19 +160,19 @@ body[dark-mode] {
 
 /* Accordion widget */
 
-[dark-mode] accordion-item :is(h3, h4) {
+[dark-mode] .accordion-item :is(h3, h4) {
   color: var(--dark-white);
 }
 
-[dark-mode] accordion-item :is(h3, h4):hover {
+[dark-mode] .accordion-item :is(h3, h4):hover {
   background-color: var(--dark-tertiary);
 }
 
-[dark-mode] accordion-item:first-child :is(h3, h4) {
+[dark-mode] .accordion-item:first-child :is(h3, h4) {
   border-radius: var(--top-radius);
 }
 
-[dark-mode] accordion-item:last-child :is(h3, h4) {
+[dark-mode] .accordion-item:last-child :is(h3, h4) {
   border-radius: var(--bottom-radius);
 }
 
@@ -224,7 +224,7 @@ body[dark-mode] {
 
 /* Callout widget */
 
-[dark-mode] callout-widget {
+[dark-mode] .callout-widget {
   background-color: var(--dark-tertiary);
 }
 

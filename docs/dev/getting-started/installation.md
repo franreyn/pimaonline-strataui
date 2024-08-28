@@ -2,44 +2,45 @@
 
 # Installation
 
-In order to use Strata UI, ensure you follow these steps and have the correct code in your HTML page.
+Ready to use Strata UI? Just follow these steps.
 
-## HTML head
+## HTML Head
 
-To use Strata in your course, ensure that your HTML page is loading the correct links. Ensure at the top of your HTML document, it has the following elements.
+Ensure the top of your HTML document has the following elements.
 
-1. **Strata UI CSS Link** - This adds all the visual styles to all the widgets and themes.
+1. **Strata UI CSS Link** - This link adds the visual styles to the widgets and themes.
 
 ```html
-https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/css/index.css" />
 ```
 
-2. **Strata UI JS Link** - This enables you to use custom HTML elements, and creates all the dynamic formatting of the code.
+2. **Strata UI JS Link** - This link dynamically adds accessibility attributes and allows for widget functionality.
 
 ```html
-https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js
+<script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/js/scripts.js" defer=""></script>
 ```
 
 _Note: These links should be present on every HTML page for your course._
 
 ### HTML Example
 
-At the top of your HTML file, after the document type and `<html>` tag, ensure the `<head>` tag contains the following attributes and links.
+At the top of your HTML file, after the document type and `<html>` element, ensure the `<head>` element contains the following attributes and links.
 
 ```html
+<!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/css/index.css" />
-  <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@1/dist/js/scripts.js" defer=""></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/css/index.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@pimaonline/pimaonline-strataui@2/dist/js/scripts.js" defer=""></script>
 </head>
 ```
 
-_Note: Don't forget to add a `<title>` to the head of your HTML document (should match the `<h1>` of the document)._
+_Note: Don't forget to add a `<title>` to the head of your HTML document (should match the content of your `<h1>` element)._
 
 ```html
-<title>One Column Layout</title>
+<title>One-Column Layout</title>
 ```
 
   <div class="footer">

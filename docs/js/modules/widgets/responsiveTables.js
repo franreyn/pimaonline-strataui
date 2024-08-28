@@ -10,12 +10,10 @@ const initResponsiveTables = () => {
     // Select all header elements within the current table
     const tableHeaders = table.querySelectorAll("th")
 
-    console.log(tableHeaders)
 
     // Select the table body within the current table
     const tableBody = table.querySelector("tbody")
 
-    console.log(tableBody)
 
     if (tableHeaders.length > 0) {
       // Initialize an array to store header text

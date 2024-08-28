@@ -6,20 +6,20 @@ A visual way to separate list items within a group.
 
 ## How to Use
 
-1. There are two types of list groups, `unordered` and `ordered`. Depending on the nature of the list, add `<unordered-list-group>` or `<ordered-list-group>` to wrap the whole list.
-2. Add `<list-group-item>` for each item in the list.
-3. Add the text content for each list group item. (No need to add a `<p>` for each list group item).
+1. There are two types of list groups, `unordered` and `ordered`. Depending on the nature of the list, add the `<ul>` element or `<ol>` element to wrap the whole list. Add `class="list-group"` to the `<ul>` or `<ol>` element.
+2. Add a `<li>` element for each item in the list.
+3. Add text content for each list group item. (No need to add a `<p>` for each list group item).
 
 ### Unordered Lists Example
 
 `Unordered Lists` - these lists are for unrelated items, that could be placed in any order.
 
 ```html
-<unordered-list-group>
-  <list-group-item>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</list-group-item>
-  <list-group-item>Nullam lobortis quam id justo porta suscipit.</list-group-item>
-  <list-group-item>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </list-group-item>
-</unordered-list-group>
+<ul class="list-group">
+  <li>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</li>
+  <li>Nullam lobortis quam id justo porta suscipit.</li>
+  <li>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </li>
+</ul>
 ```
 
 ### Ordered Lists Example
@@ -27,11 +27,11 @@ A visual way to separate list items within a group.
 `Ordred Lists` - these lists are for procedural items, where order matters.
 
 ```html
-<ordered-list-group>
-  <list-group-item>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</list-group-item>
-  <list-group-item>Nullam lobortis quam id justo porta suscipit.</list-group-item>
-  <list-group-item>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </list-group-item>
-</ordered-list-group>
+<ol class="list-group">
+  <li>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</li>
+  <li>Nullam lobortis quam id justo porta suscipit.</li>
+  <li>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </li>
+</ol>
 ```
 
 ### Utility Classes
@@ -42,19 +42,19 @@ To limit the size of the list, you can add one of two utility classes.
 2. `half-width` - makes the list half width.
 
 ```html
-<ordered-list-group class="full-width">
-  <list-group-item>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</list-group-item>
-  <list-group-item>Nullam lobortis quam id justo porta suscipit.</list-group-item>
-  <list-group-item>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </list-group-item>
-</ordered-list-group>
+<ol class="full-width">
+  <li>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</li>
+  <li>Nullam lobortis quam id justo porta suscipit.</li>
+  <li>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </li>
+</ol>
 ```
 
 ```html
-<ordered-list-group class="half-width">
-  <list-group-item>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</list-group-item>
-  <list-group-item>Nullam lobortis quam id justo porta suscipit.</list-group-item>
-  <list-group-item>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </list-group-item>
-</ordered-list-group>
+<ol class="half-width">
+  <li>Nunc sed lacus sit amet purus convallis vestibulum vitae quis libero.</li>
+  <li>Nullam lobortis quam id justo porta suscipit.</li>
+  <li>Suspendisse risus ex, vestibulum non leo sit amet, consequat ultricies eros. </li>
+</ol>
 ```
 
 _Note: Both the unordered, and ordered lists are visually identical._

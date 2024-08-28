@@ -2,34 +2,34 @@
 
 # Custom HTML Elements
 
-Strata UI utilizes custom HTML Elements to make the course developmement process easy and simple.
+Strata UI utilizes custom HTML Elements to make the course development process easy and simple.
 
 ## Adding the HTML Structure
 
-To create the structure of the document, you can use the `<column-one>` tag to create a vertical container to hold your content. To change the layout to a two column layout please see the [two column example](/layouts/two-column.md)
+To create the structure of the document, you can use the `<div class="column-one">` tag to create a vertical container to hold your content. To change the layout to a two-column layout please see the [two-column example](/layouts/two-column.md)
 
 In order to add content to the column, add a `<content-block>` tag to create nested containers that exist within the columns. All widgets and text should be contained within a `<content-block>` tag.
 
 ### HTML Example
 
 ```html
-<column-one>
-  <content-block>
+<div class="column-one">
+  <div class="content-block">
     <h2>Content Heading</h2>
     <p>Content paragraph text</p>
-  </content-block>
-</column-one>
+  </div>
+</div>
 ```
 
 ## Adding Widgets
 
-To add a widget, just add an opening tag and closing tag with the widget's custom HTML. Each widget will have custom HTML tags. In this example, the `<callout-widget>` and `<accordion-widget>` are used.
+To add a widget, simply use the corresponding HTML element along with its specific classes. This example uses the `callout-widget` and `accordion-widget` classes.
 
 ### HTML Example
 
 ```html
-<column-one>
-  <content-block>
+<div class="column-one">
+  <div class="content-block">
     <h2>Content Heading</h2>
     <p>Content paragraph text</p>
     <!-- Widget added here -->
@@ -54,8 +54,8 @@ To add a widget, just add an opening tag and closing tag with the widget's custo
         </accordion-content>
       </accordion-item>
     </accordion-widget>
-  </content-block>
-</column-one>
+  </div>
+</div>
 ```
 
 ## Adding Content

@@ -6,23 +6,23 @@ All structural components in Strata UI follow a simple grid pattern.
 
 ## Header
 
-At the top of each page is a header. This allows the course designer to add a relatable image and a title for the page. The header helps the student understands what content will be taught on that page.
+At the top of each page, there is a header where the course designer can add a relevant image and title. This header provides students with a clear indication of the content that will be covered on the page.
 
 [View Header Article](/layouts/header.md)
 
 ## Layouts
 
-The rest of the page is organized by columns. All content after the header will fall into either a one column layout, or a two column layout.
+Below the header, the page content is organized into columns. After the header, the content will be arranged in either a one-column layout or a two-column layout.
 
-[View One Column Layout Example](/layouts/one-column.md)
+[View One-Column Layout Example](/layouts/one-column.md)
 
-[View Two Column Layout Example](/layouts/two-column.md)
+[View Two-Column Layout Example](/layouts/two-column.md)
 
 ### Responsive Design
 
-When you use a one column layout the content blocks and different widgets will resize according to the device width.
+With a one-column layout, your content blocks and widgets dynamically adapt to the screen size, ensuring a seamless experience across all devices.
 
-If you are using a two-column layout, the columns will collapse at a specific device width and the content will be adjusted accordingly.
+With a two-column layout, the columns will collapse at a specific device width and the content will be adjusted accordingly.
 
 ## Content Blocks
 

@@ -1,63 +1,50 @@
-/* List groups */
 ul.list-group, ol.list-group {
-  max-width: max-content;
-  border: 1px solid var(--color-grey);
-  border-radius: var(--round-radius);
-  padding: 0;
+	max-width: max-content;
+	border: 1px solid var(--color-grey);
+	border-radius: var(--round-radius);
+	padding: 0;
 }
-
-ul.list-group .list-group-item, ol.list-group .list-group-item {
-  border-bottom: 1px solid var(--color-grey);
-  position: relative;
-  display: block;
-  padding: 10px 15px;
-  text-decoration: none;
-  margin: 0;
-  width: auto;
+ul.list-group li, ol.list-group li {
+	border-bottom: 1px solid var(--color-grey);
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	margin: 0;
+	width: auto;
 }
-
-ul.list-group .list-group-item::marker, ol.list-group .list-group-item::marker {
-  display: none;
+ul.list-group li::marker, ol.list-group li::marker {
+	display: none;
 }
-
-ul.list-group .list-group-item:last-of-type, ol.list-group .list-group-item:last-of-type {
-  border-bottom: none;
+ul.list-group li:last-of-type, ol.list-group li:last-of-type {
+	border-bottom: none;
 }
-
-ul.list-group .list-group-item:hover, ol.list-group .list-group-item:hover {
-  background-color: var(--slider-bkg);
+ul.list-group li:hover, ol.list-group li:hover {
+	background-color: var(--slider-bkg);
 }
-
-ul.list-group .list-group-item:hover:first-of-type, ol.list-group .list-group-item:hover:first-of-type {
-  border-top-left-radius: var(--round-radius);
-  border-top-right-radius: var(--round-radius);
+ul.list-group li:hover:first-of-type, ol.list-group li:hover:first-of-type {
+	border-top-left-radius: var(--round-radius);
+	border-top-right-radius: var(--round-radius);
 }
-
-ul.list-group .list-group-item:hover:last-of-type, ol.list-group .list-group-item:hover:last-of-type {
-  border-bottom-left-radius: var(--round-radius);
-  border-bottom-right-radius: var(--round-radius);
+ul.list-group li:hover:last-of-type, ol.list-group li:hover:last-of-type {
+	border-bottom-left-radius: var(--round-radius);
+	border-bottom-right-radius: var(--round-radius);
 }
-
-ul.list-group > li {
-  list-style-type: none;
+ul.list-group ul > li, ol.list-group ul > li {
+	list-style-type: none;
 }
-
 ul.list-group li > ul > li, ol.list-group li > ul > li {
-  list-style-type: disc !important;
-  display: list-item !important;
+	list-style-type: disc !important;
+	display: list-item !important;
 }
-
 .full-width {
-  max-width: 100% !important;
+	max-width: 100% !important;
 }
-
 .half-width {
-  max-width: 50% !important;
+	max-width: 50% !important;
 }
-
-/* When screen is too small, ensure half-width really takes up full width */
 @media screen and (max-width: 576px) {
-  .half-width {
-    max-width: 100% !important;
-  }
+	.half-width {
+		max-width: 100% !important;
+ }
 }

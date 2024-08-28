@@ -42,6 +42,6 @@ function toggleDarkMode() {
   }
   // Store the current dark mode preference in localStorage
   strataLocalStorage.setItem("strataDarkMode", strataDarkMode);
-  console.log("dark mode toggled")
+  ("dark mode toggled")
   darkModeLogo();
 }

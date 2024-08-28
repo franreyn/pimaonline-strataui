@@ -8,7 +8,7 @@ The styles can be found in the `_typography.scss` file. This file contains style
 
 ## Import Variables
 
-```scss
+```css
 @import "variables";
 ```
 
@@ -16,7 +16,7 @@ This line imports a SCSS file named `"variables"`. This file contains predefined
 
 ## HTML and Body Styles
 
-```scss
+```css
 html {
   font-size: 18px;
 }
@@ -33,7 +33,7 @@ These styles set the base font size for the HTML document and the font family, s
 
 ## Heading Styles
 
-```scss
+```css
 h1,
 h2,
 h3,
@@ -50,7 +50,7 @@ These styles apply to all heading elements (h1 through h6). They set the color, 
 
 ## Media Queries
 
-```scss
+```css
 @media (min-width: 768px) {
   h1 {
     font-size: 1.9rem;
@@ -64,7 +64,7 @@ These styles apply to different elements when the viewport is at least 768 pixel
 
 ## List Styles
 
-```scss
+```css
 ul,
 ol {
   list-style-position: outside;
@@ -73,11 +73,11 @@ ol {
 }
 ```
 
-These styles apply to unordered (ul) and ordered (ol) lists. They set the list style position, margin, and padding for these elements.
+These styles apply to unordered `<ul>` and ordered `<ol>` lists. They set the list style position, margin, and padding for these elements.
 
 ## Two and Three Column Lists
 
-```scss
+```css
 ul.two-col,
 ol.two-col {
   columns: 1;

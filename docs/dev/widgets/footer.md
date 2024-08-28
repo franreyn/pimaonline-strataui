@@ -2,11 +2,11 @@
 
 # Footer
 
-Display footnotes or citations related to the content in a collapsable drawer.
+Display footnotes or citations related to the content in a collapsible drawer.
 
 ## How to Use
 
-Enclose all elements within the footer section using the `<footer>` tag. Initially, the content inside the footer will be hidden. When the footer is toggled, the container will expand, revealing all the elements nested within it.
+Enclose all elements within the footer section using the `<footer>` element. Initially, the content inside the footer will be hidden. When the footer is toggled, the container will expand, revealing all the elements nested within it.
 
 ### HTML Example
 
@@ -15,11 +15,11 @@ Enclose all elements within the footer section using the `<footer>` tag. Initial
   <p>
     Definition of Rhetorical Analysis: Rhetorical analysis involves examining how authors or speakers use words to influence an audience. It focuses on understanding the strategies employed to convey messages and achieve
     desired effects<sup>1</sup>.
-      <ul>
+  </p>
+  <ul>
     <li>Example text 1</li>
     <li>Example text 2</li>
   </ul>
-  </p>
   <p>"Rhetorical Analysis," Purdue Online Writing Lab (OWL), accessed June 24, 2024, https://owl.purdue.edu/owl/general_writing/the_writing_process/rhetorical_analysis/index.html.</p>
 </footer>
 ```
@@ -43,55 +43,22 @@ Styles for `footer` are found in `_grid.scss`.
 
 ```css
 footer {
-  margin: 0 auto;
-  max-width: 998px;
-  width: 100%;
-  grid-area: footer;
-  padding: 5px 0;
-  background-color: var(--color-white);
-
-  .footnotes {
-    padding: 15px;
-  }
+  padding: 15px 0;
 }
 
-#one-column .footnotes {
-  padding: 15px 95px;
-}
-
-#two-column footer,
-#two-col-widget footer {
-  max-width: 1170px;
-}
-
-.toggle-footnotes {
-  background-color: transparent;
-  color: var(--color-link-blue);
-  text-decoration: underline;
-}
-
-.toggle-footnotes:hover {
-  background-color: transparent;
-  color: var(--color-footnotes-blue);
-  text-decoration: underline;
-}
-
-.toggle-footnotes:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.toggle-footnotes {
+.toggle-footer {
+  display: block;
+  font-size: 1rem;
   margin: 5px;
   text-decoration: none;
+  margin: auto;
+  background-color: transparent;
+  border: none;
 }
 
-.footnotes {
-  display: none;
-}
-
-.show {
-  display: block;
+.toggle-footer:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 ```
 

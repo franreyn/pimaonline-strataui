@@ -4,21 +4,21 @@ The grid components help make up the different layouts in Strata UI.
 
 The grid components are:
 
-1. ContentBlock component
-2. OneColumn component
-3. TwoColumn component
+1. Content Block component
+2. One-Column component
+3. Two-Column component
 
-The one and two column layouts, determine if the layout has one large column, or two columns with main content on the left hand side and supplemental content on the left hand side.
+The one and two-column layouts, determine if the layout has one large column, or two-columns with main content on the left-hand side and supplemental content on the left-hand side.
 
-The content body component, helps separate smaller peices of information and resides within one of the columns.
+The content body component, helps separate smaller pieces of information and resides within one of the columns.
 
 ## How It Works
 
-### One Column Layout
+### One-Column Layout
 
 Using grid and grid template, the CSS creates a general layout of the page.
 
-```scss
+```css
 #one-column {
   display: grid;
   grid-row-gap: 10px;
@@ -31,11 +31,11 @@ Using grid and grid template, the CSS creates a general layout of the page.
 }
 ```
 
-### Two Column Layout
+### Two-Column Layout
 
-The two column layout uses grid as well and a combination of flex to ensure that the height of the two columns match regardless of the content size.
+The two-column layout uses grid as well and a combination of flex to ensure that the height of the two-columns match regardless of the content size.
 
-```scss
+```css
 #two-column {
   display: grid;
   grid-row-gap: 10px;
@@ -69,7 +69,7 @@ column-two {
 
 The content body element are the sub grid components that contain the actual content. They fit inside the different columns and ensure that the learning content has a background and uniform padding.
 
-```scss
+```css
 //CONTENT BODY
 content-block {
   margin-bottom: 10px;
@@ -108,7 +108,7 @@ It also consists of basic styles for the following:
 
 1. Background for body
 2. Header and footer
-3. One and two columns
+3. One-column and two-column
 4. Typography for header and footnotes
 5. Syllabus header
 6. Buttons, links, images, figures, and utility elements

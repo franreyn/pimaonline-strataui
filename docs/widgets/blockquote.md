@@ -6,12 +6,12 @@ Draw attention to an important quote or piece of information.
 
 ## How to Use
 
-1. Wrap the quote in the `<blockquote>` tags.
+1. Wrap the quote in the `<blockquote>` elements.
 
 ### HTML Example
 
 ```html
-<blockquote>The biggest adventure you can ever take is to live the life of your dreams.</blockquote>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
 ```
 
 ### Preview

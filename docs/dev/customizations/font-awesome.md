@@ -2,7 +2,7 @@
 
 # Font Awesome
 
-Font Awesom Icons for Strata UI
+Font Awesome Icons for Strata UI
 
 ## Javascript
 
