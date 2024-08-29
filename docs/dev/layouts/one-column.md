@@ -4,6 +4,7 @@
 
 This layout is typically best used for content-heavy pages and linear learning paths.
 
+<img src="../../_images/1-column.jpg" alt="simple illustration showing the layout of a one-column layout">
 
 ### Example
 
