@@ -92,8 +92,17 @@ body.close .sidebar-toggle-button span:nth-child(3) {
 
 /* Edit sidebar when screen is small and there is a mobile menu */
 @media screen and (max-width: 768px) {
-  .sidebar-toggle {
+	body .sidebar-toggle {
     padding: 10px;
+		left: 20px;
+		background-color: var(--color-docs-nav-bkg);
+		bottom: 30px;
+  }
+	body.sticky .sidebar-toggle {
+    padding: 10px;
+		left: 20px;
+		background-color: var(--color-docs-nav-bkg);
+		bottom: 30px;
   }
 
   body .content {
