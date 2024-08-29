@@ -140,7 +140,7 @@ p.section-text {
 }
 
 .version-number {
-	color: var(--color-dkgrey);
+	color: var(--color-grey);
 }
 
 /* HOMEPAGE */
@@ -512,6 +512,7 @@ section.cover h2 {
   padding: 1rem;
   border-radius: 2px;
 	border: 2px solid var(--color-docs-light-grey);
+	background-color: var(--color-example-contianer-bkg);
 }
 
 .example-container blockquote {
