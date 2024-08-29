@@ -8,6 +8,8 @@ The easiest way to get started with Strata UI is to copy and paste one of the fo
 
 All content is displayed in a single column.
 
+<img src="../_images/1-column.jpg" alt="simple illustration showing the layout of a one-column layout">
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -163,6 +165,8 @@ All content is displayed in a single column.
 ## Two-Column Template
 
 The main content is displayed in the left column while any supplementary content is displayed in the right column.
+
+<img src="../_images/2-column.jpg" alt="simple illustration showing the layout of a two-column layout">
 
 ```html
 <!DOCTYPE html>

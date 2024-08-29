@@ -4,6 +4,8 @@
 
 This layout is best for pairing primary learning materials with supplementary learning materials.
 
+<img src="../../_images/2-column.jpg" alt="simple illustration showing the layout of a two-column layout">
+
 ### Example
 
 ```html
