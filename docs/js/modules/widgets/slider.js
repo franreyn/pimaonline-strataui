@@ -89,63 +89,68 @@ const handleSliderWidget = () => {
 
   // Initialize each slider with navigation buttons, dots, and keyboard navigation
   document.querySelectorAll(".slider-widget").forEach((slider, sliderIndex) => {
-    // Set accessibility attributes for the slider
-    slider.setAttribute("tabindex", "0")
-    slider.setAttribute("role", "group")
+  // Set accessibility attributes for the slider
+  slider.setAttribute("tabindex", "0")
+  slider.setAttribute("role", "group")
 
-    // Create a hidden label for the slider for screen readers
-    const sliderLabel = document.createElement("span")
-    sliderLabel.id = `slider-label-${sliderIndex + 1}`
-    sliderLabel.textContent = "Interactive Slider"
-    sliderLabel.hidden = true
-    // Insert the label at the beginning of the slider
-    slider.prepend(sliderLabel)
+  // Create a hidden label for the slider for screen readers
+  const sliderLabel = document.createElement("span")
+  sliderLabel.id = `slider-label-${sliderIndex + 1}`
+  sliderLabel.textContent = "Interactive Slider"
+  sliderLabel.hidden = true
+  // Insert the label at the beginning of the slider
+  slider.prepend(sliderLabel)
 
-    // Associate the label with the slider for screen readers
-    slider.setAttribute("aria-labelledby", `slider-label-${sliderIndex + 1}`)
+  // Associate the label with the slider for screen readers
+  slider.setAttribute("aria-labelledby", `slider-label-${sliderIndex + 1}`)
 
-    // Initialize the current index for the slider
-    let currentSlide = 0
-    // Select all slider items within the current slider
-    const sliderItems = Array.from(slider.querySelectorAll(".slider-item"))
-    // Create a div to contain the dots for navigation
-    const sliderDotsBar = document.createElement("div")
+  // Initialize the current index for the slider
+  let currentSlide = 0
+  // Select all slider items within the current slider
+  const sliderItems = Array.from(slider.querySelectorAll(".slider-item"))
+  // Check if a slider-dots-bar already exists
+  let sliderDotsBar = slider.querySelector(".slider-dots-bar")
+
+	console.log("slider items ", sliderItems)
+	console.log("slider dots bar ", sliderDotsBar)
+  
+  // If it doesn't exist, create a new one
+  if (!sliderDotsBar) {
+    sliderDotsBar = document.createElement("div")
     sliderDotsBar.className = "slider-dots-bar"
     // Append the dots bar to the slider
     slider.appendChild(sliderDotsBar)
-    // Initialize an array to keep track of the dots
-    let sliderDots = []
+  }
 
-    // Create dots for each slide and set up click events to navigate to the slide
-    sliderItems.forEach((sliderItem, sliderIndex) => {
-      // Create a span element to represent a dot
-      const sliderDot = document.createElement("span")
-      sliderDot.className = "slider-dot"
-      // Add a click event listener to the dot
-      sliderDot.addEventListener("click", () => {
-        // Update the current index to the index of the clicked dot
-        currentSlide = sliderIndex
-        // Call the function to update the slide display
-        hideSlidesAndDots(sliderItems, sliderDots, currentSlide)
-        // Ensure the current slide is displayed
-        sliderItems[currentSlide].style.display = "block"
-        // Add the "active" class to the current dot
-        sliderDot.classList.add("active")
-        // Call the function to align the slide content if necessary
-        totalSlideContentHeight(sliderItems[currentSlide])
-      })
-      // Append the dot to the dots bar
-      sliderDotsBar.appendChild(sliderDot)
-      // Add the dot to the array of dots
-      sliderDots.push(sliderDot)
+// Initialize an array to keep track of the dots
+let sliderDots = []
 
-      // Hide the slide if it's not the current one
-      sliderItem.style.display = sliderIndex !== currentSlide ? "none" : "block"
-      // If it's the current slide, add the "active" class to the corresponding dot
-      if (sliderIndex === currentSlide) {
-        sliderDot.classList.add("active")
-      }
+// Create dots for each slide and set up click events to navigate to the slide
+// Check if there are any dots already present to avoid duplicates
+if (sliderDotsBar.children.length === 0) {
+  sliderItems.forEach((sliderItem, sliderIndex) => {
+    const sliderDot = document.createElement("span")
+    sliderDot.className = "slider-dot"
+
+    // Add a click event listener to the dot
+    sliderDot.addEventListener("click", () => {
+      currentSlide = sliderIndex
+      updateSlide(sliderItems, sliderDots, currentSlide)
+      totalSlideContentHeight(sliderItems[currentSlide])
     })
+
+    sliderDotsBar.appendChild(sliderDot)
+    sliderItem.style.display = sliderIndex !== currentSlide ? "none" : "block"
+    if (sliderIndex === currentSlide) {
+      sliderDot.classList.add("active")
+    }
+  })
+} 
+
+// Populate sliderDots array with the actual dots from the sliderDotsBar
+sliderDots = Array.from(sliderDotsBar.children)
+
+
 
     // Create navigation buttons and set up click events to navigate between slides
     const sliderLeftArrow = createSliderButton("slider-arrow fa-chevron-left")
@@ -154,27 +159,28 @@ const handleSliderWidget = () => {
     slider.appendChild(sliderLeftArrow)
     slider.appendChild(sliderRightArrow)
 
-    // Add a click event listener to the left arrow button
-    sliderLeftArrow.addEventListener("click", () => {
-      // Update the current index to the previous slide, wrapping around if necessary
-      currentSlide =
-        currentSlide > 0 ? currentSlide - 1 : sliderItems.length - 1
-      // Call the function to update the slide display
-      updateSlide(sliderItems, sliderDots, currentSlide)
-      // Call the function to align the slide content if necessary
-      totalSlideContentHeight(sliderItems[currentSlide])
-    })
+		// Add a click event listener to the left arrow button
+		sliderLeftArrow.addEventListener("click", () => {
+			// Update the current index to the previous slide, wrapping around if necessary
+			currentSlide =
+				currentSlide > 0 ? currentSlide - 1 : sliderItems.length - 1
+			// Call the function to update the slide display
+			updateSlide(sliderItems, sliderDots, currentSlide)
+			// Call the function to align the slide content if necessary
+			totalSlideContentHeight(sliderItems[currentSlide])
+		})
 
-    // Add a click event listener to the right arrow button
-    sliderRightArrow.addEventListener("click", () => {
-      // Update the current index to the next slide, wrapping around if necessary
-      currentSlide =
-        currentSlide < sliderItems.length - 1 ? currentSlide + 1 : 0
-      // Call the function to update the slide display
-      updateSlide(sliderItems, sliderDots, currentSlide)
-      // Call the function to align the slide content if necessary
-      totalSlideContentHeight(sliderItems[currentSlide])
-    })
+		// Add a click event listener to the right arrow button
+		sliderRightArrow.addEventListener("click", () => {
+			// Update the current index to the next slide, wrapping around if necessary
+			currentSlide =
+				currentSlide < sliderItems.length - 1 ? currentSlide + 1 : 0
+			// Call the function to update the slide display
+			updateSlide(sliderItems, sliderDots, currentSlide)
+			// Call the function to align the slide content if necessary
+			totalSlideContentHeight(sliderItems[currentSlide])
+		})
+
 
     // Function to update the label text when the slide changes
     function updateSliderLabel() {
