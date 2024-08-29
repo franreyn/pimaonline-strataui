@@ -110,9 +110,6 @@ const handleSliderWidget = () => {
   const sliderItems = Array.from(slider.querySelectorAll(".slider-item"))
   // Check if a slider-dots-bar already exists
   let sliderDotsBar = slider.querySelector(".slider-dots-bar")
-
-	console.log("slider items ", sliderItems)
-	console.log("slider dots bar ", sliderDotsBar)
   
   // If it doesn't exist, create a new one
   if (!sliderDotsBar) {
