@@ -69,6 +69,21 @@ body[dark-mode] {
 
 /* Markdown section */
 
+[dark-mode] .example-container {
+	background-color: var(--dark-example-container-bkg);
+	border: 2px solid var(--dark-tertiary);
+}
+
+[dark-mode] .example-container a.button {
+	background-color: var(--dark-link-color-hover);
+	color: var(--dark-tertiary);
+}
+
+[dark-mode] .example-container a.button:hover {
+	background-color: var(--dark-link-color);
+	color: var(--dark-tertiary);
+}
+
 [dark-mode] :is(.markdown-section a) {
 	color: var(--dark-link-color);
 }
@@ -175,6 +190,17 @@ body[dark-mode] {
 [dark-mode] .accordion-item:last-child :is(h3, h4) {
   border-radius: var(--bottom-radius);
 }
+
+[dark-mode] .example-container .accordion-widget .accordion-item, [dark-mode] .example-container .accordion-widget .accordion-item:last-child {
+	border-color: var(--color-secondary);
+}
+
+	/* Tabs */
+
+[dark-mode] .tab-item label.hide-tab, [dark-mode] .tab-item input:checked + label.hide-tab {
+	color: var(--dark-white);
+}
+
 
 /* Tables */
 

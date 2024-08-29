@@ -1,11 +1,11 @@
 ul.list-group, ol.list-group {
 	max-width: max-content;
-	border: 1px solid var(--color-grey);
+	border: 1px solid var(--color-dkgrey);
 	border-radius: var(--round-radius);
 	padding: 0;
 }
 ul.list-group li, ol.list-group li {
-	border-bottom: 1px solid var(--color-grey);
+	border-bottom: 1px solid var(--color-dkgrey);
 	position: relative;
 	display: block;
 	padding: 10px 15px;

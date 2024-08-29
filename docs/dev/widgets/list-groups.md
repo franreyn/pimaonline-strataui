@@ -84,12 +84,12 @@ The styles create the border, hover animation, and add lines between list items.
 // List groups
 ul.list-group, ol.list-group {
   max-width: max-content;
-  border: 1px solid var(--color-grey);
+  border: 1px solid var(--color-dkgrey);
   border-radius: var(--round-radius);
   padding: 0;
  
   li {
-     border-bottom: 1px solid var(--color-grey);
+     border-bottom: 1px solid var(--color-dkgrey);
      position: relative;
      display: block;
      padding: 10px 15px;

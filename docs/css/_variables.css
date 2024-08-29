@@ -3,14 +3,15 @@
   --color-docs-secondary: rgba(108, 112, 126, 1);
   --color-docs-tertiary: rgba(238, 115, 31, 1);
   --color-docs-quaternary: rgba(240, 240, 240, 1);
+	--color-example-contianer-bkg: rgba(253, 253, 253, 1);
   --color-docs-dark-blue: rgba(25, 30, 63, 1);
   --color-docs-accent: rgba(79, 111, 244, 1);
 	--color-docs-accent-hover: rgb(96, 123, 230);
   --color-docs-active-link: rgba(79, 111, 244, .05);
-  --color-grey: rgba(68, 68, 68, 1);
-  --color-gray: rgba(68, 68, 68, 1);
-  --color-dkgrey: rgba(128, 128, 128, 1);
-  --color-dkgrey-hover: rgba(108, 110, 112, 1);
+  --color-dkgrey: rgba(68, 68, 68, 1);
+  --color-dkgray: rgba(68, 68, 68, 1);
+  --color-grey: rgba(128, 128, 128, 1);
+  --color-grey-hover: rgba(108, 110, 112, 1);
   --color-ltgrey: rgba(227, 227, 227, 1);
   --color-docs-nav-bkg: rgba(79, 111, 244, .1);
 	--color-docs-code-text-grey: rgba(82, 82, 82, 1);
@@ -33,6 +34,7 @@
   --dark-primary: rgba(27, 34, 35, 1);
   --dark-secondary: rgba(136, 140, 157, 1);
   --dark-tertiary: rgba(34, 42, 43, 1);
+	--dark-example-container-bkg: rgb(30, 39, 41);
   --dark-sidebar-text: rgba(105, 139, 240, 1);
 	--dark-link-color: rgba(105, 139, 240, 1);
 	--dark-link-color-hover: rgb(126, 150, 220);
