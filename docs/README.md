@@ -31,6 +31,12 @@ View the [quick start template](getting-started/quick-start) to copy and paste a
 3. [Choose a theme](/themes/pre-installed-themes.md) from pre-installed themes, or use the default theme.
 4. [Add Strata UI classes](getting-started/custom-strata-ui-classes) for each widget and content.
 
-	<div class="footer">
-		<p>&copy; 2024 Strata UI</p>
-	</div>
+### GitHub
+
+Visit our [GitHub Discussions page](https://github.com/franreyn/pimaonline-strataui/discussions) for updates and general discussions around using Strata UI.
+
+_Note: You will have to cretae a github accont in order to participate._
+
+<div class="footer">
+	<p>&copy; 2024 Strata UI</p>
+</div>
