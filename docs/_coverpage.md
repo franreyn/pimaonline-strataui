@@ -8,7 +8,7 @@
 multiple themes and widgets</h3>
 </div>
 <div class="center">
-  <a href="#/getting-started/introduction" class="btn">Get Started</a>
+  <a href="#/getting-started/introduction" class="cover-btn">Get Started</a>
 </div>
 </div>
 
@@ -92,3 +92,7 @@ With two links at the top of your HTML file, you'll be ready to use Strata UI.
 </div>
 </div>
 </div>
+
+## Have Questions?
+
+Participate in our discussions by visiting our <a class="inline-btn" href="https://github.com/franreyn/pimaonline-strataui/discussions">GitHub discussions</a> page.
