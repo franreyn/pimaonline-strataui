@@ -294,6 +294,39 @@ section.cover h2 {
   margin: 2rem 0;
 }
 
+.cover-main .cover-btn {
+	background-color: var(--color-docs-accent) !important;
+	color: var(--color-white);
+	transition: .5s ease;
+	border: none !important;
+	border-color: transparent !important;
+	font-size: 20px !important;
+	font-weight: 300 !important;
+}
+
+.cover-main .cover-btn:hover {
+	background-color: var(--color-docs-code) !important;
+	color: var(--color-white) !important;
+	border: none !important;
+	border-color: transparent !important;
+	font-size: 20px !important;
+	font-weight: 300 !important;
+}
+
+.cover-main .inline-btn {
+	background-color: transparent !important;
+	padding: 0 !important;
+	border: none !important;
+	border-color: transparent !important;
+	color: var(--color-link-blue) !important;
+	border-radius: 0 !important;
+	margin: auto !important;
+	font-size: inherit !important;
+	transition: none !important;
+	letter-spacing: inherit !important;
+	text-decoration: underline !important;
+}
+
 .vocab-cards-widget {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
