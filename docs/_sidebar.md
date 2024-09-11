@@ -27,3 +27,5 @@
   - [Tables](/widgets/tables.md)
   - [Tabs](/widgets/tabs.md)
   - [Vocab Cards](/widgets/vocab-cards.md)
+- Feedback
+	- [Visit GitHub Discussions](https://github.com/franreyn/pimaonline-strataui/discussions)
