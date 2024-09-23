@@ -29,3 +29,5 @@
 - Customizations
   - [Typography](/customizations/typography.md)
   - [Tag Conversion](/customizations/tag-conversion.md)
+- Feedback
+	- [Visit GitHub Discussions](https://github.com/franreyn/pimaonline-strataui/discussions)
