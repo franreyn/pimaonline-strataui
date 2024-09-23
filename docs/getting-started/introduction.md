@@ -35,7 +35,7 @@ View the [quick start template](getting-started/quick-start) to copy and paste a
 
 Visit our [GitHub Discussions page](https://github.com/franreyn/pimaonline-strataui/discussions) for updates and general discussions around using Strata UI.
 
-_Note: You will have to cretae a github accont in order to participate._
+_Note: You will have to create a github accont in order to participate._
 
 <div class="footer">
 	<p>&copy; 2024 Strata UI</p>
